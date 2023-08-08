@@ -2,7 +2,7 @@
 title: Account: Reset Password
 description: How to reset your password
 published: true
-date: 2023-08-08T03:40:21.828Z
+date: 2023-08-08T03:44:11.995Z
 tags: 
 editor: markdown
 dateCreated: 2023-08-08T03:28:45.878Z
@@ -13,19 +13,31 @@ You have forgotten your password? No problem, you can issue a password reset asl
 
 ---
 
-#### 1. To get started, you have to click on **Forgot password?** on the login screen or simply follow this [link](https://shocklink.net/#/account/password/reset).
+1. To get started, you have to click on "**Forgot password?**"on the login screen or simply follow this [link](https://shocklink.net/#/account/password/reset).
 
 ![reset-password-button.png](/account/reset-password/reset-password-button.png =40%x)
 
-#### 2. Enter the email you used for your account, and hit send reset email!
+2. Enter the email you used for your account, and hit send reset email!
 
 ![enter-email.png](/account/reset-password/enter-email.png =40%x) ![reset-sent.png](/account/reset-password/reset-sent.png =40%x)
 
-#### 3. Check your inbox. If you entered your email correctly, you now have a email from our systems.
+3. Check your inbox
+
+If you entered your email correctly, you now have a email from our systems.
 ![email-inbox.png](/account/reset-password/email-inbox.png)
 
 ![email.png](/account/reset-password/email.png =40%x)
 
-#### 4. Click on the **Reset password** button to proceed.
+4. Click on the "**Reset password**" button to proceed.
+
+Your now presented with two field to enter your new password.
 
 ![new-password.png](/account/reset-password/new-password.png =40%x)
+
+Click **Change password**" after entering your desired password.
+
+5. You did it!
+
+You can now login with your new password!
+
+![success.png](/account/reset-password/success.png =40%x)
