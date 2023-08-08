@@ -2,7 +2,7 @@
 title: Account: Reset Password
 description: How to reset your password
 published: true
-date: 2023-08-08T03:29:53.978Z
+date: 2023-08-08T03:30:39.522Z
 tags: 
 editor: markdown
 dateCreated: 2023-08-08T03:28:45.878Z
