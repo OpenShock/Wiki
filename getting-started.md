@@ -2,7 +2,7 @@
 title: Getting Started
 description: 
 published: true
-date: 2023-08-08T03:17:56.206Z
+date: 2023-08-08T03:24:44.433Z
 tags: 
 editor: markdown
 dateCreated: 2023-08-08T02:58:45.555Z
@@ -17,6 +17,13 @@ First of all, you need an account. You can simply create a new account at [Shock
 
 ![signup-page.png](/getting-started/signup-page.png =40%x)
 
+Note the requirements for the input fields!
+
+![signup-page-successful-signup.png](/getting-started/signup-page-successful-signup.png  =40%x)
+
+Now sign in with your newly created account.
+
+## What do you want to do next?
 
 + [Shock others]()
-+ [Get shocked]()
++ [Get shocked (hardware required)]()
