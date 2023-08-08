@@ -2,7 +2,7 @@
 title: Account: Reset Password
 description: How to reset your password
 published: true
-date: 2023-08-08T03:29:20.096Z
+date: 2023-08-08T03:29:53.978Z
 tags: 
 editor: markdown
 dateCreated: 2023-08-08T03:28:45.878Z
@@ -13,6 +13,6 @@ You have forgotten your password? No problem, you can issue a password reset asl
 
 ---
 
-To get started, you have to click on **Forgot password?** on the login screen or simply follow this [link](https://shocklink.net/#/account/password/reset){:target="_blank"}.
+To get started, you have to click on **Forgot password?** on the login screen or simply follow this [link](https://shocklink.net/#/account/password/reset).
 
 ![reset-password-button.png](/account/reset-password/reset-password-button.png =40%x)
