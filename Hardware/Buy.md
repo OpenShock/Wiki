@@ -2,7 +2,7 @@
 title: Hardware - Buy
 description: Where can I buy Hardware to DIY my own shocker and box/board?
 published: true
-date: 2023-09-17T13:53:14.402Z
+date: 2023-09-17T13:54:23.202Z
 tags: diy
 editor: markdown
 dateCreated: 2023-09-17T13:51:13.394Z
@@ -11,6 +11,14 @@ dateCreated: 2023-09-17T13:51:13.394Z
 # Buy Hardware
 My best efforts to list ali express links to current parts to DIY build your own ESP-32 board, where to buy shockers from and what to look out for.
 I try to find the best value offers for the regions listed, they might also be a valid choice for other regions. Please also look at current offers on ali express for yourself.
+
+You will need:
++ ESP-32
++ 433 MHz Antenna
++ Shocker
++ Shocker charging cable
+
+Read more on each part below.
 
 ## ESP-32
 Genuinely any ESP-32 should work if it has enough flash memory (4MB or more). ESP-8266 are currently not supported.
@@ -50,3 +58,4 @@ The charging port for the **CaiXianlin** Shocker is a standard **DC 3.5-1.35** w
 You might even have one laying around since those are really common. If not, you can pick them up on either ali express, amazon or any other general electronics market.
 
 + Global: https://aliexpress.us/item/2255799944669970.html
+
