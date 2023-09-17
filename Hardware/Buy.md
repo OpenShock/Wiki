@@ -2,7 +2,7 @@
 title: Hardware - Buy
 description: Where can I buy Hardware to DIY my own shocker and box/board?
 published: true
-date: 2023-09-17T13:51:13.394Z
+date: 2023-09-17T13:53:14.402Z
 tags: diy
 editor: markdown
 dateCreated: 2023-09-17T13:51:13.394Z
@@ -19,14 +19,14 @@ Genuinely any ESP-32 should work if it has enough flash memory (4MB or more). ES
 In addition I recommend you buy atleast 2-3 of those, for the reason of up to 20% of those micro controllers are dead on arrival. So to avoid having a bad board and needing to wait 3 more weeks for you order, buy 2-3 of them at once.
 {.is-info}
 
-+ Germany: https://de.aliexpress.com/item/32858054775.html
++ Global: https://aliexpress.us/item/2251832671740023.html
 
 
 ## 433 MHz RF Antenna
 433 MHz is the frequency the shocker listens to. So we need to use a 433 MHz RF antenna to control the shockers.
 
 + Global: https://aliexpress.us/item/2251832634295432.html (Ask for the **Transmitter** only, will give you twice the transmitters of the quantity you ordered)
-+ Alternative Global: https://www.aliexpress.us/item/3256803835799897.html (You can get the **Transmitter** only here aswell, type selection)
++ Alternative Global: https://aliexpress.us/item/3256803835799897.html (You can get the **Transmitter** only here aswell, type selection)
 
 
 ## Shocker
@@ -41,12 +41,12 @@ The reason for the Zoll denying import is, that the Shocker is made for dogs. Us
 > Make sure to select the type you want. You dont need a remote for it to work with ShockLink, **Collar only is enough**.
 {.is-info}
 
-+ Luxembourg / Generally good store: https://www.aliexpress.us/item/3256804060226907.html
-+ Netherlands: https://www.aliexpress.us/item/3256805172752011.html (Seems to be the same seller and offer as the US one)
-+ US: https://www.aliexpress.us/item/3256805172752011.html
++ Luxembourg / Generally good store: https://aliexpress.us/item/3256804060226907.html
++ Netherlands: https://aliexpress.us/item/3256805172752011.html (Seems to be the same seller and offer as the US one)
++ US: https://aliexpress.us/item/3256805172752011.html
 
 ### Shocker Charging Cable
 The charging port for the **CaiXianlin** Shocker is a standard **DC 3.5-1.35** with 5V connector. So a USB to **DC 3.5-1.35** is what you should be getting.
 You might even have one laying around since those are really common. If not, you can pick them up on either ali express, amazon or any other general electronics market.
 
-+ Global: https://www.aliexpress.us/item/2255799944669970.html
++ Global: https://aliexpress.us/item/2255799944669970.html
