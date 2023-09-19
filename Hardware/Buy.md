@@ -2,7 +2,7 @@
 title: Hardware: Buy
 description: Where can I buy Hardware to DIY my own shocker and box/board?
 published: true
-date: 2023-09-19T16:35:20.558Z
+date: 2023-09-19T16:41:01.688Z
 tags: diy, hardware, esp32
 editor: markdown
 dateCreated: 2023-09-17T13:51:13.394Z
@@ -42,15 +42,18 @@ There is two shocker protocol supported currently. One of them is a older shocke
 For protocol specifications see here: https://github.com/Shock-Link/ShockLink-Hardware
 
 > You cannot directly order Shockers to Germany, they will get denied for import by the German "Zoll". Alternatively proxy your parcel over the Netherlands or Luxembourg.  
-The reason for the Zoll denying import is, that the Shocker is made for dogs. Using shock collars on animals is considered illegal by EU law, but only germany seems to care about imports. 
+The reason for the Zoll denying import is, that the Shocker is made for dogs. Using shock collars on animals is considered illegal by EU law, but only germany seems to care about imports.  
 {.is-warning}
 
-> Make sure to select the type you want. You dont need a remote for it to work with ShockLink, **Collar only is enough**.
+> Promotion: LucHeart on discord sells Shockers and fully assembled ESP-32's to germany and surrounding countries. More info here: [WIP]
 {.is-info}
 
 + Luxembourg / Generally good store: https://aliexpress.us/item/3256804060226907.html
 + Netherlands: https://aliexpress.us/item/3256805172752011.html (Seems to be the same seller and offer as the US one)
 + US: https://aliexpress.us/item/3256805172752011.html
+
+> Make sure to select the type you want. You dont need a remote for it to work with ShockLink, **Collar only is enough**.
+{.is-info}
 
 ### Shocker Charging Cable
 The charging port for the **CaiXianlin** Shocker is a standard **DC 3.5-1.35** with 5V connector. So a USB to **DC 3.5-1.35** is what you should be getting.
