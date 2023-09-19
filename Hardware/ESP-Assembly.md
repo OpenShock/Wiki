@@ -2,13 +2,13 @@
 title: ESP-Assembly
 description: DIY Assemble your ESP-32 and Antenna
 published: true
-date: 2023-09-18T10:25:08.069Z
+date: 2023-09-19T16:33:13.328Z
 tags: guide, diy
 editor: markdown
 dateCreated: 2023-09-18T02:26:29.397Z
 ---
 
-# Board/ESP-32 assembly for DIY
+# Hardware: Board/ESP-32 Assembly
 This guide mainly focuses on the parts listed in the [Hardware Buy guide](/Hardware/Buy).
 
 ## Requirements
