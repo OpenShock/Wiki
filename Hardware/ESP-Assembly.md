@@ -2,7 +2,7 @@
 title: Hardware: Assembly
 description: DIY Assemble your ESP-32 and Antenna
 published: true
-date: 2023-09-19T16:33:28.444Z
+date: 2023-09-19T16:33:35.166Z
 tags: guide, diy
 editor: markdown
 dateCreated: 2023-09-18T02:26:29.397Z
