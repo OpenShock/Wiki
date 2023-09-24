@@ -1,7 +1,28 @@
+---
+tags:
+  - hardware
+  - vendor
+  - pishock
+---
 
-# Custom PCB v1
+# Custom PCB v1 (current)
+
+!!! danger "Extreme price point"
+
+    We strongly discouraging buying products from this vendor due to their extremely high price points. 
+
+!!! success "Fully compatible"
+
+    This product is fully compatible with OpenShock.
 
 First seen in the wild on `2023-09-19`.
+
+## Internals
+- Espressif ESP32-WROOM-32D
+- On-board radio chip
+
+## Pinout
+- Use PIN 14 for transmitting.
 
 ## Flashing
 
