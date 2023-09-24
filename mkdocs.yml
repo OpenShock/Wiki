@@ -1,0 +1,31 @@
+site_name: OpenShock
+docs_dir: docs
+site_url: https://openshock.io/
+repo_url: https://github.com/Shock-Link/Wiki
+# nav:
+#   - Home: home.md
+#   - Getting Started: getting-started.md
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+
+plugins:
+  - tags:
+      enabled: true
+      
+extra:
+  # Tag definitions for tagging pages.
+  tags:
+    selfhosting: banana
+
+  # Social links rendered in the footer.
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord,gg/AHcCbXbEcF
+      name: Discord
+
+    - icon: fontawesome/brands/github
+      link: https://github.com/Shock-Link
+      name: GitHub
