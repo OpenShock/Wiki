@@ -31,6 +31,3 @@ jobs:
       
       - name: Install MkDocs
         run: pip install mkdocs-material
-
-      - name: Build PlatformIO Project
-        run: mkdocs gh-deploy 
