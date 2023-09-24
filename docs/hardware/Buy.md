@@ -1,11 +1,7 @@
 ---
-title: Hardware: Buy
-description: Where can I buy Hardware to DIY my own shocker and box/board?
-published: true
-date: 2023-09-19T16:41:01.688Z
-tags: diy, hardware, esp32
-editor: markdown
-dateCreated: 2023-09-17T13:51:13.394Z
+tags:
+  - hardware
+  - diy
 ---
 
 My best efforts to list ali express links to current parts to DIY build your own ESP-32 board, where to buy shockers from and what to look out for.
@@ -22,11 +18,16 @@ Read more on each part below.
 ## ESP-32
 Genuinely any ESP-32 should work if it has enough flash memory (4MB or more). ESP-8266 are currently not supported.
 
-> I recommend getting the **CP2104 drive Type-C** for USB Type-C as a connector. Also fits the 3D print better.
-In addition I recommend you buy atleast 2-3 of those, for the reason of up to 20% of those micro controllers are dead on arrival. So to avoid having a bad board and needing to wait 3 more weeks for you order, buy 2-3 of them at once.
-{.is-info}
+!!! info
 
-+ Global: https://aliexpress.us/item/2251832671740023.html
+    We recommend getting the **CP2104 drive Type-C** for USB Type-C as a connector. This board also fits the 3D print better.
+
+!!! warning
+
+    We also recommend buying at least 2-3 of these boards. Up to 20% of them are dead-on-arrival.
+
+
++ Global: [https://aliexpress.us/item/2251832671740023.html](https://aliexpress.us/item/2251832671740023.html)
 
 
 ## 433 MHz RF Antenna
@@ -41,12 +42,14 @@ There is two shocker protocol supported currently. One of them is a older shocke
 
 For protocol specifications see here: https://github.com/Shock-Link/ShockLink-Hardware
 
-> You cannot directly order Shockers to Germany, they will get denied for import by the German "Zoll". Alternatively proxy your parcel over the Netherlands or Luxembourg.  
-The reason for the Zoll denying import is, that the Shocker is made for dogs. Using shock collars on animals is considered illegal by EU law, but only germany seems to care about imports.  
-{.is-warning}
+!!! warning
 
-> Promotion: LucHeart on discord sells Shockers and fully assembled ESP-32's to germany and surrounding countries. More info here: [WIP]
-{.is-info}
+    You cannot directly order Shockers to Germany, they will get denied for import by the German "Zoll". Alternatively proxy your parcel over the Netherlands or Luxembourg.  
+    The reason for the Zoll denying import is, that the Shocker is made for dogs. Using shock collars on animals is considered illegal by EU law, but only germany seems to care about imports.  
+
+!!! info
+
+    Promotion: LucHeart on discord sells Shockers and fully assembled ESP-32's to germany and surrounding countries. More info here: [WIP]
 
 + Luxembourg / Generally good store: https://aliexpress.us/item/3256804060226907.html
 + Netherlands: https://aliexpress.us/item/3256805172752011.html (Seems to be the same seller and offer as the US one)
