@@ -15,7 +15,10 @@
        y="75.308983"
        width="1924.7"
        height="572.8421"
-       id="rect2" /></defs><g
+       id="rect2" />
+	   <style>
+		  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500');
+	   </style></defs><g
      id="layer2"
      style="display:none"
      transform="translate(-50.125,-49.875)"><path
