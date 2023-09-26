@@ -35,7 +35,7 @@ nav:
 
 theme:
   name: material
-  logo: static/branding/Icon.ico
+  logo: static/branding/Icon.svg
   favicon: static/branding/Icon.ico
   features:
     - navigation.tabs
