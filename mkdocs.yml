@@ -15,18 +15,26 @@ nav:
       - quickstart/shocking-others/create-account.md
   - Hardware:
     - Shockers:
+      - hardware/shockers/identifying.md
       - hardware/shockers/buying-guide.md
-    - Prebuilt controllers:
-      - hardware/prebuilt/vendors.md
-    - DIY Controller:
-      - hardware/diy/prerequisites.md
-      - hardware/diy/sourcing-parts.md
-      - hardware/diy/building.md
-    - Other vendors:
-      - Pishock:
-        - 'hardware/pishock/custom-v1.md'
-        - 'hardware/pishock/lite.md'
-        - 'hardware/pishock/plus.md'
+    - Remotes:
+      - hardware/remotes/identifying.md
+#      - hardware/remotes/buying-guide.md
+    - Controllers:
+      - Do-it-yourself:
+        - hardware/diy/prerequisites.md
+        - hardware/diy/sourcing-parts.md
+        - hardware/diy/assembling.md
+      - Second-party vendors:
+        - hardware/vendors-second-party/about.md
+        - Europe:
+          - hardware/vendors-second-party/luc.md
+      - Third-party vendors:
+        - hardware/vendors-third-party/about.md
+        - Pishock:
+          - 'hardware/vendors-third-party/pishock/custom-v1.md'
+          - 'hardware/vendors-third-party/pishock/lite.md'
+          - 'hardware/vendors-third-party/pishock/plus.md'
   - Selfhosting:
     - 'selfhosting/selfhosting.md'
   - Contributing:
