@@ -49,7 +49,7 @@ For protocol specifications see here: [https://github.com/Open-Shock/Hardware](h
 
 !!! info
 
-    Promotion: LucHeart on discord sells Shockers and fully assembled ESP-32's to germany and surrounding countries. More info here: [WIP]
+    Make sure to take a look at our known [second-party vendors](/hardware/vendors-second-party/about/).
 
 + Luxembourg / Generally good store: [https://aliexpress.us/item/3256804060226907.html](https://aliexpress.us/item/3256804060226907.html)
 + Netherlands: [https://nl.aliexpress.com/item/1005005359066763.html](https://nl.aliexpress.com/item/1005005359066763.html) (Seems to be the same seller and offer as the US one)
