@@ -2,6 +2,7 @@
 tags:
   - hardware
   - vendor
+  - third-party
   - pishock
 ---
 

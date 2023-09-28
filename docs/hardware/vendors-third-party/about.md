@@ -1,3 +1,9 @@
+---
+tags: 
+  - hardware
+  - vendor
+  - third-party
+---
 
 # About
 

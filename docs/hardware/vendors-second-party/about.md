@@ -1,8 +1,15 @@
+---
+tags: 
+  - hardware
+  - vendor
+  - second-party-vendor
+---
+
 # About
 
 Second-party vendors are vendors from the OpenShock **community**.
 
-!!! warning
+!!! warning "Disclaimer"
 
     The OpenShock team does not give **any** guarantees about quality of products or services rendered.
 
