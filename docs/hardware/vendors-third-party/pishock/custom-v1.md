@@ -23,7 +23,7 @@ First seen in the wild on `2023-09-19`.
 - On-board radio chip
 
 ## Pinout
-- Use PIN 14 for transmitting.
+- Use PIN 12 for transmitting.
 
 ## Flashing
 
