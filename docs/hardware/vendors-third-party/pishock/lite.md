@@ -19,7 +19,10 @@ tags:
 ## Internals
 
 ## Pinout
+- Use PIN 15 for transmitting.
 
 ## Media
 
-We currently do not have any media of the Pishock Lite that we have permission to use. Do you own this device and are you willing to let us use your photographs? Then [contact us via Discord](https://discord.gg/AHcCbXbEcF).
+![Pishock Lite - Front](/static/pishock-lite/lite-front.jpg)
+![Pishock Lite - Back](/static/pishock-lite/lite-back.jpg)
+![Pishock Lite - Internal](/static/pishock-lite/lite-internal.jpg)
