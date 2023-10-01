@@ -35,6 +35,9 @@ nav:
           - 'hardware/vendors-third-party/pishock/custom-v1.md'
           - 'hardware/vendors-third-party/pishock/lite.md'
           - 'hardware/vendors-third-party/pishock/plus.md'
+  - Software:
+    - Shockers:
+      - software/shockers/caixianlin.md
   - Selfhosting:
     - 'selfhosting/selfhosting.md'
   - Contributing:
