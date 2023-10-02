@@ -29,6 +29,14 @@ tags:
 ![Pishock Lite - Back](/static/pishock-lite/lite-back.jpg)
 ![Pishock Lite - Internal](/static/pishock-lite/lite-internal.jpg)
 
-### Bad soldering variant
+### Burnt solder joint variant
 
-![Pishock Lite - Internal with horrendous soldering job](/static/pishock-lite/lite-internal-2.jpg)
+Courtesy of `@ulthirm` on Discord.
+
+![Pishock Lite - Internal - Burnt solder joint variant](/static/pishock-lite/lite-internal-2.jpg)
+
+### Cold solder joint variant
+
+Courtesy of `@pixelcommander` on Discord.
+
+![Pishock Lite - Internal - Cold solder joint variant](/static/pishock-lite/lite-internal-3.jpg)
