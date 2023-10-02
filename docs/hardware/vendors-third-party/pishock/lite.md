@@ -23,6 +23,12 @@ tags:
 
 ## Media
 
+### Clean variant
+
 ![Pishock Lite - Front](/static/pishock-lite/lite-front.jpg)
 ![Pishock Lite - Back](/static/pishock-lite/lite-back.jpg)
 ![Pishock Lite - Internal](/static/pishock-lite/lite-internal.jpg)
+
+### Bad soldering variant
+
+![Pishock Lite - Internal with horrendous soldering job](/static/pishock-lite/lite-internal-2.jpg)
