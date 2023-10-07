@@ -58,6 +58,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: wiki
+          path: site
       
       - name: Log in to Container Registry
         uses: docker/login-action@v3
