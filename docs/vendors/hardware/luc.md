@@ -2,10 +2,9 @@
 tags: 
   - hardware
   - vendor
-  - second-party-vendor
 ---
 
-# Luc
+# Luc (EU)
 
 !!! warning "Disclaimer"
 

@@ -4,4 +4,6 @@ tags:
   - shockers
 ---
 
-# Buying guide
+# Shockers
+
+See the [Hardware buying guide](../../hardware/buying-guide/).

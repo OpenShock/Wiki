@@ -3,9 +3,11 @@ tags:
   - hardware
   - board
   - vendor:pishock
+  - compat:full
+  - support:full
 ---
 
-# Custom PCB v1 (current)
+# Pishock 2023 (current)
 
 !!! danger "Extreme price point"
 
@@ -30,7 +32,7 @@ This board is compatible with the flash tool.
 
 ## Media
 
-![Pishock Custom PCB v1 - Case](/static/pishock-custom-v1/case.jpg)
-![Pishock Custom PCB v1 - Case back](/static/pishock-custom-v1/case-back.jpg)
-![Pishock Custom PCB v1 - PCB Front](/static/pishock-custom-v1/pcb-front.jpg)
-![Pishock Custom PCB v1 - PCB Back](/static/pishock-custom-v1/pcb-back.jpg)
+![Pishock Custom PCB v1 - Case](static/pishock-custom-v1/case.jpg)
+![Pishock Custom PCB v1 - Case back](static/pishock-custom-v1/case-back.jpg)
+![Pishock Custom PCB v1 - PCB Front](static/pishock-custom-v1/pcb-front.jpg)
+![Pishock Custom PCB v1 - PCB Back](static/pishock-custom-v1/pcb-back.jpg)
