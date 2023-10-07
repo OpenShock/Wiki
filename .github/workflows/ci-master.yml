@@ -50,6 +50,8 @@ jobs:
         with:
           sparse-checkout: |
             Dockerfile
+            requirements.txt
+            mkdocs.yml
       
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3

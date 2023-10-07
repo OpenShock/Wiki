@@ -1,6 +1,8 @@
 FROM python:3.12-alpine
 COPY site /site
+COPY requirements.txt /site/requirements.txt
+COPY mkdocs.yml /site/mkdocs.yml
 WORKDIR /site
-RUN pip install mkdocs
+RUN pip install -r /requirements.txt
 EXPOSE 80
 ENTRYPOINT [ "sh", "-c", "mkdocs serve --clean -a 0.0.0.0:80 --no-livereload" ]

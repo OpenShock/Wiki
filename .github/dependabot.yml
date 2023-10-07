@@ -17,3 +17,9 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+
+  # Check for Python dependency updates
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "daily"
