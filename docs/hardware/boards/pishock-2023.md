@@ -1,9 +1,8 @@
 ---
 tags:
   - hardware
-  - vendor
-  - third-party
-  - pishock
+  - board
+  - vendor:pishock
 ---
 
 # Custom PCB v1 (current)

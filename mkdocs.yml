@@ -20,6 +20,10 @@ nav:
     - Remotes:
       - hardware/remotes/identifying.md
 #      - hardware/remotes/buying-guide.md
+    - Boards:
+      - 'hardware/boards/pishock-2023.md'
+      - 'hardware/boards/pishock-lite-2021.md'
+      - 'hardware/boards/pishock-plus-2021.md'
     - Controllers:
       - Do-it-yourself:
         - hardware/diy/prerequisites.md
