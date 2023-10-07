@@ -1,8 +1,6 @@
-FROM python:3.12-alpine
-COPY site /site
-COPY requirements.txt /requirements.txt
-COPY mkdocs.yml /site/mkdocs.yml
-WORKDIR /site
-RUN pip install -r /requirements.txt
-EXPOSE 80
-ENTRYPOINT [ "sh", "-c", "mkdocs serve --clean -a 0.0.0.0:80 --no-livereload" ]
+FROM nginx:1-alpine
+
+# Copy release artifacts (static HTML, JS, CSS)
+COPY site /usr/share/nginx/html
+
+# Leave startup as-is.
