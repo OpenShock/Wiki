@@ -28,6 +28,6 @@ Codenamed "Dorx", this is a brandless knockoff ESP32-S3 board with a fake "ESP32
 
 ## Media
 
-![ESP32-S3 "Dorx"](static/dorx/dorx-1.jpg)
-![ESP32-S3 "Dorx"](static/dorx/dorx-2.jpg)
-![ESP32-S3 "Dorx"](static/dorx/dorx-3.jpg)
+![ESP32-S3 "Dorx"](../../../static/dorx/dorx-1.jpg)
+![ESP32-S3 "Dorx"](../../../static/dorx/dorx-2.jpg)
+![ESP32-S3 "Dorx"](../../../static/dorx/dorx-3.jpg)

@@ -11,16 +11,16 @@ To get started with OpenShocks, you need three things:
 
 Can be either a public or private OpenShock server. We recommend the [ShockLink.net](https://shocklink.net) public OpenShock instance.
 
-Interested in hosting your own? Check out [Selfhosting](../selfhosting).
+Interested in hosting your own? Check out [Selfhosting](../selfhosting/index.md).
 
 ### 2. An OpenShock Bridge
 
 This is a fancy way of saying "a microcontroller and a 433MHz radio". It _bridges_ the gap between shockers and the OpenShock server, hence the name *Bridge*.
 
-- For prebuilts, check out the [Hardware vendors](../vendors/hardware/).
-- For building your own, after reading the [Buying guide](../hardware/buying-guide), head over to our do-it-yourself [Asssembly guide](../diy/assembling).
+- For prebuilts, check out the [Hardware vendors](../vendors/hardware/index.md).
+- For building your own, after reading the [Buying guide](../hardware/buying-guide.md), head over to our do-it-yourself [Asssembly guide](../diy/assembling.md).
 
 ### 3. Shockers!
 
-This is the easy part! Head to the [Buying Guide](../hardware/buying-guide).
+This is the easy part! Head to the [Buying Guide](../hardware/buying-guide.md).
 

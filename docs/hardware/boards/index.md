@@ -39,10 +39,10 @@ _Boards are sorted alphabetically._
 |-|-|-|-|
 | [Knockoff ESP32-S3 "Dorx"](hardware/boards/china/esp32s3-dorx/) | R8N2 | :hammer_and_wrench: :lock: | [:rocket: Red Mushie](https://github.com/redmushie) |
 | [Knockoff ESP32-S3 "Dorx"](hardware/boards/china/esp32s3-dorx/) | R16N8 | :hammer_and_wrench: :cloud: :lock: | [:rocket: Red Mushie](https://github.com/redmushie) |
-| [Wemos D1 Mini ESP32](hardware/boards/wemos/d1-mini-esp32/) | All | :white_check_mark: | [:rocket: HentaiHeaven](https://github.com/hhvrc) |
-| [Wemos Lolin S3](hardware/boards/wemos/lolin-s3/) | All | :white_check_mark: :cloud: :lock: | [:rocket: Red Mushie](https://github.com/redmushie) |
 | [Pishock (2023)](hardware/boards/pishock/2023-pishock/) | All | :white_check_mark: | [:rocket: Red Mushie](https://github.com/redmushie) |
 | [Pishock Lite (2021 Q3)](hardware/boards/pishock/2021q3-lite/) | All | :white_check_mark: | [:rocket: HentaiHeaven](https://github.com/hhvrc) |
+| [Wemos D1 Mini ESP32](hardware/boards/wemos/d1-mini-esp32/) | All | :white_check_mark: | [:rocket: HentaiHeaven](https://github.com/hhvrc) |
+| [Wemos Lolin S3](hardware/boards/wemos/lolin-s3/) | All | :white_check_mark: :cloud: :lock: | [:rocket: Red Mushie](https://github.com/redmushie) |
 
 
 ## Community maintained

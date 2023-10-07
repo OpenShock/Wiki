@@ -7,7 +7,7 @@ nav:
   - Home: index.md
   - Quickstart:
     - quickstart/what-you-need.md
-    - quickstart/buying-guide.md
+    - hardware/buying-guide.md
   - Hardware:
     - hardware/buying-guide.md
     - Shockers:
