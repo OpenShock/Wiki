@@ -1,6 +1,6 @@
 FROM python:3.12-alpine
 COPY site /site
-COPY requirements.txt /site/requirements.txt
+COPY requirements.txt /requirements.txt
 COPY mkdocs.yml /site/mkdocs.yml
 WORKDIR /site
 RUN pip install -r /requirements.txt
