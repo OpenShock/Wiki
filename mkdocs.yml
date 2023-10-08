@@ -7,7 +7,7 @@ nav:
   - Home: index.md
   - Quickstart:
     - quickstart/what-you-need.md
-    - hardware/buying-guide.md
+    - quickstart/buying-guide.md
   - Hardware:
     - hardware/buying-guide.md
     - Shockers:
@@ -28,6 +28,8 @@ nav:
         - 'hardware/boards/pishock/2023-pishock.md'
         - 'hardware/boards/pishock/2021q3-lite.md'
         - 'hardware/boards/pishock/2021q1-plus.md'
+      - Radio:
+        - hardware/radio/index.md
   - Software:
     - Shockers:
       - software/shockers/caixianlin.md
