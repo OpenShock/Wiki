@@ -25,7 +25,6 @@ The charging port for this model is a standard **DC 3.5-1.35** with 5V connector
 
 + :globe_with_meridians: International -- [AliExpress](https://aliexpress.com/item/2255799944669970.html)
 
-
 ## Media
 
 Do you have media of this product you are willing to let us use? Contact us [on Discord](https://discord.gg/AHcCbXbEcF).

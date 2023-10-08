@@ -8,7 +8,7 @@ tags:
 
 !!! success "Compatible"
 
-        This product is compatible with OpenShock.
+    This product is compatible with OpenShock.
 
 ## Usage
 
@@ -18,7 +18,7 @@ Select `PetTrainer` when adding the shocker to your account.
 
 !!! failure "Discontinued product"
 
-        This product has been discontinued.
+    This product has been discontinued.
 
 ## Media
 
