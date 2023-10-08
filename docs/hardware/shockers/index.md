@@ -28,3 +28,8 @@ tags:
 ## Buying
 
 Each shocker page has its own buy link(s). We recommend the [CaiXianlin](caixianlin.md).
+
+## Known models
+
+- [CaiXianlin](caixianlin.md)
+- [PetTrainer](pettrainer.md) (discontinued)
