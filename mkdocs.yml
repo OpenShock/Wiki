@@ -11,7 +11,7 @@ nav:
   - Hardware:
     - hardware/buying-guide.md
     - Shockers:
-      - hardware/shockers/buying-guide.md
+      - hardware/shockers/index.md
       - hardware/shockers/caixianlin.md
     - Remotes:
       - hardware/remotes/identifying.md
@@ -55,6 +55,7 @@ theme:
     - navigation.instant
     - navigation.tracking
     - navigation.indexes
+  custom_dir: overrides
   palette: 
     # Palette toggle for dark mode
     - scheme: slate
@@ -83,6 +84,7 @@ markdown_extensions:
 plugins:
   - search
   - git-authors
+  - git-revision-date-localized
   - tags:
       enabled: true
       
