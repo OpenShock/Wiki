@@ -11,3 +11,15 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+
+  # Check for container base image updates
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "daily"
+
+  # Check for Python dependency updates
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "daily"
