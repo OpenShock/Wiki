@@ -1,3 +1,8 @@
+---
+tags:
+    - hardware
+    - shockers
+---
 
 # CaiXianlin
 

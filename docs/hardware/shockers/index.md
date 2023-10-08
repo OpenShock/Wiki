@@ -25,6 +25,6 @@ tags:
 
     **Please let us know about your success with imports [on Discord](AHcCbXbEcF).**
 
+## Buying
 
-
-See the [Hardware buying guide](../../hardware/buying-guide.md).
+Each shocker page has its own buy link(s). We recommend the [CaiXianlin](caixianlin.md).
