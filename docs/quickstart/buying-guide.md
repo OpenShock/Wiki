@@ -9,7 +9,7 @@
 
     Not interested in building your own OpenShock Bridge? Head over to the [Hardware vendors](../vendors/hardware/index.md).
 
-These are the **recommendations** of the OpenShock maintainers. This list is **not** exhaustive. For a much more *wiki-style* information base, head to the [Hardware](../hardware/boards/index.mdd) section.
+These are the **recommendations** of the OpenShock maintainers. This list is **not** exhaustive. For a much more *wiki-style* information base, head to the [Hardware](../hardware/boards/index.md) section.
 
 
 
