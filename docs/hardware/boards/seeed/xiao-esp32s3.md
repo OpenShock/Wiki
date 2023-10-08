@@ -8,14 +8,27 @@ tags:
 
 # Seeed Xiao ESP32S3
 
+- [Official website](https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html)
+
+## Specifications
+
+- ESP32-S
+- 8MiB Flash
+- 8MiB PSRAM
+- Detachable antenna
+
 ## Flashing
+
+!!! warning "Extra steps required"
+
+    Please read this section carefully.
 
 On the first picture in the [Media section](#media) below, aside the USB-C are two (extremely small!) buttons.
 
 - The "R" button is "Reset";
 - The "B" button is "Bootloader".
 
-To flash, you need to enter bootloader mode. Follow these steps:
+To flash, **you need to enter bootloader mode**. Follow these steps:
 
 - Unplug the board.
 - Hold down the "B" button.
@@ -24,6 +37,10 @@ To flash, you need to enter bootloader mode. Follow these steps:
 If everything went correctly, you can now flash the board using a flashing tool like `esptool`. After flashing, press "R" to reset the board into normal boot mode.
 
 ## Media
+
+!!! info
+
+    The antenna is detachable. The back side of the antenna has adhesive tape.
 
 ![Seeed Xiao ESP32S3 - Front](../../../static/boards/seeed-xiao-esp32s3/1.jpg)
 ![Seeed Xiao ESP32S3 - Back](../../../static/boards/seeed-xiao-esp32s3/2.jpg)

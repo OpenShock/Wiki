@@ -39,7 +39,7 @@ _Boards are sorted alphabetically._
 |-|-|-|-|
 | [Pishock (2023)](pishock/2023-pishock.md) | All | :white_check_mark: | [:rocket: Red Mushie](https://github.com/redmushie) |
 | [Pishock Lite (2021 Q3)](pishock/2021q3-lite.md) | All | :white_check_mark: | [:rocket: HentaiHeaven](https://github.com/hhvrc) |
-| [Seeed Studio Xiao ESP32S3](seeed/xiao-esp32s3.md) | :construction: | :construction: | Work in progress |
+| [Seeed Studio Xiao ESP32S3](seeed/xiao-esp32s3.md) | All | :white_check_mark: | [:rocket: Red Mushie](https://github.com/redmushie) | 
 | [Wemos D1 Mini ESP32](wemos/d1-mini-esp32.md) | All | :white_check_mark: | [:rocket: HentaiHeaven](https://github.com/hhvrc) |
 | [Wemos Lolin S3](wemos/lolin-s3.md) | All | :white_check_mark: :cloud: :lock: | [:rocket: Red Mushie](https://github.com/redmushie) |
 
