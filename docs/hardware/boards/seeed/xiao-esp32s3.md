@@ -8,7 +8,11 @@ tags:
 
 # Seeed Xiao ESP32S3
 
-- [Official website](https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html)
+!!! success "Fully compatible"
+
+    This product is fully compatible with OpenShock.
+
+See the [official webpage](https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html) for a more exhaustive description.
 
 ## Specifications
 

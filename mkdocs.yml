@@ -9,7 +9,7 @@ nav:
     - quickstart/what-you-need.md
     - quickstart/buying-guide.md
   - Hardware:
-    - hardware/buying-guide.md
+    # - hardware/buying-guide.md
     - Shockers:
       - hardware/shockers/index.md
       - hardware/shockers/caixianlin.md

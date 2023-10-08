@@ -19,7 +19,7 @@ tags:
 
 First seen in the wild on `2023-09-19`.
 
-## Internals
+## Specifications
 - Espressif ESP32-WROOM-32D
 - On-board radio chip
 

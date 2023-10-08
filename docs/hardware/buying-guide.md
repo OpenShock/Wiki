@@ -27,14 +27,14 @@ Genuinely any ESP-32 should work if it has enough flash memory (4MB or more). ES
     We also recommend buying at least 2-3 of these boards. Up to 20% of them are dead-on-arrival.
 
 
-+ Global: [https://aliexpress.us/item/2251832671740023.html](https://aliexpress.us/item/2251832671740023.html)
++ :globe_with_meridians: International -- [AliExpress](https://aliexpress.com/item/2251832671740023.html)
 
 
 ## 433 MHz RF Antenna
 433 MHz is the frequency the shocker listens to. So we need to use a 433 MHz RF antenna to control the shockers.
 
-+ Global: [https://aliexpress.us/item/2251832634295432.html](https://aliexpress.us/item/2251832634295432.html) (Ask for the **Transmitter** only, will give you twice the transmitters of the quantity you ordered)
-+ Alternative Global: [https://aliexpress.us/item/3256803835799897.html](https://aliexpress.us/item/3256803835799897.html) (You can get the **Transmitter** only here aswell, type selection)
++ :globe_with_meridians: International 1 -- [AliExpress](https://aliexpress.us/item/2251832634295432.html) (Ask for the **Transmitter** only, will give you twice the transmitters of the quantity you ordered)
++ :globe_with_meridians: International 2 -- [AliExpress](https://aliexpress.com/item/3256803835799897.html) (You can get the **Transmitter** only here aswell, type selection)
 
 
 ## Shocker
