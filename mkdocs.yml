@@ -30,8 +30,8 @@ nav:
         - 'hardware/boards/wemos/d1-mini-esp32.md'
         - 'hardware/boards/wemos/lolin-s2-mini.md'
         - 'hardware/boards/wemos/lolin-s3.md'
-      - Radio:
-        - hardware/radio/index.md
+    - Radio:
+      - hardware/radio/index.md
   - Software:
     - Shockers:
       - software/shockers/caixianlin.md
