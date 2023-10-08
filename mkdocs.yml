@@ -20,14 +20,16 @@ nav:
       - 'hardware/boards/index.md'
       # - Knockoffs:
       #   - 'hardware/boards/china/esp32s3-dorx.md'
-      - Wemos:
-        - 'hardware/boards/wemos/d1-mini-esp32.md'
-        - 'hardware/boards/wemos/lolin-s2-mini.md'
-        - 'hardware/boards/wemos/lolin-s3.md'
       - Pishock:
         - 'hardware/boards/pishock/2023-pishock.md'
         - 'hardware/boards/pishock/2021q3-lite.md'
         - 'hardware/boards/pishock/2021q1-plus.md'
+      - Seeed:
+        - hardware/boards/seeed/xiao-esp32s3.md
+      - Wemos:
+        - 'hardware/boards/wemos/d1-mini-esp32.md'
+        - 'hardware/boards/wemos/lolin-s2-mini.md'
+        - 'hardware/boards/wemos/lolin-s3.md'
       - Radio:
         - hardware/radio/index.md
   - Software:
