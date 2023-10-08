@@ -23,7 +23,7 @@ tags:
     | :flag_lu: Luxembourg | :white_check_mark: -- No problems reported | 2023 |
     | :flag_no: Norway | :white_check_mark: -- No problems reported | 2023 |
 
-    **Please let us know about your success with imports [on Discord](AHcCbXbEcF).**
+    **Please let us know about your success with imports [on Discord](https://discord.gg/AHcCbXbEcF).**
 
 ## Buying
 
