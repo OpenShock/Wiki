@@ -11,17 +11,18 @@ nav:
   - Hardware:
     - hardware/buying-guide.md
     - Shockers:
-      - hardware/shockers/identifying.md
       - hardware/shockers/buying-guide.md
+      - hardware/shockers/caixianlin.md
     - Remotes:
       - hardware/remotes/identifying.md
-#      - hardware/remotes/buying-guide.md
     - Boards:
       - 'hardware/boards/index.md'
-      - Knockoffs:
-        - 'hardware/boards/china/esp32s3-dorx.md'
+      # - Knockoffs:
+      #   - 'hardware/boards/china/esp32s3-dorx.md'
       - Wemos:
         - 'hardware/boards/wemos/d1-mini-esp32.md'
+        - 'hardware/boards/wemos/lolin-s2-mini.md'
+        - 'hardware/boards/wemos/lolin-s3.md'
       - Pishock:
         - 'hardware/boards/pishock/2023-pishock.md'
         - 'hardware/boards/pishock/2021q3-lite.md'

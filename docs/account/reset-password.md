@@ -17,20 +17,20 @@ You have forgotten your password? No problem, you can issue a password reset asl
 
 To get started, you have to click on "**Forgot password?**"on the login screen or simply follow this [link](https://shocklink.net/#/account/password/reset).
 
-![reset-password-button.png](account/reset-password/reset-password-button.png =30%x)
+![reset-password-button.png](reset-password/reset-password-button.png)
 
 #### 2. Enter previous email
 
 Enter the email you used for your account, and hit send reset email.
 
-![enter-email.png](account/reset-password/enter-email.png =30%x) ![reset-sent.png](account/reset-password/reset-sent.png =30%x)
+![enter-email.png](reset-password/enter-email.png) ![reset-sent.png](reset-password/reset-sent.png)
 
 #### 3. Check your inbox
 
 If you entered your email correctly, you now have a email from our systems.
-![email-inbox.png](account/reset-password/email-inbox.png)
+![email-inbox.png](reset-password/email-inbox.png)
 
-![email.png](account/reset-password/email.png =30%x)
+![email.png](reset-password/email.png)
 
 Click on the "**Reset password**" button to proceed
 
@@ -38,7 +38,7 @@ Click on the "**Reset password**" button to proceed
 
 Your now presented with two field to enter your new password.
 
-![new-password.png](account/reset-password/new-password.png =30%x)
+![new-password.png](reset-password/new-password.png)
 
 Click **Change password**" after entering your desired password.
 
@@ -46,4 +46,4 @@ Click **Change password**" after entering your desired password.
 
 You can now login with your new password!
 
-![success.png](account/reset-password/success.png =30%x)
+![success.png](reset-password/success.png)

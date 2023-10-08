@@ -37,12 +37,12 @@ _Boards are sorted alphabetically._
 
 | Board | Variant | Labels | Maintainer(s) |
 |-|-|-|-|
-| [Knockoff ESP32-S3 "Dorx"](hardware/boards/china/esp32s3-dorx/) | R8N2 | :hammer_and_wrench: :lock: | [:rocket: Red Mushie](https://github.com/redmushie) |
-| [Knockoff ESP32-S3 "Dorx"](hardware/boards/china/esp32s3-dorx/) | R16N8 | :hammer_and_wrench: :cloud: :lock: | [:rocket: Red Mushie](https://github.com/redmushie) |
-| [Pishock (2023)](hardware/boards/pishock/2023-pishock/) | All | :white_check_mark: | [:rocket: Red Mushie](https://github.com/redmushie) |
-| [Pishock Lite (2021 Q3)](hardware/boards/pishock/2021q3-lite/) | All | :white_check_mark: | [:rocket: HentaiHeaven](https://github.com/hhvrc) |
-| [Wemos D1 Mini ESP32](hardware/boards/wemos/d1-mini-esp32/) | All | :white_check_mark: | [:rocket: HentaiHeaven](https://github.com/hhvrc) |
-| [Wemos Lolin S3](hardware/boards/wemos/lolin-s3/) | All | :white_check_mark: :cloud: :lock: | [:rocket: Red Mushie](https://github.com/redmushie) |
+| [Knockoff ESP32-S3 "Dorx"](china/esp32s3-dorx.md) | R8N2 | :hammer_and_wrench: :lock: | [:rocket: Red Mushie](https://github.com/redmushie) |
+| [Knockoff ESP32-S3 "Dorx"](china/esp32s3-dorx.md) | R16N8 | :hammer_and_wrench: :cloud: :lock: | [:rocket: Red Mushie](https://github.com/redmushie) |
+| [Pishock (2023)](pishock/2023-pishock.md) | All | :white_check_mark: | [:rocket: Red Mushie](https://github.com/redmushie) |
+| [Pishock Lite (2021 Q3)](pishock/2021q3-lite.md) | All | :white_check_mark: | [:rocket: HentaiHeaven](https://github.com/hhvrc) |
+| [Wemos D1 Mini ESP32](wemos/d1-mini-esp32.md) | All | :white_check_mark: | [:rocket: HentaiHeaven](https://github.com/hhvrc) |
+| [Wemos Lolin S3](wemos/lolin-s3.md) | All | :white_check_mark: :cloud: :lock: | [:rocket: Red Mushie](https://github.com/redmushie) |
 
 
 ## Community maintained
@@ -53,7 +53,7 @@ We do our best to give these contributors sufficient time to test new firmware d
 
 | Board | Variant | Labels | Maintainer(s) |
 |-|-|-|-|
-| [Wemos Lolin S2 Mini](hardware/boards/wemos/lolin-s2-mini/) | N4R2 (All) | | [:airplane: Red Mushie](https://github.com/redmushie) |
+| [Wemos Lolin S2 Mini](wemos/lolin-s2-mini.md) | N4R2 (All) | | [:airplane: Red Mushie](https://github.com/redmushie) |
 
 
 ## Not maintained
@@ -62,10 +62,10 @@ These boards are untested and not maintained. They might work, but no guarantees
 
 | Compatability | Board | Variant | Features |
 |-|-|-|-|
-| :grey_question: Unknown | [Knockoff ESP32-S3 "Dorx"](hardware/boards/china/esp32s3-dorx/) | R8N2 | :lock: |
+| :grey_question: Unknown | [Knockoff ESP32-S3 "Dorx"](china/esp32s3-dorx.md) | R8N2 | :lock: |
 
 ## Incompatible
 
 These boards are fundamentally incompatible with OpenShock.
 
-- :x: [Pishock Plus (2021 Q1)](hardware/boards/pishock/2021q1-plus/) -- Uses incompatible SoC
+- :x: [Pishock Plus (2021 Q1)](pishock/2021q1-plus.md) -- Uses incompatible SoC
