@@ -8,7 +8,7 @@ Welcome to OpenShock! We're proud to present our fully open-source software solu
 Head over to the Quickstart to get started:
 
 - [What you need](quickstart/what-you-need.md)
-- [Buying guide](hardware/buying-guide.md)
+- [Buying guide](quickstart/buying-guide.md)
 
 ## Community
 

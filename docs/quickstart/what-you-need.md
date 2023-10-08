@@ -18,9 +18,9 @@ Interested in hosting your own? Check out [Selfhosting](../selfhosting/index.md)
 This is a fancy way of saying "a microcontroller and a 433MHz radio". It _bridges_ the gap between shockers and the OpenShock server, hence the name *Bridge*.
 
 - For prebuilts, check out the [Hardware vendors](../vendors/hardware/index.md).
-- For building your own, after reading the [Buying guide](../hardware/buying-guide.md), head over to our do-it-yourself [Asssembly guide](../diy/assembling.md).
+- For building your own, after reading the [Buying guide](../quickstart/buying-guide.md), head over to our do-it-yourself [Asssembly guide](../diy/assembling.md).
 
 ### 3. Shockers!
 
-This is the easy part! Head to the [Buying Guide](../hardware/buying-guide.md).
+This is the easy part! Head to the [Buying Guide](../quickstart/buying-guide.md).
 
