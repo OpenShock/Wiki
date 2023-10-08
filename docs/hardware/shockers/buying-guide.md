@@ -1,7 +1,0 @@
----
-tags:
-  - hardware
-  - shockers
----
-
-# Buying guide

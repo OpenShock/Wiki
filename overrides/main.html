@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {{ super() }}
+
+  {% if git_page_authors %}
+    <small>
+        Authors: {{ git_page_authors | default('enable mkdocs-git-authors-plugin') }}
+    </small>
+  {% endif %}
+{% endblock %}

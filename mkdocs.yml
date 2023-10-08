@@ -6,42 +6,45 @@ repo_url: https://github.com/Shock-Link/Wiki
 nav:
   - Home: index.md
   - Quickstart:
-    - quickstart/terminology.md
-    - Getting shocked:
-      - quickstart/getting-shocked/sourcing-hardware.md
-      - quickstart/getting-shocked/choosing-a-server.md
-      - quickstart/getting-shocked/create-an-account.md
-    - Shocking others:
-      - quickstart/shocking-others/create-account.md
+    - quickstart/what-you-need.md
+    - quickstart/buying-guide.md
   - Hardware:
+    - hardware/buying-guide.md
     - Shockers:
-      - hardware/shockers/identifying.md
-      - hardware/shockers/buying-guide.md
+      - hardware/shockers/index.md
+      - hardware/shockers/caixianlin.md
+      - hardware/shockers/pettrainer.md
     - Remotes:
       - hardware/remotes/identifying.md
-#      - hardware/remotes/buying-guide.md
-    - Controllers:
-      - Do-it-yourself:
-        - hardware/diy/prerequisites.md
-        - hardware/diy/sourcing-parts.md
-        - hardware/diy/assembling.md
-      - Second-party vendors:
-        - hardware/vendors-second-party/about.md
-        - Europe:
-          - hardware/vendors-second-party/luc.md
-      - Third-party vendors:
-        - hardware/vendors-third-party/about.md
-        - Pishock:
-          - 'hardware/vendors-third-party/pishock/custom-v1.md'
-          - 'hardware/vendors-third-party/pishock/lite.md'
-          - 'hardware/vendors-third-party/pishock/plus.md'
+    - Boards:
+      - 'hardware/boards/index.md'
+      # - Knockoffs:
+      #   - 'hardware/boards/china/esp32s3-dorx.md'
+      - Wemos:
+        - 'hardware/boards/wemos/d1-mini-esp32.md'
+        - 'hardware/boards/wemos/lolin-s2-mini.md'
+        - 'hardware/boards/wemos/lolin-s3.md'
+      - Pishock:
+        - 'hardware/boards/pishock/2023-pishock.md'
+        - 'hardware/boards/pishock/2021q3-lite.md'
+        - 'hardware/boards/pishock/2021q1-plus.md'
+      - Radio:
+        - hardware/radio/index.md
   - Software:
     - Shockers:
       - software/shockers/caixianlin.md
-  - Selfhosting:
-    - 'selfhosting/selfhosting.md'
-  - Contributing:
-    - 'contributing/contributing.md'
+  - Vendors:
+    - Hardware:
+      - 'vendors/hardware/index.md'
+      - 'vendors/hardware/luc.md'
+    - 'vendors/software.md'
+  - Do-it-yourself:
+    - Hardware:
+      - diy/prerequisites.md
+      - diy/assembling.md
+    - Selfhosting:
+      - 'selfhosting/index.md'
+  - 'contributing/contributing.md'
 
 theme:
   name: material
@@ -49,8 +52,13 @@ theme:
   favicon: static/branding/Icon.ico
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
+    - navigation.instant
+    - navigation.tracking
+    - navigation.indexes
+  custom_dir: overrides
   palette: 
     # Palette toggle for dark mode
     - scheme: slate
@@ -64,14 +72,22 @@ theme:
         icon: material/brightness-7 
         name: Switch to dark mode
 
-
 markdown_extensions:
+  - abbr
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - tables
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.snippets
 
 plugins:
   - search
+  - git-authors
+  - git-revision-date-localized
   - tags:
       enabled: true
       

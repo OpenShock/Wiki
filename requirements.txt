@@ -1,2 +1,4 @@
 mkdocs
 mkdocs-material
+mkdocs-git-authors-plugin
+mkdocs-git-revision-date-localized-plugin
