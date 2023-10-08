@@ -8,7 +8,7 @@ tags:
 
 !!! success "Compatible"
 
-        This product is compatible with OpenShock.
+    This product is compatible with OpenShock.
 
 Cheap and easily acquirable.
 
