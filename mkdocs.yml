@@ -1,7 +1,7 @@
 site_name: OpenShock
 docs_dir: docs
-site_url: https://openshock.io/
-repo_url: https://github.com/Shock-Link/Wiki
+site_url: https://openshock.org/
+repo_url: https://github.com/OpenShock/Wiki
 
 nav:
   - Home: index.md
@@ -105,5 +105,5 @@ extra:
       name: Discord
 
     - icon: fontawesome/brands/github
-      link: https://github.com/Shock-Link
+      link: https://github.com/OpenShock
       name: GitHub
