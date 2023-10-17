@@ -13,9 +13,9 @@ This can be either a public or private OpenShock server. We recommend the [Shock
 
 Interested in hosting your own? Check out [Selfhosting](../selfhosting/index.md).
 
-### 2. An OpenShock Bridge
+### 2. An OpenShock Controller
 
-This is a fancy way of saying "a microcontroller and a 433MHz radio". It _bridges_ the gap between shockers and the OpenShock server, hence the name *Bridge*.
+This is a fancy way of saying "a microcontroller and a 433MHz radio". It bridges the gap between shockers and the OpenShock server.
 
 - For prebuilts, check out the [Hardware vendors](../vendors/hardware/index.md).
 - For building your own, after reading the [Buying guide](../quickstart/buying-guide.md), head over to our do-it-yourself [Asssembly guide](../diy/assembling.md).

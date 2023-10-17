@@ -38,6 +38,7 @@ nav:
   - Vendors:
     - Hardware:
       - 'vendors/hardware/index.md'
+      - 'vendors/hardware/bosjesman.md'
       - 'vendors/hardware/luc.md'
     - 'vendors/software.md'
   - Do-it-yourself:
