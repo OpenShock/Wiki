@@ -18,10 +18,11 @@ tags:
 
     | Country | Results | Last updated |
     |-|-|-|
-    | :flag_de: Germany | :x: -- Import rejected **most of the time** | 2023 |
+    | :flag_de: Germany | :warning: -- Mixed results, import sometimes blocked | 2023 |
     | :flag_nl: Netherlands | :white_check_mark: --  No problems reported | 2023 |
     | :flag_lu: Luxembourg | :white_check_mark: -- No problems reported | 2023 |
     | :flag_no: Norway | :white_check_mark: -- No problems reported | 2023 |
+    | :flag_gb: United Kingdom | :white_check_mark: -- No problems reported | 2023-11 |
 
     **Please let us know about your success with imports [on Discord](https://discord.gg/AHcCbXbEcF).**
 
