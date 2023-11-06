@@ -37,7 +37,7 @@
 If everything went well it should show a ``green icon`` next to the device name on the website and the Acces Point of the ESP should be disabled, deactivating the Wifi Network of the device.  
 ![Image "Find add Button"](../static/kyobinoyo/checkifonline.png)  
 
-With this the setup of the ESP itself is done. yay!
+With this, the setup of the ESP itself is done. yay!
 
 
 ## Pair a shocker
