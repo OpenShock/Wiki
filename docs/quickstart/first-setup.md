@@ -10,9 +10,19 @@
 5. After that set the RMT pin number, that is the number of the IO pin that the RF antenna data is connected to. (default 12, for pishock boards that is 15), press Set next to it to save it.
 6. Now on your PC open the website https://shocklink.net/ create a account if you don't have one already, after that go to "Devices" and click the green "+" icon at the lower right corner and Create a new Device.
 
+![Image "Find add Button"](../static/kyobinoyo/findsaddbutton.png)  
 
-You can now click the context menu of the created device in the list to create a pair code, to do that click pair then "get pair code", type this code in on the webinterface of your ESP on your phone and click pair.
-If everything went well it should show a green icon next to the device name on the website and the Acces Point of the ESP should be disabled deactivating the Wifi Network of the device.
+
+7. You can now click the context menu of the created device in the list to create a pair code, to do that click pair then "get pair code", now grab your phone and got back to the webinterface of your ESP and type in the Pair Code you just generated.  
+![Image "Find add Button"](../static/kyobinoyo/devicecontextmenu.png)
+  
+![Image "Find add Button"](../static/kyobinoyo/findpaircode.png)  
+  
+![Image "Find add Button"](../static/kyobinoyo/paircodeexample.png)  
+
+  
+If everything went well it should show a green icon next to the device name on the website and the Acces Point of the ESP should be disabled, deactivating the Wifi Network of the device.  
+With this the Setup of the ESP itself is done.
 
 
 ## Connect to a shocker
