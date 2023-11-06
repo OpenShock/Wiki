@@ -1,4 +1,13 @@
 # Setup ESP and Shocker for the first time
+## What do you need?  
+1. USB cable with at least one USB-C connector and a PC ``or`` USB Power adapter
+2. A Smartphone with a Webbrower (Chrome, firefox etc.)
+3. ESP board
+4. Shocker
+5. Shocklink account (https://shocklink.net/)
+
+
+
 
 ## Setup ESP
 
