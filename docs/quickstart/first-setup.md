@@ -3,7 +3,7 @@
 ## Setup ESP
 
 
-1. To Setup your ESP (this is the Communication device between the API and your Shocker) you have to connect it to a power source, like a USB powerbrick or your PC USB Port (ESP Board has USB-C).
+1. To Setup your ESP (this is the Communication device between the API and your Shocker) you have to connect it to a power source, like a USB powerbrick or your PC USB Port (the ESP uses USB-C).
 2. After you plugged it in grab your phone and search for a WiFi network called similar to ``Openshock-24:DC:C3:9F:72:C8`` and connect to it.
 3. Now open your Phones browser and type in ``10.10.10.10`` or ``openshock.local`` this should give you a webinterface for the ESP.
 4. Lookup your Wifi Network in the Webinterface and type in your WiFi password, press submit.
