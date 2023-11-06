@@ -15,7 +15,7 @@
 1. To Setup your ESP (this is the communication device between the API and your shocker) you have to connect it to a power source, like a USB power adapter or your PC's USB Port (the ESP uses USB-C).
 2. After you powered up your ESP grab your ``phone`` and search for a WiFi network named similar to this: ``Openshock-24:DC:C3:9F:72:C8`` and connect to it.  
 ![Image "Find add Button"](../static/kyobinoyo/WiFioverview.png)  
-3. Now open your ``phones browser`` and type in ``10.10.10.10`` or ``openshock.local`` this should give you a webinterface for the ESP.  
+3. Now open your ``phones browser`` and type in ``10.10.10.10`` or ``openshock.local`` this should give you a webinterface for the ESP that looks like this:  
 ![Image "Find add Button"](../static/kyobinoyo/ESPWebGUI.png)  
   
 4. Lookup your Wifi Network in the Webinterface, press the green button next to it and type in your WiFi password then press submit.
