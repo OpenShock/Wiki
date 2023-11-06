@@ -18,7 +18,7 @@
 3. Now open your ``phones browser`` and type in ``10.10.10.10`` or ``openshock.local`` this should give you a webinterface for the ESP that looks like this:  
 ![Image "Find add Button"](../static/kyobinoyo/ESPWebGUI.png)  
   
-4. Lookup your Wifi Network in the Webinterface, press the green button next to it and type in your WiFi password then press submit.
+4. Lookup your Wifi Network in the webinterface, press the green button next to it and type in your WiFi password then press submit.
 5. Now set the RF TX Pin, that is the number of the IO pin that the RF antenna data is connected to. (default 12, for pishock boards that is 15), press Set next to it to save it.
 6. Now ``on your PC`` open the website https://shocklink.net/ create an account, if you don't have one already, after that go to "Devices" and click the green "+" icon at the lower right corner to create a new device. (See pictures below)  
 
