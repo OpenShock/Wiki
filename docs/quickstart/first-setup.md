@@ -19,7 +19,7 @@ If everything went well it should show a green icon next to the device name on t
 
 
 1. Make sure you charged the shocker first.
-2. Make sure your ESP ist connected to the website. (See Setup ESP above)
+2. Make sure your ESP ist connected to the website. ([Setup ESP](#setup-esp))
 3. Now got to https://shocklink.net/ and login if you are not logged in already.
 4. Go to shockers and click the green "+" icon at the bottom right corner, select your earlier created device and click create
 5. Grab your shocker hold the Power button the LED should blink fast.
