@@ -7,11 +7,11 @@ Index:
 
 
 1. Setup ESP
-To Setup your ESP (this is the Communication device between the API and your Shocker) you have to connect it to a power source, like a USB powerbrick or your PC USB Port.
+To Setup your ESP (this is the Communication device between the API and your Shocker) you have to connect it to a power source, like a USB powerbrick or your PC USB Port (ESP Board has USB-C).
 After you plugged it in grab your phone and search for a WiFi network called similar to "Openshock-24:DC:C3:9F:72:C8" and connect to it.
 Now open your Phones browser and type in 10.10.10.10 or openshock.local this should give you a webinterface for the ESP.
 Lookup your Wifi Network in the Webinterface and type in your WiFi password, press submit.
-After that set the RMT pin number, that is the number of the IO pin that the RF antenna data is connected to. (for pishock boards that is 15), press Set next to it to save it.
+After that set the RMT pin number, that is the number of the IO pin that the RF antenna data is connected to. (default 12, for pishock boards that is 15), press Set next to it to save it.
 Now on your PC open the website https://shocklink.net/ create a account if you don't have one already, after that go to "Devices" and click the green "+" icon at the lower right corner and Create a new Device.
 You can now click the context menu of the created device in the list to create a pair code, to do that click pair then "get pair code", type this code in on the webinterface of your ESP on your phone and click pair.
 If everything went well it should show a green icon next to the device name on the website and the Acces Point of the ESP should be disabled deactivating the Wifi Network of the device.
