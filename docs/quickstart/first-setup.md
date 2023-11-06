@@ -13,7 +13,9 @@ Now open your Phones browser and type in 10.10.10.10 or openshock.local this sho
 Lookup your Wifi Network in the Webinterface and type in your WiFi password, press submit.
 After that set the RMT pin number, that is the number of the IO pin that the RF antenna data is connected to. (default 12, for pishock boards that is 15), press Set next to it to save it.
 Now on your PC open the website https://shocklink.net/ create a account if you don't have one already, after that go to "Devices" and click the green "+" icon at the lower right corner and Create a new Device.
+[Create New Device]
 ![image](https://github.com/Kyobinoyo/Wiki/assets/13241508/1379cc63-8592-4d1a-99c5-c1664e682558)
+[Get Pair Code]
 ![image](https://github.com/Kyobinoyo/Wiki/assets/13241508/afc77f4a-959a-4bc1-a1b4-ded8dcc6e83d)
 ![image](https://github.com/Kyobinoyo/Wiki/assets/13241508/10d8ece8-d42a-4925-bda2-7325064c5b1d)
 ![image](https://github.com/Kyobinoyo/Wiki/assets/13241508/7a1a44b2-2f79-48d4-be4f-5ad7d6e946cc)
