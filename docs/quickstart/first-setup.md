@@ -12,17 +12,21 @@
 ## Setup ESP
 
 
-1. To Setup your ESP (this is the Communication device between the API and your Shocker) you have to connect it to a power source, like a USB powerbrick or your PC USB Port (the ESP uses USB-C).
-2. After you plugged it in grab your phone and search for a WiFi network called similar to ``Openshock-24:DC:C3:9F:72:C8`` and connect to it.
-3. Now open your Phones browser and type in ``10.10.10.10`` or ``openshock.local`` this should give you a webinterface for the ESP.
+1. To Setup your ESP (this is the communication device between the API and your shocker) you have to connect it to a power source, like a USB power adapter or your PC's USB Port (the ESP uses USB-C).
+2. After you powered up your ESP grab your ``phone`` and search for a WiFi network named like this: ``Openshock-24:DC:C3:9F:72:C8``, connect to it.  
+![Image "Find add Button"](../static/kyobinoyo/WiFioverview.png)  
+3. Now open your ``phones browser`` and type in ``10.10.10.10`` or ``openshock.local`` this should give you a webinterface for the ESP.  
+![Image "Find add Button"](../static/kyobinoyo/ESPWebGUI.png)  
+  
 4. Lookup your Wifi Network in the Webinterface, press the green button next to it and type in your WiFi password then press submit.
-5. After that set the RMT pin number, that is the number of the IO pin that the RF antenna data is connected to. (default 12, for pishock boards that is 15), press Set next to it to save it.
-6. Now on your PC open the website https://shocklink.net/ create a account if you don't have one already, after that go to "Devices" and click the green "+" icon at the lower right corner and Create a new Device.
+5. Now set the RF TX Pin, that is the number of the IO pin that the RF antenna data is connected to. (default 12, for pishock boards that is 15), press Set next to it to save it.
+6. Now ``on your PC`` open the website https://shocklink.net/ create an account, if you don't have one already, after that go to "Devices" and click the green "+" icon at the lower right corner to create a new device. (See pictures below)  
 
-![Image "Find add Button"](../static/kyobinoyo/findaddbutton2.png)  
+![Image "Find add Button"](../static/kyobinoyo/findaddbutton3.png)  
 
 
-7. You can now click the context menu of the created device in the list to create a pair code, to do that click pair then "get pair code", now grab your phone and got back to the webinterface of your ESP and type in the Pair Code you just generated.  
+7. You can now create a pair code. To do that click on the three dots next to your device name and select pair then click "get pair code", this will generate a pair code.
+8. Grab your phone again and type in the pair code into the Account Linking field, after that press "Pair"  
 ![Image "Find add Button"](../static/kyobinoyo/devicecontextmenu.png)
   
 ![Image "Find add Button"](../static/kyobinoyo/findpaircode.png)  
