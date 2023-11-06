@@ -1,4 +1,4 @@
-# How to Setup a Openshock Shocker
+# Setup ESP and Shocker for the first time
 
 ## Setup ESP
 
