@@ -1,4 +1,4 @@
-# How to Create and share a Shocklink
+# How to create and share a Share link
 ## What do you need?  
 1. Shocklink account (https://shocklink.net/)
 2. A completely setup shocker ([see the First time Setup guide](../quickstart/first-setup.md))
