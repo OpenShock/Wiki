@@ -35,24 +35,24 @@
 
 
    # Customize your Share link
-You can set limits to ``strenght`` ``duration`` or what kind of ``command`` someone can use for each share link.  
+You can set limits to strenght, duration or what kind of command someone can use for each share link.  
 You can also ``Pause`` the link so nobody can send commands via this link.  
 
 
   
 
   ## Edit the limits
-  1. Open your share link page again and select the share link you want to edit, there you open the ``share links context menu`` and choose ``Edit Mode``.
+  1. Open your share link page again and select the share link you want to edit, there you open the share links context menu and choose ``Edit Mode``.
 
 ![Image "Find add Button"](../static/kyobinoyo/editlinkllimits.png)  
   
-  2. The shocker controlls should now be ``orange`` indicating the ``Edit Mode``.
+  2. The shocker controlls should now be orange indicating the ``Edit Mode``.
   
 ![Image "Find add Button"](../static/kyobinoyo/editinterface.png)  
   
-  3. You can now set the maximum ``strenght``, ``duration`` and choose what kind of command can be send ``Sound``, ``Vibrate`` or ``Shock``.
+  3. You can now set the maximum strenght, duration and choose what kind of command can be send Sound, Vibrate or Shock.
 
-  4. To ``exit`` the ``Edit Mode`` open the ``share links context menu`` again and choose ``Edit Mode``, this will return the controlls to their normal color indicating that the ``Edit Mode`` is not active anymore.
+  4. To exit the Edit Mode open the share links context menu again and choose ``Edit Mode``, this will return the controlls to their normal color indicating that the Edit Mode is not active anymore.
 
 
 
@@ -60,14 +60,14 @@ You can also ``Pause`` the link so nobody can send commands via this link.
 
 ## Pause your Share link
 
-  1. To ``Pause`` your share link open the links page and click on the little ``Pause Icon`` next to the name.
+  1. To ``Pause`` your share link open the links page and click on the little pause icon next to the share links name.
 ![Image "Find add Button"](../static/kyobinoyo/pauseshocker.png)  
 
-  2. This will turn the ``Pause Icon`` into a ``red Play Icon`` and ``blur`` the shocker controlls telling you it's paused, as long as the link is paused it will not accept any commands.
+  2. This will turn the pause icon into a red play icon and ``blur`` the shocker controlls telling you it's paused, as long as the link is paused it will not accept any commands.
 
 ![Image "Find add Button"](../static/kyobinoyo/pausedlink.png)  
 
-  3. To ``unpause`` the share link again simply click on the ``Play Icon``.
+  3. To unpause the share link again simply click on the ``Play Icon``.
 
   
 
