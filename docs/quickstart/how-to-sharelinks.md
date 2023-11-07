@@ -27,7 +27,7 @@
 
 ![Image "Find add Button"](../static/kyobinoyo/addshockertosharelink.png)  
   
-  5. There you click on ``Add shocker`` and choose your shocker you can add multiple shockers, just repeat this step..
+  5. There you click on ``Add shocker`` and choose your shocker you can add multiple shockers, just repeat this step.
 
 ![Image "Find add Button"](../static/kyobinoyo/addshockertosharelink2.png)  
 
