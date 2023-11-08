@@ -32,7 +32,8 @@ to be done...
 <details>
   if set to <b>true</b> will shock immideatly without holding the trigger first  
 </details>
-  
+<br></br>
+
 ### Visual Parameters
 ``ShockOsc/{ShockerName}_Active`` (bool)
 <details>
@@ -52,7 +53,8 @@ to be done...
 ``ShockOsc/{ShockerName}_Intensity``  (float)
 <details>
   represents how close the shock was to maximum intensity from <b>IntensityRange</b>
-</details>  
+</details>
+<br></br>
 
 ### Dummy Shockers  
 ``_All``
@@ -66,12 +68,14 @@ to be done...
   can be used in place of a shocker name, <b>represents any</b> shocker configured in the ShockOSC config.  
   (ex: if at least one of your shockers are currently shocking <b>ShockOsc/_Any_Active</b> will be <b>true</b>)
 </details>  
+<br></br>
 
 ### Config Parameters  
 ``ShockOsc/_Config/Paused`` (bool)
 <details>
   As long as it is <b>true</b>, will pause all ShockOSC activity, shockers will still receive web commands.
 </details>
+<br></br>
   
 # Add a touch trigger to your Avatar
 to be done...   
