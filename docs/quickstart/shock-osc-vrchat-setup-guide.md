@@ -40,12 +40,12 @@ to be done...
   
 ### Dummy Shockers  
 ``_All``
-> can be used in place of a shocker name, represents all shockers configured in the ShockOSC config.  
+> can be used in place of a shocker name, ``represents all`` shockers configured in the ShockOSC config.  
 >(ex: if ``ShockOsc/_All`` is set to ``true`` on you Avatar, every shocker configured in ShockOSC will be triggered at the same time)
   
 ``_Any``
-> can be used in place of a shocker name, represents any shocker configured in the ShockOSC config.  
-> (ex: if any shocker is currently shocking ``ShockOsc/_Any_Active`` will be ``true``)
+> can be used in place of a shocker name, ``represents any`` shocker configured in the ShockOSC config.  
+> (ex: if at least one of your shockers are currently shocking ``ShockOsc/_Any_Active`` will be ``true``)
   
 ## Config Parameters  
 ``ShockOsc/_Config/Paused`` (bool)
