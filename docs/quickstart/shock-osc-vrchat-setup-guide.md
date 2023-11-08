@@ -10,47 +10,68 @@ to be done...
   
 
 ## List of available ShockOSC parameters
-### Avatar Dynamic Parameters
+### Avatar Dynamic Parameters  
+
 ``ShockOsc/{ShockerName}`` (bool)  
-> when set to ``true`` and held, will trigger a normal shock in ShockOSC
+<details>
+  when set to <b>true</b> and held, will trigger a normal shock in ShockOSC
+</details>  
   
 ``ShockOsc/{ShockerName}_Stretch`` (float)  
-> can be used to control the shock strenght  
-> (ex. stretch a bone to 50% and let go to shock someone for 50%)
-  
+<details>
+  can be used to control the shock strenght  
+  (ex. stretch a bone to 50% and let go to shock someone for 50%)
+</details>  
+
 ``ShockOsc/{ShockerName}_IsGrabbed`` (bool)   
-> mainly used  to indicate that a physbone is grabbed
+<details>
+  mainly used  to indicate that a physbone is grabbed
+</details>
   
-``ShockOsc/{ShockerName}_IShock``  (bool)
-> if set to ``true`` will shock immideatly without holding the trigger first  
-  
+``ShockOsc/{ShockerName}_IShock``  (bool) 
+<details>
+  if set to <b>true</b> will shock immideatly without holding the trigger first  
+</details>
   
 ### Visual Parameters
 ``ShockOsc/{ShockerName}_Active`` (bool)
-> can be used to display an active shock on your avatar (when the shocker is active this will be ``true`` if not it will be ``false``)
-  
+<details>
+  can be used to display an active shock on your avatar (when the shocker is active this will be <b>true</b> if not it will be <b>false</b>)
+</details>  
+
 ``ShockOsc/{ShockerName}_Cooldown`` (bool)
-> can be used to read out if the shocker is on cooldown  
-  
+<details>
+  can be used to read out if the shocker is on cooldown  
+</details>  
+
 ``ShockOsc/{ShockerName}_CooldownPercentage`` (float)
-> can be used to show how for long the cooldown is active  
-  
+<details>
+  can be used to show how for long the cooldown is active
+</details>
+    
 ``ShockOsc/{ShockerName}_Intensity``  (float)
-> represents how close the shock was to maximum intensity from ``IntensityRange``  
-  
+<details>
+  represents how close the shock was to maximum intensity from <b>IntensityRange</b>
+</details>  
+
 ### Dummy Shockers  
 ``_All``
-> can be used in place of a shocker name, ``represents all`` shockers configured in the ShockOSC config.  
->(ex: if ``ShockOsc/_All`` is set to ``true`` on you Avatar, every shocker configured in ShockOSC will be triggered at the same time)
+<details>
+  can be used in place of a shocker name, <b>represents all</b> shockers configured in the ShockOSC config.  
+  (ex: if <b>ShockOsc/_All</b> is set to <b>true</b> on you Avatar, every shocker configured in ShockOSC will be triggered at the same time)
+</details>
   
 ``_Any``
-> can be used in place of a shocker name, ``represents any`` shocker configured in the ShockOSC config.  
-> (ex: if at least one of your shockers are currently shocking ``ShockOsc/_Any_Active`` will be ``true``)
-  
-## Config Parameters  
-``ShockOsc/_Config/Paused`` (bool)
-> As long as it is ``true``, will pause all ShockOSC activity, shockers will still receive web commands.
+<details>
+  can be used in place of a shocker name, <b>represents any</b> shocker configured in the ShockOSC config.  
+  (ex: if at least one of your shockers are currently shocking <b>ShockOsc/_Any_Active</b> will be <b>true</b>)
+</details>  
 
+### Config Parameters  
+``ShockOsc/_Config/Paused`` (bool)
+<details>
+  As long as it is <b>true</b>, will pause all ShockOSC activity, shockers will still receive web commands.
+</details>
   
 # Add a touch trigger to your Avatar
 to be done...   
