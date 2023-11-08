@@ -8,6 +8,6 @@
 ## Setup ShockOSC
 
 
-## Add a trigger to your Avatar
+## Add a touch trigger to your Avatar
 
 ## Add a remote trigger to your Avatar
