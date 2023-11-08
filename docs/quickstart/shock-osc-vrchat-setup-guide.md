@@ -6,7 +6,8 @@
 4. Basic Unity knowledge is recommended
 
 # Setup ShockOSC
-
+to be done...  
+  
 
 ## List of available ShockOSC parameters
 ### Avatar Dynamic Parameters
@@ -52,5 +53,7 @@
 
   
 # Add a touch trigger to your Avatar
-
+to be done...   
+  
 # Add a remote trigger to your Avatar
+to be done...  
