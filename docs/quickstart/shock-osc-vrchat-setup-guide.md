@@ -11,7 +11,7 @@
 ## List of available ShockOSC parameters
 ### Avatar Dynamic Parameters
 ``ShockOsc/{ShockerName}`` (bool)  
-> triggers a normal shock in ShockOSC
+> when set to ``true`` and held, will trigger a normal shock in ShockOSC
   
 ``ShockOsc/{ShockerName}_Stretch`` (float)  
 > can be used to control the shock strenght  
@@ -21,7 +21,7 @@
 > mainly used  to indicate that a physbone is grabbed
   
 ``ShockOsc/{ShockerName}_IShock``  (bool)
-> can be used to trigger a shock instantely without a need to hold the trigger for a short time (perfect for ingame remote shocks)  
+> if set to ``true`` will shock immideatly without holding the trigger first  
   
   
 ### Visual Parameters
@@ -47,9 +47,10 @@
 > (ex: if any shocker is currently shocking ``ShockOsc/_Any_Active`` will be ``true``)
   
 ## Config Parameters  
-``ShockOsc/_Config/Paused``
-> Will pause all ShockOSC activity, shockers will still receive web commants tho.
+``ShockOsc/_Config/Paused`` (bool)
+> As long as it is ``true``, will pause all ShockOSC activity, shockers will still receive web commands.
 
+  
 # Add a touch trigger to your Avatar
 
 # Add a remote trigger to your Avatar
