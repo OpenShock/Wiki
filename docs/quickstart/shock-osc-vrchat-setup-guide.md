@@ -7,7 +7,7 @@
 5. Text Editor, [Notepad++](https://notepad-plus-plus.org/) for example
 
 # Setup ShockOSC
-1. Download and store the .exe file at your desired location.
+1. Download and store the ShockOsc ``.exe`` file at your desired location on your PC.
 2. Start the .exe for the first time, this will generate a ``config.json`` file, press any button to close the window again.
 3. Now open ``config.json`` in a Texteditor like Notepad++, we need two things now, your ``Shocklink API Token`` and your ``Shocker ID``. both can be found in you account on https://shocklink.net/
 
