@@ -121,18 +121,19 @@ after following this guide your config should look something like this:
 <!---Avatar Setup--->
 # How to setup a VRChat avatar with ShockOsc triggers  
 ## Add a touch trigger to your Avatar
-1. Open your avatar project and create a new ``Empty GameObject`` on the bone you want your trigger to be, your LeftLeg for example
+1. Open your avatar project and create a new ``Empty GameObject`` on the bone you want your trigger to be at, your LeftLeg for example.
 
 ![Image "add gameobject"](../static/kyobinoyo/avatar-trigger/create_trigger.png)  
 
-2. Click on the new Object and rename it however you want, for example "ShockOSC" after that select it and add a new ``VRC Contact Receiver`` component and position the object on your avatar.
+2. Click on the new object and rename it however you want, for example "ShockOSC", after that select it and add a new ``VRC Contact Receiver`` component and position the object on your avatar.
 
 ![Image "add gameobject"](../static/kyobinoyo/avatar-trigger/example_position.png)  
 
-3. Configure the components ``Radius``, ``Filtering``, ``Collision Tags`` and of course the ``Parameter``, the parameter need to follow a specific naming scheme. ``ShockOsc/{ShockerName}`` and ``{ShockerName}`` needs to be replaced by the name you gave your shocker in the ShockOsc config, for example ``ShockOsc/leftleg``.
+3. Configure the components ``Radius``, ``Filtering``, ``Collision Tags`` and of course the ``Parameter``, the parameter need to follow a specific naming scheme. ``ShockOsc/{ShockerName}`` and "{ShockerName}" needs to be replaced by the name you gave your shocker in the ShockOsc config, for example ``ShockOsc/leftleg``.
 <br></br>
-Now you are ready to go!  
-If you update an existing avatar, make sure you delete the OSC config files in ``C:\Users\%USERPROFILE%\AppData\LocalLow\VRChat\VRChat\OSC``, they are not important for the game since they only hold the avatar parameters so OSc knows what it can use, they get regenerated everytime you change your avatar, but not updated with new parameters.
+Now you are ready to go!
+  
+*If you update an existing avatar, make sure you delete the OSC config files in ``C:\Users\%USERPROFILE%\AppData\LocalLow\VRChat\VRChat\OSC``, they are not important for the game since they only hold the avatar parameters for OSC to use, they get regenerated everytime you change your avatar, but not always updated*
 
 <!--
 ## List of available ShockOSC parameters
