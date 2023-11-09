@@ -106,7 +106,7 @@ after following this guide your config should look something like this:
         "ShockLink": {
           "ApiToken": "0W3ybn7bHuF2SUwAZ8YZexRMejzTcUzJJT3cBSf4FWK7ryLhRT2wikFh8qZGYpiY",
           "Shockers": {
-      		"Bzz": "8b1d0e6a-f9a0-4e93-9812-241eae927179"
+      		"leftleg": "8b1d0e6a-f9a0-4e93-9812-241eae927179"
       	}
         },
         "Chatbox": {
