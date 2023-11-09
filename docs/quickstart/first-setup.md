@@ -1,10 +1,10 @@
-# Setup ESP and Shocker for the first time
+# First time ESP and Shocker setup
 ## What do you need?  
 1. USB cable with at least one USB-C connector and a PC ``or`` USB Power adapter
 2. A Smartphone with a Webbrower (Chrome, firefox etc.)
 3. ESP board
 4. Shocker
-5. Shocklink account (https://shocklink.net/)
+5. [Shocklink account](https://shocklink.net/)
 
 
 
@@ -45,13 +45,14 @@ With this, the setup of the ESP itself is done. yay!
 
 1. Make sure you charged the shocker first.
 2. Make sure your ESP ist connected to the website. ([Setup ESP](#setup-esp))
-3. Now go to https://shocklink.net/ and login if you are not logged in already.
+3. Now go to [Shocklink.net](https://shocklink.net/) and login if you are not logged in already.
 4. Go to ``Shockers`` and click the green ``+`` icon at the bottom right corner, select your earlier created device and click create
 5. Grab your shocker hold the Power button, the LED should blink fast indicating that it is in pair mode.
 6. On your website click the ``Speaker icon`` of your shocker, if your shocker now makes a sound, it is paired.
 
 
-*reminder: don't wear the shocker somewhere near your neck or your heart*  
+!!! Warning "Safety Rule"
+    Don't wear the shocker somewhere near your neck or your heart  
 To turn your shocker ``off`` press the power button it should ``beep twice``.  
 To turn it back ``on`` press the power button it should ``beep once``.  
   
@@ -59,4 +60,4 @@ Everything should work now, have fun!
 
 
 
-If you need additional help, join: https://shocklink.net/discord
+If you need additional help, join our [Discord](https://shocklink.net/discord)
