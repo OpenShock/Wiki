@@ -8,7 +8,7 @@
 
 # Setup ShockOSC
 1. Download and store the ``ShockOsc.exe`` file at your desired location on your PC.  
-   (atm there a two ShockOsc.exe files to download, you only need the ``OpenShock.ShockOsc.exe``)  
+   (at the moment there are two ShockOsc.exe files to download, you only need the ``OpenShock.ShockOsc.exe``)  
 3. Start the .exe for the first time, this will generate a ``config.json`` file in the same location as the .exe, press any button to close the window again.
 4. Now open ``config.json`` in a text editor, now we need two things, your ``Shocklink API Token`` and your ``Shocker ID``. both can be found in your account on https://shocklink.net/
 
@@ -116,8 +116,25 @@ after following this guide your config should look something like this:
     </code>
   </pre>
 </details>
+<br></br>
 
+<!---Avatar Setup--->
+# How to setup a VRChat avatar with ShockOsc triggers  
+## Add a touch trigger to your Avatar
+1. Open your avatar project and create a new ``Empty GameObject`` on the bone you want your trigger to be, your LeftLeg for example
 
+![Image "add gameobject"](../static/kyobinoyo/avatar-trigger/create_trigger.png)  
+
+2. Click on the new Object and rename it however you want, for example "ShockOSC" after that select it and add a new ``VRC Contact Receiver`` component and position the object on your avatar.
+
+![Image "add gameobject"](../static/kyobinoyo/avatar-trigger/example_position.png)  
+
+3. Configure the components ``Radius``, ``Filtering``, ``Collision Tags`` and of course the ``Parameter``, the parameter need to follow a specific naming scheme. ``ShockOsc/{ShockerName}`` and ``{ShockerName}`` needs to be replaced by the name you gave your shocker in the ShockOsc config, for example ``ShockOsc/leftleg``.
+<br></br>
+Now you are ready to go!  
+If you update an existing avatar, make sure you delete the OSC config files in ``C:\Users\%USERPROFILE%\AppData\LocalLow\VRChat\VRChat\OSC``, they are not important for the game since they only hold the avatar parameters so OSc knows what it can use, they get regenerated everytime you change your avatar, but not updated with new parameters.
+
+<!--
 ## List of available ShockOSC parameters
 ### Avatar Dynamic Parameters  
 
@@ -185,9 +202,4 @@ after following this guide your config should look something like this:
   As long as it is <b>true</b>, will pause all ShockOSC activity, shockers will still receive web commands.
 </details>
 <br></br>
-  
-# Add a touch trigger to your Avatar
-to be done...   
-  
-# Add a remote trigger to your Avatar
-to be done...  
+-->
