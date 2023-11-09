@@ -132,10 +132,10 @@ after following this guide your config should look something like this:
 
 3. Configure the components ``Radius``, ``Filtering``, ``Collision Tags`` and of course the ``Parameter``, the parameter need to follow a specific naming scheme. ``ShockOsc/{ShockerName}`` and "{ShockerName}" needs to be replaced by the name you gave your shocker in the ShockOsc config, for example ``ShockOsc/leftleg``.
 
-![Image "add gameobject"](../static/kyobinoyo/avatar-trigger/example_settings.png)
+![Image "add gameobject"](../static/kyobinoyo/avatar-trigger/example_settings2.png)
 
 <br></br>
-Now you are ready to go!
+Now upload your Avatar and you are ready to go!
   
 *If you update an existing avatar, make sure you delete the OSC config files in ``C:\Users\%USERPROFILE%\AppData\LocalLow\VRChat\VRChat\OSC``, they are not important for the game since they only hold the avatar parameters for OSC to use, they get regenerated everytime you change your avatar, but not always updated*
 
