@@ -12,7 +12,7 @@
 3. Start the .exe for the first time, this will generate a ``config.json`` file in the same location as the .exe, press any button to close the window again.
 4. Now open ``config.json`` in a text editor, now we need two things, your ``Shocklink API Token`` and your ``Shocker ID``. both can be found in your account on https://shocklink.net/
 
-### Create API Token
+### Configure the API Token
 
 <details>
   On the Shocklink page go to <code>API Tokens</code>.<br>
@@ -30,7 +30,7 @@
 </details>
 
 
-### Find Shocker ID
+### Configure the Shocker ID
 
 <details>
   On the Shocklink page, go to <code>Shockers</code><br>
