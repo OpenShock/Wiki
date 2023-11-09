@@ -129,6 +129,9 @@ after following this guide your config should look something like this:
 ![Image "add gameobject"](../static/kyobinoyo/avatar-trigger/example_position.png)  
 
 3. Configure the components ``Radius``, ``Filtering``, ``Collision Tags`` and of course the ``Parameter``, the parameter need to follow a specific naming scheme. ``ShockOsc/{ShockerName}`` and "{ShockerName}" needs to be replaced by the name you gave your shocker in the ShockOsc config, for example ``ShockOsc/leftleg``.
+
+![Image "add gameobject"](../static/kyobinoyo/avatar-trigger/example_settings.png)
+
 <br></br>
 Now you are ready to go!
   
