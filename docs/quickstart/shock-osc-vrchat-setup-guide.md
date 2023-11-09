@@ -3,7 +3,7 @@
 1. [Fully setup shocker](../quickstart/first-setup.md)
 2. [Newest ShockOSC](https://github.com/OpenShock/ShockOsc/releases)
 3. A VRChat avatar
-4. Basic Unity knowledge for working with VRChat avatars is recommended
+4. Basic Unity knowledge while working with VRChat avatars is recommended
 5. Text Editor, [Notepad++](https://notepad-plus-plus.org/) for example
 
 # Setup ShockOSC
