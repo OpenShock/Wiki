@@ -134,6 +134,11 @@ after following this guide your config should look something like this:
 
 ![Image "add gameobject"](../static/kyobinoyo/avatar-trigger/example_settings2.png)
 
+<code>Or</code>
+
+![Image "add gameobject"](../static/kyobinoyo/avatar-trigger/example_settings3.png)
+
+
 <br></br>
 Now upload your Avatar and you are ready to go!
   
