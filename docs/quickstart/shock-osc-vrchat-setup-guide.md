@@ -10,7 +10,7 @@
 1. Download and store the ``ShockOsc.exe`` file at your desired location on your PC.  
    (at the moment there are two ShockOsc.exe files to download, you only need the ``OpenShock.ShockOsc.exe``)  
 3. Start the .exe for the first time, this will generate a ``config.json`` file in the same location as the .exe, press any button to close the window again.
-4. Now open ``config.json`` in a text editor, now we need two things, your ``Shocklink API Token`` and your ``Shocker ID``. both can be found in your account on https://shocklink.net/
+4. Now open ``config.json`` in a text editor, now we need two things, your ``Shocklink API Token`` and your ``Shocker ID``. Both can be found in your account on https://shocklink.net/
 
 ### Configure the API Token
 
