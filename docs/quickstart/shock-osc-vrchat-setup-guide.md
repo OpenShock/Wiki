@@ -63,7 +63,6 @@ You can also add multiple shockers or just one, make sure you don't use the same
   </pre>
 </code>
 </details>
-<br></br>
 
 4. Set your limits, of course you can also set limits in ShockOSc as well, for this go inside the ``config.json`` and edit the ``IntensityRange`` and ``DurationRange`` (ShockOSC starts counting from 1 so 100% would be 101 in the config)
 
