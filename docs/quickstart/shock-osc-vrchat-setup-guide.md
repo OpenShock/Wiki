@@ -64,7 +64,7 @@ You can also add multiple shockers or just one, make sure you don't use the same
 </code>
 </details>
 
-4. Set your limits, of course you can also set limits in ShockOSc as well, for this go inside the ``config.json`` and edit the ``IntensityRange`` and ``DurationRange`` (ShockOSC starts counting from 1 so 100% would be 101 in the config, duration is in milliseconds)
+4. Set your limits, of course you can also set limits in ShockOSc as well, for this go inside the ``config.json`` and edit the ``IntensityRange`` and ``DurationRange`` (ShockOSC starts counting at 1, so 100% would be 101 in the config, all time is in milliseconds)
 5. Save the config file, you are done!
 
 Start the ShockOsc.exe and keep it open to use it.
