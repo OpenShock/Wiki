@@ -24,14 +24,14 @@
       <img src="../../static/guides/shockosc/finds_apitokens.png" alt="find api token"><br>
       <br></br>
       Press the <code>green plus</code> at the bottom.<br>
-      <img src="../../static/guides/shockosc/avatar-trigger/green_plus.png" alt="create api token"><br>
+      <img src="../../static/guides/shockosc/green_plus.png" alt="create api token"><br>
       <br></br>
       Give it a name, for example "ShockOSC" and set no expiry date, after that click create.<br>
-      <img src="../../static/guides/shockosc/avatar-trigger/create_APIToken.png" alt="create api token 2"><br>
+      <img src="../../static/guides/shockosc/create_APIToken.png" alt="create api token 2"><br>
       <br></br>
       Copy the API Token and paste it into the config at <code>"ApiToken":</code>, after that it should look like this:<br>
       <code>"ApiToken": "0W3ybn7bHuF2SUwAZ8YZexRMejzTcUzJJT3cBSf4FWK7ryLhRT2wikFh8qZGYpiY"</code>.<br>
-      <img src="../../static/guides/shockosc/avatar-trigger/API_Token.png" alt="copy api token"><br>
+      <img src="../../static/guides/shockosc/API_Token.png" alt="copy api token"><br>
     </details>
 
 
@@ -39,13 +39,13 @@
 
     <details>
       On the Shocklink page, go to <code>Shockers</code><br>
-      <img src="../../static/guides/shockosc/avatar-trigger/find_shockers.png" alt="find shockers"><br>
+      <img src="../../static/guides/shockosc/find_shockers.png" alt="find shockers"><br>
       <br></br>
       Open the context menu of the shocker you want to use<br>
-      <img src="../../static/guides/shockosc/avatar-trigger/find_shockerid.png" alt="find shocker id"><br>
+      <img src="../../static/guides/shockosc/find_shockerid.png" alt="find shocker id"><br>
       <br></br>
       Click on edit, and copy the ID<br>
-      <img src="../../static/guides/shockosc/avatar-trigger/find_shockerid2.png" alt="find shocker id 2"><br>
+      <img src="../../static/guides/shockosc/find_shockerid2.png" alt="find shocker id 2"><br>
       In your config you have to create a list for your shockers, there you have to paste your Shocker ID<br>
       It should look something like this at the end:<br>
     <code>
