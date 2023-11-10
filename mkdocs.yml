@@ -8,6 +8,9 @@ nav:
   - Safety:
       - safety/safety-rules.md
   - Guides:
+    - Quickstart:
+      - quickstart/what-you-need.md
+      - quickstart/buying-guide.md
     - Openshock:
       - guides/openshock-first-setup.md
     - Shocklink:
@@ -15,9 +18,6 @@ nav:
     - ShockOsc:
       - guides/shockosc-basic.md
       - guides/shockosc-avatar-setup.md
-    - Quickstart:
-      - quickstart/what-you-need.md
-      - quickstart/buying-guide.md
   - Hardware:
     # - hardware/buying-guide.md
     - Shockers:
