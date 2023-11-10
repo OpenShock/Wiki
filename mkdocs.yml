@@ -10,7 +10,8 @@ nav:
   - Guides:
     - guides/first-setup.md
     - guides/how-to-sharelinks.md
-    - guides/shock-osc-vrchat-setup-guide.md
+    - guides/shockosc-basic.md
+    - guide/shockosc-avatar-setup.md
     - Quickstart:
       - quickstart/what-you-need.md
       - quickstart/buying-guide.md
