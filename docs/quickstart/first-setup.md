@@ -50,5 +50,5 @@ Everything should work now, have fun!
 !!! Info "Power Shocker On/Off"
     To turn your shocker ``off`` press the power button it should ``beep twice``.  
     To turn it back ``on`` press the power button it should ``beep once``.  
-!!! Info
+!!! Info "Help"
     If you need additional help, join our [Discord](https://shocklink.net/discord)

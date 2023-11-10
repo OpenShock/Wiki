@@ -5,13 +5,15 @@ repo_url: https://github.com/OpenShock/Wiki
 
 nav:
   - Home: index.md
-  - Quickstart:
-    - quickstart/what-you-need.md
-    - quickstart/buying-guide.md
-    - quickstart/safety-rules.md
+  - Safety:
+      - quickstart/safety-rules.md
+  - Guides:
     - quickstart/first-setup.md
     - quickstart/how-to-sharelinks.md
     - quickstart/shock-osc-vrchat-setup-guide.md
+    - Quickstart:
+      - quickstart/what-you-need.md
+      - quickstart/buying-guide.md
   - Hardware:
     # - hardware/buying-guide.md
     - Shockers:
