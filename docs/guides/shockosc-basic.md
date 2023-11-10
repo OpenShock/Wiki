@@ -6,9 +6,9 @@
     
 ## What you need
 
-1. [Fully setup shocker](openshock-first-setup.md)
-2. [Newest ShockOSC](https://github.com/OpenShock/ShockOsc/releases)
-5. Text Editor, [Notepad++](https://notepad-plus-plus.org/) for example
+- [Fully setup shocker](openshock-first-setup.md)
+- [Newest ShockOSC](https://github.com/OpenShock/ShockOsc/releases)
+- Text Editor, [Notepad++](https://notepad-plus-plus.org/) for example
 
 ## Setup ShockOSC
 1. Download and store the ``ShockOsc.exe`` file at your desired location on your PC.  
@@ -92,7 +92,7 @@ This way you will be shocked for a fixed strenght or duration or both when someo
 1. Open your ``config.json``.
 2. Set ``RandomIntensity`` and/or ``RandomDuration`` is set to ``false``, you can configure these individually. 
 3. Edit the ``FixedIntensity`` and/or ``FixedDuration`` to the fixed value you want.
-4. Save the config file, you are done!
+4. Save the config file, you are done! 🎉  
 
 ## Example Config
 !!! Info "Example Config"  

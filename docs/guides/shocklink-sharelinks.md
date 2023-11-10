@@ -5,8 +5,8 @@
     Check out [Safety](../safety/safety-rules.md) for more information.
   
 ## What you need
-1. [Shocklink.net account](https://shocklink.net/)
-2. A completely setup shocker ([see the First time Setup guide](openshock-first-setup.md))
+- [Shocklink.net account](https://shocklink.net/)
+- A working shocker ([see the First time Setup guide](openshock-first-setup.md))
 
 
 
@@ -29,7 +29,7 @@ Your new share link should popup as a new entry looking like this:
   5. Click on ``Add shocker`` and choose your shocker, you can add multiple shockers to the same link, just repeat this step.  
 ![Image "Image"](../static/guides/how-to-sharelinks/addshockertosharelink2.png)  
 
-  6.  After adding your shocker to the link you should be able to see the shockers controls, that's it. Everyone with the share link can now control your shocker.
+  6.  After adding your shocker to the link you should be able to see the shockers controls, that's it. Everyone with the share link can now control your shocker. 🎉  
 
 
 ## Customize your Share link

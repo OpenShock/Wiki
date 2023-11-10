@@ -5,7 +5,7 @@ Welcome to OpenShock! We're proud to present our fully open-source software solu
 
 ## Getting started
 
-Head over to the Quickstart to get started:
+Head over to the Guides to get started:
 
 - [What you need](quickstart/what-you-need.md)
 - [Buying guide](quickstart/buying-guide.md)

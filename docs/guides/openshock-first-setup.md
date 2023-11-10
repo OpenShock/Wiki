@@ -5,11 +5,11 @@
     Check out [Safety](../safety/safety-rules.md) for more information.
 
 ## What you need
-1. USB cable with at least one USB-C connector and a PC ``or`` USB Power adapter
-2. A Smartphone with a Webbrower (Chrome, firefox etc.)
-3. ESP board
-4. Shocker
-5. [Shocklink account](https://shocklink.net/)
+- USB cable with at least one USB-C connector and a PC ``or`` USB Power adapter
+- A Smartphone with a Webbrower (Chrome, firefox etc.)
+- ESP board
+- Shocker
+- [Shocklink account](https://shocklink.net/)
 
 
 

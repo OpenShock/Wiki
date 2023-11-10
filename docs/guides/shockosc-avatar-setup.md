@@ -1,8 +1,9 @@
 # ShockOsc - VRChat Avatar Setup 
   
 ## What you need
-1. A VRChat avatar
-2. Basic Unity knowledge while working with VRChat avatars is recommended
+- [ShockOsc](shockosc-basic.md)
+- A VRChat avatar
+- Basic experience in working with VRChat avatars is recommended
 
 ## Touch trigger
 1. Open your avatar project and create a new ``Empty GameObject`` on the bone you want your trigger to be at, your LeftLeg for example.  
@@ -12,11 +13,11 @@
 ![Image "Image"](../static/guides/shockosc/example_position.png)  
 
 3. Configure the components ``Radius``, ``Filtering``, ``Collision Tags`` and of course the ``Parameter``, the parameter need to follow a specific naming scheme. ``ShockOsc/{ShockerName}`` replace *{ShockerName}* by the name you gave your shocker in the ShockOsc config, for example ``ShockOsc/leftleg``.  
-![Image "Image"](../static/guides/shockosc/example_settings2.png)
-
-!!! Info "Replace *ShockerName* with the one in your ShockOsc config, like this"
-    ![Image "Image"](../static/guides/shockosc/example_settings3.png)  
-
+![Image "Image"](../static/guides/shockosc/example_settings3.png)  
+4. Now upload your Avatar and you are ready to go! 🎉  
+!!! Info "Avatar Update Info"
+    If you update an existing avatar, make sure you delete the OSC config files in ``C:\Users\%USERPROFILE%\AppData\LocalLow\VRChat\VRChat\OSC``, they are not important for the game since they only hold the avatar parameters for OSC to use, they get regenerated everytime you change your avatar, but VRChat fails to update them somethimes when a new parameter got added to an Avatar. 
+    
 <br></br>
 ## Remote trigger
 to be done
@@ -26,12 +27,10 @@ to be done
 to be done  
 
 <br></br>
-
-Now upload your Avatar and you are ready to go!
-  
+<!-- 
 !!! Info "Avatar Update Info"
     If you update an existing avatar, make sure you delete the OSC config files in ``C:\Users\%USERPROFILE%\AppData\LocalLow\VRChat\VRChat\OSC``, they are not important for the game since they only hold the avatar parameters for OSC to use, they get regenerated everytime you change your avatar, but VRChat fails to update them somethimes when a new parameter got added to an Avatar. 
-
+-->
 ## List of available parameters
 
 !!! Info
@@ -55,7 +54,7 @@ Now upload your Avatar and you are ready to go!
     
     ``ShockOsc/{ShockerName}_IShock``  (bool) 
     <details>
-    if set to <b>true</b> will shock immideatly without holding the trigger first  
+    if set to <b>true</b> will shock immediately ignoring the configurated <code>HoldTime</code>.  
     </details>
 
     ### Visual Parameters
