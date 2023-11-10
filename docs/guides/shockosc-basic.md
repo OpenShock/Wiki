@@ -14,7 +14,8 @@
 1. Download and store the ``ShockOsc.exe`` file at your desired location on your PC.  
    (at the moment there are two ShockOsc.exe files to download, you only need the ``OpenShock.ShockOsc.exe``)  
 2. Start the .exe for the first time, this will generate a ``config.json`` file in the same location as the .exe, press any button to close the window again.
-3. Now open ``config.json`` in a text editor, now we need two things, your ``Shocklink API Token`` and your ``Shocker ID``. Both can be found in your account on [Shocklink.net](https://shocklink.net/)
+3. Now open ``config.json`` in a text editor, we need to configure two things , your ``API Token`` and your ``Shocker ID``.  
+Both can be found in your account on [Shocklink.net](https://shocklink.net/)
 
 !!! Info "Configure the API Token"
 
@@ -68,60 +69,77 @@
     </code>
     </details>
 
-## Configure ShockOsc
-1. Set your limits, of course you can also set limits in ShockOSc as well, for this go inside the ``config.json`` and edit the ``IntensityRange`` and ``DurationRange`` (ShockOSC starts counting at 1, so 100% would be 101 in the config, all time is in milliseconds)  
-  
-2. Save the config file, you are done!
+## Configure Limits
+You can also set limits in ShockOsc. 
+!!! Info
+    Time is set in milliseconds  
+    1 second = 1000 milliseconds  
+    
+    ShockOsc counts from 0  
+    Strenght = 0 is 1% and 101 is 100%
 
+### Random strenght and duration
+This way you will be shocked for a random strenght and/or random duration or both when someone triggers your ShockOsc.  
+
+1. Open your ``config.json``.
+2. Make sure ``RandomIntensity`` and/or ``RandomDuration`` is set to ``true``, you can configure these individually. 
+3. Edit the ``IntensityRange`` and ``DurationRange``.
+4. Save the config file, you are done!
+
+### Fixed strenght and duration
+This way you will be shocked for a fixed strenght or duration or both when someone triggers you ShockOsc.  
+
+1. Open your ``config.json``.
+2. Set ``RandomIntensity`` and/or ``RandomDuration`` is set to ``false``, you can configure these individually. 
+3. Edit the ``FixedIntensity`` and/or ``FixedDuration`` to the fixed value you want.
+4. Save the config file, you are done!
+
+## Example Config
 !!! Info "Example Config"  
     After following this guide your config should look something like this:  
 
-    <details>
-      <pre>
-        <code>
-          "Osc": {
-              "Chatbox": true,
-              "Hoscy": false,
-              "SendPort": 9000,
-              "HoscySendPort": 9001
+    <pre>
+      <code>
+        "Osc": {
+            "Chatbox": true,
+            "Hoscy": false,
+            "SendPort": 9000,
+            "HoscySendPort": 9001
+          },
+          "Behaviour": {
+            "RandomIntensity": true,
+            "RandomDuration": true,
+            "RandomDurationStep": 1000,
+            "DurationRange": {
+              "Min": 1000,
+              "Max": 5000
             },
-            "Behaviour": {
-              "RandomIntensity": true,
-              "RandomDuration": true,
-              "RandomDurationStep": 1000,
-              "DurationRange": {
-                "Min": 1000,
-                "Max": 5000
-              },
-              "IntensityRange": {
-                "Min": 1,
-                "Max": 30
-              },
-              "FixedIntensity": 50,
-              "FixedDuration": 2000,
-              "HoldTime": 250,
-              "CooldownTime": 5000,
-              "WhileBoneHeld": "Vibrate",
-              "DisableWhileAfk": true,
-              "ForceUnmute": false
+            "IntensityRange": {
+              "Min": 1,
+              "Max": 30
             },
-            "ShockLink": {
-              "ApiToken": "0W3ybn7bHuF2SUwAZ8YZexRMejzTcUzJJT3cBSf4FWK7ryLhRT2wikFh8qZGYpiY",
-              "Shockers": {
-              "leftleg": "8b1d0e6a-f9a0-4e93-9812-241eae927179"
+            "FixedIntensity": 50,
+            "FixedDuration": 2000,
+            "HoldTime": 250,
+            "CooldownTime": 5000,
+            "WhileBoneHeld": "Vibrate",
+            "DisableWhileAfk": true,
+            "ForceUnmute": false
+          },
+          "ShockLink": {
+            "ApiToken": "0W3ybn7bHuF2SUwAZ8YZexRMejzTcUzJJT3cBSf4FWK7ryLhRT2wikFh8qZGYpiY",
+            "Shockers": {
+            "leftleg": "8b1d0e6a-f9a0-4e93-9812-241eae927179"
             }
-            },
-            "Chatbox": {
-              "DisplayRemoteControl": true,
-              "HoscyType": "Message"
-            }
+          },
+          "Chatbox": {
+            "DisplayRemoteControl": true,
+            "HoscyType": "Message"
           }
-        </code>
-      </pre>
-    </details>
+        }
+      </code>
+    </pre>
 
-!!! Info "How to use"
-    Start the ShockOsc.exe while VRChat is running and keep it open.
 
-!!! Info "Advanced Configuration"
+!!! Warning "Advanced Configuration"
     On the [ShockOSC repository](https://github.com/OpenShock/ShockOsc) you can see additional configuration examples, but that would go beyond the limits of this simple guide  

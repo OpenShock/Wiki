@@ -9,6 +9,7 @@ Head over to the Quickstart to get started:
 
 - [What you need](quickstart/what-you-need.md)
 - [Buying guide](quickstart/buying-guide.md)
+- [Setup ESP and Shocker](guides/openshock-first-setup.md)
 
 ## Community
 

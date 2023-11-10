@@ -11,10 +11,10 @@
 2. Click on the new object and rename it however you want, for example "ShockOSC", after that select it and add a new ``VRC Contact Receiver`` component and position the object on your avatar.  
 ![Image "Image"](../static/guides/shockosc/example_position.png)  
 
-3. Configure the components ``Radius``, ``Filtering``, ``Collision Tags`` and of course the ``Parameter``, the parameter need to follow a specific naming scheme. ``ShockOsc/{ShockerName}`` and "{ShockerName}" needs to be replaced by the name you gave your shocker in the ShockOsc config, for example ``ShockOsc/leftleg``.  
+3. Configure the components ``Radius``, ``Filtering``, ``Collision Tags`` and of course the ``Parameter``, the parameter need to follow a specific naming scheme. ``ShockOsc/{ShockerName}`` replace *{ShockerName}* by the name you gave your shocker in the ShockOsc config, for example ``ShockOsc/leftleg``.  
 ![Image "Image"](../static/guides/shockosc/example_settings2.png)
 
-!!! Info "Replace "ShockerName" with the one in your ShockOsc config, like this"
+!!! Info "Replace *ShockerName* with the one in your ShockOsc config, like this"
     ![Image "Image"](../static/guides/shockosc/example_settings3.png)  
 
 <br></br>
@@ -57,7 +57,6 @@ Now upload your Avatar and you are ready to go!
     <details>
     if set to <b>true</b> will shock immideatly without holding the trigger first  
     </details>
-    <br></br>
 
     ### Visual Parameters
     ``ShockOsc/{ShockerName}_Active`` (bool)
@@ -79,7 +78,6 @@ Now upload your Avatar and you are ready to go!
     <details>
     represents how close the shock was to maximum intensity from <b>IntensityRange</b>
     </details>
-    <br></br>
 
     ### Dummy Shockers  
     ``_All``
@@ -93,11 +91,10 @@ Now upload your Avatar and you are ready to go!
     can be used in place of a shocker name, <b>represents any</b> shocker configured in the ShockOSC config.  
     (ex: if at least one of your shockers are currently shocking <b>ShockOsc/_Any_Active</b> will be <b>true</b>)
     </details>  
-    <br></br>
 
     ### Config Parameters  
     ``ShockOsc/_Config/Paused`` (bool)
     <details>
-    As long as it is <b>true</b>, will pause all ShockOSC activity, shockers will still receive web commands.
+    As long as this parameter is <b>true</b>, all activity by ShockOsc will be paused, shockers will still receive commands via [Share links](shocklink-sharelinks.md) and Share codes.
     </details>
     <br></br>
