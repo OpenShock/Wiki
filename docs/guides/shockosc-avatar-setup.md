@@ -15,9 +15,14 @@
 3. Configure the components ``Radius``, ``Filtering``, ``Collision Tags`` and of course the ``Parameter``, the parameter need to follow a specific naming scheme. ``ShockOsc/{ShockerName}`` replace *{ShockerName}* by the name you gave your shocker in the ShockOsc config, for example ``ShockOsc/leftleg``.  
 ![Image "Image"](../static/guides/shockosc/example_settings3.png)  
 4. Now upload your Avatar and you are ready to go! 🎉  
-!!! Info "Avatar Update Info"
+
+!!! failure "Activate OSC"
+    Make sure you have OSC enabled in your Action Menu inside VRChat.  
+  
+!!! Tip "Avatar Update Info"
     If you update an existing avatar, make sure you delete the OSC config files in ``C:\Users\%USERPROFILE%\AppData\LocalLow\VRChat\VRChat\OSC``, they are not important for the game since they only hold the avatar parameters for OSC to use, they get regenerated everytime you change your avatar, but VRChat fails to update them somethimes when a new parameter got added to an Avatar. 
-    
+  
+    Reload your Avatar after that.
 <br></br>
 ## Remote trigger
 to be done

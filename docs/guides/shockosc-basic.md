@@ -71,7 +71,7 @@ Both can be found in your account on [Shocklink.net](https://shocklink.net/)
 
 ## Configure Limits
 You can also set limits in ShockOsc. 
-!!! Info
+!!! Tip
     Time is set in milliseconds  
     1 second = 1000 milliseconds  
     
