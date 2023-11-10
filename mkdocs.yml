@@ -6,11 +6,11 @@ repo_url: https://github.com/OpenShock/Wiki
 nav:
   - Home: index.md
   - Safety:
-      - quickstart/safety-rules.md
+      - safety/safety-rules.md
   - Guides:
-    - quickstart/first-setup.md
-    - quickstart/how-to-sharelinks.md
-    - quickstart/shock-osc-vrchat-setup-guide.md
+    - guides/first-setup.md
+    - guides/how-to-sharelinks.md
+    - guides/shock-osc-vrchat-setup-guide.md
     - Quickstart:
       - quickstart/what-you-need.md
       - quickstart/buying-guide.md

@@ -5,7 +5,7 @@
     
 ## What you need
 
-1. [Fully setup shocker](../quickstart/first-setup.md)
+1. [Fully setup shocker](../guides/first-setup.md)
 2. [Newest ShockOSC](https://github.com/OpenShock/ShockOsc/releases)
 3. A VRChat avatar
 4. Basic Unity knowledge while working with VRChat avatars is recommended
