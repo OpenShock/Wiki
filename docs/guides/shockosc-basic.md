@@ -7,10 +7,10 @@
 ## What you need
 
 - [Fully setup shocker](openshock-first-setup.md)
-- [Newest ShockOSC](https://github.com/OpenShock/ShockOsc/releases)
+- [Newest ShockOsc](https://github.com/OpenShock/ShockOsc/releases)
 - Text Editor, [Notepad++](https://notepad-plus-plus.org/) for example
 
-## Setup ShockOSC
+## Setup ShockOsc
 1. Download and store the ``ShockOsc.exe`` file at your desired location on your PC.  
    (at the moment there are two ShockOsc.exe files to download, you only need the ``OpenShock.ShockOsc.exe``)  
 2. Start the .exe for the first time, this will generate a ``config.json`` file in the same location as the .exe, press any button to close the window again.
@@ -74,9 +74,6 @@ You can also set limits in ShockOsc.
 !!! Tip
     Time is set in milliseconds  
     1 second = 1000 milliseconds  
-    
-    ShockOsc counts from 0  
-    Strenght = 0 is 1% and 101 is 100%
 
 ### Random strenght and duration
 This way you will be shocked for a random strenght and/or random duration or both when someone triggers your ShockOsc.  
