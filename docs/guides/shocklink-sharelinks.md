@@ -6,7 +6,7 @@
   
 ## What you need
 1. [Shocklink.net account](https://shocklink.net/)
-2. A completely setup shocker ([see the First time Setup guide](first-setup.md))
+2. A completely setup shocker ([see the First time Setup guide](openshock-first-setup.md))
 
 
 

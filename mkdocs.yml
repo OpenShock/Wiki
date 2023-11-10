@@ -8,10 +8,13 @@ nav:
   - Safety:
       - safety/safety-rules.md
   - Guides:
-    - guides/first-setup.md
-    - guides/how-to-sharelinks.md
-    - guides/shockosc-basic.md
-    - guides/shockosc-avatar-setup.md
+    - Openshock:
+      - guides/openshock-first-setup.md
+    - Shocklink:
+      - guides/shocklink-sharelinks.md
+    - ShockOsc:
+      - guides/shockosc-basic.md
+      - guides/shockosc-avatar-setup.md
     - Quickstart:
       - quickstart/what-you-need.md
       - quickstart/buying-guide.md

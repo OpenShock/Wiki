@@ -1,6 +1,10 @@
 # ShockOsc - VRChat Avatar Setup 
   
-## Add a touch trigger to your Avatar
+## What you need
+1. A VRChat avatar
+2. Basic Unity knowledge while working with VRChat avatars is recommended
+
+## Touch trigger
 1. Open your avatar project and create a new ``Empty GameObject`` on the bone you want your trigger to be at, your LeftLeg for example.  
 ![Image "Image"](../static/guides/shockosc/create_trigger.png)  
 
@@ -14,7 +18,86 @@
     ![Image "Image"](../static/guides/shockosc/example_settings3.png)  
 
 <br></br>
+## Remote trigger
+to be done
+## Pull trigger
+to be done
+## Pause toggle
+to be done  
+
+<br></br>
+
 Now upload your Avatar and you are ready to go!
   
 !!! Info "Avatar Update Info"
     If you update an existing avatar, make sure you delete the OSC config files in ``C:\Users\%USERPROFILE%\AppData\LocalLow\VRChat\VRChat\OSC``, they are not important for the game since they only hold the avatar parameters for OSC to use, they get regenerated everytime you change your avatar, but VRChat fails to update them somethimes when a new parameter got added to an Avatar. 
+
+## List of available parameters
+
+!!! Info
+    ### Avatar Dynamic Parameters  
+
+    ``ShockOsc/{ShockerName}`` (bool)  
+    <details>
+    when set to <b>true</b> and held, will trigger a normal shock in ShockOSC
+    </details>  
+    
+    ``ShockOsc/{ShockerName}_Stretch`` (float)  
+    <details>
+    can be used to control the shock strenght  
+    (ex. stretch a bone to 50% and let go to shock someone for 50%)
+    </details>  
+
+    ``ShockOsc/{ShockerName}_IsGrabbed`` (bool)   
+    <details>
+    mainly used  to indicate that a physbone is grabbed
+    </details>
+    
+    ``ShockOsc/{ShockerName}_IShock``  (bool) 
+    <details>
+    if set to <b>true</b> will shock immideatly without holding the trigger first  
+    </details>
+    <br></br>
+
+    ### Visual Parameters
+    ``ShockOsc/{ShockerName}_Active`` (bool)
+    <details>
+    can be used to display an active shock on your avatar (when the shocker is active, ShockOSC will set this to <b>true</b> if not it will be <b>false</b>)
+    </details>  
+
+    ``ShockOsc/{ShockerName}_Cooldown`` (bool)
+    <details>
+    can be used to read out if the shocker is on cooldown  
+    </details>  
+
+    ``ShockOsc/{ShockerName}_CooldownPercentage`` (float)
+    <details>
+    can be used to show how for long the cooldown is active
+    </details>
+        
+    ``ShockOsc/{ShockerName}_Intensity``  (float)
+    <details>
+    represents how close the shock was to maximum intensity from <b>IntensityRange</b>
+    </details>
+    <br></br>
+
+    ### Dummy Shockers  
+    ``_All``
+    <details>
+    can be used in place of a shocker name, <b>represents all</b> shockers configured in the ShockOSC config.  
+    (ex: if <b>ShockOsc/_All</b> is set to <b>true</b> on you Avatar, every shocker configured in ShockOSC will be triggered at the same time)
+    </details>
+    
+    ``_Any``
+    <details>
+    can be used in place of a shocker name, <b>represents any</b> shocker configured in the ShockOSC config.  
+    (ex: if at least one of your shockers are currently shocking <b>ShockOsc/_Any_Active</b> will be <b>true</b>)
+    </details>  
+    <br></br>
+
+    ### Config Parameters  
+    ``ShockOsc/_Config/Paused`` (bool)
+    <details>
+    As long as it is <b>true</b>, will pause all ShockOSC activity, shockers will still receive web commands.
+    </details>
+    <br></br>
