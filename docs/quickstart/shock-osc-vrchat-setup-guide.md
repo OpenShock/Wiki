@@ -1,5 +1,9 @@
-# VRChat Avatar OSC trigger
-# What you need
+# ShockOsc - VRChat Avatar
+
+!!! Warning
+    Don't wear the shocker somewhere near your neck or your heart  
+    
+## What you need
 
 1. [Fully setup shocker](../quickstart/first-setup.md)
 2. [Newest ShockOSC](https://github.com/OpenShock/ShockOsc/releases)
@@ -7,7 +11,7 @@
 4. Basic Unity knowledge while working with VRChat avatars is recommended
 5. Text Editor, [Notepad++](https://notepad-plus-plus.org/) for example
 
-# Setup ShockOSC
+## Setup ShockOSC
 1. Download and store the ``ShockOsc.exe`` file at your desired location on your PC.  
    (at the moment there are two ShockOsc.exe files to download, you only need the ``OpenShock.ShockOsc.exe``)  
 2. Start the .exe for the first time, this will generate a ``config.json`` file in the same location as the .exe, press any button to close the window again.
@@ -65,7 +69,7 @@
     </code>
     </details>
 
-# Configure ShockOsc
+## Configure ShockOsc
 1. Set your limits, of course you can also set limits in ShockOSc as well, for this go inside the ``config.json`` and edit the ``IntensityRange`` and ``DurationRange`` (ShockOSC starts counting at 1, so 100% would be 101 in the config, all time is in milliseconds)  
   
 2. Save the config file, you are done!
@@ -125,8 +129,8 @@
 <br></br>
 
 <!---Avatar Setup--->
-# How to setup a VRChat avatar with ShockOsc triggers  
-## Add a touch trigger to your Avatar
+## How to setup a VRChat for ShockOsc 
+### Add a touch trigger to your Avatar
 1. Open your avatar project and create a new ``Empty GameObject`` on the bone you want your trigger to be at, your LeftLeg for example.  
 ![Image "Image"](../static/kyobinoyo/avatar-trigger/create_trigger.png)  
 
