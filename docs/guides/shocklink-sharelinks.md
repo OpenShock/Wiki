@@ -3,7 +3,11 @@
 !!! Warning
     **Don't wear the shocker somewhere near your neck or your heart.**  
     Check out [Safety](../safety/safety-rules.md) for more information.
-  
+
+!!! Info "What is a Share link?"
+    Share links are a great way to give people control of your shockers without the need of a Shocklink account.  
+
+
 ## What you need
 - [Shocklink.net account](https://shocklink.net/)
 - A working shocker ([see the First time Setup guide](openshock-first-setup.md))
@@ -15,27 +19,33 @@
   1. Open [Shocklink.net](https://shocklink.net/) and go to the ``Share Links`` section.  
   ![Image "Image"](../static/guides/how-to-sharelinks/findshocklinks.png)  
 
-  2. Click ``Add new share link``  
+  2. Click ``Add new share link!``  
 ![Image "Image"](../static/guides/how-to-sharelinks/addnewsharelink.png)  
 
   3. Here you can choose to set an expiry date and a name, after that press ``Create``  
 ![Image "Image"](../static/guides/how-to-sharelinks/createshocklink.png)  
-Your new share link should popup as a new entry looking like this:  
+Your new share link should popup as a new entry on the page.    
 ![Image "Image"](../static/guides/how-to-sharelinks/sharelinkcreated.png)  
 
-  4. Now that you have created the link itself you need to add one or multiple shockers to it so they can be triggered via this link, for this you click on the new entry, this will bring up the links page, on the top right, on the right side are three dots that open the ``context menu`` of the link.    
+  4. Now that you have created the link itself you need to add one or multiple shockers to it so they can be triggered with this link, to do that you click on the newly created link.
+  
+  5. On the right side are three dots that open the ``context menu`` of the link.    
 ![Image "Image"](../static/guides/how-to-sharelinks/addshockertosharelink.png)  
   
-  5. Click on ``Add shocker`` and choose your shocker, you can add multiple shockers to the same link, just repeat this step.  
+  6. Click on ``Add shocker`` and choose your shocker, you can add multiple shockers to the same link, just repeat this step.  
 ![Image "Image"](../static/guides/how-to-sharelinks/addshockertosharelink2.png)  
 
-  6.  After adding your shocker to the link you should be able to see the shockers controls, that's it. Everyone with the share link can now control your shocker. 🎉  
+  7.  After adding your shocker(s) to the link you will see the shockers controls, that's it.  
+  Everyone with the share link can now control your shocker. 🎉  
 
+!!! Tip
+    Create multiple share links for different people to have better control over who can shock you!
+<br></br>
 
 ## Customize your Share link
-!!! Info ""
+!!! Info
     You can set limits to ``strenght``, ``duration`` or what kind of ``command`` someone can use for each share link.  
-    You can also ``Pause`` the link so nobody can send commands via this link.  
+    You can also ``Pause`` the link so nobody can send commands with this link.  
 ### Edit the limits  
   1. Open your share link page again and select the share link you want to edit, there you open the share links context menu and choose ``Edit Mode``.
   ![Image "Image"](../static/guides/how-to-sharelinks/editlinkllimits.png)  
