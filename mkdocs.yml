@@ -5,9 +5,20 @@ repo_url: https://github.com/OpenShock/Wiki
 
 nav:
   - Home: index.md
-  - Quickstart:
-    - quickstart/what-you-need.md
-    - quickstart/buying-guide.md
+  - Safety:
+      - safety/safety-rules.md
+  - Guides:
+    - Quickstart:
+      - quickstart/what-you-need.md
+      - quickstart/buying-guide.md
+    - Openshock:
+      - guides/openshock-first-setup.md
+    - Shocklink:
+    # - guides/shocklink-sharecodes.md
+      - guides/shocklink-sharelinks.md
+    - ShockOsc:
+      - guides/shockosc-basic.md
+      - guides/shockosc-avatar-setup.md
   - Hardware:
     # - hardware/buying-guide.md
     - Shockers:
