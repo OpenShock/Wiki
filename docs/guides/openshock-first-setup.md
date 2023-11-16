@@ -53,7 +53,7 @@ If everything went well it should show a **green icon** next to the device name 
 ![image](../static/guides/first-setup/find_sound_button.png)
 7. Everything should work now, have fun! 🎉  
 !!! Info
-    Your shocker will remember the ESP, no need to repair it everytime.  
+    Your shocker will remember the ESP, no need to pair it everytime.  
 
 !!! Tip "Power Shocker On/Off"
     To turn your shocker ``off`` press the power button it should ``beep twice``.  

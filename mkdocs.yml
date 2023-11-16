@@ -14,7 +14,7 @@ nav:
     - Openshock:
       - guides/openshock-first-setup.md
     - Shocklink:
-    # - guides/shocklink-sharecodes.md
+      - guides/shocklink-sharecodes.md
       - guides/shocklink-sharelinks.md
     - ShockOsc:
       - guides/shockosc-basic.md
