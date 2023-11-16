@@ -16,11 +16,11 @@
 
 ## Setup ESP  
 1. To Setup your ESP (this is the communication device between the API and your shocker) you have to connect it to a power source, like a USB power adapter or your PC's USB Port (the ESP uses USB-C).
-2. After you powered up your ESP grab your **phone** and search for a WiFi network named similar to this: ``Openshock-24:DC:C3:9F:72:C8`` and connect to it.  
+2. After you powered up your ESP grab your **phone** and search for a Wi-Fi network named similar to this: ``Openshock-24:DC:C3:9F:72:C8`` and connect to it.  
 ![Image "image"](../static/guides/first-setup/WiFioverview.png)  
 3. Now open your **phones browser** and type in ``10.10.10.10`` or ``openshock.local`` this should open up a web-interface for the ESP that looks like this:  
 ![Image "image"](../static/guides/first-setup/ESPWebGUI.png)  
-4. Lookup your Wi-Fi Network in the web-interface, press the green button next to it and type in your WiFi password then press submit.
+4. Lookup your Wi-Fi Network in the web-interface, press the green button next to it and type in your Wi-Fi password then press submit.
 5. Set the RF TX Pin, that is the number of the IO pin that the RF antenna data is connected to. (default 12, for pishock boards that is 15, if you don't know your pin, try asking for help on our [Discord](https://shocklink.net/discord)), type in your pin and press **Set** to change it.
 6. **On your PC** open [Shocklink.net](https://shocklink.net/) and create an account, if you don't have one already, after that go to ``Devices`` and click the **green + icon** at the lower right corner to create a new device.   
 ![Image "image"](../static/guides/first-setup/findaddbutton3.png)  
@@ -37,7 +37,7 @@ If everything went well it should show a **green icon** next to the device name 
 
 !!! Tip
     You can just plug and unplug your ESP, it should reconnect as soon as it is powered up again.
-    
+
 <br></br>
 
 ## Pair a shocker

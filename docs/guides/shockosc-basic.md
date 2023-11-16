@@ -23,61 +23,45 @@
 3. Open ``config.json`` in a text editor, we need to configure two things , your ``API Token`` and your ``Shocker ID``.  
 Both can be found in your account on [Shocklink.net](https://shocklink.net/)
 
-!!! Info "Configure the API Token"
-
-    <details>
-      <ol>
-        <li>On the Shocklink page go to <code>API Tokens</code>.<br>
-        <img src="../../static/guides/shockosc/finds_apitokens.png" alt="find api token"></li><br>
-        <br></br>
-        <li>Press the <code>green plus</code> at the bottom.<br>
-        <img src="../../static/guides/shockosc/green_plus.png" alt="create api token"></li><br>
-        <br></br>
-        <li>Give it a name, for example "ShockOSC" and set no expiry date, after that click create.<br>
-        <img src="../../static/guides/shockosc/create_APIToken.png" alt="create api token 2"></li><br>
-        <br></br>
-        <li>Copy the API Token and paste it into the config at <code>"ApiToken":</code>, after that it should look like this:<br>
-        <code>"ApiToken": "0W3ybn7bHuF2SUwAZ8YZexRMejzTcUzJJT3cBSf4FWK7ryLhRT2wikFh8qZGYpiY"</code>.<br>
-        <img src="../../static/guides/shockosc/API_Token.png" alt="copy api token"></li><br>
-      </ol>
-    </details>
+??? Info "Configure the API Token"
+    1. On the Shocklink page go to ``API Tokens``  
+    ![Image "Image"](../../static/guides/shockosc/finds_apitokens.png)  
+    2. Press the ``green plus`` at the bottom.  
+    ![Image "Image"](../../static/guides/shockosc/green_plus.png)  
+    3. Give it a name, for example "ShockOSC" and set no expiry date, after that click create.  
+    ![Image "Image"](../../static/guides/shockosc/create_APIToken.png)  
+    ![Image "Image"](../../static/guides/shockosc/API_Token.png)  
+    4. Copy the API Token and paste it into the config at ``"ApiToken":``, after that it should look like this:  
+    ```json
+    "ApiToken": "0W3ybn7bHuF2SUwAZ8YZexRMejzTcUzJJT3cBSf4FWK7ryLhRT2wikFh8qZGYpiY"
+    ```  
+    5. Save the config.
 
 
-!!! Info "Configure the Shocker ID"
-
-    <details>
-      <ol>
-        <li>On the Shocklink page, go to <code>Shockers</code><br>
-        <img src="../../static/guides/shockosc/find_shockers.png" alt="find shockers"></li><br>
-        <br></br>
-        <li>Open the context menu of the shocker you want to use<br>
-        <img src="../../static/guides/shockosc/find_shockerid.png" alt="find shocker id"></li><br>
-        <br></br>
-        <li>Click on edit, and copy the ID<br>
-        <img src="../../static/guides/shockosc/find_shockerid2.png" alt="find shocker id 2"></li><br>
-        <li>In your config you have to create a list for your shockers, there you have to paste your Shocker ID<br>
-        It should look something like this at the end:<br>
-      <code>
-        <pre>
-            "Shockers": {
-              "SHOCKERNAME": "18b1d0e6a-f9a0-4e93-9812-241eae9271791"
-            }
-        </pre>
-      </code>
-      In this example the <code>SHOCKERNAME</code> can be replaced by your own name for your shocker <code>leg</code> for example, the name doesn't need to match the name on Shocklink.net, this name is later used to create a trigger parameter on your avatar.</li><br>
-      <br></br>
-      <li>(optional) You <b>can</b> also add more shockers, make sure you don't use the same ID or Name twice, this doesn't work.<br>
-      <code>
-        <pre>
-            "Shockers": {
-              "leftleg": "18b1d0e6a-f9a0-4e93-9812-241eae9271791", 
-              "rightleg": "28b1d0e6a-f9a0-4e93-9812-241eae9271792,
-              "nose": "38b1d0e6a-f9a0-4e93-9812-241eae9271793"
-            }
-        </pre>
-      </code></li>
-      </ol>
-    </details>
+??? Info "Configure the Shocker ID"
+    1. On the Shocklink page, go to ``Shockers``  
+    ![Image "Image"](../../static/guides/shockosc/find_shockers.png)  
+    2. Open the context menu of the shocker you want to use  
+    ![Image "Image"](../../static/guides/shockosc/find_shockerid.png)  
+    3. Click on edit, and copy the ID  
+    ![Image "Image"](../../static/guides/shockosc/find_shockerid2.png)  
+    4. In your config you have to create a list for your shockers, there you have to paste your Shocker ID  
+    It should look something like this at the end:  
+    ```json
+    ...
+      "Shockers": {
+        "SHOCKERNAME": "18b1d0e6a-f9a0-4e93-9812-241eae9271791"}
+    ```  
+    In this example the ``SHOCKERNAME`` can be replaced by your own name for your shocker ``leg`` for example, the name doesn't need to match the name on Shocklink.net, this name is later used to create a trigger parameter on your avatar.  
+          
+    (optional) You <u><b>can</b></u> also add more shockers, make sure you don't use the same ID or Name twice, this doesn't work.<br>
+    ```json
+    ...
+    "Shockers": {
+      "leftleg": "18b1d0e6a-f9a0-4e93-9812-241eae9271791", 
+      "rightleg": "28b1d0e6a-f9a0-4e93-9812-241eae9271792",
+      "lefttoe": "38b1d0e6a-f9a0-4e93-9812-241eae9271793"}
+    ```
 
 <br></br>
 
@@ -106,11 +90,9 @@ This way you will be shocked for a fixed strength or duration or both when someo
 <br></br>
 
 ## Example Config
-!!! Info "Example Config"  
+??? Info "Example Config"  
     After following this guide your config should look something like this:  
-
-    <pre>
-      <code>
+    ```json
         "Osc": {
             "Chatbox": true,
             "Hoscy": false,
@@ -140,7 +122,7 @@ This way you will be shocked for a fixed strength or duration or both when someo
           "ShockLink": {
             "ApiToken": "0W3ybn7bHuF2SUwAZ8YZexRMejzTcUzJJT3cBSf4FWK7ryLhRT2wikFh8qZGYpiY",
             "Shockers": {
-            "leftleg": "8b1d0e6a-f9a0-4e93-9812-241eae927179"
+            "leg": "8b1d0e6a-f9a0-4e93-9812-241eae927179"
             }
           },
           "Chatbox": {
@@ -148,8 +130,7 @@ This way you will be shocked for a fixed strength or duration or both when someo
             "HoscyType": "Message"
           }
         }
-      </code>
-    </pre>
+    ```
 
 
 !!! Warning "Advanced Configuration"
