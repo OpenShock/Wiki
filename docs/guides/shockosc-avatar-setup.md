@@ -1,4 +1,4 @@
-# ShockOsc - VRChat Avatar Setup 
+# VRChat Avatar Setup 
   
 ## What you need
 - [ShockOsc](shockosc-basic.md)

@@ -1,4 +1,4 @@
-# ShockOsc - Basic Setup
+# Basic Setup
 
 !!! danger "Safety Warning"
     **Don't wear the shocker somewhere near your neck or your heart.**  

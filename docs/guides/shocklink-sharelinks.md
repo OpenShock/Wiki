@@ -1,4 +1,4 @@
-# Shocklink - Share links
+# Share links
 
 !!! danger "Safety Warning"
     **Don't wear the shocker somewhere near your neck or your heart.**  

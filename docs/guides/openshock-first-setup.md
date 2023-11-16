@@ -1,4 +1,4 @@
-# Openshock - First time setup
+# First time setup
 
 !!! danger "Safety Warning"
     **Don't wear the shocker somewhere near your neck or your heart.**  
