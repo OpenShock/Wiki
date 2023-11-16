@@ -5,8 +5,7 @@ repo_url: https://github.com/OpenShock/Wiki
 
 nav:
   - Home: index.md
-  - Safety:
-      - safety/safety-rules.md
+  - Safety: safety/safety-rules.md
   - Guides:
     - Quickstart:
       - quickstart/what-you-need.md
@@ -14,8 +13,8 @@ nav:
     - Openshock:
       - guides/openshock-first-setup.md
     - Shocklink:
-    # - guides/shocklink-sharecodes.md
       - guides/shocklink-sharelinks.md
+      - guides/shocklink-sharecodes.md
     - ShockOsc:
       - guides/shockosc-basic.md
       - guides/shockosc-avatar-setup.md

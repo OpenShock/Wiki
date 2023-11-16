@@ -1,10 +1,10 @@
-# Shocklink - Share links
+# Share links
 
-!!! Warning
+!!! danger "Safety Warning"
     **Don't wear the shocker somewhere near your neck or your heart.**  
-    Check out [Safety](../safety/safety-rules.md) for more information.
+    Check out [Safety](../safety/safety-rules.md) for more information. 
 
-!!! Info "What is a Share link?"
+!!! question "What is a Share link?"
     Share links are a great way to give people control of your shockers without the need of a Shocklink account.  
 
 
@@ -12,7 +12,7 @@
 - [Shocklink.net account](https://shocklink.net/)
 - A working shocker ([see the First time Setup guide](openshock-first-setup.md))
 
-
+<br></br>
 
 ## How to create a Share link
 
@@ -40,11 +40,12 @@ Your new share link should popup as a new entry on the page.
 
 !!! Tip
     Create multiple share links for different people to have better control over who can shock you!
+
 <br></br>
 
 ## Customize your Share link
 !!! Info
-    You can set limits to ``strenght``, ``duration`` or what kind of ``command`` someone can use for each share link.  
+    You can set limits to ``intensity``, ``duration`` or what kind of ``command`` someone can use for each share link.  
     You can also ``Pause`` the link so nobody can send commands with this link.  
 ### Edit the limits  
   1. Open your share link page again and select the share link you want to edit, there you open the share links context menu and choose ``Edit Mode``.
@@ -53,7 +54,7 @@ Your new share link should popup as a new entry on the page.
   2. The shocker controls should now be orange indicating the ``Edit Mode``.
   ![Image "Image"](../static/guides/how-to-sharelinks/editinterface.png)  
   
-  3. You can now set the maximum strenght, duration and choose what kind of command can be send, Sound, Vibrate or Shock.
+  3. You can now set the maximum intensity, duration and choose what kind of command can be send, Sound, Vibrate or Shock.
 
   4. To exit the Edit Mode open the share links context menu again and choose ``Edit Mode``, it will return the controls to their normal color indicating that the Edit Mode is not active anymore.  
 
@@ -64,7 +65,7 @@ Your new share link should popup as a new entry on the page.
   2. It should now ``blur`` the shocker controls telling you it's paused, as long as the link is paused it will not accept any commands.
 ![Image "Image"](../static/guides/how-to-sharelinks/pausedlink.png)  
 
-  3. To unpause the share link again simply click on the ``Play Icon``.
+  3. To un-pause the share link again simply click on the ``Play Icon``.
 
   
 
