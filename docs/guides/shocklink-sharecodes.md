@@ -3,11 +3,11 @@
     **Don't wear the shocker somewhere near your neck or your heart.**  
     Check out [Safety](../safety/safety-rules.md) for more information. 
 
-!!! Info "What is a Share code?"
+!!! question "What is a Share code?"
     Share codes make it possible for someone with a Shocklink.net account to directly control your shocker with their account.  
 !!! Info "Share codes can only be used once! " 
     You need to generate a new code every time you want to share the controls of your shocker with a new person.
-    Shares are permanent until unshared/deleted by the owner of the shocker.
+    Shares are permanent until unshared/deleted by the owner of the shocker.  
 
 
 ## What you need
@@ -44,7 +44,7 @@
 
 ## Edit share code limits
 You can also set limits to every share code.  
-!!! Info
+!!! bug ""
     For this step to work, someone has to use your share code first
 
 1. Go to [Shocklink.net](https://shocklink.net/) and login.
@@ -63,4 +63,5 @@ You can also set limits to every share code.
     You can also pause a specific share to temporarily stop the person from using this shocker.  
     Inside the share list, click the pause button in front of their account name, do the same again to un-pause it.  
 !!! Info "Deleting Shares"
-    In the same context menu where you can edit the share code limits you can also click ``unshare`` to delete the share code, this will unbind the shocker from the persons account and they can no longer control the shocker.
+    In the same context menu where you can edit the share code limits you can also click ``unshare`` to delete the share code, this will unbind the shocker from the persons account and they can no longer control the shocker.  
+  

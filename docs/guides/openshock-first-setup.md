@@ -58,5 +58,5 @@ If everything went well it should show a **green icon** next to the device name 
     To turn your shocker ``off`` press the power button it should ``beep twice``.  
     To turn it back ``on`` press the power button it should ``beep once``.  
 
-!!! Warning "Help"
+!!! question "Help"
     If you need additional help, join our [Discord](https://shocklink.net/discord)

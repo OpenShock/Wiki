@@ -4,7 +4,7 @@
     **Don't wear the shocker somewhere near your neck or your heart.**  
     Check out [Safety](../safety/safety-rules.md) for more information.  
 
-!!! Info "What is ShockOsc?"
+!!! question "What is ShockOsc?"
     ShockOsc is an application made for Shocklink that uses OSC to trigger your shockers from an in-game command.  
     OSC is a service implemented in VRChat that allows the communication between the game and 3rd party applications.  
 
