@@ -43,9 +43,6 @@ nav:
         - 'hardware/boards/wemos/lolin-s3.md'
     - Radio:
       - hardware/radio/index.md
-  - Software:
-    - Shockers:
-      - software/shockers/caixianlin.md
   - Vendors:
     - Hardware:
       - 'vendors/hardware/index.md'
