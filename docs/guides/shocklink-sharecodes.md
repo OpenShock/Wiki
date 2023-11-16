@@ -13,7 +13,9 @@
 ## What you need
 - [Shocklink.net account](https://shocklink.net/)
 - A working shocker ([see the First time Setup guide](openshock-first-setup.md))
-- A person you trust
+- A person you trust  
+
+<br></br>
 
 ## Create a share code
 1. Go to [Shocklink.net](https://shocklink.net/) and login.
@@ -25,6 +27,8 @@
 5. Send this code to a person you trust.
 ![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_FindCode.png) 
 
+<br></br>
+
 ## Use a share code
 1. Go to [Shocklink.net](https://shocklink.net/) and login.
 2. Switch to the ``Shockers`` section, then go to ``Shared``.
@@ -35,6 +39,8 @@
 ![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_Added.png)
 !!! Tip
     You can find all shockers you added with a share code on the same page in your account under ``Shockers`` -> ``Shared``
+
+<br></br>
 
 ## Edit share code limits
 You can also set limits to every share code.  

@@ -12,7 +12,7 @@
 - [Shocklink.net account](https://shocklink.net/)
 - A working shocker ([see the First time Setup guide](openshock-first-setup.md))
 
-
+<br></br>
 
 ## How to create a Share link
 
@@ -40,6 +40,7 @@ Your new share link should popup as a new entry on the page.
 
 !!! Tip
     Create multiple share links for different people to have better control over who can shock you!
+
 <br></br>
 
 ## Customize your Share link

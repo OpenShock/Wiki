@@ -14,9 +14,7 @@
 
 
 
-## Setup ESP
-
-
+## Setup ESP  
 1. To Setup your ESP (this is the communication device between the API and your shocker) you have to connect it to a power source, like a USB power adapter or your PC's USB Port (the ESP uses USB-C).
 2. After you powered up your ESP grab your **phone** and search for a WiFi network named similar to this: ``Openshock-24:DC:C3:9F:72:C8`` and connect to it.  
 ![Image "image"](../static/guides/first-setup/WiFioverview.png)  
@@ -39,8 +37,9 @@ If everything went well it should show a **green icon** next to the device name 
 
 !!! Tip
     You can just plug and unplug your ESP, it should reconnect as soon as it is powered up again.
-
+    
 <br></br>
+
 ## Pair a shocker
 1. Make sure you charged the shocker first.
 2. Make sure your ESP is connected to the website. ([Setup ESP](#setup-esp))

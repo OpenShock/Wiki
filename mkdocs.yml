@@ -5,8 +5,7 @@ repo_url: https://github.com/OpenShock/Wiki
 
 nav:
   - Home: index.md
-  - Safety:
-      - safety/safety-rules.md
+  - Safety: safety/safety-rules.md
   - Guides:
     - Quickstart:
       - quickstart/what-you-need.md

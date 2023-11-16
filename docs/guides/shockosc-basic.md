@@ -8,12 +8,13 @@
     ShockOsc is an application made for Shocklink that uses OSC to trigger your shockers from an in-game command.  
     OSC is a service implemented in VRChat that allows the communication between the game and 3rd party applications.  
 
-    
 ## What you need
 
 - [Fully setup shocker](openshock-first-setup.md)
 - [Newest ShockOsc](https://github.com/OpenShock/ShockOsc/releases)
 - Text editor, Notepad or [Notepad++](https://notepad-plus-plus.org/) for example
+
+<br></br>
 
 ## Setup ShockOsc
 1. [Download](https://github.com/OpenShock/ShockOsc/releases) and store the ``ShockOsc.exe`` file at your desired location on your PC.  
@@ -78,14 +79,15 @@ Both can be found in your account on [Shocklink.net](https://shocklink.net/)
       </ol>
     </details>
 
+<br></br>
+
 ## Configure Limits
 You can also set limits in ShockOsc. 
 !!! Tip
     Time is set in milliseconds  
     1 second = 1000 milliseconds  
-
     
-### Random strenght and duration
+### Random strength and duration
 This way you will be shocked for a random strength or random duration or both when someone triggers your ShockOsc.  
 
 1. Open your ``config.json``.
@@ -100,6 +102,8 @@ This way you will be shocked for a fixed strength or duration or both when someo
 2. Set ``RandomIntensity`` and/or ``RandomDuration``  to ``false``, you can configure these individually. 
 3. Edit the ``FixedIntensity`` and/or ``FixedDuration`` to the fixed value you want.
 4. Save the config file, you are done! 🎉  
+
+<br></br>
 
 ## Example Config
 !!! Info "Example Config"  
