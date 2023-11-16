@@ -5,7 +5,7 @@
 
 !!! Info "What is a Share code?"
     Share codes make it possible for someone with a Shocklink.net account to directly control your shocker with their account.  
-!!! Info "Sharecodes can only be used once! " 
+!!! Info "Share codes can only be used once! " 
     You need to generate a new code every time you want to share the controls of your shocker with a new person.
     Shares are permanent until unshared/deleted by the owner of the shocker.
 
