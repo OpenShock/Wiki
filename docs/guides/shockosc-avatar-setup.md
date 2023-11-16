@@ -20,7 +20,7 @@
     Make sure you have OSC enabled in your Action Menu inside VRChat.  
   
 !!! Tip "Avatar Update Info"
-    If you update an existing avatar, make sure you delete the OSC config files in ``C:\Users\%USERPROFILE%\AppData\LocalLow\VRChat\VRChat\OSC``, they are not important for the game since they only hold the avatar parameters for OSC to use, they get regenerated everytime you change your avatar, but VRChat fails to update them somethimes when a new parameter got added to an Avatar. 
+    If you update an existing avatar, make sure you delete the OSC config files in ``C:\Users\%USERPROFILE%\AppData\LocalLow\VRChat\VRChat\OSC``, they are not important for the game since they only hold the avatar parameters for OSC to use, they get regenerated every time you change your avatar, but VRChat fails to update them sometimes when a new parameter got added to an Avatar. 
   
     Reload your Avatar after that.
 <br></br>
@@ -34,7 +34,7 @@ to be done
 <br></br>
 <!-- 
 !!! Info "Avatar Update Info"
-    If you update an existing avatar, make sure you delete the OSC config files in ``C:\Users\%USERPROFILE%\AppData\LocalLow\VRChat\VRChat\OSC``, they are not important for the game since they only hold the avatar parameters for OSC to use, they get regenerated everytime you change your avatar, but VRChat fails to update them somethimes when a new parameter got added to an Avatar. 
+    If you update an existing avatar, make sure you delete the OSC config files in ``C:\Users\%USERPROFILE%\AppData\LocalLow\VRChat\VRChat\OSC``, they are not important for the game since they only hold the avatar parameters for OSC to use, they get regenerated every time you change your avatar, but VRChat fails to update them sometimes when a new parameter got added to an Avatar. 
 -->
 ## List of available parameters
 
@@ -48,7 +48,7 @@ to be done
     
     ``ShockOsc/{ShockerName}_Stretch`` (float)  
     <details>
-    can be used to control the shock strenght  
+    can be used to control the shock strength  
     (ex. stretch a bone to 50% and let go to shock someone for 50%)
     </details>  
 

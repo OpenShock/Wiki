@@ -5,7 +5,7 @@
     Check out [Safety](../safety/safety-rules.md) for more information.  
 
 !!! Info "What is ShockOsc?"
-    ShockOsc is an application made for Shocklink that uses OSC to trigger your shockers from an ingame command.  
+    ShockOsc is an application made for Shocklink that uses OSC to trigger your shockers from an in-game command.  
     OSC is a service implemented in VRChat that allows the communication between the game and 3rd party applications.  
 
     
@@ -83,17 +83,16 @@ You can also set limits in ShockOsc.
 !!! Tip
     Time is set in milliseconds  
     1 second = 1000 milliseconds  
-
 ### Random strenght and duration
-This way you will be shocked for a random strenght or random duration or both when someone triggers your ShockOsc.  
+This way you will be shocked for a random strength or random duration or both when someone triggers your ShockOsc.  
 
 1. Open your ``config.json``.
 2. Make sure ``RandomIntensity`` and/or ``RandomDuration`` is set to ``true``, you can configure these individually. 
 3. Edit the ``IntensityRange`` and ``DurationRange``.
 4. Save the config file, you are done!
 
-### Fixed strenght and duration
-This way you will be shocked for a fixed strenght or duration or both when someone triggers you ShockOsc.  
+### Fixed strength and duration
+This way you will be shocked for a fixed strength or duration or both when someone triggers you ShockOsc.  
 
 1. Open your ``config.json``.
 2. Set ``RandomIntensity`` and/or ``RandomDuration``  to ``false``, you can configure these individually. 

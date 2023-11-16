@@ -1,5 +1,5 @@
 # Safety Rules 
-!!! failure "Disclamer"
+!!! failure "Disclaimer"
     Please keep in mind that this is an Adult Toy (18+) with the purpose of Inflicting pain on your Partner and should only be used with consent.
 
 !!! Warning "DO NOT wear your Shockers near these Zones"

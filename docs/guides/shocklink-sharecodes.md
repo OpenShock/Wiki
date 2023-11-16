@@ -6,7 +6,7 @@
 !!! Info "What is a Share code?"
     Share codes make it possible for someone with a Shocklink.net account to directly control your shocker with their account.  
 !!! Info "Sharecodes can only be used once! " 
-    You need to generate a new code everytime you want to share the controls of your shocker with a new person.
+    You need to generate a new code every time you want to share the controls of your shocker with a new person.
     Shares are permanent until unshared/deleted by the owner of the shocker.
 
 
@@ -42,7 +42,7 @@ You can also set limits to every share code.
     For this step to work, someone has to use your share code first
 
 1. Go to [Shocklink.net](https://shocklink.net/) and login.
-2. Open up the ``Shockers`` section and open the context menu of the shocker you want to edit the code for.
+2. Switch to the ``Shockers`` section and open up the context menu of the shocker you want to edit the code for.
 ![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_ContextMenuShocker.png) 
 3. Inside the context menu click on ``Shares``.
 4. After someone added your share code you should be able to see their account in the list.
@@ -55,6 +55,6 @@ You can also set limits to every share code.
 
 !!! Tip
     You can also pause a specific share to temporarily stop the person from using this shocker.  
-    Inside the share list, click the pause button in front of their account name, do the same again to unpause it.  
+    Inside the share list, click the pause button in front of their account name, do the same again to un-pause it.  
 !!! Info "Deleting Shares"
     In the same context menu where you can edit the share code limits you can also click ``unshare`` to delete the share code, this will unbind the shocker from the persons account and they can no longer control the shocker.
