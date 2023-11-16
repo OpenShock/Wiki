@@ -23,7 +23,7 @@
 3. Open ``config.json`` in a text editor, we need to configure two things , your ``API Token`` and your ``Shocker ID``.  
 Both can be found in your account on [Shocklink.net](https://shocklink.net/)
 
-??? Info "Configure the API Token"
+??? note "Configure the API Token"
     1. On [Shocklink.net](https://shocklink.net/) go to ``API Tokens``  
     ![Image "Image"](../static/guides/shockosc/finds_apitokens.png)  
     2. Press the ``green plus`` at the bottom.  
@@ -40,7 +40,7 @@ Both can be found in your account on [Shocklink.net](https://shocklink.net/)
         Obviously you should use your own APi Token 😉
 
 
-??? Info "Configure the Shocker ID"
+??? note "Configure the Shocker ID"
     1. On [Shocklink.net](https://shocklink.net/) go to ``Shockers``  
     ![Image "Image"](../static/guides/shockosc/find_shockers.png)  
     2. Open the context menu of the shocker you want to use  
@@ -83,6 +83,30 @@ This way you will be shocked for a random strength or random duration or both wh
 2. Make sure ``RandomIntensity`` and/or ``RandomDuration`` is set to ``true``, you can configure these individually. 
 3. Edit the ``IntensityRange`` and ``DurationRange``.
 4. Save the config file, you are done!
+??? example
+    ```json
+    "Behaviour": {
+      "RandomIntensity": true,    <---- configure this
+      "RandomDuration": true,     <---- configure this
+      "RandomDurationStep": 1000,
+      "DurationRange": {
+        "Min": 1000,              <---- configure this
+        "Max": 10000              <---- configure this
+      },
+      "IntensityRange": {
+        "Min": 1,                 <---- configure this
+        "Max": 100                <---- configure this
+      },
+      "FixedIntensity": 50,
+      "FixedDuration": 2000,
+      "HoldTime": 250,
+      "CooldownTime": 10000,
+      "WhileBoneHeld": "Vibrate",
+      "DisableWhileAfk": true,
+      "ForceUnmute": false
+    },
+    ```
+
 
 ### Fixed strength and duration
 This way you will be shocked for a fixed strength or duration or both when someone triggers you ShockOsc.  
@@ -91,12 +115,35 @@ This way you will be shocked for a fixed strength or duration or both when someo
 2. Set ``RandomIntensity`` and/or ``RandomDuration``  to ``false``, you can configure these individually. 
 3. Edit the ``FixedIntensity`` and/or ``FixedDuration`` to the fixed value you want.
 4. Save the config file, you are done! 🎉  
+??? example
+    ```json
+    "Behaviour": {
+      "RandomIntensity": false,    <---- configure this
+      "RandomDuration": false,     <---- configure this
+      "RandomDurationStep": 1000,
+      "DurationRange": {
+        "Min": 1000,
+        "Max": 10000
+      },
+      "IntensityRange": {
+        "Min": 1,
+        "Max": 100
+      },
+      "FixedIntensity": 50,       <---- configure this
+      "FixedDuration": 2000,      <---- configure this
+      "HoldTime": 250,
+      "CooldownTime": 10000,
+      "WhileBoneHeld": "Vibrate",
+      "DisableWhileAfk": true,
+      "ForceUnmute": false
+    },
+    ```
 
 <br></br>
 
 ## Example Config
-??? example "Example Config"  
-    After following this guide your config should look something like this:  
+After following this guide your config should look something like this: 
+??? example "Example Config"   
     ```json
     "Osc": {
         "Chatbox": true,
