@@ -18,32 +18,32 @@
 ![Image "Image"](../static/guides/shockosc/example_settings3.png)  
 4. Now upload your Avatar and you are ready to go! 🎉  
 
-!!! failure "Activate OSC"
-    Make sure you have OSC enabled in your Action Menu inside VRChat.  
-  
+!!! bug "Activate OSC"
+    Make sure that you have [enabled OSC](https://docs.vrchat.com/docs/osc-overview#how-do-i-use-it) inside VRChat.  
+
 !!! Tip "Avatar Update Info"
     If you update an existing avatar, make sure you delete the OSC config files in ``C:\Users\%USERPROFILE%\AppData\LocalLow\VRChat\VRChat\OSC``, they are not important for the game since they only hold the avatar parameters for OSC to use, they get regenerated every time you change your avatar, but VRChat fails to update them sometimes when a new parameter got added to an Avatar. 
-  
+
     Reload your Avatar after that.
 
 <br></br>
 
 ## Remote trigger
-!!! example "Still brewing!"
+!!! info "Still brewing!"
 
     Sorry, we haven't _quite_ gotten around to writing this set of articles just yet. **In the meantime, feel free to hit us up on [Discord](https://discord.gg/AHcCbXbEcF).**
 
 <br></br>
 
 ## Pull trigger
-!!! example "Still brewing!"
+!!! info "Still brewing!"
 
     Sorry, we haven't _quite_ gotten around to writing this set of articles just yet. **In the meantime, feel free to hit us up on [Discord](https://discord.gg/AHcCbXbEcF).**
 
 <br></br>
 
 ## Pause toggle
-!!! example "Still brewing!"
+!!! info "Still brewing!"
 
     Sorry, we haven't _quite_ gotten around to writing this set of articles just yet. **In the meantime, feel free to hit us up on [Discord](https://discord.gg/AHcCbXbEcF).** 
 

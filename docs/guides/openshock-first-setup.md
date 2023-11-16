@@ -1,8 +1,8 @@
 # Openshock - First time setup
 
-!!! Warning
+!!! danger "Safety Warning"
     **Don't wear the shocker somewhere near your neck or your heart.**  
-    Check out [Safety](../safety/safety-rules.md) for more information.
+    Check out [Safety](../safety/safety-rules.md) for more information. 
 
 ## What you need
 - USB cable with at least one USB-C connector and a PC _**or**_ USB Power adapter

@@ -1,7 +1,7 @@
 # Shocklink - Share codes
-!!! Warning
+!!! danger "Safety Warning"
     **Don't wear the shocker somewhere near your neck or your heart.**  
-    Check out [Safety](../safety/safety-rules.md) for more information.
+    Check out [Safety](../safety/safety-rules.md) for more information. 
 
 !!! Info "What is a Share code?"
     Share codes make it possible for someone with a Shocklink.net account to directly control your shocker with their account.  
