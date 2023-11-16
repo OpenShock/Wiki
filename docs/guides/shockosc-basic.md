@@ -83,6 +83,8 @@ You can also set limits in ShockOsc.
 !!! Tip
     Time is set in milliseconds  
     1 second = 1000 milliseconds  
+
+    
 ### Random strenght and duration
 This way you will be shocked for a random strength or random duration or both when someone triggers your ShockOsc.  
 
