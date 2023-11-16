@@ -55,7 +55,7 @@ You can also set limits to every share code.
 ![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_LinkedList.png) 
 5. Click on the context menu next to the share you want to set limits for and select edit.
 ![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_SharedContextMneu.png) 
-6. Set max ``strenght``and ``duration`` and also select what kind of ``commands`` the person can send.  
+6. Set max ``intensity``and ``duration`` and also select what kind of ``commands`` the person can send.  
 ![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_EditLimit.png) 
 7. Press save and you are done. 🎉
 

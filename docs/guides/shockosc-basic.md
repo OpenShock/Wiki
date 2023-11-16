@@ -76,8 +76,8 @@ You can also set limits in ShockOsc.
     Time is set in milliseconds  
     1 second = 1000 milliseconds  
     
-### Random strength and duration
-This way you will be shocked for a random strength or random duration or both when someone triggers your ShockOsc.  
+### Random intensity and duration
+This way you will be shocked for a random intensity or random duration or both when someone triggers your ShockOsc.  
 
 1. Open your ``config.json``.
 2. Make sure ``RandomIntensity`` and/or ``RandomDuration`` is set to ``true``, you can configure these individually. 
@@ -108,8 +108,8 @@ This way you will be shocked for a random strength or random duration or both wh
     ```
 
 
-### Fixed strength and duration
-This way you will be shocked for a fixed strength or duration or both when someone triggers you ShockOsc.  
+### Fixed intensity and duration
+This way you will be shocked for a fixed intensity or duration or both when someone triggers you ShockOsc.  
 
 1. Open your ``config.json``.
 2. Set ``RandomIntensity`` and/or ``RandomDuration``  to ``false``, you can configure these individually. 

@@ -58,7 +58,7 @@
     
 
 ??? "``ShockOsc/{ShockerName}_Stretch`` (float)"  
-    can be used to control the shock strength  
+    can be used to control the shock intensity  
     (ex. stretch a bone to 50% and let go to shock someone for 50%)  
 
 ??? Info "``ShockOsc/{ShockerName}_IsGrabbed`` (bool)"   
