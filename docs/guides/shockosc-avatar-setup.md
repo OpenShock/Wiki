@@ -51,67 +51,44 @@
 
 ## List of available parameters
 
-!!! Info
-    ### Avatar Dynamic Parameters  
+### Avatar Dynamic Parameters  
 
-    ``ShockOsc/{ShockerName}`` (bool)  
-    <details>
-    when set to <b>true</b> and held, will trigger a normal shock in ShockOSC
-    </details>  
+??? Info "``ShockOsc/{ShockerName}`` (bool)"
+    when set to ``true`` and held, will trigger a normal shock in ShockOSC
     
-    ``ShockOsc/{ShockerName}_Stretch`` (float)  
-    <details>
+
+??? "``ShockOsc/{ShockerName}_Stretch`` (float)"  
     can be used to control the shock strength  
-    (ex. stretch a bone to 50% and let go to shock someone for 50%)
-    </details>  
+    (ex. stretch a bone to 50% and let go to shock someone for 50%)  
 
-    ``ShockOsc/{ShockerName}_IsGrabbed`` (bool)   
-    <details>
-    mainly used  to indicate that a physbone is grabbed
-    </details>
-    
-    ``ShockOsc/{ShockerName}_IShock``  (bool) 
-    <details>
-    if set to <b>true</b> will shock immediately ignoring the configurated <code>HoldTime</code>.  
-    </details>
+??? Info "``ShockOsc/{ShockerName}_IsGrabbed`` (bool)"   
+    mainly used  to indicate that a Physbone is grabbed
 
-    ### Visual Parameters
-    ``ShockOsc/{ShockerName}_Active`` (bool)
-    <details>
-    can be used to display an active shock on your avatar (when the shocker is active, ShockOSC will set this to <b>true</b> if not it will be <b>false</b>)
-    </details>  
+??? "``ShockOsc/{ShockerName}_IShock``  (bool)" 
+    if set to ``true`` will shock immediately ignoring the configurated ``HoldTime``.  
 
-    ``ShockOsc/{ShockerName}_Cooldown`` (bool)
-    <details>
+### Visual Parameters
+??? Info "``ShockOsc/{ShockerName}_Active`` (bool)"
+    can be used to display an active shock on your avatar (when the shocker is active, ShockOSC will set this to ``true`` if not it will be ``false``)
+
+??? "``ShockOsc/{ShockerName}_Cooldown`` (bool)"
     can be used to read out if the shocker is on cooldown  
-    </details>  
 
-    ``ShockOsc/{ShockerName}_CooldownPercentage`` (float)
-    <details>
+??? Info "``ShockOsc/{ShockerName}_CooldownPercentage`` (float)"
     can be used to show how for long the cooldown is active
-    </details>
-        
-    ``ShockOsc/{ShockerName}_Intensity``  (float)
-    <details>
-    represents how close the shock was to maximum intensity from <b>IntensityRange</b>
-    </details>
-
-    ### Dummy Shockers  
-    ``_All``
-    <details>
-    can be used in place of a shocker name, <b>represents all</b> shockers configured in the ShockOSC config.  
-    (ex: if <b>ShockOsc/_All</b> is set to <b>true</b> on you Avatar, every shocker configured in ShockOSC will be triggered at the same time)
-    </details>
     
-    ``_Any``
-    <details>
-    can be used in place of a shocker name, <b>represents any</b> shocker configured in the ShockOSC config.  
-    (ex: if at least one of your shockers are currently shocking <b>ShockOsc/_Any_Active</b> will be <b>true</b>)
-    </details>  
+??? "``ShockOsc/{ShockerName}_Intensity``  (float)"
+    represents how close the shock was to maximum intensity from ``IntensityRange``
 
-    ### Config Parameters  
-    ``ShockOsc/_Config/Paused`` (bool)
-    <details>
-    As long as this parameter is <b>true</b>, all activity by ShockOsc will be paused, shockers will still receive commands via [Share links](shocklink-sharelinks.md) and Share codes.
-    </details>
-    <br></br>
+### Dummy Shockers  
+??? Info "``_All``"
+    can be used in place of a shocker name, **represents all** shockers configured in the ShockOSC config.  
+    (ex: if **ShockOsc/_All** is set to ``true`` on you Avatar, every shocker configured in ShockOSC will be triggered at the same time)
+
+??? "``_Any``"
+    can be used in place of a shocker name, **represents any** shocker configured in the ShockOSC config.  
+    (ex: if at least one of your shockers are currently shocking **ShockOsc/_Any_Active** will be ``true``)  
+
+### Config Parameters  
+??? Info "``ShockOsc/_Config/Paused`` (bool)"
+    As long as this parameter is ``true``, all activity by ShockOsc will be paused, shockers will still receive commands via [Share links](shocklink-sharelinks.md) and Share codes.  

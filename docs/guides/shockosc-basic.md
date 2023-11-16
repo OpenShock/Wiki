@@ -24,7 +24,7 @@
 Both can be found in your account on [Shocklink.net](https://shocklink.net/)
 
 ??? Info "Configure the API Token"
-    1. On the Shocklink page go to ``API Tokens``  
+    1. On [Shocklink.net](https://shocklink.net/) go to ``API Tokens``  
     ![Image "Image"](../../static/guides/shockosc/finds_apitokens.png)  
     2. Press the ``green plus`` at the bottom.  
     ![Image "Image"](../../static/guides/shockosc/green_plus.png)  
@@ -39,7 +39,7 @@ Both can be found in your account on [Shocklink.net](https://shocklink.net/)
 
 
 ??? Info "Configure the Shocker ID"
-    1. On the Shocklink page, go to ``Shockers``  
+    1. On [Shocklink.net](https://shocklink.net/) go to ``Shockers``  
     ![Image "Image"](../../static/guides/shockosc/find_shockers.png)  
     2. Open the context menu of the shocker you want to use  
     ![Image "Image"](../../static/guides/shockosc/find_shockerid.png)  
