@@ -47,7 +47,7 @@ Both can be found in your account on [Shocklink.net](https://shocklink.net/)
     ![Image "Image"](../static/guides/shockosc/find_shockerid.png)  
     3. Click on edit, and copy the ID  
     ![Image "Image"](../static/guides/shockosc/find_shockerid2.png)  
-    4. In your config you have to create a list for your shockers, there you have to paste your Shocker ID  
+    4. In your config you have to create a list for your shockers, there you have to paste your Shocker ID then save your config file.    
     It should look something like this at the end:  
     !!! example 
         ```json
@@ -82,8 +82,8 @@ This way you will be shocked for a random intensity or random duration or both w
 1. Open your ``config.json``.
 2. Make sure ``RandomIntensity`` and/or ``RandomDuration`` is set to ``true``, you can configure these individually. 
 3. Edit the ``IntensityRange`` and ``DurationRange``.
-4. Save the config file, you are done!
-??? example
+4. Save the config file, you are done! 🎉
+???+ example
     ```json
     "Behaviour": {
       "RandomIntensity": true,    <---- configure this
@@ -115,7 +115,7 @@ This way you will be shocked for a fixed intensity or duration or both when some
 2. Set ``RandomIntensity`` and/or ``RandomDuration``  to ``false``, you can configure these individually. 
 3. Edit the ``FixedIntensity`` and/or ``FixedDuration`` to the fixed value you want.
 4. Save the config file, you are done! 🎉  
-??? example
+???+ example
     ```json
     "Behaviour": {
       "RandomIntensity": false,    <---- configure this
@@ -143,7 +143,7 @@ This way you will be shocked for a fixed intensity or duration or both when some
 
 ## Example Config
 After following this guide your config should look something like this: 
-??? example "Example Config"   
+???+ example "Example Config"   
     ```json
     "Osc": {
         "Chatbox": true,

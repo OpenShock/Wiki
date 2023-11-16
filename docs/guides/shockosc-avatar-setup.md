@@ -59,7 +59,7 @@
 
 ??? "``ShockOsc/{ShockerName}_Stretch`` (float)"  
     can be used to control the shock intensity  
-    (ex. stretch a bone to 50% and let go to shock someone for 50%)  
+    (ex. stretch a bone to 50% and let go to get shocked for 50% intensity)  
 
 ??? Info "``ShockOsc/{ShockerName}_IsGrabbed`` (bool)"   
     mainly used  to indicate that a Physbone is grabbed
@@ -75,7 +75,8 @@
     can be used to read out if the shocker is on cooldown  
 
 ??? Info "``ShockOsc/{ShockerName}_CooldownPercentage`` (float)"
-    can be used to show how for long the cooldown is active
+    Reads out the shocker cooldown, 1 means cooldown and 0 means no cooldown.  
+    can be used to make a loading bar for example.  
     
 ??? "``ShockOsc/{ShockerName}_Intensity``  (float)"
     represents how close the shock was to maximum intensity from ``IntensityRange``
