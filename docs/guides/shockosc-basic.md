@@ -81,7 +81,8 @@ This way you will be shocked for a random intensity or random duration or both w
 1. Open your ``config.json``.
 2. Make sure ``RandomIntensity`` and/or ``RandomDuration`` is set to ``true``, you can configure these individually. 
 3. Edit the ``IntensityRange`` and/or ``DurationRange``.
-4. Save the config file, you are done! 🎉
+4. (optional) set the ``"CooldownTime"`` to the desired value. This will stop ShockOsc from reacting for x seconds after the last trigger.
+5. Save the config file, you are done! 🎉  
 ???+ example
     ```json
     "Behaviour": {
@@ -113,7 +114,8 @@ This way you will be shocked for a fixed intensity or duration or both when some
 1. Open your ``config.json``.
 2. Set ``RandomIntensity`` and/or ``RandomDuration``  to ``false``, you can configure these individually. 
 3. Edit the ``FixedIntensity`` and/or ``FixedDuration`` to the fixed value you want.
-4. Save the config file, you are done! 🎉  
+4. (optional) set the ``"CooldownTime"`` to the desired value. This will stop ShockOsc from reacting for x seconds after the last trigger.
+5. Save the config file, you are done! 🎉  
 ???+ example
     ```json
     "Behaviour": {
@@ -182,8 +184,8 @@ After following this guide your config should look something like this:
       }
     }
     ```
-!!! Info "VRChat Avatar Setup"
+!!! success "VRChat Avatar Setup"
     Check out the [VRChat Avatar Setup](shockosc-avatar-setup.md) Guide!
 
-!!! Tip "Advanced Configuration"
+!!! info "Advanced Configuration"
     On the [ShockOSC repository](https://github.com/OpenShock/ShockOsc) you can see additional configuration examples, but that would go beyond the limits of this simple guide  
