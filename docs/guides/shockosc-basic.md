@@ -20,10 +20,8 @@
 1. [Download](https://github.com/OpenShock/ShockOsc/releases) and store the ``ShockOsc.exe`` file at your desired location on your PC.  
    (at the moment there are two ShockOsc.exe files to download, you only need the ``OpenShock.ShockOsc.exe``)  
 2. Start the .exe for the first time, this will generate a ``config.json`` file in the same location as the .exe, press any button to close the window again.
-3. Open ``config.json`` in a text editor, we need to configure two things , your ``API Token`` and your ``Shocker ID``.  
-Both can be found in your account on [Shocklink.net](https://shocklink.net/)
-
-??? note "Configure the API Token"
+3. Open ``config.json`` in a text editor, we need to configure two things for ShockOsc to work, your ``API Token`` and your ``Shocker ID``.    
+??? abstract "Configure the API Token"
     1. On [Shocklink.net](https://shocklink.net/) go to ``API Tokens``  
     ![Image "Image"](../static/guides/shockosc/finds_apitokens.png)  
     2. Press the ``green plus`` at the bottom.  
@@ -40,7 +38,7 @@ Both can be found in your account on [Shocklink.net](https://shocklink.net/)
         Obviously you should use your own APi Token 😉
 
 
-??? note "Configure the Shocker ID"
+??? abstract "Configure the Shocker ID"
     1. On [Shocklink.net](https://shocklink.net/) go to ``Shockers``  
     ![Image "Image"](../static/guides/shockosc/find_shockers.png)  
     2. Open the context menu of the shocker you want to use  
@@ -67,7 +65,8 @@ Both can be found in your account on [Shocklink.net](https://shocklink.net/)
           "lefttoe": "38b1d0e6a-f9a0-4e93-9812-241eae9271793"}
         ...
         ```
-
+After finishing these steps, save your ``config.json``.   
+ShockOsc is now working and should connect to to your shocker(s) when you start it. 🎉  
 <br></br>
 
 ## Configure Limits
@@ -81,7 +80,7 @@ This way you will be shocked for a random intensity or random duration or both w
 
 1. Open your ``config.json``.
 2. Make sure ``RandomIntensity`` and/or ``RandomDuration`` is set to ``true``, you can configure these individually. 
-3. Edit the ``IntensityRange`` and ``DurationRange``.
+3. Edit the ``IntensityRange`` and/or ``DurationRange``.
 4. Save the config file, you are done! 🎉
 ???+ example
     ```json
@@ -183,7 +182,8 @@ After following this guide your config should look something like this:
       }
     }
     ```
-
+!!! Info "VRChat Avatar Setup"
+    Check out the [VRChat Avatar Setup](shockosc-avatar-setup.md) Guide!
 
 !!! Tip "Advanced Configuration"
     On the [ShockOSC repository](https://github.com/OpenShock/ShockOsc) you can see additional configuration examples, but that would go beyond the limits of this simple guide  
