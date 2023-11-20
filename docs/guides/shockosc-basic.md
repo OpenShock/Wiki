@@ -52,22 +52,18 @@
         === "One Shocker"
 
               ```json
-              ...
               "Shockers": {
                 "SHOCKERNAME": "18b1d0e6a-f9a0-4e93-9812-241eae9271791"
                 }
-              ...
               ```
         === "Multiple Shockers"
 
               ```json
-              ...
               "Shockers": {
                 "leftleg": "18b1d0e6a-f9a0-4e93-9812-241eae9271791", 
                 "rightleg": "28b1d0e6a-f9a0-4e93-9812-241eae9271792",
                 "lefttoe": "38b1d0e6a-f9a0-4e93-9812-241eae9271793"
                 }
-              ...
               ```
         **SHOCKERNAME** needs to be replaced by your own shocker name, the name is only used for ShockOsc and doesn't need to be the same as the one on the website.
 
@@ -99,8 +95,7 @@ You can also set limits in ShockOsc.
     3. Edit the ``IntensityRange`` and/or ``DurationRange``.
     4. Save the config file, you are done! 🎉  
     ???+ example
-        ```json hl_lines="3 4 7 8 11 12"
-        ...
+        ```json hl_lines="2 3 6 7 10 11"
         "Behaviour": {
           "RandomIntensity": true,
           "RandomDuration": true,
@@ -121,7 +116,6 @@ You can also set limits in ShockOsc.
           "DisableWhileAfk": true,
           "ForceUnmute": false
         },
-        ...
         ```
 === "Fixed intensity/duration"
     Get shocked for a fixed intensity/duration.  
@@ -131,8 +125,7 @@ You can also set limits in ShockOsc.
     3. Edit the ``FixedIntensity`` and/or ``FixedDuration`` to the fixed value you want.
     4. Save the config file, you are done! 🎉  
     ???+ example
-        ```json hl_lines="3 4 14 15"
-        ...
+        ```json hl_lines="2 3 13 14"
         "Behaviour": {
           "RandomIntensity": false,
           "RandomDuration": false,
@@ -153,7 +146,6 @@ You can also set limits in ShockOsc.
           "DisableWhileAfk": true,
           "ForceUnmute": false
         },
-        ...
         ```
 
 ### Cooldown
@@ -162,8 +154,7 @@ You can also set limits in ShockOsc.
 
 - To configure your cooldown duration, set the ``"CooldownTime":`` inside the ``config.json`` to the value you want.
 !!! example
-    ```json hl_lines="5"
-    ...
+    ```json hl_lines="4"
     "FixedIntensity": 50,
     "FixedDuration": 2000,
     "HoldTime": 250,
@@ -171,7 +162,6 @@ You can also set limits in ShockOsc.
     "WhileBoneHeld": "Vibrate",
     "DisableWhileAfk": true,
     "ForceUnmute": false
-    ...
     ```
 
 <br></br>
