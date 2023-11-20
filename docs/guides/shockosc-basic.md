@@ -45,26 +45,30 @@
     ![Image "Image"](../static/guides/shockosc/find_shockerid.png)  
     3. Click on edit, and copy the ID  
     ![Image "Image"](../static/guides/shockosc/find_shockerid2.png)  
-    4. In your config you have to create a list for your shockers, there you have to paste your Shocker ID then save your config file.    
-    It should look something like this at the end:  
+    4. In your config you have to create a list for your shockers, there you have to paste your Shocker ID, then save your config file.    
+    It should look like this at the end:  
     !!! example 
-        ```json
-        ...
-        "Shockers": {
-          "SHOCKERNAME": "18b1d0e6a-f9a0-4e93-9812-241eae9271791"}
-        ...
-        ```  
-        ``SHOCKERNAME`` can be replaced by your own name for your shocker, ``leg`` for example, the name doesn't need to match the name on Shocklink.net, this name is later used to create a parameter on your avatar.  
-              
-        (optional) You <u><b>can</b></u> also add more shockers, make sure you don't use the same ID or Name twice, this doesn't work.<br>
-        ```json
-        ...
-        "Shockers": {
-          "leftleg": "18b1d0e6a-f9a0-4e93-9812-241eae9271791", 
-          "rightleg": "28b1d0e6a-f9a0-4e93-9812-241eae9271792",
-          "lefttoe": "38b1d0e6a-f9a0-4e93-9812-241eae9271793"}
-        ...
-        ```
+
+        === "One Shocker"
+
+              ```json
+              ...
+              "Shockers": {
+                "SHOCKERNAME": "18b1d0e6a-f9a0-4e93-9812-241eae9271791"}
+              ...
+              ```
+        === "Multiple Shockers"
+
+              ```json
+              ...
+              "Shockers": {
+                "leftleg": "18b1d0e6a-f9a0-4e93-9812-241eae9271791", 
+                "rightleg": "28b1d0e6a-f9a0-4e93-9812-241eae9271792",
+                "lefttoe": "38b1d0e6a-f9a0-4e93-9812-241eae9271793"}
+              ...
+              ```
+        **SHOCKERNAME** needs to be replaced by your own shocker name, the name is only used for ShockOsc and doesn't need to be the same as the one on the website.
+
 After finishing these steps, save your ``config.json``.   
 ShockOsc is now working and should connect to to your shocker(s) when you start it. 🎉  
 <br></br>

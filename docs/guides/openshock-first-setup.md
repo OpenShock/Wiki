@@ -7,8 +7,8 @@
 ## What you need
 - USB cable with at least one USB-C connector and a PC _**or**_ USB Power adapter
 - A Smartphone with a Webbrower (Chrome, Firefox etc.)
-- ESP board
-- Shocker
+- [ESP board](../hardware/boards/index.md)
+- [Shocker](../hardware/shockers/index.md)
 - [Shocklink account](https://shocklink.net/)
 
 
