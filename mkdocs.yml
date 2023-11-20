@@ -70,6 +70,7 @@ theme:
     - navigation.tracking
     - navigation.indexes
     - content.tabs.link
+    - content.code.annotate
   custom_dir: overrides
   palette: 
     # Palette toggle for dark mode

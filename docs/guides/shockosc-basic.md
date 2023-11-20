@@ -70,78 +70,106 @@
         **SHOCKERNAME** needs to be replaced by your own shocker name, the name is only used for ShockOsc and doesn't need to be the same as the one on the website.
 
 After finishing these steps, save your ``config.json``.   
-ShockOsc is now working and should connect to to your shocker(s) when you start it. 🎉  
+ShockOsc is now working and should connect to to your shocker(s) when you start it. 🎉 
+
+!!! success "VRChat Avatar Setup"
+    Check out the [VRChat Avatar Setup](shockosc-avatar-setup.md) Guide!  
+    **Keep reading this guide to configure the limits of your ShockOsc.**
+
 <br></br>
 
 ## Configure Limits
 You can also set limits in ShockOsc. 
+
 !!! Tip
     Time is set in milliseconds  
-    1 second = 1000 milliseconds  
-    
-### Random intensity and duration
-This way you will be shocked for a random intensity or random duration or both when someone triggers your ShockOsc.  
+    1 second = 1000 milliseconds 
 
-1. Open your ``config.json``.
-2. Make sure ``RandomIntensity`` and/or ``RandomDuration`` is set to ``true``, you can configure these individually. 
-3. Edit the ``IntensityRange`` and/or ``DurationRange``.
-4. (optional) set the ``"CooldownTime"`` to the desired value. This will stop ShockOsc from reacting for x seconds after the last trigger.
-5. Save the config file, you are done! 🎉  
-???+ example
-    ```json
-    "Behaviour": {
-      "RandomIntensity": true,    <---- configure this
-      "RandomDuration": true,     <---- configure this
-      "RandomDurationStep": 1000,
-      "DurationRange": {
-        "Min": 1000,              <---- configure this
-        "Max": 10000              <---- configure this
-      },
-      "IntensityRange": {
-        "Min": 1,                 <---- configure this
-        "Max": 100                <---- configure this
-      },
-      "FixedIntensity": 50,
-      "FixedDuration": 2000,
-      "HoldTime": 250,
-      "CooldownTime": 10000,
-      "WhileBoneHeld": "Vibrate",
-      "DisableWhileAfk": true,
-      "ForceUnmute": false
-    },
-    ```
+### Shock Modes
+!!! question "Shock Modes?"
+    Yes! You can be shocked for a random intensity/duration or a fixed one.
 
+=== "Random intensity/duration" 
+    Get shocked for a random intensity/duration.  
 
-### Fixed intensity and duration
-This way you will be shocked for a fixed intensity or duration or both when someone triggers you ShockOsc.  
+    1. Open your ``config.json``.
+    2. Make sure ``RandomIntensity`` and/or ``RandomDuration`` is set to ``true``, you can configure these individually. 
+    3. Edit the ``IntensityRange`` and/or ``DurationRange``.
+    4. Save the config file, you are done! 🎉  
+    ???+ example
+        ```json hl_lines="3 4 7 8 11 12"
+        ...
+        "Behaviour": {
+          "RandomIntensity": true,
+          "RandomDuration": true,
+          "RandomDurationStep": 1000,
+          "DurationRange": {
+            "Min": 1000,
+            "Max": 10000
+          },
+          "IntensityRange": {
+            "Min": 1,
+            "Max": 100
+          },
+          "FixedIntensity": 50,
+          "FixedDuration": 2000,
+          "HoldTime": 250,
+          "CooldownTime": 10000,
+          "WhileBoneHeld": "Vibrate",
+          "DisableWhileAfk": true,
+          "ForceUnmute": false
+        },
+        ...
+        ```
+=== "Fixed intensity/duration"
+    Get shocked for a fixed intensity/duration.  
 
-1. Open your ``config.json``.
-2. Set ``RandomIntensity`` and/or ``RandomDuration``  to ``false``, you can configure these individually. 
-3. Edit the ``FixedIntensity`` and/or ``FixedDuration`` to the fixed value you want.
-4. (optional) set the ``"CooldownTime"`` to the desired value. This will stop ShockOsc from reacting for x seconds after the last trigger.
-5. Save the config file, you are done! 🎉  
-???+ example
-    ```json
-    "Behaviour": {
-      "RandomIntensity": false,    <---- configure this
-      "RandomDuration": false,     <---- configure this
-      "RandomDurationStep": 1000,
-      "DurationRange": {
-        "Min": 1000,
-        "Max": 10000
-      },
-      "IntensityRange": {
-        "Min": 1,
-        "Max": 100
-      },
-      "FixedIntensity": 50,       <---- configure this
-      "FixedDuration": 2000,      <---- configure this
-      "HoldTime": 250,
-      "CooldownTime": 10000,
-      "WhileBoneHeld": "Vibrate",
-      "DisableWhileAfk": true,
-      "ForceUnmute": false
-    },
+    1. Open your ``config.json``.
+    2. Set ``RandomIntensity`` and/or ``RandomDuration``  to ``false``, you can configure these individually. 
+    3. Edit the ``FixedIntensity`` and/or ``FixedDuration`` to the fixed value you want.
+    4. Save the config file, you are done! 🎉  
+    ???+ example
+        ```json hl_lines="3 4 14 15"
+        ...
+        "Behaviour": {
+          "RandomIntensity": false,
+          "RandomDuration": false,
+          "RandomDurationStep": 1000,
+          "DurationRange": {
+            "Min": 1000,
+            "Max": 10000
+          },
+          "IntensityRange": {
+            "Min": 1,
+            "Max": 100
+          },
+          "FixedIntensity": 50,      
+          "FixedDuration": 2000,    
+          "HoldTime": 250,
+          "CooldownTime": 10000,
+          "WhileBoneHeld": "Vibrate",
+          "DisableWhileAfk": true,
+          "ForceUnmute": false
+        },
+        ...
+        ```
+
+### Cooldown
+!!! question "What does a cooldown do?"
+    The cooldown will stop ShockOsc from shocking you for a certain amount of time after the last shock. 
+
+- To configure your cooldown duration, set the ``"CooldownTime":`` inside the ``config.json`` to the value you want.
+!!! example
+    ```json hl_lines="5"
+    ...
+    "FixedIntensity": 50,
+    "FixedDuration": 2000,
+    "HoldTime": 250,
+    "CooldownTime": 5000,
+    "WhileBoneHeld": "Vibrate",
+    "DisableWhileAfk": true,
+    "ForceUnmute": false
+    ...
     ```
 
 <br></br>
@@ -188,8 +216,6 @@ After following this guide your config should look something like this:
       }
     }
     ```
-!!! success "VRChat Avatar Setup"
-    Check out the [VRChat Avatar Setup](shockosc-avatar-setup.md) Guide!
 
 !!! info "Advanced Configuration"
     On the [ShockOSC repository](https://github.com/OpenShock/ShockOsc) you can see additional configuration examples, but that would go beyond the limits of this simple guide  
