@@ -32,7 +32,7 @@ Your new share link should popup as a new entry on the page.
   5. On the right side are three dots that open the ``context menu`` of the link.    
 ![Image "Image"](../static/guides/how-to-sharelinks/addshockertosharelink.png)  
   
-  6. Click on ``Add shocker`` and choose your shocker, you can add multiple shockers to the same link, just repeat this step.  
+  6. Click on ``Add shocker`` and choose your shocker, you can add multiple shockers to the same link, just repeat step 5 and 6.  
 ![Image "Image"](../static/guides/how-to-sharelinks/addshockertosharelink2.png)  
 
   7.  After adding your shocker(s) to the link you will see the shockers controls, that's it.  
