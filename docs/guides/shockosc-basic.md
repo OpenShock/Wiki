@@ -54,7 +54,8 @@
               ```json
               ...
               "Shockers": {
-                "SHOCKERNAME": "18b1d0e6a-f9a0-4e93-9812-241eae9271791"}
+                "SHOCKERNAME": "18b1d0e6a-f9a0-4e93-9812-241eae9271791"
+                }
               ...
               ```
         === "Multiple Shockers"
@@ -64,7 +65,8 @@
               "Shockers": {
                 "leftleg": "18b1d0e6a-f9a0-4e93-9812-241eae9271791", 
                 "rightleg": "28b1d0e6a-f9a0-4e93-9812-241eae9271792",
-                "lefttoe": "38b1d0e6a-f9a0-4e93-9812-241eae9271793"}
+                "lefttoe": "38b1d0e6a-f9a0-4e93-9812-241eae9271793"
+                }
               ...
               ```
         **SHOCKERNAME** needs to be replaced by your own shocker name, the name is only used for ShockOsc and doesn't need to be the same as the one on the website.
