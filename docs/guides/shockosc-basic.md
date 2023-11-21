@@ -27,7 +27,8 @@
     2. Press the ``green plus`` at the bottom.  
     ![Image "Image"](../static/guides/shockosc/green_plus.png)  
     3. Give it a name, for example "ShockOSC" and set no expiry date, after that click create.  
-    ![Image "Image"](../static/guides/shockosc/create_APIToken.png)  
+    **The API Token will only be displayed once in the confirmation window.**  
+    ![Image "Image"](../static/guides/shockosc/create_APIToken.png)
     ![Image "Image"](../static/guides/shockosc/API_Token.png)  
     4. Copy the API Token and paste it into the config at ``"ApiToken":`` then save the config file.  
     After that it should look like this:  
@@ -60,6 +61,7 @@
 
               ```json
               "Shockers": {
+                "SHOCKERNAME": "18b1d0e6a-f9a0-4e93-9812-241eae9271791",
                 "leftleg": "18b1d0e6a-f9a0-4e93-9812-241eae9271791", 
                 "rightleg": "28b1d0e6a-f9a0-4e93-9812-241eae9271792",
                 "lefttoe": "38b1d0e6a-f9a0-4e93-9812-241eae9271793"
@@ -69,10 +71,6 @@
 
 After finishing these steps, save your ``config.json``.   
 ShockOsc is now working and should connect to to your shocker(s) when you start it. 🎉 
-
-!!! success "VRChat Avatar Setup"
-    Check out the [VRChat Avatar Setup](shockosc-avatar-setup.md) Guide!  
-    **Keep reading this guide to configure the limits of your ShockOsc.**
 
 <br></br>
 
@@ -208,6 +206,8 @@ After following this guide your config should look something like this:
       }
     }
     ```
+!!! success "VRChat Avatar Setup"
+    Check out the [VRChat Avatar Setup](shockosc-avatar-setup.md) Guide!  
 
 !!! info "Advanced Configuration"
     On the [ShockOSC repository](https://github.com/OpenShock/ShockOsc) you can see additional configuration examples, but that would go beyond the limits of this simple guide  
