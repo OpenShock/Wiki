@@ -7,8 +7,8 @@
 ## What you need
 - USB cable with at least one USB-C connector and a PC _**or**_ USB Power adapter
 - A Smartphone with a Webbrower (Chrome, Firefox etc.)
-- ESP board
-- Shocker
+- [ESP board](../hardware/boards/index.md)
+- [Shocker](../hardware/shockers/index.md)
 - [Shocklink account](https://shocklink.net/)
 
 
@@ -21,7 +21,9 @@
 3. Now open your **phones browser** and type in ``10.10.10.10`` or ``openshock.local`` this should open up a web-interface for the ESP that looks like this:  
 ![Image "image"](../static/guides/first-setup/ESPWebGUI.png)  
 4. Lookup your Wi-Fi Network in the web-interface, press the green button next to it and type in your Wi-Fi password then press submit.
-5. Set the RF TX Pin, that is the number of the IO pin that the RF antenna data is connected to. (default 12, for pishock boards that is 15, if you don't know your pin, try asking for help on our [Discord](https://shocklink.net/discord)), type in your pin and press **Set** to change it.
+5. Set the ``RF TX Pin``, that is the number of the IO pin that the RF antenna data is connected to.  
+(default 12, if you don't know your pin, check out the [board documentation #pinout](../hardware/boards/pishock/2023-pishock.md/#pinout) and see if your board is documented or try asking for help on our [Discord](https://shocklink.net/discord)).  
+Type in your pin and press **Set** to change it.
 6. **On your PC** open [Shocklink.net](https://shocklink.net/) and create an account, if you don't have one already, after that go to ``Devices`` and click the **green + icon** at the lower right corner to create a new device.   
 ![Image "image"](../static/guides/first-setup/findaddbutton3.png)  
 7. Give it a name. To do that click on the **three dots** next to your newly created device's name and select **edit**, type in the name for the ESP (your name for example) into the name field, then press save.  

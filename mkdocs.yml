@@ -70,6 +70,8 @@ theme:
     - navigation.instant
     - navigation.tracking
     - navigation.indexes
+    - content.tabs.link
+    - content.code.annotate
   custom_dir: overrides
   palette: 
     # Palette toggle for dark mode
@@ -89,6 +91,8 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
   - tables
   - attr_list
   - pymdownx.emoji:

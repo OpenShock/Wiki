@@ -32,7 +32,7 @@ Your new share link should popup as a new entry on the page.
   5. On the right side are three dots that open the ``context menu`` of the link.    
 ![Image "Image"](../static/guides/how-to-sharelinks/addshockertosharelink.png)  
   
-  6. Click on ``Add shocker`` and choose your shocker, you can add multiple shockers to the same link, just repeat this step.  
+  6. Click on ``Add shocker`` and choose your shocker, you can add multiple shockers to the same link, just repeat step 5 and 6.  
 ![Image "Image"](../static/guides/how-to-sharelinks/addshockertosharelink2.png)  
 
   7.  After adding your shocker(s) to the link you will see the shockers controls, that's it.  
@@ -59,10 +59,10 @@ Your new share link should popup as a new entry on the page.
   4. To exit the Edit Mode open the share links context menu again and choose ``Edit Mode``, it will return the controls to their normal color indicating that the Edit Mode is not active anymore.  
 
 ### Pause your Share link
-  1. To ``Pause`` your share link go to Share links open the link you want to pause and click on the little pause icon next to the share links name.  
+  1. To ``Pause`` your share link go to Share links, open the link you want to pause and click on the little pause icon next to the share links name.  
 ![Image "Image"](../static/guides/how-to-sharelinks/pauseshocker.png)  
 
-  2. It should now ``blur`` the shocker controls telling you it's paused, as long as the link is paused it will not accept any commands.
+  2. It should now ``blur`` the shocker controls telling you it's paused, as long as the link is paused your shocker will not accept any commands from **this** link.
 ![Image "Image"](../static/guides/how-to-sharelinks/pausedlink.png)  
 
   3. To un-pause the share link again simply click on the ``Play Icon``.
