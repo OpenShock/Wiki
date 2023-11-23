@@ -32,7 +32,7 @@
 3. Create a Device:
     1. **On your PC** open [Shocklink.net](https://shocklink.net/).
     2. Create an account. *(If you don't have one already)* 
-    3. Go to ``Devices`` and click the **green + icon** at the lower right corner to create a new device.   
+    3. Go to **Devices** and click the **green + icon** at the lower right corner to create a new device.   
     4. Give it a name: 
         1. Open the Context menu of the device. *(the three dots next to your newly created device)*
         2. Select **edit**.
@@ -67,7 +67,7 @@
 3. Create a Shocker.
     1. Go to [Shocklink.net](https://shocklink.net/)
     2. login if you are not logged in already.
-    3. Navigate to ``Shockers``.
+    3. Navigate to **Shockers**.
     4. Press the green **+** icon at the bottom right corner. 
     5. Select your earlier created **device**. 
     6. Give it a **name**.
@@ -79,7 +79,7 @@
 4. Pair your Shocker.
     1. Grab your shocker and turn it on. 
     2. Hold the power button until it beeps and the LED flashes fast. *This means the pair mode is active*
-    3. On the website click the ``Speaker icon`` of your shocker, if your shocker now makes a sound, the pairing was successful.
+    3. On the website click the _**Speaker icon**_ of your shocker, if your shocker now makes a sound, the pairing was successful.
     ??? Info "Image"
         ![image](../static/guides/first-setup/find_sound_button.png)
 **Everything should work now, have fun!** 🎉  
@@ -90,5 +90,5 @@
     Your shocker will remember the ESP, no need to pair it every time.  
 
 !!! Tip "Power Shocker On/Off"
-    To turn your shocker ``off`` press the power button it should ``beep twice``.  
-    To turn it back ``on`` press the power button it should ``beep once``.  
+    To turn your shocker ``off`` press the power button it should **beep twice**.  
+    To turn it back ``on`` press the power button it should **beep once**.  

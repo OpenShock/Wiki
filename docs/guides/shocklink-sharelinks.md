@@ -10,7 +10,7 @@
 
 ## What you need
 - [Shocklink.net account](https://shocklink.net/)
-- A working shocker ([see the First time Setup guide](openshock-first-setup.md))
+- [A working shocker](openshock-first-setup.md)
 
 <br></br>
 
