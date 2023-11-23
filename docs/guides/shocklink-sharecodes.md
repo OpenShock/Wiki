@@ -28,6 +28,7 @@
         ![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_ContextMenuShocker.png)  
         ![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_CreateCode.png)  
         ![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_FindCode.png)  
+
 <br></br>
 
 ## Use a share code
@@ -66,6 +67,8 @@ You can also set limits to every share code.
         ![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_SharedContextMneu.png) 
         ![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_EditLimit.png) 
 
+<br></br>
+
 ## Pause/Unpause a share code
 !!! bug "Info"
     For this step to work, someone has to [use your share code](#use-a-share-code) first
@@ -80,6 +83,8 @@ You can also set limits to every share code.
     ??? Info "Images"
         ![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_ContextMenuShocker.png) 
         ![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_LinkedList.png) 
+
+<br></br>
 
 ## Unshare/Delete a share code
 !!! bug "Info"

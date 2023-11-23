@@ -148,6 +148,8 @@ You can also set limits in ShockOsc.
         },
         ```
 
+<br></br>
+
 ### Cooldown
 !!! question "What does a cooldown do?"
     The cooldown will stop ShockOsc from shocking you for a certain amount of time after the last shock. 

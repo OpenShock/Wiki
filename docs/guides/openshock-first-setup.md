@@ -20,7 +20,7 @@
     _**The ESP uses USB-C**_
 1. Connect your **Phone** to the ESP:
     1. Power up your ESP and grab your **phone**.
-    2. With your phone, search for a Wi-Fi network named similar to ``Openshock-24:DC:C3:9F:72:C8`` and connect to it.  
+    2. On your phone, search for a Wi-Fi network named similar to ``Openshock-24:DC:C3:9F:72:C8`` and connect to it.  
     ??? Info "Image"
         ![Image "image"](../static/guides/first-setup/WiFioverview.png)  
 2. Connect the ESP to your Wi-Fi Network:

@@ -16,20 +16,20 @@
 
 ## How to create a Share link
 
-  1. Create the Link:
+1. Create the Link:
     1. Open [Shocklink.net](https://shocklink.net/).
     2. Go to the **Share Links** section.  
     3. Click **Add new share link!**    
-    4. (optional) Set an expiry date.
-    5. Give it a **name**.
-    6. Press **Create**
-      * Your new share link should popup as a new entry on the page.      
-    ??? Info "Image"
+    4. Give it a **name**.
+        * (optional) Set an expiry date.
+    5. Press **Create**
+        * Your new share link should popup as a new entry on the page.      
+    ??? Info "Images"
         ![Image "Image"](../static/guides/how-to-sharelinks/findshocklinks.png)  
         ![Image "Image"](../static/guides/how-to-sharelinks/addnewsharelink.png)  
         ![Image "Image"](../static/guides/how-to-sharelinks/createshocklink.png)  
         ![Image "Image"](../static/guides/how-to-sharelinks/sharelinkcreated.png)  
-  2. Add a Shocker to the Link: 
+2. Add a Shocker to the Link: 
     1. Click on the newly created link.
     2. Open the Context Menu *(the three dots on the right side open the **context menu** of the link.)*
     3. Click on **Add shocker**
@@ -39,8 +39,9 @@
     ??? Info "Images"
         ![Image "Image"](../static/guides/how-to-sharelinks/addshockertosharelink.png)  
         ![Image "Image"](../static/guides/how-to-sharelinks/addshockertosharelink2.png)  
+
 **That's it.**  
-Everyone with the share link can now control your shocker. 🎉  
+Everyone you send the share link to can now control your shocker. 🎉  
 
 !!! Tip
     Create multiple share links for different people to have better control over who can shock you!
@@ -52,7 +53,7 @@ Everyone with the share link can now control your shocker. 🎉
     You can set limits to _*intensity*_, _*duration*_ or what kind of _*command*_ someone can use for each share link.  
     You can also _*Pause*_ the link so nobody can send commands with this link.  
 ### Edit the limits  
-  1. Go to your [share link page](https://shocklink.net/#/dashboard/shares/links) and select the share link you want to edit.
+1. Go to your [share link page](https://shocklink.net/#/dashboard/shares/links) and select the share link you want to edit.
     1. Open the share links **Context Menu** 
     2. Select **Edit Mode**.
         * The shocker controls should change to orange indicating the **Edit Mode**.
@@ -61,19 +62,21 @@ Everyone with the share link can now control your shocker. 🎉
     ??? Info "Images"
         ![Image "Image"](../static/guides/how-to-sharelinks/editlinkllimits.png)
         ![Image "Image"](../static/guides/how-to-sharelinks/editinterface.png) 
-  **That's it.** 🎉
+
+**That's it.** 🎉
+
+<br></br>
 
 
 ### Pause your Share link
 !!! Info
     A paused link will not accept any commands.  
-  1. Go to your [share link page](https://shocklink.net/#/dashboard/shares/links) and select the share link you want to _**pause**_.
+1. Go to your [share link page](https://shocklink.net/#/dashboard/shares/links) and select the share link you want to _**pause**_.
     1. Click on the little pause icon next to the share links name.  
-      * It should now _**blur**_ the shocker controls telling you it's paused.
-    ??? Info "Image" 
-        ![Image "Image"](../static/guides/how-to-sharelinks/pauseshocker.png) 
+        * It should now _**blur**_ the shocker controls telling you it's paused.
 2. To un-pause the share link again simply click on the ``Play Icon``.
-??? Info "Image"
+??? Info "Images"
+    ![Image "Image"](../static/guides/how-to-sharelinks/pauseshocker.png) 
     ![Image "Image"](../static/guides/how-to-sharelinks/pausedlink.png)  
 
   
