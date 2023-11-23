@@ -14,51 +14,81 @@
 
 
 
-## Setup ESP  
-1. To Setup your ESP (this is the communication device between the API and your shocker) you have to connect it to a power source, like a USB power adapter or your PC's USB Port (the ESP uses USB-C).
-2. After you powered up your ESP grab your **phone** and search for a Wi-Fi network named similar to this: ``Openshock-24:DC:C3:9F:72:C8`` and connect to it.  
-![Image "image"](../static/guides/first-setup/WiFioverview.png)  
-3. Now open your **phones browser** and type in ``10.10.10.10`` or ``openshock.local`` this should open up a web-interface for the ESP that looks like this:  
-![Image "image"](../static/guides/first-setup/ESPWebGUI.png)  
-4. Lookup your Wi-Fi Network in the web-interface, press the green button next to it and type in your Wi-Fi password then press submit.
-5. Set the ``RF TX Pin``, that is the number of the IO pin that the RF antenna data is connected to.  
-(default 12, if you don't know your pin, check out the [board documentation #pinout](../hardware/boards/pishock/2023-pishock.md/#pinout) and see if your board is documented or try asking for help on our [Discord](https://shocklink.net/discord)).  
-Type in your pin and press **Set** to change it.
-6. **On your PC** open [Shocklink.net](https://shocklink.net/) and create an account, if you don't have one already, after that go to ``Devices`` and click the **green + icon** at the lower right corner to create a new device.   
-![Image "image"](../static/guides/first-setup/findaddbutton3.png)  
-7. Give it a name. To do that click on the **three dots** next to your newly created device's name and select **edit**, type in the name for the ESP (your name for example) into the name field, then press save.  
-![Image "image"](../static/guides/first-setup/find_device_context_menu.png)  
-![Image "image"](../static/guides/first-setup/edit_device.png)  
-8. Click on the **three dots** again, this time select "**pair**" and press "**get pair code**", this will generate a pair code.  
-![Image "image"](../static/guides/first-setup/findpaircode.png)  
-![Image "image"](../static/guides/first-setup/paircodeexample.png)  
-9. On your **phone** type the code into the Account Linking field of the ESP's web-interface, then press "**Pair**"  
-10. The setup of the ESP itself is done. yay! 🎉  
-If everything went well it should show a **green icon** next to the device name on the website and the Access Point of the ESP should be disabled, closing Wi-Fi Network of the device.  
-![Image "image"](../static/guides/first-setup/checkifonline.png)  
-
-!!! Tip
-    You can just plug and unplug your ESP, it should reconnect as soon as it is powered up again.
+## Setup the ESP  
+!!! Bug "Power on your ESP"
+    To Setup your ESP *(this is the communication device between the API and your shocker)* you have to connect it to a power source, a USB power adapter or your PC's USB port.  
+    _**The ESP uses USB-C**_
+1. Connect your **Phone** to the ESP:
+    1. Power up your ESP and grab your **phone**.
+    2. On your phone, search for a Wi-Fi network named similar to ``Openshock-24:DC:C3:9F:72:C8`` and connect to it.  
+    ??? Info "Image"
+        ![Image "image"](../static/guides/first-setup/WiFioverview.png)  
+2. Connect the ESP to your Wi-Fi Network:
+    1. Open your phones browser and type in ``10.10.10.10`` _**or**_ ``openshock.local`` this should open up a web-interface for the ESP. 
+    2. Lookup your routers Wi-Fi Network in the web-interface, press the green button next to it and type in your Wi-Fi password then press submit.  
+    *A green message should pop up if it's connected*
+    ??? Info "Image"
+        ![Image "image"](../static/guides/first-setup/ESPWebGUI.png)
+3. Create a Device:
+    1. **On your PC** open [Shocklink.net](https://shocklink.net/).
+    2. Create an account. *(If you don't have one already)* 
+    3. Go to **Devices** and click the **green + icon** at the lower right corner to create a new device.   
+    4. Give it a name: 
+        1. Open the Context menu of the device. *(the three dots next to your newly created device)*
+        2. Select **edit**.
+        3. Type in the name for the ESP *(your name for example)* into the name field.
+        4. Press save.
+    ??? Info "Images"
+        ![Image "image"](../static/guides/first-setup/findaddbutton3.png) 
+        ![Image "image"](../static/guides/first-setup/find_device_context_menu.png)
+        ![Image "image"](../static/guides/first-setup/edit_device.png)
+4. Pair the Device to your ESP:
+    1. Open the Context Menu of your device again.
+    2. Select **pair** and press **get pair code**, this will generate a new pair code. 
+    3. On your Phone type the code into the Account Linking field of the ESP's web-interface, then press **Pair**
+        * After you linked the ESP to your account it should shut down it's own Wi-Fi network.
+    ??? Info "Images"
+        ![Image "image"](../static/guides/first-setup/findpaircode.png)
+        ![Image "image"](../static/guides/first-setup/paircodeexample.png)
+5. The setup of the ESP itself is done. yay! 🎉   
+    - If everything went well it should show a **green icon** next to the device name on the website.
+    ??? Info "Image"
+        ![Image "image"](../static/guides/first-setup/checkifonline.png)
+!!! Info "RF TX Pin"
+    **DO NOT** change that, this is an advanced feature.  
+    It should be set correctly by default after flashing the Openshock firmware.  
+    For more information see [boards](../hardware/boards/index.md).
 
 <br></br>
 
 ## Pair a shocker
 1. Make sure you charged the shocker first.
 2. Make sure your ESP is connected to the website. ([Setup ESP](#setup-esp))
-3. Go to [Shocklink.net](https://shocklink.net/) and login if you are not logged in already.
-4. On Shocklink.net navigate to ``Shockers`` and click the green **+** icon at the bottom right corner, select your earlier created **device**, give it a **name** and select your **Model of shocker**, after that click create.  
-![image](../static/guides/first-setup/Create_shocker_green_plus.png) 
-![image](../static/guides/first-setup/create_shocker.png) 
-6. Grab your shocker and turn it on, then hold the power button until it beeps and the LED is flashing fast, indicating that it is in pair mode.
-6. On your website click the ``Speaker icon`` of your shocker, if your shocker now makes a sound, the pairing was successful.
-![image](../static/guides/first-setup/find_sound_button.png)
-7. Everything should work now, have fun! 🎉  
+3. Create a Shocker.
+    1. Go to [Shocklink.net](https://shocklink.net/)
+    2. login if you are not logged in already.
+    3. Navigate to **Shockers**.
+    4. Press the green **+** icon at the bottom right corner. 
+    5. Select your earlier created **device**. 
+    6. Give it a **name**.
+    7. Select your **Model of shocker**. 
+    8. Click **create**.  
+    ??? info "Images"
+        ![image](../static/guides/first-setup/Create_shocker_green_plus.png) 
+        ![image](../static/guides/first-setup/create_shocker.png) 
+4. Pair your Shocker.
+    1. Grab your shocker and turn it on. 
+    2. Hold the power button until it beeps and the LED flashes fast. *This means the pair mode is active*
+    3. On the website click the _**Speaker icon**_ of your shocker, if your shocker now makes a sound, the pairing was successful.
+    ??? Info "Image"
+        ![image](../static/guides/first-setup/find_sound_button.png)
+**Everything should work now, have fun!** 🎉  
+!!! question "Help"
+    If you need additional help, join our [Discord](https://shocklink.net/discord)
+
 !!! Info
     Your shocker will remember the ESP, no need to pair it every time.  
 
 !!! Tip "Power Shocker On/Off"
-    To turn your shocker ``off`` press the power button it should ``beep twice``.  
-    To turn it back ``on`` press the power button it should ``beep once``.  
-
-!!! question "Help"
-    If you need additional help, join our [Discord](https://shocklink.net/discord)
+    To turn your shocker ``off`` press the power button it should **beep twice**.  
+    To turn it back ``on`` press the power button it should **beep once**.  

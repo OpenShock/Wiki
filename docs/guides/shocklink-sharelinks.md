@@ -10,33 +10,38 @@
 
 ## What you need
 - [Shocklink.net account](https://shocklink.net/)
-- A working shocker ([see the First time Setup guide](openshock-first-setup.md))
+- [A working shocker](openshock-first-setup.md)
 
 <br></br>
 
 ## How to create a Share link
 
-  1. Open [Shocklink.net](https://shocklink.net/) and go to the ``Share Links`` section.  
-  ![Image "Image"](../static/guides/how-to-sharelinks/findshocklinks.png)  
+1. Create the Link:
+    1. Open [Shocklink.net](https://shocklink.net/).
+    2. Go to the **Share Links** section.  
+    3. Click **Add new share link!**    
+    4. Give it a **name**.
+        * (optional) Set an expiry date.
+    5. Press **Create**
+        * Your new share link should popup as a new entry on the page.      
+    ??? Info "Images"
+        ![Image "Image"](../static/guides/how-to-sharelinks/findshocklinks.png)  
+        ![Image "Image"](../static/guides/how-to-sharelinks/addnewsharelink.png)  
+        ![Image "Image"](../static/guides/how-to-sharelinks/createshocklink.png)  
+        ![Image "Image"](../static/guides/how-to-sharelinks/sharelinkcreated.png)  
+2. Add a Shocker to the Link: 
+    1. Click on the newly created link.
+    2. Open the Context Menu *(the three dots on the right side open the **context menu** of the link.)*
+    3. Click on **Add shocker**
+    4. Select your Shocker.
+    5. Press **Add** *(repeat that to add more shockers)*
+        * You should be able to see the shockers controls now.
+    ??? Info "Images"
+        ![Image "Image"](../static/guides/how-to-sharelinks/addshockertosharelink.png)  
+        ![Image "Image"](../static/guides/how-to-sharelinks/addshockertosharelink2.png)  
 
-  2. Click ``Add new share link!``  
-![Image "Image"](../static/guides/how-to-sharelinks/addnewsharelink.png)  
-
-  3. Here you can choose to set an expiry date and a name, after that press ``Create``  
-![Image "Image"](../static/guides/how-to-sharelinks/createshocklink.png)  
-Your new share link should popup as a new entry on the page.    
-![Image "Image"](../static/guides/how-to-sharelinks/sharelinkcreated.png)  
-
-  4. Now that you have created the link itself you need to add one or multiple shockers to it so they can be triggered with this link, to do that you click on the newly created link.
-  
-  5. On the right side are three dots that open the ``context menu`` of the link.    
-![Image "Image"](../static/guides/how-to-sharelinks/addshockertosharelink.png)  
-  
-  6. Click on ``Add shocker`` and choose your shocker, you can add multiple shockers to the same link, just repeat step 5 and 6.  
-![Image "Image"](../static/guides/how-to-sharelinks/addshockertosharelink2.png)  
-
-  7.  After adding your shocker(s) to the link you will see the shockers controls, that's it.  
-  Everyone with the share link can now control your shocker. 🎉  
+**That's it.**  
+Everyone you send the share link to can now control your shocker. 🎉  
 
 !!! Tip
     Create multiple share links for different people to have better control over who can shock you!
@@ -45,27 +50,34 @@ Your new share link should popup as a new entry on the page.
 
 ## Customize your Share link
 !!! Info
-    You can set limits to ``intensity``, ``duration`` or what kind of ``command`` someone can use for each share link.  
-    You can also ``Pause`` the link so nobody can send commands with this link.  
+    You can set limits to _*intensity*_, _*duration*_ or what kind of _*command*_ someone can use for each share link.  
+    You can also _*Pause*_ the link so nobody can send commands with this link.  
 ### Edit the limits  
-  1. Open your share link page again and select the share link you want to edit, there you open the share links context menu and choose ``Edit Mode``.
-  ![Image "Image"](../static/guides/how-to-sharelinks/editlinkllimits.png)  
-  
-  2. The shocker controls should now be orange indicating the ``Edit Mode``.
-  ![Image "Image"](../static/guides/how-to-sharelinks/editinterface.png)  
-  
-  3. You can now set the maximum intensity, duration and choose what kind of command can be send, Sound, Vibrate or Shock.
+1. Go to your [share link page](https://shocklink.net/#/dashboard/shares/links) and select the share link you want to edit.
+    1. Open the share links **Context Menu** 
+    2. Select **Edit Mode**.
+        * The shocker controls should change to orange indicating the **Edit Mode**.
+    3. Set the maximum _**intensity**_, _**duration**_ and choose what kind of _**command**_ can be send.
+    4. To exit the Edit Mode open the share links context menu and select **Edit Mode** again. This will return the controls to their normal color.
+    ??? Info "Images"
+        ![Image "Image"](../static/guides/how-to-sharelinks/editlinkllimits.png)
+        ![Image "Image"](../static/guides/how-to-sharelinks/editinterface.png) 
 
-  4. To exit the Edit Mode open the share links context menu again and choose ``Edit Mode``, it will return the controls to their normal color indicating that the Edit Mode is not active anymore.  
+**That's it.** 🎉
+
+<br></br>
+
 
 ### Pause your Share link
-  1. To ``Pause`` your share link go to Share links, open the link you want to pause and click on the little pause icon next to the share links name.  
-![Image "Image"](../static/guides/how-to-sharelinks/pauseshocker.png)  
-
-  2. It should now ``blur`` the shocker controls telling you it's paused, as long as the link is paused your shocker will not accept any commands from **this** link.
-![Image "Image"](../static/guides/how-to-sharelinks/pausedlink.png)  
-
-  3. To un-pause the share link again simply click on the ``Play Icon``.
+!!! Info
+    A paused link will not accept any commands.  
+1. Go to your [share link page](https://shocklink.net/#/dashboard/shares/links) and select the share link you want to _**pause**_.
+    1. Click on the little pause icon next to the share links name.  
+        * It should now _**blur**_ the shocker controls telling you it's paused.
+2. To un-pause the share link again simply click on the ``Play Icon``.
+??? Info "Images"
+    ![Image "Image"](../static/guides/how-to-sharelinks/pauseshocker.png) 
+    ![Image "Image"](../static/guides/how-to-sharelinks/pausedlink.png)  
 
   
 
