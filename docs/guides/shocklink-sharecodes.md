@@ -19,49 +19,86 @@
 
 ## Create a share code
 1. Go to [Shocklink.net](https://shocklink.net/) and login.
-2. Switch to the ``Shockers`` section and open the context menu of the shocker you want to get a share code for.
-![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_ContextMenuShocker.png) 
-3. Inside the context menu select ``Shares``.
-4. Click on the ``green plus icon``, that will generate a new share code.
-![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_CreateCode.png) 
-5. Send this code to a person you trust.
-![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_FindCode.png) 
-
+2. Switch to the **Shockers** section 
+    1. Open the context menu of the shocker you want to get a share code for. *(The three dots next to the name)*
+    2. Select **Shares**.
+    3. Click on the **green plus icon**, that will generate a new share code.
+    4. Send this code to a person you trust.
+    ??? Info "Images"
+        ![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_ContextMenuShocker.png)  
+        ![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_CreateCode.png)  
+        ![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_FindCode.png)  
 <br></br>
 
 ## Use a share code
 1. Go to [Shocklink.net](https://shocklink.net/) and login.
-2. Switch to the ``Shockers`` section, then go to ``Shared``.
-![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_FindAddCode.png) 
-3. Click on the ``green plus icon`` and type in the share code you received from someone.
-![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_AddCode.png) 
-4. Now the shocker is linked to your account and you can control it. 🎉
-![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_Added.png)
+2. Switch to the [Shockers shared section](https://shocklink.net/#/dashboard/shockers/shared).
+    1. Click on the **green plus icon**.
+    2. Type in the share code you received from someone.  
+
+**Now the shocker is linked to your account and you can control it.** 🎉
+??? Info "Images"
+    ![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_FindAddCode.png) 
+    ![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_AddCode.png) 
+    ![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_Added.png)
 !!! Tip
-    You can find all shockers you added with a share code on the same page in your account under ``Shockers`` -> ``Shared``
+    You can find all shockers you added with a share code on the same page in your account under **Shockers** -> [**Shared**](https://shocklink.net/#/dashboard/shockers/shared)
 
 <br></br>
 
 ## Edit share code limits
 You can also set limits to every share code.  
-!!! bug ""
-    For this step to work, someone has to use your share code first
+!!! bug "Info"
+    For this step to work, someone has to [use your share code](#use-a-share-code) first
 
 1. Go to [Shocklink.net](https://shocklink.net/) and login.
-2. Switch to the ``Shockers`` section and open up the context menu of the shocker you want to edit the code for.
-![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_ContextMenuShocker.png) 
-3. Inside the context menu click on ``Shares``.
-4. After someone added your share code you should be able to see their account in the list.
-![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_LinkedList.png) 
-5. Click on the context menu next to the share you want to set limits for and select edit.
-![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_SharedContextMneu.png) 
-6. Set max ``intensity``and ``duration`` and also select what kind of ``commands`` the person can send.  
-![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_EditLimit.png) 
-7. Press save and you are done. 🎉
+2. Switch to the **Shockers** section. 
+    1. Open up the context menu of the shocker you want to edit the code for.
+    2. Select **Shares**.
+        * After someone added your share code you should be able to see their account in the list.
+    3. Open the Context Menu next to the persons account name.
+    4. Select **Edit**
+    5. Set max _**intensity**_ and _**duration**_ and also select what kind of _**commands**_ the person can send.  
+    6. Press **Save**, you are done. 🎉  
+    ??? Info "Images"
+        ![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_ContextMenuShocker.png) 
+        ![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_LinkedList.png) 
+        ![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_SharedContextMneu.png) 
+        ![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_EditLimit.png) 
+
+## Pause/Unpause a share code
+!!! bug "Info"
+    For this step to work, someone has to [use your share code](#use-a-share-code) first
+1. Go to [Shocklink.net](https://shocklink.net/) and login.
+2. Switch to the **Shockers** section. 
+    1. Open up the context menu of the shocker you want to pause the code for.
+    2. Select **Shares**.
+        * In this list there are *pause icons* next to the account names.
+    3. Press the *pause icon* next to the person you want to pause the shocker for.
+        * *Press the **play icon** next to the persons name to unpause the code again.*
+    4. You are done. 🎉  
+    ??? Info "Images"
+        ![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_ContextMenuShocker.png) 
+        ![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_LinkedList.png) 
+
+## Unshare/Delete a share code
+!!! bug "Info"
+    For this step to work, someone has to [use your share code](#use-a-share-code) first
+1. Go to [Shocklink.net](https://shocklink.net/) and login.
+2. Switch to the **Shockers** section. 
+    1. Open up the context menu of the shocker you want to unshare.
+    2. Select **Shares**.
+    3. Open the Context Menu next to the person you want to unshare.
+    4. Select **Unshare**
+    6. You are done. 🎉  
+    ??? Info "Images"
+        ![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_ContextMenuShocker.png) 
+        ![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_LinkedList.png) 
+        ![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_SharedContextMneu.png) 
+
+
 
 !!! Tip
     You can also pause a specific share to temporarily stop the person from using this shocker.  
     Inside the share list, click the pause button in front of their account name, do the same again to un-pause it.  
-!!! Info "Deleting Shares"
-    In the same context menu where you can edit the share code limits you can also click ``unshare`` to delete the share code, this will unbind the shocker from the persons account and they can no longer control the shocker.  
   

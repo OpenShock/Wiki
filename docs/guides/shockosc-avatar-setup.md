@@ -8,31 +8,38 @@
 <br></br>
 
 ## Touch trigger
-1. Open your avatar project and create a new ``Empty GameObject`` on the bone you want your trigger to be at, your LeftLeg for example.  
-![Image "Image"](../static/guides/shockosc/create_trigger.png)  
-
-2. Click on the new object and rename it to whatever you want, for example "ShockOSC", add a new ``VRC Contact Receiver`` component to it and position the object on your avatar.  
-![Image "Image"](../static/guides/shockosc/example_position.png)  
-
+1. Open your avatars unity project.
+2. Add the Touch Trigger
+    1. Create a new **Empty GameObject** on the bone you want your trigger to be at, your LeftLeg for example. 
+        1. *Right-Click the bone.*
+        2. *Select "Create Empty".*
+    ??? Info "Image"  
+        ![Image "Image"](../static/guides/shockosc/create_trigger.png)
+    1. Select the new GameObject.
+    2. Rename it to whatever you want. *For example "ShockOSC"* 
+    3. Add a new ``VRC Contact Receiver`` component to it.
+    4. Position the object on your avatar.
+    ??? Info "Image"  
+        ![Image "Image"](../static/guides/shockosc/example_position.png)  
 3. Configure the **VRC Contact Receiver** component:  
     - **Radius** : That's the range of the trigger, don't make it too big otherwise people will constantly trigger it by accident.
     - **Filtering**: ``Local Only`` should definetily be used, but it's on you if you use ``Allow Self``, ``Allow Others`` or both of these. This will decide if other people or you can trigger the shocker by touching it.
     - **Collision Tags**: I recommend that you at least use the ``Finger`` Tag, otherwise people can't touch the trigger with their fingers, but is's up to you what kind of tags you use.
     - **Receiver Type**: this needs to be set to ``constant``.
     - **Parameter**: ``ShockOsc/{ShockerName}``  
-      Replace *{ShockerName}* by the name you gave your shocker in the ShockOsc config.  
+      Replace *{ShockerName}* by the name you gave your shocker in the [ShockOsc config](./shockosc-basic.md#setup-shockosc).  
       Example: ``ShockOsc/leftleg``.  
-!!! example
-    === "Component"
-        ![Image "Image"](../static/guides/shockosc/example_settings3.png)
-    === "ShockOsc Config"
-        ```json
-        "Shockers": {
-        "leftleg": "18b1d0e6a-f9a0-4e93-9812-241eae9271791"
-        }
-        ```
-        No idea what this is? Check out the [ShockOsc Basic setup guide](shockosc-basic.md)
-Now upload your Avatar and you are ready to go! 🎉  
+    ??? example
+        === "Component"
+            ![Image "Image"](../static/guides/shockosc/example_settings3.png)
+        === "ShockOsc Config"
+            ```json
+            "Shockers": {
+            "leftleg": "18b1d0e6a-f9a0-4e93-9812-241eae9271791"
+            }
+            ```
+            No idea what this is? Check out the [ShockOsc Basic setup guide](shockosc-basic.md)  
+4. Upload your Avatar and you are ready to go! 🎉  
 
 !!! bug "Activate OSC"
     Make sure that you have [enabled OSC](https://docs.vrchat.com/docs/osc-overview#enabling-it) inside VRChat.  
