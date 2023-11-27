@@ -14,5 +14,5 @@ Started `2023-11-20`.
 
 ## Contact
 
-- :simple-discord: Discord -- `HentaiHeaven`
+- :simple-discord: Discord -- `hhvr`
 - :material-email: Email -- `contact@heavenvr.tech`
