@@ -38,7 +38,7 @@ Genuinely any ESP-32 should work if it has enough flash memory (4MB or more). ES
 
 
 ## Shocker
-There is two shocker protocol supported currently. One of them is a older shocker model, reffered to as "**PetTrainer**" since it has as label on the shocker. The other protocol supported is reffered to as "**Small**"-Shocker or **CaiXianlin**. (Small does not mean its less powerful, its the same power as the PetTrainer)
+There is two shocker protocol supported currently. One of them is a older shocker model, reffered to as "**Petrainer**" since it has as label on the shocker. The other protocol supported is reffered to as "**Small**"-Shocker or **CaiXianlin**. (Small does not mean its less powerful, its the same power as the Petrainer)
 
 For protocol specifications see here: [https://github.com/OpenShock/Hardware](https://github.com/OpenShock/Hardware)
 

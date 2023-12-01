@@ -4,7 +4,7 @@ tags:
     - shockers
 ---
 
-# PetTrainer
+# Petrainer
 
 !!! success "Compatible"
 
@@ -12,7 +12,7 @@ tags:
 
 ## Usage
 
-Select `PetTrainer` when adding the shocker to your account.
+Select `Petrainer` when adding the shocker to your account.
 
 ## Buying
 

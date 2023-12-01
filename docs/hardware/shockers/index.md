@@ -33,4 +33,4 @@ Each shocker page has its own buy link(s). We recommend the [CaiXianlin](caixian
 ## Known models
 
 - [CaiXianlin](caixianlin.md)
-- [PetTrainer](pettrainer.md) (discontinued)
+- [Petrainer](petrainer.md) (discontinued)
