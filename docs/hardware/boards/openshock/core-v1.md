@@ -9,7 +9,7 @@ tags:
 ---
 
 # OpenShock Core V1
-### Designed by [nullstalgia](../../../vendors/hardware/nullstalgia)
+### Designed by [nullstalgia](../../../vendors/hardware/nullstalgia.md)
 
 
 !!! success "Fully compatible"
