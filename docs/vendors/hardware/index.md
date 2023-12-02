@@ -33,4 +33,10 @@ This is a **non-curated list** of self-reported vendors from the OpenShock **com
 | [BosjesMan](./bosjesman.md) | :globe_with_meridians: Global | :white_check_mark: | :white_check_mark: | :x: | 2023-10-17 |
 | [HentaiHeaven](./HentaiHeaven.md) | :globe_with_meridians: Global | :white_check_mark: | :white_check_mark: | :white_check_mark: | 2023-11-20 |
 
+### North America
+
+| Vendor | :airplane: Ships to | :electric_plug: Controllers | :high_voltage: Shockers | :package: 3D Prints (Case, Spacers) | Started | 
+|-|-|-|-|-|-|
+| [nullstalgia](./nullstalgia.md) | :flag_us: USA | :white_check_mark: | :white_check_mark: | :white_check_mark: | 2023-12-01 |
+
 _Want to be on this list? Hit up a maintainer on [Discord](https://discord.gg/AHcCbXbEcF)._
