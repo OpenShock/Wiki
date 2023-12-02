@@ -30,6 +30,8 @@ nav:
       - 'hardware/boards/index.md'
       # - Knockoffs:
       #   - 'hardware/boards/china/esp32s3-dorx.md'
+      - OpenShock:
+        - 'hardware/boards/openshock/core-v1.md'
       - Pishock:
         - 'hardware/boards/pishock/2023-pishock.md'
         - 'hardware/boards/pishock/2021q3-lite.md'
@@ -49,6 +51,8 @@ nav:
         - 'vendors/hardware/luc.md'
         - 'vendors/hardware/bosjesman.md'
         - 'vendors/hardware/HentaiHeaven.md'
+      - North America:
+        - 'vendors/hardware/nullstalgia.md'
     - 'vendors/software.md'
   - Do-it-yourself:
     - Hardware:
