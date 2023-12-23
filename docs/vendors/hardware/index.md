@@ -30,7 +30,7 @@ This is a **non-curated list** of self-reported vendors from the OpenShock **com
 | Vendor | :airplane: Ships to | :electric_plug: Controllers | :high_voltage: Shockers | :package: 3D Prints (Case, Spacers) | Started | 
 |-|-|-|-|-|-|
 | [Luc](./luc.md) | :flag_eu: Europe |  :white_check_mark: | :white_check_mark: | :white_check_mark: | 2023-02-23 |
-| [BosjesMan](./bosjesman.md) | :globe_with_meridians: Global | :white_check_mark: | :white_check_mark: | :x: | 2023-10-17 |
+| [BosjesMan](./bosjesman.md) | :globe_with_meridians: Global | :white_check_mark: | :white_check_mark: | :white_check_mark: | 2023-10-17 |
 | [HentaiHeaven](./HentaiHeaven.md) | :globe_with_meridians: Global | :white_check_mark: | :white_check_mark: | :white_check_mark: | 2023-11-20 |
 
 ### North America
