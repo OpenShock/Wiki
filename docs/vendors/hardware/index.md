@@ -31,7 +31,7 @@ This is a **non-curated list** of self-reported vendors from the OpenShock **com
 |-|-|-|-|-|-|
 | [Luc](./luc.md) | :flag_eu: Europe |  :white_check_mark: | :white_check_mark: | :white_check_mark: | 2023-02-23 |
 | [BosjesMan](./bosjesman.md) | :globe_with_meridians: Global | :white_check_mark: | :white_check_mark: | :white_check_mark: | 2023-10-17 |
-| [HentaiHeaven](./HentaiHeaven.md) | :globe_with_meridians: Global | :white_check_mark: | :white_check_mark: | :white_check_mark: | 2023-11-20 |
+| [HentaiHeaven](./HentaiHeaven.md) | :flag_no: :flag_dk: :flag_se: Scandinavia | :white_check_mark: | :white_check_mark: | :white_check_mark: | 2023-11-20 |
 
 ### North America
 
