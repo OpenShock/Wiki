@@ -11,7 +11,9 @@ nav:
       - quickstart/what-you-need.md
       - quickstart/buying-guide.md
     - Openshock:
+      - guides/openshock-how-to-flash-your-board.md
       - guides/openshock-first-setup.md
+      - guides/openshock-how-to-update.md
     - Shocklink:
       - guides/shocklink-sharelinks.md
       - guides/shocklink-sharecodes.md
