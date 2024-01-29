@@ -29,7 +29,6 @@ nav:
     - Remotes:
       - hardware/remotes/identifying.md
     - Boards:
-      - hardware/pinlayout.md
       - 'hardware/boards/index.md'
       # - Knockoffs:
       #   - 'hardware/boards/china/esp32s3-dorx.md'
