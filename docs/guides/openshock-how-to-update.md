@@ -5,7 +5,7 @@
 - [Shocklink account](https://shocklink.net/)
 - **Firmware 1.1.0 or newer**
 
-### Using Over the Air Update (Recommended)
+## Using Over the Air Update (Recommended)
 1. Login to the [website](https://shocklink.net/)
 2. Connect your Device to a power source and make sure it appears as Online in the Device section.
 3. Open the context menu of your Device.
@@ -23,7 +23,7 @@ After it's done it should restart your Device and everything should just work™
     If the update is not successful the updater will not overwrite anything and your Device should just stay on the old version.  
     Ask on the [Discord](https://discord.gg/OpenShock) for help.
 
-### Using a Flash tool
+## Using a Flash tool
 This basically means re-flashing your firmware with a newer version, like it is explained in the [How to flash the firmware](../guides/openshock-how-to-flash-your-board.md) guide.  
 **Doing it this way will also reset all your configuration.**
 !!! failure "What if something fails?"
