@@ -6,6 +6,23 @@
 - A Chromium based browser like Google Chrome for example. **Firefox will not work since it doesn't support Web Serial**
 - A flash tool like [ESP Tool](https://espressif.github.io/esptool-js/)
 - The newest [Openshock firmware](https://github.com/OpenShock/Firmware/releases), make sure you download the firmware that is made for your kind of board.  
+- (Optional) [CP210x Universal Windows Driver](https://download.openshock.org/drivers/CP210x_Universal_Windows_Driver.zip)
+
+!!! warning "Important"
+    Make sure you have a cable that supports data transfer.  
+    Make sure your cable is not damaged.  
+    Make sure your USB port is not damaged.
+
+## Connecting the Device to the PC
+1. Connect your Device via USB cable to your PC, make sure you use a cable that allows data transfer.
+2. Open the Device-Manager in windows and make sure it is connected and has a Driver installed.
+3. If your Devices shows up with a yellow exclamation mark: 
+    1. Download the [CP210x Universal Windows Driver](https://download.openshock.org/drivers/CP210x_Universal_Windows_Driver.zip) and unzip it. 
+    2. In the Device-Manager, right click your Device and select "Update Driver".
+    3. Select "Browse my PC for Drivers"
+    4. Select the folder of the downloaded driver and proceed.
+    5. It should now work
+4. If your Device shows up normally in the Device-Manager proceed with the next step.
 
 ## Flashing the firmware
 1. Plug your Device into your PC using a USB cable.
