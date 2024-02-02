@@ -5,7 +5,7 @@
 - [Shocklink account](https://shocklink.net/)
 - **Firmware 1.1.0 or newer**
 
-## Using Over the Air Update (Recommended)
+## Over the Air Update (Recommended)
 1. Login to the [website](https://shocklink.net/)
 2. Connect your Device to a power source and make sure it appears as Online in the Device section.
 3. Open the context menu of your Device.
