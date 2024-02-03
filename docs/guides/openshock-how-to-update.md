@@ -26,5 +26,3 @@ After it's done it should restart your Device and everything should just work™
 ## Using a Flash tool
 This basically means re-flashing your firmware with a newer version, like it is explained in the [How to flash the firmware](../guides/openshock-how-to-flash-your-board.md) guide.  
 **Doing it this way will also reset all your configuration.**
-!!! failure "What if something fails?"
-    Since flashing it this way is a bit more unsafe compared to our updater, you can try doing it again using the previous steps and see if it works, otherwise join our [discord](https://discord.gg/OpenShock) and we will see how we can help you!
