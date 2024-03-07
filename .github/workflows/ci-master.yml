@@ -20,7 +20,7 @@ jobs:
         with:
           fetch-depth: 0  # Needed for mkdocs-git-authors-plugin
 
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         with:
           path: |
             ~/.cache/pip
