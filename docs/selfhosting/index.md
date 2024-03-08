@@ -2,23 +2,113 @@
 
 ## Requirements
 
-1. a server with docker installed
-2. a network with wifi
-3. compatible hardware board anda shocker
+Hardware: 
 
-## Container setup
+1. A computer. Linux or windows would work. 
+2. Compatible hardware board and a shocker
+
+Software: 
+
+1. [Python 3.6+](https://www.python.org/downloads/) (Current latest should work fine.)
+2. [Visual Studio Code](https://code.visualstudio.com/) with [PlatformIO addon](https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide)
+3. [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/) on Windows or [Docker Engine](https://docs.docker.com/engine/install/) on Linux.
+
+## Preparing the server
+
+Install software from the [Requirements](#requirements) on the server, make a new folder in a known location. In it, create a file called `docker-compose.yaml` and open it in VSCode or a preferred text editor. (editor with an integrated terminal is preferred)
+
+### Docker compose template
+
+Configuration template, paste it in `docker-compose.yaml` file. The template is explained in the sections below.
+
+???Template
+    ```yaml
+    version: '3.8'
+
+    services:
+        postgres:
+            image: postgres:16
+            restart: unless-stopped
+            networks:
+                - openshock
+            environment:
+                - POSTGRES_PASSWORD=password
+                - POSTGRES_USER=openshock
+                - POSTGRES_DB=openshock
+            volumes:
+                - local/path:/var/lib/postgresql/data
+
+        redis:
+            image: redislabs/redisearch:latest
+            restart: unless-stopped
+            networks:
+                - openshock
+
+        api:
+            image: ghcr.io/openshock/api:latest
+            restart: unless-stopped
+            networks:
+                - openshock
+                - reverse-proxy
+            depends_on:
+                - postgres
+                - redis
+                - cron
+            environment:
+                OPENSHOCK__DB__CONN: Host=postgres;Port=5432;Database=openshock;Username=openshock;Password=password
+                OPENSHOCK__REDIS__HOST: redis
+                OPENSHOCK__FRONTENDBASEURL: https://custom-domain.com
+                OPENSHOCK__MAIL__TYPE: SMTP
+                OPENSHOCK__COOKIEDOMAIN: custom-domain.com
+                OPENSHOCK__MAIL__SENDER__EMAIL: admin@custom-domain.com
+                OPENSHOCK__MAIL__SENDER__NAME: custom-domain-admin
+                OPENSHOCK__MAIL__SMTP__HOST: smtp.custom-domain.com
+                OPENSHOCK__MAIL__SMTP__USERNAME: admin
+                OPENSHOCK__MAIL__SMTP__PASSWORD: not-existing
+
+        webui:
+            image: ghcr.io/openshock/webui:latest
+            restart: unless-stopped
+            environment:
+                - OPENSHOCK_NAME=Custom-name
+                - OPENSHOCK_URL=https://custom-domain.com
+                - OPENSHOCK_SHARE_URL=https://shared.custom-domain.com
+                - OPENSHOCK_API_URL=https://api.custom-domain.com
+            depends_on:
+                - api
+                - live_control
+            networks:
+                - reverse-proxy
+
+        live_control:
+            image: ghcr.io/openshock/live-control-gateway:latest
+            restart: unless-stopped
+            networks:
+                - openshock
+                - reverse-proxy
+            environment:
+                OPENSHOCK__DB: Host=postgres;Port=5432;Database=openshock;Username=openshock;Password=password
+                OPENSHOCK__REDIS__HOST: redis
+                OPENSHOCK__COUNTRYCODE: DE
+                OPENSHOCK__FQDN: lcg.custom-domain.com
+
+        cron:
+            image: ghcr.io/openshock/cron:master
+            restart: unless-stopped
+            networks:
+                - openshock
+            environment:
+                OPENSHOCK__DB: Host=postgres;Port=5432;Database=openshock;Username=openshock;Password=password
+                OPENSHOCK__REDIS__HOST: redis
+
+    networks:
+        openshock:
+        reverse-proxy:
+    ```
 
 
-### Openshock api and webui
-tldr: setup the api and supporting services, reverse-proxied using nginx proxy manager
 
 
-1. postgres setup + volumes
-2. copypaste redis setup from dockercompose
-3. making the database connection string
-4. cron and live control
-5. setup the api container
-6. webui
 
 ### reverse proxy
 
@@ -36,4 +126,5 @@ tldr: setup the api and supporting services, reverse-proxied using nginx proxy m
 
 ## Troubleshooting
 
-1. use the monitor from platformio and logs from the api service, in most cases the error is a misconfiguration of the api
+1. if you cannot connect from 
+2. use the monitor from platformio and logs from the api service, in most cases the error is a misconfiguration of the api
