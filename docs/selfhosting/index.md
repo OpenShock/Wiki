@@ -17,9 +17,9 @@ Software:
 
 Install software from the [Requirements](#requirements) on the server, make a new folder in a known location. In it, create a file called `docker-compose.yaml` and open it in VSCode or a preferred text editor. (editor with an integrated terminal is preferred)
 
-### Docker compose template
+### Docker compose setup
 
-Configuration template, paste it in `docker-compose.yaml` file. The template is explained in the sections below.
+Configuration template, paste it in `docker-compose.yaml` file.
 
 ???Template
     ```yaml
@@ -36,7 +36,7 @@ Configuration template, paste it in `docker-compose.yaml` file. The template is 
                 - POSTGRES_USER=openshock
                 - POSTGRES_DB=openshock
             volumes:
-                - local/path:/var/lib/postgresql/data
+                - openshock-pg-data:/var/lib/postgresql/data
 
         redis:
             image: redislabs/redisearch:latest
@@ -58,10 +58,10 @@ Configuration template, paste it in `docker-compose.yaml` file. The template is 
                 OPENSHOCK__DB__CONN: Host=postgres;Port=5432;Database=openshock;Username=openshock;Password=password
                 OPENSHOCK__REDIS__HOST: redis
                 OPENSHOCK__FRONTENDBASEURL: https://custom-domain.com
-                OPENSHOCK__MAIL__TYPE: SMTP
                 OPENSHOCK__COOKIEDOMAIN: custom-domain.com
                 OPENSHOCK__MAIL__SENDER__EMAIL: admin@custom-domain.com
                 OPENSHOCK__MAIL__SENDER__NAME: custom-domain-admin
+                OPENSHOCK__MAIL__TYPE: SMTP
                 OPENSHOCK__MAIL__SMTP__HOST: smtp.custom-domain.com
                 OPENSHOCK__MAIL__SMTP__USERNAME: admin
                 OPENSHOCK__MAIL__SMTP__PASSWORD: not-existing
@@ -104,7 +104,36 @@ Configuration template, paste it in `docker-compose.yaml` file. The template is 
     networks:
         openshock:
         reverse-proxy:
+
+    volumes:
+        openshock-pg-data:
     ```
+
+variables that must be changed:
+* POSTGRES_PASSWORD, and the password field in every DB_CONN string (Password=PUT_NEW_PASSWORD_HERE;)
+* Every instance of "custom-domain.com". it needs to be replaced with a domain you own, or have configured in your HOSTS file (more on that in [TODO: PUT LINK TO CONFIGURING HISTS SECTION])
+* Everything in email configuration. consult api README.MD for information on how to configure that [TODO: LINK]. add a note about that the config is not verified and you can put bollocks data, and the api will still work?
+
+
+variables that can be changed:
+* OPENSHOCK_NAME, can be set to whatever. it'll show in places around the web ui.
+* subdomain parts of each url/fqdn. (note, when not running on a domain, the live-control gateway needs to be specified with a ip address)
+* 
+
+
+variables you shouldn't change
+variales you absolutely cannot chagen
+
+redis:
+No changes necessary
+
+api:
+update the db connection string with password from postgres
+update the frontendbaseurl with a domain.
+
+note about email: while you can change nothing and use the mock values, it is recommended to set it up correctly. Otherwise password recovery will not function.
+
+
 
 
 
