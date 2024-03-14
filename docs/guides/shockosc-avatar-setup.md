@@ -104,15 +104,15 @@ This will utilize the Contact Sender and Receiver components of the VRChatSDK to
     5. Create a Toggle for it in the FXLayer.
         1. Open your Avatar FX Layer Animator
         2. Go to the Parameter Tab and create a new Bool parameter
-        3. Name  the new Bool Parameter it however you want, maybe something like "ShockerRemote"
+        3. Name the new Bool Parameter however you want, maybe something like "ShockerRemote"
         4. Switch to the Layer tab of the Animator and Create a new Layer.
         5. Name the layer something like "Shocker Remote"
         6. Create 2 new states inside the layer and name them On and Off and set Off as the default layer state (Orange).
         ![Layer](../static/guides/shockosc/RemoteShockLayer.png)
         7. Create 2 new Animations, one that toggles the Sender object On an one that turns it Off, then assigns the animations to the right states you created earlier.
         8. Create 2 Transitions one from On to Off and one from Off to On.
-        9. Both transitions should not have a transition time greater then 0 and they should have no Exit time.
-        10. In both transitions set your Bool Parameter created earlier as a condition, On to Off should be ``false`` and Off to On should be ``true``
+        9. Both transitions should **not** have a transition time greater then 0 and they should have **no** Exit time.
+        10. In both transitions set your Bool Parameter created earlier as a condition, from On to Off should be ``false`` and Off to On should be ``true``
         ![LayerTransitions](../static/guides/shockosc/TransitionOptions_Remote_Trigger.gif)
     6. Create the Toggle in the Action Menu.
         1. Open your avatars Parameter list and add your earlier created bool parameter to it
