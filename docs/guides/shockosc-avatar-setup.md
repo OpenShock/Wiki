@@ -123,7 +123,10 @@ This will utilize the Contact Sender and Receiver components of the VRChatSDK to
         ![Menu entry](../static/guides/shockosc/Remotetrigger_Menuentry.png)
 
 ### Upload your Avatars
-Both avatars can now be uploaded, the Receiver Avatar should also delete the OSC config to make sure that the newly added IShock parameter is used by OSC. ``C:\Users\%USERPROFILE%\AppData\LocalLow\VRChat\VRChat\OSC``
+!!! Bug "Important"
+    Both avatars can now be uploaded, the Receiver Avatar should also delete their VRChat OSC config (``C:\Users\%USERPROFILE%\AppData\LocalLow\VRChat\VRChat\OSC``) to make sure that the newly added IShock parameter is used by OSC.  
+  
+    Also make sure you have interactions enabled ingame otherwise contacts won't work!
   
 
 <br></br>
