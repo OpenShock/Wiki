@@ -55,6 +55,7 @@
 This will utilize the Contact Sender and Receiver components of the VRChatSDK to make it possible to trigger a shock without touching your Avatar, like a remote.  
 !!! example "Prefab"
     There is also a Prefab I created to make it easier to add it to an avatar  
+    You'll need VRCFury to auto merge it to your avatar, otherwise you have to do it manually.  
     [Download](../static/guides/shockosc/Prefabs/Openshock_ShockOsc_RemoteTrigger.unitypackage)
 
 ### Create a Receiver
@@ -119,7 +120,7 @@ This will utilize the Contact Sender and Receiver components of the VRChatSDK to
         2. uncheck the "Saved" option and also the "default" option  
         3. Open your Avatar Menu file and go to the place you want to add the Button for the Remote to.
         4. Create a new entry, give it a name "Shocker Remote" for example. Make sure it's set to Button and then add your Parameter to it.
-        ![Menuentry](../static/guides/shockosc/Remotetrigger_Menuentry.png)
+        ![Menu entry](../static/guides/shockosc/Remotetrigger_Menuentry.png)
 
 ### Upload your Avatars
 Both avatars can now be uploaded, the Receiver Avatar should also delete the OSC config to make sure that the newly added IShock parameter is used by OSC. ``C:\Users\%USERPROFILE%\AppData\LocalLow\VRChat\VRChat\OSC``
