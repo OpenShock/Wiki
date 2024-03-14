@@ -27,7 +27,7 @@
     - **Collision Tags**: I recommend that you at least use the ``Finger`` Tag, otherwise people can't touch the trigger with their fingers, but is's up to you what kind of tags you use.
     - **Receiver Type**: this needs to be set to ``constant``.
     - **Parameter**: ``ShockOsc/{ShockerName}``  
-      Replace *{ShockerName}* by the name you gave your shocker in the [ShockOsc config](./shockosc-basic.md#setup-shockosc).  
+      Replace *{ShockerName}* with the name you gave your shocker in the [ShockOsc config](./shockosc-basic.md#setup-shockosc).  
       Example: ``ShockOsc/leftleg``.  
     ??? example
         === "Component"
@@ -51,10 +51,79 @@
 
 <br></br>
 
-## Remote trigger
-!!! info "Still brewing!"
+## Remote trigger  
+This will utilize the Contact Sender and Receiver components of the VRChatSDK to make it possible to trigger a shock without touching your Avatar, like a remote.  
+!!! example "Prefab"
+    There is also a Prefab I created to make it easier to add it to an avatar  
+    [Download](../static/guides/shockosc/Prefabs/Openshock_ShockOsc_RemoteTrigger.unitypackage)
 
-    Sorry, we haven't _quite_ gotten around to writing this set of articles just yet. **In the meantime, feel free to hit us up on [Discord](https://discord.gg/AHcCbXbEcF).**
+### Create a Receiver
+1. Open your Avatars Project
+2. Create a Receiver
+    1. In the Hierarchy right click your Avatar
+    2. Click *Create Empty* to create a new GameObject
+    3. Rename it to something like "ShockOsc Receiver".
+    4. Select the newly created object and go into the inspector, click on *Add Component* and add a ``VRC Contact Receiver`` component to the object.
+3. Setup the Receiver
+    1. Increase the Range of the component (max. 3m, that's a limit enforced by VRChat)
+    2. Check, Allow Others and Local Only
+    3. Uncheck Allow Self
+    4. Add a Collision Tag
+    5. Set the Collision Tag to *Custom*
+    6. Set a Custom Tag
+        1. I recommend generating a password with a password generator, **don't use a real password!** This password needs to be shared with the people that should be able to trigger your receiver.
+    7. Set the receiver type to constant
+    8. Set the Parameter: ``ShockOsc/{ShockerName}_IShock``,alternatively you can use ``ShockOsc/_All_IShock`` to trigger all your shockers at the same time.
+      Replace *{ShockerName}* with the name you gave your shocker in the [ShockOsc config](./shockosc-basic.md#setup-shockosc).  
+      Example: ``ShockOsc/leftleg_IShock``.  
+    ![Receiver](../static/guides/shockosc/RemoteShock_Receiver.png)
+    ??? example
+        === "Component"
+            ![image](../static/guides/shockosc/ExampleRemote_Receiver.png)
+        === "ShockOsc Config"
+            ```json
+            "Shockers": {
+            "leftleg": "18b1d0e6a-f9a0-4e93-9812-241eae9271791"
+            }
+            ```
+            No idea what this is? Check out the [ShockOsc Basic setup guide](shockosc-basic.md)  
+### Create a Sender
+1. Open your friends Avatar project.
+2. Create a Sender
+    1. In the Hierarchy right click your Avatar
+    2. Click *Create Empty* to create a new GameObject
+    3. Rename it to something like "ShockOsc Sender".
+    4. Select the newly created object and go into the inspector, click on *Add Component* and add a ``VRC Contact Sender`` component to the object.
+3. Setup the Sender
+    1. Increase the Range of the component (max. 3m, that's a limit enforced by VRChat)
+    2. Add a Collision Tag
+    3. Set the Collision Tag to *Custom*
+    4. Set a Custom Tag
+        1. this needs to be the same tag as the one in the Receiver!
+    5. Create a Toggle for it in the FXLayer.
+        1. Open your Avatar FX Layer Animator
+        2. Go to the Parameter Tab and create a new Bool parameter
+        3. Name  the new Bool Parameter it however you want, maybe something like "ShockerRemote"
+        4. Switch to the Layer tab of the Animator and Create a new Layer.
+        5. Name the layer something like "Shocker Remote"
+        6. Create 2 new states inside the layer and name them On and Off and set Off as the default layer state (Orange).
+        ![Layer](../static/guides/shockosc/RemoteShockLayer.png)
+        7. Create 2 new Animations, one that toggles the Sender object On an one that turns it Off, then assigns the animations to the right states you created earlier.
+        8. Create 2 Transitions one from On to Off and one from Off to On.
+        9. Both transitions should not have a transition time greater then 0 and they should have no Exit time.
+        10. In both transitions set your Bool Parameter created earlier as a condition, On to Off should be ``false`` and Off to On should be ``true``
+        ![LayerTransitions](../static/guides/shockosc/TransitionOptions_Remote_Trigger.gif)
+    6. Create the Toggle in the Action Menu.
+        1. Open your avatars Parameter list and add your earlier created bool parameter to it
+        ![ParameterEntry](../static/guides/shockosc/RemoteTrigger_Paramaters.png)
+        2. uncheck the "Saved" option and also the "default" option  
+        3. Open your Avatar Menu file and go to the place you want to add the Button for the Remote to.
+        4. Create a new entry, give it a name "Shocker Remote" for example. Make sure it's set to Button and then add your Parameter to it.
+        ![Menuentry](../static/guides/shockosc/Remotetrigger_Menuentry.png)
+
+### Upload your Avatars
+Both avatars can now be uploaded, the Receiver Avatar should also delete the OSC config to make sure that the newly added IShock parameter is used by OSC. ``C:\Users\%USERPROFILE%\AppData\LocalLow\VRChat\VRChat\OSC``
+  
 
 <br></br>
 
@@ -115,11 +184,3 @@
 === "Config Parameters"  
     !!! Info "``ShockOsc/_Config/Paused`` (bool)"
         As long as this parameter is ``true``, all activity by ShockOsc will be paused, shockers will still receive commands via [Share links](shocklink-sharelinks.md) and Share codes.  
-<!--
-| Parameter                           | Type    | Description                                                                                                         |
-| :---------------------------------- | :-----: | :------------------------------------------------------------------------------------------------------------------ |
-| `ShockOsc/{ShockerName}`            | Bool    | when set to ``true`` and held, will trigger a normal shock in ShockOSC                                              |
-| `ShockOsc/{ShockerName}_Stretch`    | Float   | can be used to control the shock intensity (ex. stretch a bone to 50% and let go to get shocked for 50% intensity)  |
-| `ShockOsc/{ShockerName}_IsGrabbed`  | Bool    | mainly used  to indicate that a Physbone is grabbed                                                                 |
-| `ShockOsc/{ShockerName}_IShock`     | Bool    | if set to ``true`` will shock immediately ignoring the configurated ``HoldTime``.                                   |
--->
