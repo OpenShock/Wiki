@@ -12,6 +12,7 @@ Software:
 1. [Python 3.6+](https://www.python.org/downloads/) (Current latest should work fine.)
 2. [Visual Studio Code](https://code.visualstudio.com/) with [PlatformIO addon](https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide)
 3. [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/) on Windows or [Docker Engine](https://docs.docker.com/engine/install/) on Linux.
+4. node [TODO: input the rest of data]
 
 ## Preparing the server
 
@@ -65,6 +66,7 @@ Configuration template, paste it in `docker-compose.yaml` file.
                 OPENSHOCK__MAIL__SMTP__HOST: smtp.custom-domain.com
                 OPENSHOCK__MAIL__SMTP__USERNAME: admin
                 OPENSHOCK__MAIL__SMTP__PASSWORD: not-existing
+                OPENSHOCK__TURNSTILE__ENABLE: False
 
         webui:
             image: ghcr.io/openshock/webui:latest
@@ -110,38 +112,31 @@ Configuration template, paste it in `docker-compose.yaml` file.
     ```
 
 variables that must be changed:
+
 * POSTGRES_PASSWORD, and the password field in every DB_CONN string (Password=PUT_NEW_PASSWORD_HERE;)
-* Every instance of "custom-domain.com". it needs to be replaced with a domain you own, or have configured in your HOSTS file (more on that in [TODO: PUT LINK TO CONFIGURING HISTS SECTION])
-* Everything in email configuration. consult api README.MD for information on how to configure that [TODO: LINK]. add a note about that the config is not verified and you can put bollocks data, and the api will still work?
+* Every instance of "custom-domain.com". it needs to be replaced with a domain you own.
+* Everything in email configuration. consult api's README.MD for information on how to configure that [TODO: LINK]. add a note about that the config is not verified and you can put bollocks data, and the api will still work? tested as of version 2.5.2 of api
 
 
 variables that can be changed:
-* OPENSHOCK_NAME, can be set to whatever. it'll show in places around the web ui.
-* subdomain parts of each url/fqdn. (note, when not running on a domain, the live-control gateway needs to be specified with a ip address)
-* 
 
+* OPENSHOCK_NAME, can be set to whatever. it'll show in places around the web ui.
+* subdomain parts of each url/fqdn. (note, when not running on a domain, the live-control gateway needs to be specified with a ip address in the firmware [TODO: check if this is actually true])
+* OPENSHOCK__COUNTRYCODE, can be set to whatever. I'd leave it as default if you are running only one. It is used to select a gateway closest to you if there are multiple.
 
 variables you shouldn't change
-variales you absolutely cannot chagen
 
-redis:
-No changes necessary
+* Host=postgres and Port=5432 parts of the DB_CONN variables. The host must be the same as the name of the postgres service definition.
+* OPENSHOCK__REDIS__HOST, same as above. Must equal name of the redis service definition.
 
-api:
-update the db connection string with password from postgres
-update the frontendbaseurl with a domain.
-
-note about email: while you can change nothing and use the mock values, it is recommended to set it up correctly. Otherwise password recovery will not function.
-
-
-
+For more information consult readme.md files of each service [TODO: add links]
 
 
 
 
 ### reverse proxy
 
-1. modify hosts file for the subdomains if not owning a domain
+1. Acquiring a domain
 2. configure reverse proxy
 3. making share links work
 
@@ -151,9 +146,9 @@ note about email: while you can change nothing and use the mock values, it is re
 2. install latest python ( i used 3.11 )
 3. install platformio
 4. edit the env
-5. build and upload images
+   1. Note about the version popup
+5. build and upload images onto the board
 
 ## Troubleshooting
 
-1. if you cannot connect from 
-2. use the monitor from platformio and logs from the api service, in most cases the error is a misconfiguration of the api
+1. use the monitor from platformio and logs from the api service, in most cases the error is a misconfiguration of the api
