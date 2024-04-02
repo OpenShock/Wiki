@@ -9,6 +9,7 @@ Head over to the Guides to get started:
 
 - [What you need](quickstart/what-you-need.md)
 - [Buying guide](quickstart/buying-guide.md)
+- [How To Flash the Firmware](guides/openshock-how-to-flash-your-board.md)
 - [Setup ESP and Shocker](guides/openshock-first-setup.md)
 
 ## Community
@@ -17,4 +18,4 @@ Like what you see? Join us [over on Discord!](https://discord.gg/AHcCbXbEcF)
 
 ## Contributing
 
-Want to help? Head over [to the OpenShock Github](https://github.com/OpenShock) and dive right in!
+Want to help? Head over [to the OpenShock GitHub](https://github.com/OpenShock) and dive right in!
