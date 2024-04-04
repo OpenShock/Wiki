@@ -51,9 +51,10 @@ For protocol specifications see here: [https://github.com/OpenShock/Hardware](ht
 
     Make sure to take a look at our list of [vendors](../vendors/hardware/index.md).
 
-+ Luxembourg / Generally good store: [https://aliexpress.us/item/3256804060226907.html](https://aliexpress.us/item/3256804060226907.html)
+These might work for other countries as well.
 + Netherlands: [https://nl.aliexpress.com/item/1005005359066763.html](https://nl.aliexpress.com/item/1005005359066763.html) (Seems to be the same seller and offer as the US one)
 + US: [https://aliexpress.us/item/3256805172752011.html](https://aliexpress.us/item/3256805172752011.html)
++ Germany: https://aliexpress.com/item/1005005133046985.html
 
 !!! info
 
