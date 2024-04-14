@@ -16,10 +16,12 @@ Cheap and easily acquirable.
 
 ### Shockers
 
-+ Germany/International?: https://aliexpress.com/item/1005005133046985.html
+Best effort list of current AliExpress sellers. Feel free to add more sources to this list!
 
-+ Netherlands: [https://nl.aliexpress.com/item/1005005359066763.html](https://nl.aliexpress.com/item/1005005359066763.html) (Seems to be the same seller and offer as the US one)
-+ US: [https://aliexpress.us/item/3256805172752011.html](https://aliexpress.us/item/3256805172752011.html)
++ Germany/International?: [AliExpress](https://aliexpress.com/item/1005005133046985.html)
+
++ Netherlands: [AliExpress](https://nl.aliexpress.com/item/1005005359066763.html)
++ US: [AliExpress](https://aliexpress.us/item/3256805172752011.html)
 
 
 ### Cables
