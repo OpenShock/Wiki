@@ -11,8 +11,11 @@ tags:
 
 # Luc
 
+Go vist my Etsy Shop at [shop.luc.cat](https://shop.luc.cat) or contact me via discord.
+
 Started `2023-02-23`.
 
 ## Contact
 
 - :simple-discord: Discord -- `lucheart`
+- :material-link: Etsy Shop [shop.luc.cat](https://shop.luc.cat)
