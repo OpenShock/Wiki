@@ -16,8 +16,11 @@ Cheap and easily acquirable.
 
 ### Shockers
 
-+ :globe_with_meridians: International 1 (USB charge only, cheaper) -- [AliExpress](https://aliexpress.com/item/1005005359066763.html)
-+ :globe_with_meridians: International 2 (Wall plugs only) -- [AliExpress](https://aliexpress.com/item/1005004246541659.html)
++ Germany/International?: https://aliexpress.com/item/1005005133046985.html
+
++ Netherlands: [https://nl.aliexpress.com/item/1005005359066763.html](https://nl.aliexpress.com/item/1005005359066763.html) (Seems to be the same seller and offer as the US one)
++ US: [https://aliexpress.us/item/3256805172752011.html](https://aliexpress.us/item/3256805172752011.html)
+
 
 ### Cables
 
