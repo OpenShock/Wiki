@@ -63,6 +63,10 @@ nav:
     - Selfhosting:
       - 'selfhosting/index.md'
   - 'contributing/contributing.md'
+  - Legal and Privacy:
+    - 'legal/terms-and-conditions.md'
+    - 'legal/code-of-conduct.md'
+    - 'legal/license.md'
 
 theme:
   name: material
