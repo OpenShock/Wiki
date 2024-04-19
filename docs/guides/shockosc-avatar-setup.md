@@ -56,7 +56,7 @@ This will utilize the Contact Sender and Receiver components of the VRChatSDK to
 !!! example "Prefab"
     There is also a Prefab I created to make it easier to add it to an avatar  
     You'll need VRCFury to auto merge it to your avatar, otherwise you have to do it manually.  
-    [Download](../static/guides/shockosc/Prefabs/Openshock_ShockOSC_RemoteTrigger.unitypackage)  
+    [Download](https://github.com/Kyobinoyo/OpenshockPrefabs/releases)  
 
 ### Create a Receiver
 1. Open your Avatars Project
