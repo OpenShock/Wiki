@@ -19,6 +19,7 @@ nav:
       - guides/shocklink-sharecodes.md
     - ShockOsc:
       - guides/shockosc-basic.md
+      # - guides/shockosc-basic-new.md
       - guides/shockosc-avatar-setup.md
   - Hardware:
     # - hardware/buying-guide.md

@@ -214,4 +214,4 @@ After following this guide your config should look something like this:
     Check out the [VRChat Avatar Setup](shockosc-avatar-setup.md) Guide!  
 
 !!! info "Advanced Configuration"
-    On the [ShockOSC repository](https://github.com/OpenShock/ShockOsc) you can see additional configuration examples, but that would go beyond the limits of this simple guide  
+    On the [ShockOSC repository](https://github.com/OpenShock/ShockOsc) you can see additional configuration examples, but that would go beyond the limits of this simple guide
