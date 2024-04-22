@@ -5,8 +5,8 @@
     Check out [Safety](../safety/safety-rules.md) for more information.  
 
 !!! question "What is ShockOsc?"
-    ShockOsc is an application made for Shocklink that uses OSC to trigger your shockers from an in-game command.  
-    OSC is a service implemented in VRChat that allows the communication between the game and 3rd party applications.  
+    ShockOsc is an application made for OSC to trigger your shockers from an in-game trigger.  
+    [OSC](https://docs.vrchat.com/docs/osc-overview) is a service implemented in VRChat that allows the communication between the game and 3rd party applications.   
 
 ## What you need
 

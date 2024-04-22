@@ -1,23 +1,23 @@
-# Basic Setup
+# Basic Setup (Legacy)
 
 !!! danger "Safety Warning"
     **Don't wear the shocker somewhere near your neck or your heart.**  
     Check out [Safety](../safety/safety-rules.md) for more information.  
 
 !!! question "What is ShockOsc?"
-    ShockOsc is an application made for Shocklink that uses OSC to trigger your shockers from an in-game command.  
-    OSC is a service implemented in VRChat that allows the communication between the game and 3rd party applications.  
+    ShockOsc is an application made for OSC to trigger your shockers from an in-game trigger.  
+    [OSC](https://docs.vrchat.com/docs/osc-overview) is a service implemented in VRChat that allows the communication between the game and 3rd party applications.  
+
+!!! Warning
+    This Guide is meant for the OLD ShockOSC, please use the new one here [New ShockOSC](shockosc-basic-new.md) 
 
 ## What you need
-
 - [Fully setup shocker](openshock-first-setup.md)
-- [Newest ShockOsc](https://github.com/OpenShock/ShockOsc/releases)
-- Text editor, Notepad or [Notepad++](https://notepad-plus-plus.org/) for example
-
-<br></br>
+- [Newest ShockOsc](https://github.com/OpenShock/ShockOsc/releases/tag/v1.8.3)
+- Text editor, Notepad or [Notepad++](https://notepad-plus-plus.org/) for example  
 
 ## Setup ShockOsc
-1. [Download](https://github.com/OpenShock/ShockOsc/releases) and store the ``Openshock.ShockOsc.exe`` file at your desired location on your PC. 
+1. [Download](https://github.com/OpenShock/ShockOsc/releases/tag/v1.8.3) and store the ``Openshock.ShockOsc.exe`` file at your desired location on your PC. 
 2. Create **config.json**:
     1. Start the **Openshock.ShockOsc.exe** for the first time 
         * this will generate a **config.json** file in the same location as the Openshock.ShockOsc.exe. 
