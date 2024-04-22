@@ -17,12 +17,16 @@
 1. [Download ShockOSC](https://github.com/OpenShock/ShockOsc/releases) and install it. 
 2. Go to [Shocklink.net](https://shocklink.net/) and acquire an API Token for your account.
     1. Login into your account
-    2. Got to the "API Token" tab.
-    3. Press the green **+** icon.
+    2. Got to the "API Token" tab.  
+    ![Find API Tokens](../static/guides/shockosc/finds_apitokens.png)  
+    3. Press the green **+** icon.  
+    ![Green +](../static/guides/shockosc/green_plus.png)  
     4. Give it a name.
     5. Set no expiry
-    6. Click Create.
-    7. Copy the shown code.
+    6. Click Create.  
+    ![Create Token](../static/guides/shockosc/create_APIToken.png)  
+    7. Copy the shown code.  
+    ![Copy Token](../static/guides/shockosc/API_Token.png)  
 3. Login to ShockOSC
     1. Open ShockOSC
     2. Paste the API Token into the API Token field that will log you into your account.
