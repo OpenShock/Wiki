@@ -29,7 +29,8 @@
     ![Copy Token](../static/guides/shockosc/API_Token.png)  
 3. Login to ShockOSC
     1. Open ShockOSC
-    2. Paste the API Token into the API Token field that will log you into your account.
+    2. Paste the API Token into the API Token field and press continue.
+    ![LogIn](../static/guides/shockosc/NewShockOSC-LogIn.png)
 4. Configure your Shock Group.  
 *everything is done in groups, doesn't matter if it's only one shocker or multiple shockers.*  
     1. Create a new Group.
