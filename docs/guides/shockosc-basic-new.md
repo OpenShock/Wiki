@@ -33,10 +33,11 @@
     ![LogIn](../static/guides/shockosc/NewShockOSC-LogIn.png)
 4. Configure your Shock Group.  
 *everything is done in groups, doesn't matter if it's only one shocker or multiple shockers.*  
-    1. Create a new Group.
-    2. Give the Group a name. (This also defines the parameter name later used for your Avatar)  
-    3. Select what shocker is to be used with the group.  
-    4. *Optional you can override the default limits set in ShockOSC per group*
+    1. Go to the Group Tab.
+    2. Create a new Group.
+    3. Give the Group a name. (This also defines the parameter name later used for your Avatar)  
+    4. Select what shocker is to be used with the group.  
+    5. *Optional you can override the default limits set in ShockOSC per group*
     ![Group Setup](../static/guides/shockosc/NewShockOSC-GroupSetup.png)  
 5. Setup your Limits.
     1. Go to the Config Tab
