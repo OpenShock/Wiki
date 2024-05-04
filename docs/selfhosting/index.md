@@ -12,7 +12,7 @@ Software:
 1. [Python 3.6+](https://www.python.org/downloads/) (Current latest should work fine.)
 2. [Visual Studio Code](https://code.visualstudio.com/) with [PlatformIO addon](https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide)
 3. [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/) on Windows or [Docker Engine](https://docs.docker.com/engine/install/) on Linux.
-4. node [TODO: input the rest of data]
+4. [Node 20](https://nodejs.org/en/download)
 
 Other:
 
@@ -155,29 +155,92 @@ Variables that shouldn't be changed
 For more information consult readme.md files of each service [TODO: add links]
 
 
-### reverse proxy
+### Reverse proxy
 
 Run the docker-compose stack with `docker compose up` command in the same folder that docker-compose.yaml is created. Then open the admin panel on port 
 
 The default login and password is `admin@example.com` and `changeme`
 
-Now configure the 
+#### Configuring proxy hosts
 
+Add a Proxy Host for each: api, webui, live_control. Make sure that the FQDN for each container is correct.
 
-1. configure reverse proxy
-2. making share links work
-   1. /s/ -> /#/public/proxy/shares/links/[code] (share link)
-   2. /c/ -> /#/public/proxy/shares/code/[code] (add shocker link)
+In the above docker-compose those would be correct: 
+
+* api -> api.custom-domain.com
+* webui -> custom-domain.com 
+* live_control -> lcg.custom-domain.com
+
+Example configuration for the API proxy host:
+
+![Example config for API](images/example-proxy-host.png)
+
+* Domain Names: Put the FQDN here. 
+* scheme: leave as http (What scheme reverse-proxy will use to communicate with the container)
+* forward hostname/ip: Put in the name of the service specified in docker-compose ("api" for the api, "webui" for webui etc.)
+* forward port: leave at 80
+
+The rest of the settings can be left as is, except the SSL tab. You must set a SSL certificate for each proxy host. Either use Let's encrypt, or add your own SSL certificate in the "SSL certificates" tab.
+
+#### making share links work
+
+Add a proxy host with the FQDN set in OPENSHOCK_SHARE_URL variable, set settings the same as webui config from the previous step. Open the "Advanced" tab and paste the following config into "Custom Nginx Configuration" field:
+
+```apacheconf
+    # Redirect share links
+    location /s/ {
+        rewrite ^/s/(.*)$ https://custom-domain.com/#/public/proxy/shares/links/$1 redirect;
+    }
+    # Redirect shocker codes
+    location /c/ {
+        rewrite ^/c/(.*)$ https://custom-domain.com/#/public/proxy/shares/code/$1 redirect;
+    }
+
+    # Catch-all location block for everything else
+    location / {
+        return 404;
+    }
+```
+
+Final proxy hosts list should look similar to the following:
+![End result of proxy host config](images/end-result.png)
+
+Congratulations, the backend and website should be working now. Next up: building and flashing firmware for the shockers to work with the self-hosted instance. 
 
 ## Firmware setup
 
-1. Install vscode
-2. install latest python ( i used 3.11 )
-3. install platformio
-4. edit the env
-   1. Note about the version popup
-5. build and upload images onto the board
+Clone the [firmware repository](https://github.com/OpenShock/Firmware) and open the directory with visual studio code. Wait for platform.io to configure the project (you might need to restart VSCode, the process will take about 2-3 minutes)
+
+### Configuring the Firmware
+
+Open the .env file in the root of the directory, and edit it accordingly. Below is a example configuration for server setup with the template above.
+
+```ini
+OPENSHOCK_API_DOMAIN=api.custom-domain.com
+OPENSHOCK_FW_CDN_DOMAIN=custom-domain.com
+OPENSHOCK_FW_VERSION=1.2.1-selfhosted
+OPENSHOCK_FW_HOSTNAME=custom-domain
+OPENSHOCK_FW_AP_PREFIX=selfhosted-openshock-
+OPENSHOCK_URI_BUFFER_SIZE=256
+```
+Explanation of config options:
+
+* OPENSHOCK_API_DOMAIN: FQDN of the api. 
+* OPENSHOCK_FW_CDN_DOMAIN: FQDN of where the firmware was downloaded from. (since this is customized firmware, i set it to the FQDN of the webui.)
+* OPENSHOCK_FW_VERSION: version string that will show up in the webui (Image below)
+* OPENSHOCK_FW_HOSTNAME: Will be used in useragent, and during setup to access the captive portal
+* OPENSHOCK_FW_AP_PREFIX: Prefix for the wifi hotspot name you'll need to connect to to setup the board.
+* OPENSHOCK_URI_BUFFER_SIZE: only needs to be changed if the FQDN for the site is very long. (the monitor will log the need to do so. Default value should be sufficient for most domain names.)
+
+![version popup](images\version-string-view.png)
+
+
+### Build and flash
+
+Plug in your board, open Platform.io panel (on the left vertical bar), select your board, and run "General/Build" and "Platform/Build Filesystem Image" (the tasks might not show up at first, but should appear after a second.)
+
+After both succeed, run "General/Upload" and "Platform/Upload Filesystem Image". After both are successful, reboot the board and run "General/Monitor" task to view the logs, but everything should be set up to follow the [First time setup](../guides/openshock-first-setup.md) section of the wiki.
 
 ## Troubleshooting
 
-1. use the monitor from platformio and logs from the api service, in most cases the error is a misconfiguration of the api
+Use the monitor from platformio and logs from the api service, in most cases the error is a misconfiguration of the api
