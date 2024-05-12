@@ -53,10 +53,6 @@
 
 ## Remote trigger  
 This will utilize the Contact Sender and Receiver components of the VRChatSDK to make it possible to trigger a shock without touching your Avatar, like a remote.  
-!!! example "Prefab"
-    There is also a Prefab I created to make it easier to add it to an avatar  
-    You'll need VRCFury to auto merge it to your avatar, otherwise you have to do it manually.  
-    [Download](https://github.com/Kyobinoyo/OpenshockPrefabs/releases/tag/RemoteTrigger)  
 
 ### Create a Receiver
 1. Open your Avatars Project
@@ -138,53 +134,76 @@ This will utilize the Contact Sender and Receiver components of the VRChatSDK to
 
 <br></br>
 
-## Pause toggle
-!!! info "Still brewing!"
-
-    Sorry, we haven't _quite_ gotten around to writing this set of articles just yet. **In the meantime, feel free to hit us up on [Discord](https://discord.gg/AHcCbXbEcF).** 
-
-<br></br>
-
 ## List of available parameters
 
 === "Avatar Dynamic Parameters "
-    !!! Info "``ShockOsc/{ShockerName}`` (bool)"
+    !!! Info "``ShockOsc/{GroupName}`` (bool)"
         when set to ``true`` and held, will trigger a normal shock in ShockOSC
         
 
-    !!! note "``ShockOsc/{ShockerName}_Stretch`` (float)"  
+    !!! Info "``ShockOsc/{GroupName}_Stretch`` (float)"  
         can be used to control the shock intensity  
         (ex. stretch a bone to 50% and let go to get shocked for 50% intensity)  
 
-    !!! Info "``ShockOsc/{ShockerName}_IsGrabbed`` (bool)"   
+    !!! Info "``ShockOsc/{GroupName}_IsGrabbed`` (bool)"   
         mainly used  to indicate that a Physbone is grabbed
 
-    !!! note "``ShockOsc/{ShockerName}_IShock``  (bool)" 
+    !!! Info "``ShockOsc/{GroupName}_IShock``  (bool)" 
         if set to ``true`` will shock immediately ignoring the configurated ``HoldTime``.  
 
 === "Visual Parameters"
-    !!! Info "``ShockOsc/{ShockerName}_Active`` (bool)"
+    !!! Info "``ShockOsc/{GroupName}_Active`` (bool)"
         can be used to display an active shock on your avatar (when the shocker is active, ShockOSC will set this to ``true`` if not it will be ``false``)
 
-    !!! note "``ShockOsc/{ShockerName}_Cooldown`` (bool)"
+    !!! Info "``ShockOsc/{GroupName}_Cooldown`` (bool)"
         can be used to read out if the shocker is on cooldown  
 
-    !!! Info "``ShockOsc/{ShockerName}_CooldownPercentage`` (float)"
+    !!! Info "``ShockOsc/{GroupName}_CooldownPercentage`` (float)"
         Reads out the shocker cooldown, 1 means cooldown and 0 means no cooldown.  
-        can be used to make a loading bar for example.  
+        can be used to make a cooldown timer for example.  
         
-    !!! note "``ShockOsc/{ShockerName}_Intensity``  (float)"
-        represents how close the shock was to maximum intensity from ``IntensityRange``
+    !!! Info "``ShockOsc/{GroupName}_Intensity``  (float)"
+        represents how close the shock was to your configured max intensity.
 
 === "Dummy Shockers"  
     !!! Info "``_All``"
-        can be used in place of a shocker name, **represents all** shockers configured in the ShockOSC config.  
-        (ex: if **ShockOsc/_All** is set to ``true`` on you Avatar, every shocker configured in ShockOSC will be triggered at the same time)
+        can be used in place of a group name, **represents all** shockers on your account.  
+        (ex: if **ShockOsc/_All** is set to ``true`` on you Avatar, all of your shockers will be triggered at the same time)
 
-    !!! note "``_Any``"
-        can be used in place of a shocker name, **represents any** shocker configured in the ShockOSC config.  
+    !!! Info "``_Any``"
+        can be used in place of a group name, **represents any** shocker on your account.  
         (ex: if at least one of your shockers are currently shocking **ShockOsc/_Any_Active** will be ``true``)  
 
 === "Config Parameters"  
-    !!! Info "``ShockOsc/_Config/Paused`` (bool)"
-        As long as this parameter is ``true``, all activity by ShockOsc will be paused, shockers will still receive commands via [Share links](shocklink-sharelinks.md) and Share codes.  
+    !!! Info "``ShockOsc/_Config/_All/Paused`` (bool)"
+        It's a kind of killswitch, pausing ShockOSC.  
+
+    !!! Info "``ShockOsc/_Config/_All/MinIntensity`` (Float)"
+        Sets Minimum Intensity for the Random Mode.
+
+    !!! Info "``ShockOsc/_Config/_All/MaxIntensity`` (Float)"
+        Sets Maximum Intensity for the Random Mode.  
+
+    !!! Info "``ShockOsc/_Config/_All/MinDuration`` (Float)"
+        Sets Minimum Duration for the Random Mode.  
+
+    !!! Info "``ShockOsc/_Config/_All/MaxDuration`` (Float)"
+        Sets Maximum Duration for the Random Mode.  
+    
+    !!! Info "``ShockOsc/_Config/_All/Duration`` (Float)"
+        Sets Duration Time for the Fixed Mode (100% = 10 Sec.) 
+    
+    !!! Info "``ShockOsc/_Config/_All/Intensity`` (Float)"
+        Sets Intensity for the Fixed Mode.
+    
+    !!! Info "``ShockOsc/_Config/_All/ModeIntensity`` (Float)"
+        Toggles between Fixed and Random Intensity Mode (True = Random)  
+
+    !!! Info "``ShockOsc/_Config/_All/ModeDuration`` (Float)"
+        Toggles between Fixed and Random Duration Mode (True = Random)   
+
+    !!! Info "``ShockOsc/_Config/_All/CooldownTime`` (Float)"
+        Sets the desired cooldown time.  (0 - 100 sec.)
+
+    !!! Info "``ShockOsc/_Config/_All/HoldTime`` (Float)"
+        Sets the time needed to hold the trigger to activate a shock.
