@@ -12,26 +12,17 @@
 
 - [Fully setup shocker](openshock-first-setup.md)
 - [Newest ShockOsc](https://github.com/OpenShock/ShockOsc/releases)
+- [Shocklink Account](https://shocklink.net/)
 
 ## Setup ShockOsc
 1. [Download ShockOSC](https://github.com/OpenShock/ShockOsc/releases) and install it. 
-2. Go to [Shocklink.net](https://shocklink.net/) and acquire an API Token for your account.
-    1. Login into your account
-    2. Got to the "API Token" tab.  
-    ![Find API Tokens](../static/guides/shockosc/finds_apitokens.png)  
-    3. Press the green **+** icon.  
-    ![Green +](../static/guides/shockosc/green_plus.png)  
-    4. Give it a name.
-    5. Set no expiry
-    6. Click Create.  
-    ![Create Token](../static/guides/shockosc/create_APIToken.png)  
-    7. Copy the shown code.  
-    ![Copy Token](../static/guides/shockosc/API_Token.png)  
-3. Login to ShockOSC
+2. Login to ShockOSC
     1. Open ShockOSC
-    2. Paste the API Token into the API Token field and press continue.
+    2. Click on "Get Token", this will open a browser window.
+    3. In the browser, log into your Shocklink account and accept the request shown.
+    4. ShockOSC will now log you in.
     ![LogIn](../static/guides/shockosc/NewShockOSC-LogIn.png)
-4. Configure your Shock Group.  
+4. Create your Shock Group.  
 *everything is done in groups, doesn't matter if it's only one shocker or multiple shockers.*  
     1. Go to the Group Tab.
     2. Create a new Group.
@@ -39,7 +30,7 @@
     4. Select what shocker is to be used with the group.  
     5. *Optional you can override the default limits set in ShockOSC per group*
     ![Group Setup](../static/guides/shockosc/NewShockOSC-GroupSetup.png)  
-5. Setup your Limits.
+5. Configure your Limits.
     1. Go to the Config Tab
     2. Configure Cooldown, Hold time, if Intensity is fixed or random and the limits for that same with duration.
     3. Choose if ShockOSC pauses while being AFK and if it'll unmute you when shocked.
