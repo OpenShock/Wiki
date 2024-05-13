@@ -36,13 +36,8 @@
     3. Choose if ShockOSC pauses while being AFK and if it'll unmute you when shocked.
     4. Everything else can be left alone unless you know what you are doing.  
     ![Config](../static/guides/shockosc/NewShockOSC_Config.png)
-6. That's it, you are ready to go! 🎉 
-
-!!! Tip "Upgrade from old ShockOSC"
-    *If you upgrade from the old ShockOSC, you can just name your group like you named your shocker there to keep compatibility with your avatars parameters.*  
-    
-!!! success "VRChat Avatar Setup"
-    Check out the [VRChat Avatar Setup](shockosc-avatar-setup.md) Guide!  
-
-!!! info "Advanced Configuration"
-    On the [ShockOSC repository](https://github.com/OpenShock/ShockOsc) you can see additional configuration examples, but that would go beyond the limits of this simple guide
+6. **If you want to use ShockOsc in [ChilloutVR](https://store.steampowered.com/app/661130/ChilloutVR/) make sure to disable OSC Query in the App Setting.**
+7. That's it, you are ready to go! 🎉 
+ 
+!!! success "Avatar Setup"
+    Check out the [VRChat Avatar Setup](shockosc-avatar-setup-vrc.md) or [ChilloutVR Avatar Setup](shockosc-avatar-setup-cvr.md) Guide!  

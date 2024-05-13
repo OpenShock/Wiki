@@ -70,22 +70,15 @@ This will utilize the Contact Sender and Receiver components of the VRChatSDK to
     6. Set a Custom Tag
         1. I recommend generating a password with a password generator, **don't use a real password!** This password needs to be shared with the people that should be able to trigger your receiver.
     7. Set the receiver type to constant
-    8. Set the Parameter: ``ShockOsc/{ShockerName}_IShock``,alternatively you can use ``ShockOsc/_All_IShock`` to trigger all your shockers at the same time.
+    8. Set the Parameter: ``ShockOsc/{ShockerName}_IShock``(bool),alternatively you can use ``ShockOsc/_All_IShock``(bool) to trigger all your shockers at the same time.
       Replace *{ShockerName}* with the name you gave your shocker in the [ShockOsc config](./shockosc-basic.md#setup-shockosc).  
       Example: ``ShockOsc/leftleg_IShock``.  
     ![Receiver](../static/guides/shockosc/RemoteShock_Receiver.png)
     ??? example
-        === "Component"
-            ![image](../static/guides/shockosc/ExampleRemote_Receiver.png)
-        === "ShockOsc Config"
-            ```json
-            "Shockers": {
-            "leftleg": "18b1d0e6a-f9a0-4e93-9812-241eae9271791"
-            }
-            ```
-            No idea what this is? Check out the [ShockOsc Basic setup guide](shockosc-basic.md)  
+        ![image](../static/guides/shockosc/ExampleRemote_Receiver.png)  
+
 ### Create a Sender
-1. Open your friends Avatar project.
+1. Open your partners Avatar project.
 2. Create a Sender
     1. In the Hierarchy right click your Avatar
     2. Click *Create Empty* to create a new GameObject
