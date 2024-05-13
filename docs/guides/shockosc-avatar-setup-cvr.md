@@ -9,8 +9,9 @@
 ## Touch Trigger
 1. Open your Project
 2. Create an Advanced Avatar Trigger  
-    1. Select the Bone of you avatar you want the trigger to be.  
-    2. Create a new empty Game object.  
+    1. Select the Bone of you avatar you want the trigger to be.   
+    2. Create a new empty Game object and name it however you like.  
+    ![Hierarchy](../static/guides/shockosc/CVR/Hierarchy.png)  
     3. Add the "CVR Advanced Avatar Trigger" component to it.  
     4. Configure it like followed and replace {GROUPNAME} with the name of your ShockOsc group. ``ShockOsc/Bzz`` for example:  
     ![Trigger](../static/guides/shockosc/CVR/AdvancedAvatarTrigger.png)  
