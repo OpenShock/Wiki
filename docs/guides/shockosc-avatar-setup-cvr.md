@@ -15,8 +15,8 @@
     3. Add the "CVR Advanced Avatar Trigger" component to it.  
     4. Configure it like followed and replace {GROUPNAME} with the name of your ShockOsc group. ``ShockOsc/Bzz`` for example:  
     ![Trigger](../static/guides/shockosc/CVR/AdvancedAvatarTrigger.png)  
-3. Add the Parameter to your Animator.  
-4. Add the Parameter to your Menu as a Bool.  
+3. Add the Parameter to your Animator as a bool.  
+4. Add the Parameter to your Menu as a bool.  
 ![Menu](../static/guides/shockosc/CVR/Menu.png)  
 
 ## List of available parameters
