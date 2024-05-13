@@ -21,7 +21,10 @@ nav:
       - guides/shockosc-basic-new.md
       - guides/shockosc-avatar-setup-vrc.md
       - guides/shockosc-avatar-setup-cvr.md
-      - guides/shockosc-basic.md
+      ############################
+      #     Old ShockOSC         #
+      #- guides/shockosc-basic.md#
+      ############################  
   - Hardware:
     # - hardware/buying-guide.md
     - Shockers:
