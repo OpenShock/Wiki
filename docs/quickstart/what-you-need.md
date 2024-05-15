@@ -11,7 +11,7 @@ To get started with OpenShocks, you need three things:
 
 This can be either a public or private OpenShock server. We recommend the [ShockLink.net](https://shocklink.net) public OpenShock instance.
 
-Interested in hosting your own? Check out [Selfhosting](../selfhosting/index.md).
+Interested in hosting your own? Check out [Selfhosting](../diy/selfhosting.md).
 
 ### 2. An OpenShock Controller
 

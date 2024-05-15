@@ -61,12 +61,11 @@ nav:
       - North America:
         - 'vendors/hardware/nullstalgia.md'
     - 'vendors/software.md'
-  - Do-it-yourself:
+  - Do it Yourself:
     - Hardware:
-      - diy/prerequisites.md
       - diy/assembling.md
-    - Selfhosting:
-      - 'selfhosting/index.md'
+    - Software:
+      - 'diy/selfhosting.md'
   - 'contributing/contributing.md'
   - Legal and Privacy:
     - 'legal/terms-and-conditions.md'
