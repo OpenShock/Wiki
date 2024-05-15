@@ -7,7 +7,7 @@ tags:
   - support:full
 ---
 
-# Pishock 2023 (current)
+# Pishock 2023 (Current)
 
 !!! warning "OpenShock is not affiliated with Pishock"
 
