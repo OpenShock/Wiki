@@ -29,16 +29,9 @@
     - **Parameter**: ``ShockOsc/{ShockerName}``  
       Replace *{ShockerName}* with the name you gave your shocker in the [ShockOsc config](./shockosc-basic.md#setup-shockosc).  
       Example: ``ShockOsc/leftleg``.  
-    ??? example
-        === "Component"
-            ![Image "Image"](../static/guides/shockosc/example_settings3.png)
-        === "ShockOsc Config"
-            ```json
-            "Shockers": {
-            "leftleg": "18b1d0e6a-f9a0-4e93-9812-241eae9271791"
-            }
-            ```
-            No idea what this is? Check out the [ShockOsc Basic setup guide](shockosc-basic.md)  
+    !!! info "Example"
+        ![Image "Image"](../static/guides/shockosc/example_settings3.png)  
+
 4. Upload your Avatar and you are ready to go! 🎉  
 
 !!! bug "Activate OSC"
