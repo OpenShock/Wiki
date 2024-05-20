@@ -9,14 +9,14 @@ tags:
 ---
 
 # OpenShock Core V1
-### Designed by [nullstalgia](../../../vendors/hardware/nullstalgia.md)
 
+Designed by [nullstalgia](../../../vendors/hardware/nullstalgia.md)
 
 !!! success "Fully compatible"
-
     This product is fully compatible with OpenShock.
 
 ## Specifications
+
 - Espressif ESP32-S3-WROOM-1-N8 (8MB Flash, no PSRAM)
 - USB-C Connection to integrated ESP32-S3 USB (no UART adapter)
 - On-board 433MHz RF Transmitter
@@ -24,8 +24,9 @@ tags:
 - On-board Emergency Stop Button, plus 3.5mm extension port (for foot pedals)
 
 ## Pinout
+
 - GPIO 15 for RX Transmission
-- GPIO 13 for Emergency Stop (Active Low, on-board pullup)
+- GPIO 13 for Emergency Stop (Active Low, on board pull-up)
 - GPIO 35 for Status LED (Active High)
 - GPIO 48 for RGB LED
 
@@ -36,8 +37,8 @@ If you are having difficulties flashing via the USB port, you can enter the USB 
 You may require a pair of small pointy objects, such as toothpicks or paperclips, to reach the buttons mentioned below.
 
 1. Plug the board into your computer via USB, make sure the cable can support power and data.
-2. Hold down BOOT <sup>(IO 0)</sup>.
-3. While holding boot, tap RST <sup>(EN)</sup>.
+2. Hold down BOOT (IO 0).
+3. While holding boot, tap RST (EN).
 4. Release BOOT and upload new firmware via the virtual COM port!
 5. You may need to tap RST (without BOOT!) to start new firmware after flashing has completed.
 
@@ -53,4 +54,3 @@ You may require a pair of small pointy objects, such as toothpicks or paperclips
 ![OpenShock Core V1.1 Ports](../../../static/boards/openshock-core-v1/case-ports.jpg)
 ![OpenShock Core V1.1 Case Logo Side](../../../static/boards/openshock-core-v1/case-name-side.jpg)
 ![OpenShock Core V1.1 Case Null Symbol Side/Bottom](../../../static/boards/openshock-core-v1/case-bottom-null.jpg)
-

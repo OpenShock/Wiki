@@ -3,5 +3,6 @@
     "MD013": false,
     "MD049": {"style": "asterisk"},
     "MD046": {"style": "fenced"},
-    "MD041": false
+    "MD041": false,
+    "MD007": {"indent": 4}
 }
