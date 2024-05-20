@@ -4,8 +4,7 @@ OpenShock Software is available Open Source under the AGPL-3.0 License with extr
 
 These only apply to some projects. Read the individual license files in the individual source code repositories for more information.
 
-
-```
+```text
 
                     GNU AFFERO GENERAL PUBLIC LICENSE
                        Version 3, 19 November 2007
