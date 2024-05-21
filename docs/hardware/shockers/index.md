@@ -5,11 +5,10 @@ tags:
 ---
 
 # Shockers
-
+<-- -->
 !!! warning "Import restrictions"
-
     Shockers are advertised as shock collars for use on animals, which is considered illegal by EU law.
-    
+
     Importing these products to your country might be restricted because of this.
 
     As an alternative, you can proxy your parcels via a country that does not closely monitor these product imports, such as the Netherlands or Luxembourg.

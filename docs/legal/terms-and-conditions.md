@@ -13,11 +13,9 @@ OpenShock Software is intended for use exclusively on consenting human individua
 
 Furthermore, OpenShock assumes no liability for any harm or permanent damage resulting from the use of our software, either alone or in combination with any hardware or equipment. Users are responsible for adhering to our safety guidelines and are encouraged to prioritize the well-being of themselves and others. Our safety guide must be followed diligently to ensure the responsible and ethical use of OpenShock Software.
 
-
 We are committed to the well-being and safety of all animals. As part of our core values, we firmly oppose any use of OpenShock Software or similar products on animals.
 We believe in treating animals with care, respect, and compassion at all times. Therefore, we expressly prohibit the use of our software for any purpose related to animals.
 We advocate for positive, humane training methods that promote trust and cooperation between humans and animals.
-
 
 ## Changes to these terms and conditions
 

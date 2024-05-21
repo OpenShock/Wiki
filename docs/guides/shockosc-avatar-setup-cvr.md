@@ -1,6 +1,7 @@
 # ChilloutVR Avatar Setup
 
 ## What you need
+
 - [ShockOsc](shockosc-basic.md)
 - A ChilloutVR avatar
 - Basic experience in working with ChilloutVR avatars is recommended  
@@ -10,9 +11,10 @@
     Please make sure you have "OSC Query" turned off in the **App Settings** tab.  
 
 ## Touch Trigger
+
 1. Open your Project
 2. Create an Advanced Avatar Trigger  
-    1. Select the Bone of you avatar you want the trigger to be.   
+    1. Select the Bone of you avatar you want the trigger to be.
     2. Create a new empty Game object and name it however you like.  
     ![Hierarchy](../static/guides/shockosc/CVR/Hierarchy.png)  
     3. Add the "CVR Advanced Avatar Trigger" component to it.  
@@ -29,7 +31,6 @@
 === "Avatar Dynamic Parameters "
     !!! Info "``ShockOsc/{GroupName}`` (bool)"
         when set to ``true`` and held, will trigger a normal shock in ShockOSC
-        
 
     !!! Info "``ShockOsc/{GroupName}_Stretch`` (float)"  
         can be used to control the shock intensity  
@@ -39,7 +40,7 @@
         mainly used  to indicate that a Physbone is grabbed
 
     !!! Info "``ShockOsc/{GroupName}_IShock``  (bool)" 
-        if set to ``true`` will shock immediately ignoring the configurated ``HoldTime``.  
+        if set to ``true`` will shock immediately ignoring the configured ``HoldTime``.  
 
 === "Visual Parameters"
     !!! Info "``ShockOsc/{GroupName}_Active`` (bool)"
@@ -49,7 +50,7 @@
         can be used to read out if the shocker is on cooldown  
 
     !!! Info "``ShockOsc/{GroupName}_CooldownPercentage`` (float)"
-        Reads out the shocker cooldown, 1 means cooldown and 0 means no cooldown.  
+        Reads out the shocker cooldown, 1 means cooldown and 0 means no cooldown.
         can be used to make a cooldown timer for example.  
         
     !!! Info "``ShockOsc/{GroupName}_Intensity``  (float)"
