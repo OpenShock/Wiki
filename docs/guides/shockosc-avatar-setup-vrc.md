@@ -23,7 +23,7 @@
         ![Image "Image"](../static/guides/shockosc/example_position.png)  
 3. Configure the **VRC Contact Receiver** component:  
     - **Radius** : That's the range of the trigger, don't make it too big otherwise people will constantly trigger it by accident.
-    - **Filtering**: ``Local Only`` should definetily be used, but it's on you if you use ``Allow Self``, ``Allow Others`` or both of these. This will decide if other people or you can trigger the shocker by touching it.
+    - **Filtering**: ``Local Only`` should definitely be used, but it's on you if you use ``Allow Self``, ``Allow Others`` or both of these. This will decide if other people or you can trigger the shocker by touching it.
     - **Collision Tags**: I recommend that you at least use the ``Finger`` Tag, otherwise people can't touch the trigger with their fingers, but is's up to you what kind of tags you use.
     - **Receiver Type**: this needs to be set to ``constant``.
     - **Parameter**: ``ShockOsc/{ShockerName}``  
@@ -108,7 +108,7 @@ This will utilize the Contact Sender and Receiver components of the VRChatSDK to
 
 !!! Bug "Important"
     Both avatars can now be uploaded, the Receiver Avatar should also delete their VRChat OSC config (``C:\Users\%USERPROFILE%\AppData\LocalLow\VRChat\VRChat\OSC``) to make sure that the newly added IShock parameter is used by OSC.  
-    Also make sure you have interactions enabled ingame otherwise contacts won't work!
+    Also make sure you have interactions enabled in-game otherwise contacts won't work!
 
 ## Pull trigger
 
