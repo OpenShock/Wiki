@@ -8,7 +8,7 @@
 - [VSCode](https://visualstudio.microsoft.com/#vscode-section)
 - [PlatformIO IDE](https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide)
 
-Clone [Openshock/Firmware](https://github.com/OpenShock/Firmware) to a folder on your PC.
+Clone [OpenShock/Firmware](https://github.com/OpenShock/Firmware) to a folder on your PC.
 Open the folder you just downloaded  with VSCode. Allow time for PlatformIO to initialize the IDE. Once it has completed, pick the project environment based on the board you would like to compile for under the new PlatformIO icon.
 
 ![An image showing where to find the icon for 'Pick project environment'](../static/diy/software/compiling/platformio.png)

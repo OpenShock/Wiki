@@ -12,7 +12,7 @@ nav:
           - Quickstart:
                 - quickstart/what-you-need.md
                 - quickstart/buying-guide.md
-          - Openshock:
+          - OpenShock:
                 - guides/openshock-how-to-flash-your-board.md
                 - guides/openshock-first-setup.md
                 - guides/openshock-how-to-update.md
