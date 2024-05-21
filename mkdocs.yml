@@ -20,10 +20,9 @@ nav:
                 - guides/shocklink-sharelinks.md
                 - guides/shocklink-sharecodes.md
           - ShockOsc:
-                - guides/shockosc-basic-new.md
+                - guides/shockosc-basic.md
                 - guides/shockosc-avatar-setup-vrc.md
                 - guides/shockosc-avatar-setup-cvr.md
-            # - guides/shockosc-basic.md
 
     - Hardware:
           - Shockers:
