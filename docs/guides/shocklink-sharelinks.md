@@ -1,9 +1,5 @@
 # Share links
 
-!!! danger "Safety Warning"
-    **Don't wear the shocker somewhere near your neck or your heart.**  
-    Check out [Safety](../safety/safety-rules.md) for more information.
-
 !!! question "What is a Share link?"
     Share links are a great way to give people control of your shockers without the need of a Shocklink account.  
 
