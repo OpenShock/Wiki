@@ -63,7 +63,7 @@ This will utilize the Contact Sender and Receiver components of the VRChatSDK to
     6. Set a Custom Tag
         1. I recommend generating a password with a password generator, **don't use a real password!** This password needs to be shared with the people that should be able to trigger your receiver.
     7. Set the receiver type to constant
-    8. Set the Parameter: ``ShockOsc/{GroupName}_IShock``(bool),alternatively you can use ``ShockOsc/_All_IShock``(bool) to trigger all your shockers at the same time.
+    8. Set the Parameter: ``ShockOsc/{GroupName}_IShock``(bool), alternatively you can use ``ShockOsc/_All_IShock``(bool) to trigger all your shockers at the same time.
       Replace *{GroupName}* with the name you gave your shocker in the [ShockOsc config](./shockosc-basic.md#setup-shockosc).  
       Example: ``ShockOsc/leftleg_IShock``.  
     ![Receiver](../static/guides/shockosc/RemoteShock_Receiver.png)
