@@ -51,6 +51,7 @@ We do our best to give these contributors sufficient time to test new firmware d
 | Board | Variant | Labels | Maintainer(s) |
 |-|-|-|-|
 | [Wemos Lolin S2 Mini](wemos/lolin-s2-mini.md) | N4R2 (All) | | [:airplane: Red Mushie](https://github.com/redmushie) |
+| [DFRobot Firebeetle ESP32-E](dfr-firebeetle/dfr-firebeetle.md) | ESP32-E (All) | | [:airplane: LostQuasar](https://github.com/LostQuasar) |
 
 ## Not maintained
 
