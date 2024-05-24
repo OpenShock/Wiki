@@ -6,8 +6,6 @@
 - A VRChat avatar
 - Basic experience in working with VRChat avatars is recommended
 
-<br></br>
-
 ## Touch trigger
 
 1. Open your avatars unity project.
@@ -25,7 +23,7 @@
         ![Image "Image"](../static/guides/shockosc/example_position.png)  
 3. Configure the **VRC Contact Receiver** component:  
     - **Radius** : That's the range of the trigger, don't make it too big otherwise people will constantly trigger it by accident.
-    - **Filtering**: ``Local Only`` should definetily be used, but it's on you if you use ``Allow Self``, ``Allow Others`` or both of these. This will decide if other people or you can trigger the shocker by touching it.
+    - **Filtering**: ``Local Only`` should definitely be used, but it's on you if you use ``Allow Self``, ``Allow Others`` or both of these. This will decide if other people or you can trigger the shocker by touching it.
     - **Collision Tags**: I recommend that you at least use the ``Finger`` Tag, otherwise people can't touch the trigger with their fingers, but is's up to you what kind of tags you use.
     - **Receiver Type**: this needs to be set to ``constant``.
     - **Parameter**: ``ShockOsc/{GroupName}``  
@@ -41,7 +39,6 @@
 
 !!! Tip "Avatar Update Info"
     If you update an existing avatar, make sure you delete the OSC config files in ``C:\Users\%USERPROFILE%\AppData\LocalLow\VRChat\VRChat\OSC``, they are not important for the game since they only hold the avatar parameters for OSC to use, they get regenerated every time you change your avatar, but VRChat fails to update them sometimes when a new parameter got added to an Avatar.
-
     Reload your Avatar after that.
 
 ## Remote trigger  
@@ -111,14 +108,12 @@ This will utilize the Contact Sender and Receiver components of the VRChatSDK to
 
 !!! Bug "Important"
     Both avatars can now be uploaded, the Receiver Avatar should also delete their VRChat OSC config (``C:\Users\%USERPROFILE%\AppData\LocalLow\VRChat\VRChat\OSC``) to make sure that the newly added IShock parameter is used by OSC.  
-  
-    Also make sure you have interactions enabled ingame otherwise contacts won't work!
+    Also make sure you have interactions enabled in-game otherwise contacts won't work!
 
 ## Pull trigger
 
 !!! info "Still brewing!"
-
-    Sorry, we haven't _quite_ gotten around to writing this set of articles just yet. **In the meantime, feel free to hit us up on [Discord](https://discord.gg/AHcCbXbEcF).**
+    Sorry, we haven't *quite* gotten around to writing this set of articles just yet. **In the meantime, feel free to hit us up on [Discord](https://discord.gg/AHcCbXbEcF).**
 
 ## List of available parameters
 
