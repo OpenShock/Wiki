@@ -1,6 +1,6 @@
 site_name: OpenShock
 docs_dir: docs
-site_url: https://openshock.org/
+site_url: https://wiki.openshock.org/
 repo_url: https://github.com/OpenShock/Wiki
 
 nav:

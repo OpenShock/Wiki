@@ -33,7 +33,7 @@
 4. Configure your Limits.
     1. Go to the Config Tab
     2. Configure Cooldown, Hold time, if Intensity is fixed or random and the limits for that same with duration.
-    3. Choose if ShockOSC pauses while being AFK and if it'll unmute you when shocked.
+    3. Choose if ShockOSC pauses while being AFK and if it'll un-mute you when shocked.
     4. Everything else can be left alone unless you know what you are doing.  
     ![Config](../static/guides/shockosc/NewShockOSC_Config.png)
 5. **If you want to use ShockOsc in [ChilloutVR](https://store.steampowered.com/app/661130/ChilloutVR/) make sure to disable OSC Query in the App Setting.**
