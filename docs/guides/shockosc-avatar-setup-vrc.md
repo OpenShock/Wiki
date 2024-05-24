@@ -26,12 +26,12 @@
     - **Filtering**: ``Local Only`` should definitely be used, but it's on you if you use ``Allow Self``, ``Allow Others`` or both of these. This will decide if other people or you can trigger the shocker by touching it.
     - **Collision Tags**: I recommend that you at least use the ``Finger`` Tag, otherwise people can't touch the trigger with their fingers, but is's up to you what kind of tags you use.
     - **Receiver Type**: this needs to be set to ``constant``.
-    - **Parameter**: ``ShockOsc/{ShockerName}``  
-      Replace *{ShockerName}* with the name you gave your shocker in the [ShockOsc config](./shockosc-basic.md#setup-shockosc).  
+    - **Parameter**: ``ShockOsc/{GroupName}``  
+      Replace *{GroupName}* with the name you gave your shocker in the [ShockOsc config](./shockosc-basic.md#setup-shockosc).  
       Example: ``ShockOsc/leftleg``.  
-    !!! info "Example"
+    !!! example "Example"
         ![Image "Image"](../static/guides/shockosc/example_settings3.png)  
-
+        
 4. Upload your Avatar and you are ready to go! 🎉  
 
 !!! bug "Activate OSC"
@@ -62,8 +62,8 @@ This will utilize the Contact Sender and Receiver components of the VRChatSDK to
     6. Set a Custom Tag
         1. I recommend generating a password with a password generator, **don't use a real password!** This password needs to be shared with the people that should be able to trigger your receiver.
     7. Set the receiver type to constant
-    8. Set the Parameter: ``ShockOsc/{ShockerName}_IShock``(bool),alternatively you can use ``ShockOsc/_All_IShock``(bool) to trigger all your shockers at the same time.
-      Replace *{ShockerName}* with the name you gave your shocker in the [ShockOsc config](./shockosc-basic.md#setup-shockosc).  
+    8. Set the Parameter: ``ShockOsc/{GroupName}_IShock``(bool), alternatively you can use ``ShockOsc/_All_IShock``(bool) to trigger all your shockers at the same time.
+      Replace *{GroupName}* with the name you gave your shocker in the [ShockOsc config](./shockosc-basic.md#setup-shockosc).  
       Example: ``ShockOsc/leftleg_IShock``.  
     ![Receiver](../static/guides/shockosc/RemoteShock_Receiver.png)
     ??? example
