@@ -6,7 +6,7 @@
 ## What you need
 
 - [Shocklink.net account](https://shocklink.net/)
-- [A working shocker](openshock-first-setup.md)
+- [A connected shocker](openshock-first-setup.md)
 
 ## How to create a Share link
 
@@ -35,7 +35,7 @@
         ![Image "Image"](../static/guides/how-to-sharelinks/addshockertosharelink2.png)  
 
 **That's it.**  
-Everyone you send the share link to can now control your shocker. 🎉  
+Everyone you send the share link to can now control your shocker. 🎉
 
 !!! Tip
     Create multiple share links for different people to have better control over who can shock you!

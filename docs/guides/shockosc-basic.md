@@ -1,21 +1,21 @@
 # Basic Setup
 
-!!! question "What is ShockOsc?"
-    ShockOsc is an application made for OSC to trigger your shockers from an in-game trigger.  
+!!! question "What is ShockOSC?"
+    ShockOSC is an application made for OSC to trigger your shockers from an in-game trigger.  
     [OSC](https://docs.vrchat.com/docs/osc-overview) is a service implemented in VRChat that allows the communication between the game and 3rd party applications.
 
-!!! info "New ShockOsc"
-    Information on this page is dedicated to the **new** version of ShockOsc, the old version is no longer supported.
+!!! info "New ShockOSC"
+    Information on this page is dedicated to the **new** version of ShockOSC, the old version is no longer supported.
 
 ## What you need
 
 - [Fully setup shocker](openshock-first-setup.md)
-- [Newest ShockOsc](https://github.com/OpenShock/ShockOsc/releases)
+- [Newest ShockOSC](https://github.com/OpenShock/ShockOSC/releases)
 - [Shocklink Account](https://shocklink.net/)
 
 ## Setup ShockOsc
 
-1. [Download ShockOSC](https://github.com/OpenShock/ShockOsc/releases) and install it.
+1. [Download ShockOSC](https://github.com/OpenShock/ShockOSC/releases) and install it.
 2. Login to ShockOSC
     1. Open ShockOSC
     2. Click on "Get Token", this will open a browser window.

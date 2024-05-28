@@ -9,7 +9,7 @@
 ## What you need
 
 - [Shocklink.net account](https://shocklink.net/)
-- [A working shocker](openshock-first-setup.md)
+- [A connected shocker](openshock-first-setup.md)
 
 ## Create a share code
 

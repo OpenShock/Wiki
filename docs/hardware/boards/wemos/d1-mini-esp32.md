@@ -14,7 +14,7 @@ tags:
 ## Specifications
 
 !!! example "Still brewing!"
-    Sorry, we haven't *quite* finished this article yet. **In the meantime, feel free to hit us up on [Discord](https://discord.gg/AHcCbXbEcF) if you have any trouble.**
+    Sorry, we haven't *quite* finished this article yet. **In the meantime, feel free to hit us up on [Discord](https://discord.gg/OpenShock) if you have any trouble.**
 
 ## Buying
 
