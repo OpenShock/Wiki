@@ -79,7 +79,7 @@
 **Everything should work now, have fun!** 🎉  
 
 !!! question "Need Help?"
-    If you need additional help, join our [Discord](https://shocklink.net/discord)
+    If you need additional help, join our [Discord](https://discord.gg/OpenShock)
 
 !!! Info
     Your shocker will remember the Device, no need to pair it every time.

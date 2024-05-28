@@ -22,4 +22,4 @@ Select `Petrainer` when adding the shocker to your account.
 
 ## Media
 
-Do you have media of this product you are willing to let us use? Contact us [on Discord](https://discord.gg/AHcCbXbEcF).
+Do you have media of this product you are willing to let us use? Contact us [on Discord](https://discord.gg/OpenShock).

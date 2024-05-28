@@ -131,7 +131,7 @@ extra:
     # Social links rendered in the footer.
     social:
         - icon: fontawesome/brands/discord
-          link: https://discord.gg/AHcCbXbEcF
+          link: https://discord.gg/OpenShock
           name: Discord
 
         - icon: fontawesome/brands/github

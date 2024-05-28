@@ -14,7 +14,7 @@ Head over to the Guides to get started:
 
 ## Community
 
-Like what you see? Join us [over on Discord!](https://discord.gg/AHcCbXbEcF)
+Like what you see? Join us [over on Discord!](https://discord.gg/OpenShock)
 
 ## Contributing
 
