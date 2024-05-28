@@ -19,7 +19,7 @@ Designed by [nullstalgia](../../../vendors/hardware/nullstalgia.md)
 
 - Espressif ESP32-S3-WROOM-1-N8 (8MB Flash, no PSRAM)
 - USB-C Connection to integrated ESP32-S3 USB (no UART adapter)
-- On-board 433MHz RF Transmitter
+- On-board 433 MHz Transmitter
 - RGB and Status LEDs
 - On-board Emergency Stop Button, plus 3.5mm extension port (for foot pedals)
 

@@ -20,7 +20,7 @@ First seen in the wild on `2023-09-19`.
 ## Specifications
 
 - Espressif ESP32-WROOM-32D
-- On-board radio chip
+- On-board 433 MHz transmitter
 
 ## Pinout
 

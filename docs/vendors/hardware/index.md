@@ -17,7 +17,7 @@ This is a **non-curated list** of self-reported vendors from the OpenShock **com
 | Term | Meaning |
 |-|-|
 | :airplane: Ships to | The region(s) that a vendor ships to. |
-| :electric_plug: Controllers | Whether they sell pre-assembled controllers ([ESP32 board](../../hardware/boards/index.md) + [433MHz radio](../../hardware/radio/index.md)). |
+| :electric_plug: Controllers | Whether they sell pre-assembled controllers ([ESP32 board](../../hardware/boards/index.md) + [433 MHz transmitter](../../hardware/transmitter/index.md)). |
 | :high_voltage: Shockers | Whether they sell [shockers](../../hardware/shockers/index.md). |
 | :package: 3D Prints | Whether they sell 3D-printed cases (for controllers) or spacers (for shockers). |
 
@@ -37,4 +37,4 @@ This is a **non-curated list** of self-reported vendors from the OpenShock **com
 |-|-|-|-|-|-|
 | [nullstalgia](./nullstalgia.md) | :flag_us: USA | :white_check_mark: | :white_check_mark: | :white_check_mark: | 2023-12-01 |
 
-*Want to be on this list? Hit up a maintainer on [Discord](https://discord.gg/AHcCbXbEcF).*
+*Want to be on this list? Hit up a maintainer on [Discord](https://discord.gg/OpenShock).*
