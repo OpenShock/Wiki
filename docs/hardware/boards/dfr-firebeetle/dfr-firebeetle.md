@@ -23,6 +23,8 @@ tags:
 
 ## Pinout
 
+- Pin 2 / D9 is used for the status LED.
+- Pin 5 / D8 is used to control the onboard RGB LED.
 - Pin 13 / D7 is the default pin for transmitting.
 
 ## Buying
