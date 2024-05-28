@@ -17,7 +17,7 @@
 
 1. Connect your **Phone** to the hub:
     1. Plug your hub in and ensure it has power.
-    2. On your phone, search for a Wi-Fi network named similar to ``Openshock-24:DC:C3:9F:72:C8`` and connect to it.  
+    2. On your phone, search for a Wi-Fi network named similar to ``OpenShock-24:DC:C3:9F:72:C8`` and connect to it.  
     ??? Info "Image"
         ![Image "image"](../static/guides/first-setup/WiFioverview.png)
 2. Connect to the hub via the network:
