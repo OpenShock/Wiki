@@ -13,9 +13,9 @@ This can be either a public or private OpenShock server. We recommend the [Shock
 
 Interested in hosting your own server? Check out the [Self-hosting](../diy/selfhosting.md) guide.
 
-### 2. An OpenShock controller
+### 2. An OpenShock hub
 
-A controller connects OpenShock to the shock device via a micro-controller and a 433 MHz transmitter.
+A hub connects OpenShock to the shock device via a micro-controller and a 433 MHz transmitter.
 
 - For pre-built options, check out the [Hardware vendors](../vendors/hardware/index.md).
 - For building your own, after reading the [Buying guide](../quickstart/buying-guide.md), head over to our do it yourself [Assembly guide](../diy/assembling.md).
