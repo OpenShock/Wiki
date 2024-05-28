@@ -8,7 +8,7 @@ tags:
     - support:community
 ---
 
-# DFRobot Firebeetle 2 ESP32-E
+# DFRobot FireBeetle 2 ESP32-E
 
 !!! success "Fully compatible"
     This product is fully compatible with OpenShock.
@@ -27,8 +27,8 @@ tags:
 
 ## Buying
 
-- <https://www.dfrobot.com/product-2195.html>
+- [www.dfrobot.com](https://www.dfrobot.com/product-2195.html)
 
 ## Media
 
-![DFRobot Firebeetle](../../../static/boards/dfrobot-firebeetle/firebeetle.jpg)
+![DFRobot FireBeetle](../../../static/boards/dfrobot-firebeetle/firebeetle.jpg)

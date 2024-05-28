@@ -17,19 +17,18 @@ Cheap and easily acquirable.
 
 Best effort list of current AliExpress sellers. Feel free to add more sources to this list!
 
-- Germany/International?: [AliExpress](https://aliexpress.com/item/1005005133046985.html)
-- Netherlands: [AliExpress](https://nl.aliexpress.com/item/1005005359066763.html)
-- US: [AliExpress](https://aliexpress.us/item/3256805172752011.html)
+- :globe_with_meridians: International: [AliExpress](https://aliexpress.com/item/1005005133046985.html)
+- :flag_nl: Netherlands: [AliExpress](https://nl.aliexpress.com/item/1005005359066763.html)
 
 ### Cables
 
-The charging port for this model is a standard **DC 3.5-1.35** with 5V connector. An USB to **DC 3.5-1.35** cable is what you would want. You might even have one laying around as they are very common.
+The charging port for this model is a standard **DC 3.5 x 1.35mm**. A USB to **DC 3.5 x 1.35mm** cable is used to charge the shocker. You might even have one laying around as they are common.
 
-- :globe_with_meridians: International -- [AliExpress](https://aliexpress.com/item/2255799944669970.html)
+- :globe_with_meridians: International: [AliExpress](https://aliexpress.com/item/2255799944669970.html)
 
 ## Media
 
-Do you have media of this product you are willing to let us use? Contact us [on Discord](https://discord.gg/AHcCbXbEcF).
+Do you have media of this product you are willing to let us use? Contact us [on Discord](https://discord.gg/OpenShock).
 
 ## Technical Specification
 

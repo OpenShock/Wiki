@@ -5,7 +5,7 @@ If you've found yourself here, chances are you're either looking to get shocked,
 
 ## Requirements
 
-To get started with OpenShocks, you need three things:
+To get started with OpenShock, you need three things:
 
 ### 1. An OpenShock server
 

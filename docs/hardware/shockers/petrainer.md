@@ -7,7 +7,6 @@ tags:
 # Petrainer
 
 !!! success "Compatible"
-
     This product is compatible with OpenShock.
 
 ## Usage
@@ -17,7 +16,6 @@ Select `Petrainer` when adding the shocker to your account.
 ## Buying
 
 !!! failure "Discontinued product"
-
     This product has been discontinued.
 
 ## Media
