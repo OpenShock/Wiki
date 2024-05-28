@@ -10,7 +10,7 @@ This guide mainly focuses on the parts listed in the [Hardware Buy guide](../qui
 
 ## What/Where to buy?
 
-See the [Hardware Buy guide here](../quickstart/buying-guide.md). For the board/ESP-32 assembly you need the ESP-32 and a 433 MHz antenna.
+See the [Hardware Buy guide here](../quickstart/buying-guide.md). For the board/ESP-32 assembly you need the ESP-32 and a 433 MHz transmitter.
 
 ## Figuring out the PINs
 
