@@ -2,7 +2,7 @@
   
 ## What you need
 
-- [ShockOsc](shockosc-basic.md)
+- [ShockOSC](shockosc-basic.md)
 - A VRChat avatar
 - Basic experience in working with VRChat avatars is recommended
 
@@ -27,11 +27,11 @@
     - **Collision Tags**: I recommend that you at least use the ``Finger`` Tag, otherwise people can't touch the trigger with their fingers, but is's up to you what kind of tags you use.
     - **Receiver Type**: this needs to be set to ``constant``.
     - **Parameter**: ``ShockOsc/{GroupName}``  
-      Replace *{GroupName}* with the name you gave your shocker in the [ShockOsc config](./shockosc-basic.md#setup-shockosc).  
+      Replace *{GroupName}* with the name you gave your shocker in the [ShockOSC config](./shockosc-basic.md#setup-shockosc).  
       Example: ``ShockOsc/leftleg``.  
     !!! example "Example"
         ![Image "Image"](../static/guides/shockosc/example_settings3.png)  
-        
+
 4. Upload your Avatar and you are ready to go! 🎉  
 
 !!! bug "Activate OSC"
@@ -51,7 +51,7 @@ This will utilize the Contact Sender and Receiver components of the VRChatSDK to
 2. Create a Receiver
     1. In the Hierarchy right click your Avatar
     2. Click *Create Empty* to create a new GameObject
-    3. Rename it to something like "ShockOsc Receiver".
+    3. Rename it to something like "ShockOSC Receiver".
     4. Select the newly created object and go into the inspector, click on *Add Component* and add a ``VRC Contact Receiver`` component to the object.
 3. Setup the Receiver
     1. Increase the Range of the component (max. 3m, that's a limit enforced by VRChat)
@@ -75,7 +75,7 @@ This will utilize the Contact Sender and Receiver components of the VRChatSDK to
 2. Create a Sender
     1. In the Hierarchy right click your Avatar
     2. Click *Create Empty* to create a new GameObject
-    3. Rename it to something like "ShockOsc Sender".
+    3. Rename it to something like "ShockOSC Sender".
     4. Select the newly created object and go into the inspector, click on *Add Component* and add a ``VRC Contact Sender`` component to the object.
 3. Setup the Sender
     1. Increase the Range of the component (max. 3m, that's a limit enforced by VRChat)
@@ -113,10 +113,10 @@ This will utilize the Contact Sender and Receiver components of the VRChatSDK to
 ## Pull trigger
 
 !!! info "Still brewing!"
-    Sorry, we haven't *quite* gotten around to writing this set of articles just yet. **In the meantime, feel free to hit us up on [Discord](https://discord.gg/AHcCbXbEcF).**
+    Sorry, we haven't *quite* gotten around to writing this set of articles just yet. **In the meantime, feel free to hit us up on [Discord](https://discord.gg/OpenShock).**
 
 ## List of available parameters
-
+<!-- markdownlint-disable MD046 -->
 === "Avatar Dynamic Parameters "
     !!! Info "``ShockOsc/{GroupName}`` (bool)"
         when set to ``true`` and held, will trigger a normal shock in ShockOSC
@@ -187,3 +187,4 @@ This will utilize the Contact Sender and Receiver components of the VRChatSDK to
 
     !!! Info "``ShockOsc/_Config/_All/HoldTime`` (Float)"
         Sets the time needed to hold the trigger to activate a shock.
+<!-- markdownlint-enable MD046 -->

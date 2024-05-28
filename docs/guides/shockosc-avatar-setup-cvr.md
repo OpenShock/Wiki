@@ -2,12 +2,12 @@
 
 ## What you need
 
-- [ShockOsc](shockosc-basic.md)
+- [ShockOSC](shockosc-basic.md)
 - A ChilloutVR avatar
 - Basic experience in working with ChilloutVR avatars is recommended  
 - A OSC mod for ChilloutVR
 
-!!! Info "Special ShockOsc Settings for ChilloutVR"
+!!! Info "Special ShockOSC Settings for ChilloutVR"
     Please make sure you have "OSC Query" turned off in the **App Settings** tab.  
 
 ## Touch Trigger
@@ -27,7 +27,7 @@
 5. That's it. 🎉  
 
 ## List of available parameters
-
+<!-- markdownlint-disable MD046 -->
 === "Avatar Dynamic Parameters "
     !!! Info "``ShockOsc/{GroupName}`` (bool)"
         when set to ``true`` and held, will trigger a normal shock in ShockOSC
@@ -52,7 +52,7 @@
     !!! Info "``ShockOsc/{GroupName}_CooldownPercentage`` (float)"
         Reads out the shocker cooldown, 1 means cooldown and 0 means no cooldown.
         can be used to make a cooldown timer for example.  
-        
+
     !!! Info "``ShockOsc/{GroupName}_Intensity``  (float)"
         represents how close the shock was to your configured max intensity.
 
@@ -67,7 +67,7 @@
 
 === "Config Parameters"  
     !!! Info "``ShockOsc/_Config/_All/Paused`` (bool)"
-        It's a kind of killswitch, pausing ShockOSC.  
+        It's a kind of kill switch, pausing ShockOSC.  
 
     !!! Info "``ShockOsc/_Config/_All/MinIntensity`` (Float)"
         Sets Minimum Intensity for the Random Mode.
@@ -80,21 +80,22 @@
 
     !!! Info "``ShockOsc/_Config/_All/MaxDuration`` (Float)"
         Sets Maximum Duration for the Random Mode.  
-    
+
     !!! Info "``ShockOsc/_Config/_All/Duration`` (Float)"
         Sets Duration Time for the Fixed Mode (100% = 10 Sec.) 
-    
+
     !!! Info "``ShockOsc/_Config/_All/Intensity`` (Float)"
         Sets Intensity for the Fixed Mode.
-    
+
     !!! Info "``ShockOsc/_Config/_All/ModeIntensity`` (Float)"
         Toggles between Fixed and Random Intensity Mode (True = Random)  
 
     !!! Info "``ShockOsc/_Config/_All/ModeDuration`` (Float)"
-        Toggles between Fixed and Random Duration Mode (True = Random)   
+        Toggles between Fixed and Random Duration Mode (True = Random)
 
     !!! Info "``ShockOsc/_Config/_All/CooldownTime`` (Float)"
         Sets the desired cooldown time.  (0 - 100 sec.)
 
     !!! Info "``ShockOsc/_Config/_All/HoldTime`` (Float)"
         Sets the time needed to hold the trigger to activate a shock.
+<!-- markdownlint-enable MD046 -->
