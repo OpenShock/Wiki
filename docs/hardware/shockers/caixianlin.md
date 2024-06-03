@@ -28,7 +28,13 @@ The charging port for this model is a standard **DC 3.5 x 1.35mm**. A USB to **D
 
 ## Media
 
-Do you have media of this product you are willing to let us use? Contact us [on Discord](https://discord.gg/OpenShock).
+![CaiXianlin Shocker Front](../../static/shockers/caixianlin/ShockerFront.webp)
+![CaiXianlin Shocker Back](../../static/shockers/caixianlin/ShockerBack.webp)
+
+![CaiXianlin Shocker Back Inner Case](../../static/shockers/caixianlin/ShockerCaseBackGif.gif)
+
+Thank you `@dasbrin` on Discord for the images.
+
 
 ## Technical Specification
 
