@@ -37,6 +37,7 @@ nav:
                 #   - hardware/boards/china/esp32s3-dorx.md
                 - OpenShock:
                       - hardware/boards/openshock/core-v1.md
+                      - hardware/boards/openshock/core-v2.md
                 - PiShock:
                       - hardware/boards/pishock/2023-pishock.md
                       - hardware/boards/pishock/2021q3-lite.md
