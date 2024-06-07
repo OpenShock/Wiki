@@ -89,7 +89,6 @@ theme:
         - navigation.indexes
         - content.tabs.link
         - content.code.annotate
-    custom_dir: overrides
     palette:
         # Palette toggle for dark mode
         - scheme: slate  
