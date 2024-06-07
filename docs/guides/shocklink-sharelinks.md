@@ -9,7 +9,7 @@
 
 
 ## What you need
-- [Openshock account](https://openshock.app/)
+- [OpenShock account](https://openshock.app/)
 - [A working shocker](openshock-first-setup.md)
 
 <br></br>
@@ -17,7 +17,7 @@
 ## How to create a Share link
 
 1. Create the Link:
-    1. Open [Openshock.app](https://openshock.app/).
+    1. Open [OpenShock.app](https://openshock.app/).
     2. Go to the **Share Links** section.  
     3. Click **Add new share link!**    
     4. Give it a **name**.

@@ -10,7 +10,7 @@
 - A Smartphone with a Webbrower (Chrome, Firefox etc.)
 - [ESP Device](../hardware/boards/index.md)
 - [Shocker](../hardware/shockers/index.md)
-- [Openshock account](https://openshock.app/)
+- [OpenShock account](https://openshock.app/)
 
 
 
@@ -28,7 +28,7 @@
     ??? Info "Image"
         ![Image "image"](../static/guides/first-setup/ESPWebGUI.png)
 3. Create a Device on the website:
-    1. **On your PC** open [Openshock.app](https://openshock.app/).
+    1. **On your PC** open [OpenShock.app](https://openshock.app/).
     2. Create an account. *(If you don't have one already)* 
     3. Go to **Devices** and click the **green + icon** at the lower right corner to create a new device.   
     4. Give it a name: 
@@ -63,7 +63,7 @@
 1. Make sure you charged the shocker first.
 2. Make sure your Device is connected to the website. ([Setup Device](#setup-the-esp-device))
 3. Create a Shocker.
-    1. Go to [Openshock.app](https://openshock.app/)
+    1. Go to [OpenShock.app](https://openshock.app/)
     2. login if you are not logged in already.
     3. Navigate to **Shockers**.
     4. Press the green **+** icon at the bottom right corner. 

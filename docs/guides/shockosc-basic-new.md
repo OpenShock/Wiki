@@ -12,7 +12,7 @@
 
 - [Fully setup shocker](openshock-first-setup.md)
 - [Newest ShockOsc](https://github.com/OpenShock/ShockOsc/releases)
-- [Openshock account](https://openshock.app/)
+- [OpenShock account](https://openshock.app/)
 
 ## Setup ShockOsc
 1. [Download ShockOSC](https://github.com/OpenShock/ShockOsc/releases) and install it. 

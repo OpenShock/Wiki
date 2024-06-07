@@ -2,11 +2,11 @@
 
 ## What you need
 - [Fully setup Device](../guides/openshock-first-setup.md)
-- [Openshock account](https://openshock.app/)
+- [OpenShock account](https://openshock.app/)
 - **Firmware 1.1.0 or newer**
 
 ## Over the Air Update (Recommended)
-1. Login to [Openshock.app](https://openshock.app/)
+1. Login to [OpenShock.app](https://openshock.app/)
 2. Connect your Device to a power source and make sure it appears as Online in the Device section.
 3. Open the context menu of your Device.
 4. Select "OTA Update".  
