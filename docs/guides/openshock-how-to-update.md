@@ -3,12 +3,12 @@
 ## What you need
 
 - [Fully setup Device](../guides/openshock-first-setup.md)
-- [OpenShock account](https://openshock.app/)
+- [Shocklink account](https://shocklink.net/)
 - **Firmware 1.1.0 or newer**
 
 ## Over the Air Update (Recommended)
 
-1. Login to [OpenShock.app](https://openshock.app/)
+1. Login to the [website](https://shocklink.net/)
 2. Connect your hub to a power source and make sure it appears as online in the Device section.
 3. Open the context menu of your hub.
 4. Select "OTA Update".  

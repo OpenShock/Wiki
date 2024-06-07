@@ -1,19 +1,19 @@
 # Share codes
 
 !!! question "What is a Share code?"
-    Share codes make it possible for someone with an OpenShock account to directly control your shocker with their account.  
+    Share codes make it possible for someone with a Shocklink.net account to directly control your shocker with their account.  
 !!! Info "Share codes can only be used once! "
     You need to generate a new code every time you want to share the controls of your shocker with a new person.
     Shares are permanent until unshared/deleted by the owner of the shocker.  
 
 ## What you need
 
-- [OpenShock account](https://openshock.app/)
+- [Shocklink.net account](https://shocklink.net/)
 - [A connected shocker](openshock-first-setup.md)
 
 ## Create a share code
 
-1. Go to [OpenShock.app](https://openshock.app/) and login.
+1. Go to [Shocklink.net](https://shocklink.net/) and login.
 2. Switch to the **Shockers** section
     1. Open the context menu of the shocker you want to get a share code for. *(The three dots next to the name)*
     2. Select **Shares**.
@@ -26,8 +26,8 @@
 
 ## Use a share code
 
-1. Go to [OpenShock.app](https://openshock.app/) and login.
-2. Switch to the [Shockers shared section](https://openshock.app/#/dashboard/shockers/shared).
+1. Go to [Shocklink.net](https://shocklink.net/) and login.
+2. Switch to the [Shockers shared section](https://shocklink.net/#/dashboard/shockers/shared).
     1. Click on the **green plus icon**.
     2. Type in the share code you received from someone.  
 
@@ -37,7 +37,7 @@
     ![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_AddCode.png)
     ![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_Added.png)
 !!! Tip
-    You can find all shockers you added with a share code on the same page in your account under **Shockers** -> [**Shared**](https://openshock.app/#/dashboard/shockers/shared)
+    You can find all shockers you added with a share code on the same page in your account under **Shockers** -> [**Shared**](https://shocklink.net/#/dashboard/shockers/shared)
 
 ## Edit share code limits
 
@@ -45,7 +45,7 @@ You can also set limits to every share code.
 !!! bug "Info"
     For this step to work, someone has to [use your share code](#use-a-share-code) first
 
-1. Go to [OpenShock.app](https://openshock.app/) and login.
+1. Go to [Shocklink.net](https://shocklink.net/) and login.
 2. Switch to the **Shockers** section.
     1. Open up the context menu of the shocker you want to edit the code for.
     2. Select **Shares**.
@@ -65,7 +65,7 @@ You can also set limits to every share code.
 !!! bug "Info"
     For this step to work, someone has to [use your share code](#use-a-share-code) first
 
-1. Go to [OpenShock.app](https://openshock.app/) and login.
+1. Go to [Shocklink.net](https://shocklink.net/) and login.
 2. Switch to the **Shockers** section.
     1. Open up the context menu of the shocker you want to pause the code for.
     2. Select **Shares**.
@@ -82,7 +82,7 @@ You can also set limits to every share code.
 !!! bug "Info"
     For this step to work, someone has to [use your share code](#use-a-share-code) first
 
-1. Go to [OpenShock.app](https://openshock.app/) and login.
+1. Go to [Shocklink.net](https://shocklink.net/) and login.
 2. Switch to the **Shockers** section.
     1. Open up the context menu of the shocker you want to unshare.
     2. Select **Shares**.

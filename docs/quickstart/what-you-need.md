@@ -9,7 +9,7 @@ To get started with OpenShock, you need three things:
 
 ### 1. An OpenShock server
 
-This can be either a public or private OpenShock server. We recommend the [OpenShock.app](https://openshock.app/)public OpenShock instance.
+This can be either a public or private OpenShock server. We recommend the [ShockLink.net](https://shocklink.net) public OpenShock instance.
 
 Interested in hosting your own server? Check out the [Self-hosting](../diy/selfhosting.md) guide.
 
