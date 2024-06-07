@@ -11,13 +11,13 @@
 
 
 ## What you need
-- [Shocklink.net account](https://shocklink.net/)
+- [Openshock account](https://openshock.app/)
 - [A working shocker](openshock-first-setup.md)
 
 <br></br>
 
 ## Create a share code
-1. Go to [Shocklink.net](https://shocklink.net/) and login.
+1. Go to [Openshock.app](https://openshock.app/) and login.
 2. Switch to the **Shockers** section 
     1. Open the context menu of the shocker you want to get a share code for. *(The three dots next to the name)*
     2. Select **Shares**.
@@ -31,7 +31,7 @@
 <br></br>
 
 ## Use a share code
-1. Go to [Shocklink.net](https://shocklink.net/) and login.
+1. Go to [Openshock.app](https://openshock.app/) and login.
 2. Switch to the [Shockers shared section](https://shocklink.net/#/dashboard/shockers/shared).
     1. Click on the **green plus icon**.
     2. Type in the share code you received from someone.  
@@ -51,7 +51,7 @@ You can also set limits to every share code.
 !!! bug "Info"
     For this step to work, someone has to [use your share code](#use-a-share-code) first
 
-1. Go to [Shocklink.net](https://shocklink.net/) and login.
+1. Go to [Openshock.app](https://openshock.app/) and login.
 2. Switch to the **Shockers** section. 
     1. Open up the context menu of the shocker you want to edit the code for.
     2. Select **Shares**.
@@ -71,7 +71,7 @@ You can also set limits to every share code.
 ## Pause/Unpause a share code
 !!! bug "Info"
     For this step to work, someone has to [use your share code](#use-a-share-code) first
-1. Go to [Shocklink.net](https://shocklink.net/) and login.
+1. Go to [Openshock.app](https://openshock.app/) and login.
 2. Switch to the **Shockers** section. 
     1. Open up the context menu of the shocker you want to pause the code for.
     2. Select **Shares**.
@@ -88,7 +88,7 @@ You can also set limits to every share code.
 ## Unshare/Delete a share code
 !!! bug "Info"
     For this step to work, someone has to [use your share code](#use-a-share-code) first
-1. Go to [Shocklink.net](https://shocklink.net/) and login.
+1. Go to [Openshock.app](https://openshock.app/) and login.
 2. Switch to the **Shockers** section. 
     1. Open up the context menu of the shocker you want to unshare.
     2. Select **Shares**.

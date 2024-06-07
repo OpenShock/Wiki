@@ -13,7 +13,7 @@
 
 ## Flashing the firmware
 1. Plug your Device into your PC using a USB cable.
-1. Open the [Flashtool](https://next.shocklink.net/flashtool) with Chrome or another Chromium based browser.
+1. Open the [Flashtool](https://next.openshock.app/flashtool) with Chrome or another Chromium based browser.
 2. Click "Select Device" and select your Device in the Popup window.  
 If your Device is not showing up click on "Install Drivers", after that repeat this step.   
 ![Connect Device](../static/guides/how-to-flash/Connect_Device_Flashtoolguide.png)

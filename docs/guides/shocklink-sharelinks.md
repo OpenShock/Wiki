@@ -9,7 +9,7 @@
 
 
 ## What you need
-- [Shocklink.net account](https://shocklink.net/)
+- [Openshock account](https://openshock.app/)
 - [A working shocker](openshock-first-setup.md)
 
 <br></br>
@@ -17,7 +17,7 @@
 ## How to create a Share link
 
 1. Create the Link:
-    1. Open [Shocklink.net](https://shocklink.net/).
+    1. Open [Openshock.app](https://openshock.app/).
     2. Go to the **Share Links** section.  
     3. Click **Add new share link!**    
     4. Give it a **name**.
@@ -53,7 +53,7 @@ Everyone you send the share link to can now control your shocker. 🎉
     You can set limits to _*intensity*_, _*duration*_ or what kind of _*command*_ someone can use for each share link.  
     You can also _*Pause*_ the link so nobody can send commands with this link.  
 ### Edit the limits  
-1. Go to your [share link page](https://shocklink.net/#/dashboard/shares/links) and select the share link you want to edit.
+1. Go to your [share link page](https://openshock.app/#/dashboard/shares/links) and select the share link you want to edit.
     1. Open the share links **Context Menu** 
     2. Select **Edit Mode**.
         * The shocker controls should change to orange indicating the **Edit Mode**.
@@ -71,7 +71,7 @@ Everyone you send the share link to can now control your shocker. 🎉
 ### Pause your Share link
 !!! Info
     A paused link will not accept any commands.  
-1. Go to your [share link page](https://shocklink.net/#/dashboard/shares/links) and select the share link you want to _**pause**_.
+1. Go to your [share link page](https://openshock.app/#/dashboard/shares/links) and select the share link you want to _**pause**_.
     1. Click on the little pause icon next to the share links name.  
         * It should now _**blur**_ the shocker controls telling you it's paused.
 2. To un-pause the share link again simply click on the ``Play Icon``.
