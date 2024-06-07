@@ -92,13 +92,17 @@ theme:
     custom_dir: overrides
     palette:
         # Palette toggle for dark mode
-        - scheme: slate
+        - scheme: slate  
+          primary: custom
+          accent: custom
           toggle:
               icon: material/brightness-4
               name: Switch to light mode
 
         # Palette toggle for light mode
         - scheme: default
+          primary: custom
+          accent: custom
           toggle:
               icon: material/brightness-7
               name: Switch to dark mode
@@ -119,10 +123,15 @@ markdown_extensions:
 
 plugins:
     - search
-    - git-authors
-    - git-revision-date-localized
+    - git-committers:
+            repository: openshock/wiki
+            branch: master
+    - git-revision-date-localized:
+            enable_creation_date: true
     - tags:
-          enabled: true
+            enabled: true
+extra_css:
+  - "css/custom.css"
 
 extra:
     # Tag definitions for tagging pages.
