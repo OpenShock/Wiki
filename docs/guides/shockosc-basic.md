@@ -11,7 +11,7 @@
 
 - [Fully setup shocker](openshock-first-setup.md)
 - [Newest ShockOSC](https://github.com/OpenShock/ShockOSC/releases)
-- [Shocklink Account](https://shocklink.net/)
+- [OpenShock Account](https://openshock.app/)
 
 ## Setup ShockOsc
 
@@ -19,7 +19,7 @@
 2. Login to ShockOSC
     1. Open ShockOSC
     2. Click on "Get Token", this will open a browser window.
-    3. In the browser, log into your Shocklink account and accept the request shown.
+    3. In the browser, log into your OpenShock account and accept the request shown.
     4. ShockOSC will now log you in.
     ![LogIn](../static/guides/shockosc/NewShockOSC-LogIn.png)
 3. Create your Shock Group.  

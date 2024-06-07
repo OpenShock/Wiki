@@ -12,13 +12,13 @@ nav:
           - Quickstart:
                 - quickstart/what-you-need.md
                 - quickstart/buying-guide.md
-          - OpenShock:
+          - OpenShock Hardware:
                 - guides/openshock-how-to-flash-your-board.md
                 - guides/openshock-first-setup.md
                 - guides/openshock-how-to-update.md
-          - Shocklink:
-                - guides/shocklink-sharelinks.md
-                - guides/shocklink-sharecodes.md
+          - OpenShock App:
+                - guides/openshock-sharelinks.md
+                - guides/openshock-sharecodes.md
           - ShockOsc:
                 - guides/shockosc-basic.md
                 - guides/shockosc-avatar-setup-vrc.md
