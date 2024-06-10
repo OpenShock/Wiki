@@ -14,8 +14,8 @@ nav:
       - guides/openshock-how-to-flash-your-board.md
       - guides/openshock-first-setup.md
       - guides/openshock-how-to-update.md
-      - guides/shocklink-sharelinks.md
-      - guides/shocklink-sharecodes.md
+      - guides/openshock-sharelinks.md
+      - guides/openshock-sharecodes.md
     - ShockOsc:
       - guides/shockosc-basic-new.md
       - guides/shockosc-avatar-setup-vrc.md
