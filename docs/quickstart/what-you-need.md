@@ -1,26 +1,25 @@
 
 # What you need
 
-If you've found yourself here, chances are you're either looking to get shocked, or shock a friend or partner! We've written this quickstart guide to help you get shocking as fast as possible.
+If you've found yourself here, chances are you're either looking to get shocked, or shock a friend or partner! We've written this quick start guide to help you get shocking as fast as possible.
 
 ## Requirements
 
-To get started with OpenShocks, you need three things:
+To get started with OpenShock, you need three things:
 
 ### 1. An OpenShock server
 
 This can be either a public or private OpenShock server. We recommend the [ShockLink.net](https://shocklink.net) public OpenShock instance.
 
-Interested in hosting your own? Check out [Selfhosting](../selfhosting/index.md).
+Interested in hosting your own server? Check out the [Self-hosting](../diy/selfhosting.md) guide.
 
-### 2. An OpenShock Controller
+### 2. An OpenShock hub
 
-This is a fancy way of saying "a microcontroller and a 433MHz radio". It bridges the gap between shockers and the OpenShock server.
+A hub connects OpenShock to the shock device via a micro-controller and a 433 MHz transmitter.
 
-- For prebuilts, check out the [Hardware vendors](../vendors/hardware/index.md).
-- For building your own, after reading the [Buying guide](../quickstart/buying-guide.md), head over to our do-it-yourself [Asssembly guide](../diy/assembling.md).
+- For pre-built options, check out the [Hardware vendors](../vendors/hardware/index.md).
+- For building your own, after reading the [Buying guide](../quickstart/buying-guide.md), head over to our do it yourself [Assembly guide](../diy/assembling.md).
 
-### 3. Shockers!
+### 3. Shockers
 
-This is the easy part! Head to the [Buying Guide](../quickstart/buying-guide.md).
-
+This is the easy part! Head to the [Buying Guide](../quickstart/buying-guide.md) for all the information you'll need.

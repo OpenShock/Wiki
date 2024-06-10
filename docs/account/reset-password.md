@@ -1,15 +1,16 @@
 ---
-title: Account: Reset Password
-description: How to reset your password
-published: true
-date: 2023-08-08T03:47:08.075Z
-tags: 
-editor: markdown
-dateCreated: 2023-08-08T03:28:45.878Z
+    title: Account: Reset Password
+    description: How to reset your password
+    published: true
+    date: 2023-08-08T03:47:08.075Z
+    tags: 
+    editor: markdown
+    dateCreated: 2023-08-08T03:28:45.878Z
 ---
 
 # Account: Reset Password
-You have forgotten your password? No problem, you can issue a password reset aslong as you still have access to your email inbox.
+
+You have forgotten your password? No problem, you can issue a password reset as long as you still have access to your email inbox.
 
 ---
 

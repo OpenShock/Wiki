@@ -1,6 +1,6 @@
 site_name: OpenShock
 docs_dir: docs
-site_url: https://openshock.org/
+site_url: https://wiki.openshock.org/
 repo_url: https://github.com/OpenShock/Wiki
 
 nav:
@@ -46,80 +46,124 @@ nav:
       - hardware/radio/index.md
   - Vendors:
     - Hardware:
-      - 'vendors/hardware/index.md'
-      - Europe:
-        - 'vendors/hardware/luc.md'
-        - 'vendors/hardware/bosjesman.md'
-        - 'vendors/hardware/HentaiHeaven.md'
-    - 'vendors/software.md'
-  - Do-it-yourself:
-    - Hardware:
-      - diy/prerequisites.md
-      - diy/assembling.md
-    - Selfhosting:
-      - 'selfhosting/index.md'
-  - 'contributing/contributing.md'
+          - Shockers:
+                - hardware/shockers/index.md
+                - hardware/shockers/caixianlin.md
+                - hardware/shockers/petrainer.md
+          - Remotes:
+                - hardware/remotes/identifying.md
+          - Boards:
+                - hardware/boards/index.md
+                # - Knockoffs:
+                #   - hardware/boards/china/esp32s3-dorx.md
+                - OpenShock:
+                      - hardware/boards/openshock/core-v1.md
+                      - hardware/boards/openshock/core-v2.md
+                - PiShock:
+                      - hardware/boards/pishock/2023-pishock.md
+                      - hardware/boards/pishock/2021q3-lite.md
+                      - hardware/boards/pishock/2021q1-plus.md
+                - Seeed:
+                      - hardware/boards/seeed/xiao-esp32s3.md
+                - Wemos:
+                      - hardware/boards/wemos/d1-mini-esp32.md
+                      - hardware/boards/wemos/lolin-s2-mini.md
+                      - hardware/boards/wemos/lolin-s3.md
+          - Transmitter:
+                - hardware/transmitter/index.md
+
+    - Vendors:
+          - Hardware:
+                - vendors/hardware/index.md
+                - Europe:
+                      - vendors/hardware/luc.md
+                      - vendors/hardware/bosjesman.md
+                      - vendors/hardware/hentaiheaven.md
+                - North America:
+                      - vendors/hardware/nullstalgia.md
+          - vendors/software.md
+
+    - Do it Yourself:
+          - Hardware:
+                - diy/assembling.md
+          - Software:
+                - diy/selfhosting.md
+                - diy/compile.md
+    - contributing/contributing.md
+
+    - Legal and Privacy:
+          - legal/terms-and-conditions.md
+          - legal/code-of-conduct.md
+          - legal/license.md
 
 theme:
-  name: material
-  logo: static/branding/Icon.svg
-  favicon: static/branding/Icon.ico
-  features:
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.sections
-    - navigation.expand
-    - navigation.instant
-    - navigation.tracking
-    - navigation.indexes
-    - content.tabs.link
-    - content.code.annotate
-  custom_dir: overrides
-  palette: 
-    # Palette toggle for dark mode
-    - scheme: slate
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+    name: material
+    logo: static/branding/Icon.svg
+    favicon: static/branding/Icon.ico
+    features:
+        - navigation.tabs
+        - navigation.tabs.sticky
+        - navigation.sections
+        - navigation.expand
+        - navigation.instant
+        - navigation.tracking
+        - navigation.indexes
+        - content.tabs.link
+        - content.code.annotate
+    palette:
+        # Palette toggle for dark mode
+        - scheme: slate  
+          primary: custom
+          accent: custom
+          toggle:
+              icon: material/brightness-4
+              name: Switch to light mode
 
-    # Palette toggle for light mode
-    - scheme: default
-      toggle:
-        icon: material/brightness-7 
-        name: Switch to dark mode
+        # Palette toggle for light mode
+        - scheme: default
+          primary: custom
+          accent: custom
+          toggle:
+              icon: material/brightness-7
+              name: Switch to dark mode
 
 markdown_extensions:
-  - abbr
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
-  - tables
-  - attr_list
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - pymdownx.snippets
+    - abbr
+    - admonition
+    - pymdownx.details
+    - pymdownx.superfences
+    - pymdownx.tabbed:
+          alternate_style: true
+    - tables
+    - attr_list
+    - pymdownx.emoji:
+          emoji_index: !!python/name:material.extensions.emoji.twemoji
+          emoji_generator: !!python/name:material.extensions.emoji.to_svg
+    - pymdownx.snippets
 
 plugins:
-  - search
-  - git-authors
-  - git-revision-date-localized
-  - tags:
-      enabled: true
-      
+    - search
+    - git-committers:
+            repository: openshock/wiki
+            branch: master
+    - git-revision-date-localized:
+            enable_creation_date: true
+    - tags:
+            enabled: true
+extra_css:
+  - "css/custom.css"
+
 extra:
-  # Tag definitions for tagging pages.
-  tags:
-    selfhosting: banana
+    # Tag definitions for tagging pages.
+    tags:
+        selfhosting: banana
 
-  # Social links rendered in the footer.
-  social:
-    - icon: fontawesome/brands/discord
-      link: https://discord.gg/AHcCbXbEcF
-      name: Discord
+    # Social links rendered in the footer.
+    social:
+        - icon: fontawesome/brands/discord
+          link: https://discord.gg/OpenShock
+          name: Discord
 
-    - icon: fontawesome/brands/github
-      link: https://github.com/OpenShock
-      name: GitHub
+        - icon: fontawesome/brands/github
+          link: https://github.com/OpenShock
+          name: GitHub
