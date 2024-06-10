@@ -11,7 +11,7 @@
 
 - [Fully setup shocker](openshock-first-setup.md)
 - [Newest ShockOSC](https://github.com/OpenShock/ShockOSC/releases)
-- [Shocklink Account](https://shocklink.net/)
+- [Shocklink Account](https://openshock.app/)
 
 ## Setup ShockOsc
 

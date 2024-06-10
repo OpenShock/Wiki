@@ -1,7 +1,7 @@
 # Share links
 
 !!! question "What is a Share link?"
-    Share links are a great way to give people control of your shockers without the need of a Shocklink account.  
+    Share links are a great way to give people control of your shockers without the need of a OpenShock account.  
 
 ## What you need
 - [OpenShock account](https://openshock.app/)

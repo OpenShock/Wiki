@@ -6,4 +6,4 @@
 
 ## Public instances
 
-- [https://shocklink.net/](https://shocklink.net/)
+- [https://openshock.app/](https://openshock.app/)

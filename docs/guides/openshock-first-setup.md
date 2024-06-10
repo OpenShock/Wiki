@@ -28,7 +28,7 @@
     ??? Info "Image"
         ![Image "image"](../static/guides/first-setup/ESPWebGUI.png)
 3. Create a hub on the website:
-    1. **On your PC** open [Shocklink.net](https://openshock.app/).
+    1. **On your PC** open [openshock.app](https://openshock.app/).
     2. Create an account. *(If you don't have one already)*
     3. Go to **Devices** and click the **green plus icon** at the lower right corner to create a new hub.
     4. Give it a name:
@@ -60,7 +60,7 @@
 1. Ensure the shocker is sufficiently charged.
 2. Ensure your hub is connected to the website. ([Setup the OpenShock hub](#setup-the-openshock-hub))
 3. Create a Shocker.
-    1. Go to [Shocklink.net](https://openshock.app/)
+    1. Go to [openshock.app](https://openshock.app/)
     2. Login if you are not already.
     3. Navigate to **Shockers**.
     4. Press the **green plus icon** at the bottom right corner.
