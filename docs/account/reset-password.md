@@ -16,7 +16,7 @@ You have forgotten your password? No problem, you can issue a password reset as 
 
 #### 1. Get started
 
-To get started, you have to click on "**Forgot password?**"on the login screen or simply follow this [link](https://shocklink.net/#/account/password/reset).
+To get started, you have to click on "**Forgot password?**"on the login screen or simply follow this [link](https://openshock.app/#/account/password/reset).
 
 ![reset-password-button.png](reset-password/reset-password-button.png)
 
