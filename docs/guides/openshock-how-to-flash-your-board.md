@@ -4,7 +4,7 @@
 
 - [OpenShock hub](../hardware/boards/index.md)
 - A Chromium based web-browser (Chrome, Edge, Opera, etc.) **Firefox will not work since it doesn't support Web Serial**
-- [Our Flashtool](https://next.shocklink.net/flashtool)
+- [Our Flashtool](https://next.openshock.app/flashtool)
 
 !!! warning "Important"
     Ensure you have a cable that supports data transfer, and neither the port nor cable is damaged.

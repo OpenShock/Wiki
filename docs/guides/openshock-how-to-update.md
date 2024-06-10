@@ -4,7 +4,7 @@
 
 - [Fully setup Device](../guides/openshock-first-setup.md)
 - [OpenShock account](https://openshock.app/)
-- **Firmware 1.1.0 or newer**
+- **OpenShock Firmware 1.1.0 or newer**
 
 ## Over the Air Update (Recommended)
 

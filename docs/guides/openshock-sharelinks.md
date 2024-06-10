@@ -7,9 +7,6 @@
 - [OpenShock account](https://openshock.app/)
 - [A connected shocker](openshock-first-setup.md)
 
-- [Shocklink.net account](https://shocklink.net/)
-- [A connected shocker](openshock-first-setup.md)
-
 ## How to create a Share link
 
 1. Create the Link:
