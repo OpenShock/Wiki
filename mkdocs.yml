@@ -4,26 +4,47 @@ site_url: https://wiki.openshock.org/
 repo_url: https://github.com/OpenShock/Wiki
 
 nav:
-    - Home: index.md
-
-    - Safety: safety/safety-rules.md
-
-    - Guides:
-          - Quickstart:
-                - quickstart/what-you-need.md
-                - quickstart/buying-guide.md
-          - OpenShock:
-                - guides/openshock-how-to-flash-your-board.md
-                - guides/openshock-first-setup.md
-                - guides/openshock-how-to-update.md
-          - Shocklink:
-                - guides/shocklink-sharelinks.md
-                - guides/shocklink-sharecodes.md
-          - ShockOsc:
-                - guides/shockosc-basic.md
-                - guides/shockosc-avatar-setup-vrc.md
-                - guides/shockosc-avatar-setup-cvr.md
-
+  - Home: index.md
+  - Safety: safety/safety-rules.md
+  - Guides:
+    - Quickstart:
+      - quickstart/what-you-need.md
+      - quickstart/buying-guide.md
+    - Openshock:
+      - guides/openshock-how-to-flash-your-board.md
+      - guides/openshock-first-setup.md
+      - guides/openshock-how-to-update.md
+      - guides/openshock-sharelinks.md
+      - guides/openshock-sharecodes.md
+    - ShockOsc:
+      - guides/shockosc-basic-new.md
+      - guides/shockosc-avatar-setup-vrc.md
+      - guides/shockosc-avatar-setup-cvr.md 
+  - Hardware:
+    # - hardware/buying-guide.md
+    - Shockers:
+      - hardware/shockers/index.md
+      - hardware/shockers/caixianlin.md
+      - hardware/shockers/pettrainer.md
+    - Remotes:
+      - hardware/remotes/identifying.md
+    - Boards:
+      - 'hardware/boards/index.md'
+      # - Knockoffs:
+      #   - 'hardware/boards/china/esp32s3-dorx.md'
+      - Pishock:
+        - 'hardware/boards/pishock/2023-pishock.md'
+        - 'hardware/boards/pishock/2021q3-lite.md'
+        - 'hardware/boards/pishock/2021q1-plus.md'
+      - Seeed:
+        - hardware/boards/seeed/xiao-esp32s3.md
+      - Wemos:
+        - 'hardware/boards/wemos/d1-mini-esp32.md'
+        - 'hardware/boards/wemos/lolin-s2-mini.md'
+        - 'hardware/boards/wemos/lolin-s3.md'
+    - Radio:
+      - hardware/radio/index.md
+  - Vendors:
     - Hardware:
           - Shockers:
                 - hardware/shockers/index.md
