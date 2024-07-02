@@ -9,7 +9,7 @@ Head over to the Guides to get started:
 
 - [What you need](quickstart/what-you-need.md)
 - [Buying guide](quickstart/buying-guide.md)
-- [How To Flash the Firmware](guides/openshock-how-to-flash-your-board.md)
+- [How to Flash the Firmware](guides/openshock-how-to-flash-your-board.md)
 - [Setup ESP and Shocker](guides/openshock-first-setup.md)
 
 ## Community

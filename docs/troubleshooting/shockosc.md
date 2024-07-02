@@ -21,9 +21,9 @@ Go ahead and click reset config in the VRChat action menu. This should reload yo
 or
 
 If it doesn't, navigate to `%userprofile%\appdata\locallow\VRChat\VRChat` and delete `OSC` folder.
-Then switch avatar again.
+Then reload your avatar again.
 
 ## Check config
 
-Make sure you have the correct name for the shocker set. Also double check you have set the correct id.
-You can get the shocker id from clicking edit on a shocker and copying the shown id.
+Make sure you have the correct name for the shocker set. Also double check you have set the correct ID.
+You can get the shocker ID from clicking edit on a shocker and copying the shown ID.
