@@ -1,7 +1,7 @@
 # Compiling from source
 
 !!! info "Still brewing!"
-    This article heavily under development; expect very frequent changes
+    This article heavily under development; expect frequent changes.
 
 ## Requirements  
 
