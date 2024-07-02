@@ -57,7 +57,6 @@ nav:
                 - Europe:
                       - vendors/hardware/luc.md
                       - vendors/hardware/bosjesman.md
-                      - vendors/hardware/hentaiheaven.md
                 - North America:
                       - vendors/hardware/nullstalgia.md
           - vendors/software.md
