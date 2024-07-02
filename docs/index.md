@@ -1,7 +1,7 @@
 
 # OpenShock
 
-Welcome to OpenShock! We're proud to present our fully open-source software solution, compatible with off the shelf hardware, to get you started in the world of shocking!
+Welcome to OpenShock! We're proud to present our fully open-source software solution, compatible with off-the-shelf hardware, to get you started in the world of shocking!
 
 ## Getting started
 
