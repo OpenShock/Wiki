@@ -4,7 +4,7 @@
 
 - [Fully setup Openshock hub](../guides/openshock-first-setup.md)
 - [OpenShock account](https://openshock.app/)
-- **OpenShock Firmware 1.1.0 or newer**
+- [**OpenShock Firmware 1.1.0 or newer**](https://github.com/OpenShock/Firmware)
 
 ## Over the Air Update (Recommended)
 
