@@ -6,7 +6,7 @@
 
 ## What you need
 
-- USB cable suitable for your device.
+- USB cable suitable for your Openshock hub.
 - A stable power source. Try to avoid cheap power bricks, they can cause the device to crash under certain loads.
 - A smartphone with a web browser (Chrome, Firefox etc.)
 - [OpenShock hub](../hardware/boards/index.md)
@@ -83,4 +83,4 @@
     If you need additional help, join our [Discord](https://discord.gg/OpenShock)
 
 !!! Info
-    Your shocker will remember the device, there is no need to pair it every time.
+    Your shocker will remember the hub, there is no need to pair it every time.

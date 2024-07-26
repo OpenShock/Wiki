@@ -13,7 +13,7 @@
 1. Plug your hub into your PC using a USB cable.
 2. Open the [Flashtool](https://next.openshock.app/flashtool).
 3. Click "Select Device" and select your hub in the Popup window.  
-If your Device is not showing up click on "Install Drivers", after that repeat this step.
+If your hub is not showing up click on "Install Drivers", after that repeat this step.
 ![Connect Controller](../static/guides/how-to-flash/Connect_Device_Flashtoolguide.png)
 4. Ensure you have the "Stable" channel selected.
 5. Ensure the correct board is selected.
