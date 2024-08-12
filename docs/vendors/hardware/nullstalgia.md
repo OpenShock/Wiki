@@ -11,7 +11,7 @@ tags:
 
 Started `2023-12-01`.
 
-Current controller on sale: [OpenShock Core V1.1](../../hardware/boards/openshock/core-v1.md).
+Current controller on sale: [OpenShock Core V2](../../hardware/boards/openshock/core-v2.md).
 
 [Github](https://github.com/nullstalgia)
 

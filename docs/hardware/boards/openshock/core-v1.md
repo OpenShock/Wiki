@@ -25,16 +25,18 @@ Designed by [nullstalgia](../../../vendors/hardware/nullstalgia.md)
 
 ## Pinout
 
-- GPIO 15 for RX Transmission
+- GPIO 15 for RF Transmission
 - GPIO 13 for Emergency Stop (Active Low, on board pull-up)
 - GPIO 35 for Status LED (Active High)
-- GPIO 48 for RGB LED
+- GPIO 48 for RGB (WS2812B) LED
 
 ## Flashing
 
 If you are having difficulties flashing via the USB port, you can enter the USB Serial Download Mode.
 
 You may require a pair of small pointy objects, such as toothpicks or paperclips, to reach the buttons mentioned below.
+
+**With the USB-C port facing down, the top button is RST (EN) and the bottom button is BOOT (IO 0).**
 
 1. Plug the board into your computer via USB, make sure the cable can support power and data.
 2. Hold down BOOT (IO 0).

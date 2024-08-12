@@ -41,6 +41,7 @@ These boards are tested before every release by the [:rocket: OpenShock maintain
 | [Wemos D1 Mini ESP32](wemos/d1-mini-esp32.md) | All | :white_check_mark: | [:rocket: HentaiHeaven](https://github.com/hhvrc) |
 | [Wemos Lolin S3](wemos/lolin-s3.md) | All | :white_check_mark: :cloud: :lock: | [:rocket: Red Mushie](https://github.com/redmushie) |
 | [OpenShock Core V1](openshock/core-v1.md) | All | :white_check_mark: :cloud: :lock: | [:rocket: nullstalgia](https://github.com/nullstalgia) |
+| [OpenShock Core V2](openshock/core-v2.md) | All | :white_check_mark: :cloud: :lock: | [:rocket: nullstalgia](https://github.com/nullstalgia) |
 
 ## Community maintained
 
