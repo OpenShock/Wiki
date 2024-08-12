@@ -1,4 +1,4 @@
-# How to Update
+# How to Update the Hub
 
 ## What you need
 
