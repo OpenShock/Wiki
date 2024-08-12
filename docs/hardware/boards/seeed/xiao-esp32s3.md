@@ -20,6 +20,9 @@ See the [official webpage](https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html)
 - 8MiB PSRAM
 - Detachable antenna
 
+!!! warning "Inconsistent Pin Labels"
+    The pin labels printed on the board do *not* match the ESP32-S3's actual GPIO numbers. Please refer to the [official Seeed documentation](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/#hardware-overview) to find the correlations between the printed labels and the actual GPIO numbers.
+
 ## Flashing
 
 !!! warning "Extra steps required"

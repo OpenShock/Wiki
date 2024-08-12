@@ -17,7 +17,7 @@
 
 1. Connect your **Phone** to the hub:
     1. Plug your hub in and ensure it has power.
-    2. On your phone, search for a Wi-Fi network named similar to ``OpenShock-24:DC:C3:9F:72:C8`` and connect to it.  
+    2. On your phone, search for a Wi-Fi network named similar to ``OpenShock-XX:XX:XX:XX:XX:XX`` and connect to it.  
     ??? Info "Image"
         ![Image "image"](../static/guides/first-setup/WiFioverview.png)
 2. Connect to the hub via the network:
@@ -55,7 +55,7 @@
 !!! warning "RF TX Pin"
     **DO NOT** change the RF TX Pin, this is an advanced feature. It should be set correctly by default after flashing the OpenShock firmware. For more information see the page dedicated to your micro-controller under [boards](../hardware/boards/index.md).
 
-## Pair a shocker
+## Pairing shockers
 
 1. Ensure the shocker is sufficiently charged.
 2. Ensure your hub is connected to the website. ([Setup the OpenShock hub](#setup-the-openshock-hub))
@@ -72,9 +72,10 @@
         ![image](../static/guides/first-setup/Create_shocker_green_plus.png)
         ![image](../static/guides/first-setup/create_shocker.png)
 4. Pair your Shocker.
-    1. Grab your shocker and turn it on. (Hold the power button for 1 sec. it should beep once.)
+    1. Grab your shocker and turn it on. (Press the power button once. it should beep one time.)
     2. Hold the power button again until it beeps and the LED flashes fast. *This means the pair mode is active*
-    3. On the website click the ***speaker icon*** of your shocker, if your shocker now makes a sound, the pairing was successful.
+    3. On the website click the ***speaker icon*** of your shocker, if your shocker beeps in response, the pairing was successful.
+    4. You must click the icon before the shocker's pairing mode times out (while the shocker's LED is flashing quickly).
     ??? Info "Image"
         ![image](../static/guides/first-setup/find_sound_button.png)
 **Everything should work now, have fun!** 🎉  
