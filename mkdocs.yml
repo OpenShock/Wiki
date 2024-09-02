@@ -8,6 +8,8 @@ nav:
 
     - Safety: safety/safety-rules.md
 
+    - Developer: dev/index.md
+
     - Guides:
           - Quickstart:
                 - quickstart/what-you-need.md
