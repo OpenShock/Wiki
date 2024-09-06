@@ -35,7 +35,7 @@ You can generate a API Token on the website. [New API Token UI](https://next.ope
 
 There is a few different WebSocket endpoints. Most of them use json. The Hub (previously named Device) websocket uses flatbuffers binary serialization.
 
-GW = Gateway or LiveControlGateway (e.g. de1-gateway.openshock.app)
+GW = Gateway or LiveControlGateway (e.g. de1-gateway.openshock.app)  
 API = Main API (e.g. api.openshock.app)
 
 - [GW]/1/ws/live/{deviceId} # Live Control Websocket, json
