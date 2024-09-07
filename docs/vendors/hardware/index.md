@@ -35,5 +35,6 @@ This is a **non-curated list** of self-reported vendors from the OpenShock **com
 | Vendor | :airplane: Ships to | :electric_plug: Controllers | :high_voltage: Shockers | :package: 3D Prints (Case, Spacers) | Started |
 |-|-|-|-|-|-|
 | [nullstalgia](./nullstalgia.md) | :flag_us: USA | :white_check_mark: | :white_check_mark: | :white_check_mark: | 2023-12-01 |
+| [sillypupkit](./sillypupkit.md) | :globe_with_meridians: Global | :white_check_mark: | :white_check_mark: | :white_check_mark: | 2024-09-07 |
 
 *Want to be on this list? Hit up a maintainer on [Discord](https://discord.gg/OpenShock).*
