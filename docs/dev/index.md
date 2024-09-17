@@ -17,7 +17,7 @@ tags:
 
 You can find the OpenAPI Documentation here: [api.OpenShock.app/swagger](https://api.openshock.app/swagger)
 
-Note that there is both a [Definition Version 1](https://api.openshock.app/swagger/1/swagger.json) and [Definition Version 2](https://api.openshock.app/swagger/1/swagger.json) file.
+Note that there is both a [Definition Version 1](https://api.openshock.app/swagger/1/swagger.json) and [Definition Version 2](https://api.openshock.app/swagger/2/swagger.json) file.
 
 !!! hint "Version Definition Files"
     You might notice that Version 2 does not contain all the endpoints that are in Version 1. That is because version 2 only contains endpoints that actually make a version 1 equivalent obsolete and there for deprecated.  
