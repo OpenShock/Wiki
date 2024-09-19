@@ -1,3 +1,10 @@
+---
+tags:
+  - selfhost
+  - api
+  - backend
+---
+
 # Self Hosting
 
 ## Requirements
