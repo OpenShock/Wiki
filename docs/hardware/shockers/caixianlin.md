@@ -7,7 +7,6 @@ tags:
 # CaiXianlin
 
 !!! success "Compatible"
-
     This product is compatible with OpenShock.
 
 Cheap and easily acquirable.
@@ -16,18 +15,25 @@ Cheap and easily acquirable.
 
 ### Shockers
 
-+ :globe_with_meridians: International 1 (USB charge only, cheaper) -- [AliExpress](https://aliexpress.com/item/1005005359066763.html)
-+ :globe_with_meridians: International 2 (Wall plugs only) -- [AliExpress](https://aliexpress.com/item/1005004246541659.html)
+Best effort list of current AliExpress sellers. Feel free to add more sources to this list!
+
+- :globe_with_meridians: International: [AliExpress](https://aliexpress.com/item/1005005133046985.html)
+- :flag_nl: Netherlands: [AliExpress](https://nl.aliexpress.com/item/1005005359066763.html)
 
 ### Cables
 
-The charging port for this model is a standard **DC 3.5-1.35** with 5V connector. An USB to **DC 3.5-1.35** cable is what you would want. You might even have one laying around as they are very common.
+The charging port for this model is a standard **DC 3.5 x 1.35mm**. A USB to **DC 3.5 x 1.35mm** cable is used to charge the shocker. You might even have one laying around as they are common.
 
-+ :globe_with_meridians: International -- [AliExpress](https://aliexpress.com/item/2255799944669970.html)
+- :globe_with_meridians: International: [AliExpress](https://aliexpress.com/item/2255799944669970.html)
 
 ## Media
 
-Do you have media of this product you are willing to let us use? Contact us [on Discord](https://discord.gg/AHcCbXbEcF).
+![CaiXianlin Shocker Front](../../static/shockers/caixianlin/ShockerFront.webp)
+![CaiXianlin Shocker Back](../../static/shockers/caixianlin/ShockerBack.webp)
+
+![CaiXianlin Shocker Back Inner Case](../../static/shockers/caixianlin/ShockerCaseBackGif.gif)
+
+Thank you `@dasbrin` on Discord for the images.
 
 
 ## Technical Specification
@@ -62,7 +68,7 @@ Do you have media of this product you are willing to let us use? Contact us [on 
 
 #### Layout
 
-```
+```text
 [PREFIX        ] = XX
 [TRANSMITTER ID] =   XXXXXXXXXXXXXXXX
 [CHANNEL       ] =                   XXXX
@@ -82,10 +88,9 @@ Every ``0`` is encoded as ``1000`` or ``0x8``
 ### Examples
 
 > Names are formatted as: Channel number (CH1), Command (SHOCK), Strength (99)
-
 > For all examples the Transmitter ID ``46231`` is used
 
-```
+```text
 [CH1 SHOCK   00] = fc e8ee8e88e88e8eee 8888 888e 88888888 8e88ee88 88
 [CH1 SHOCK   01] = fc e8ee8e88e88e8eee 8888 888e 8888888e 8e88ee8e 88
 [CH1 SHOCK   02] = fc e8ee8e88e88e8eee 8888 888e 888888e8 8e88eee8 88
