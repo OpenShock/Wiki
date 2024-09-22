@@ -44,6 +44,10 @@ Thank you `@dasbrin` on Discord for the images.
 
 [US Patent Document 2](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/D879390)
 
+### Community Reversed Engineered documents
+
+[Shocker & Remote Documents on GitHub](https://github.com/Nat-the-Kat/caixianlin_remote_shocker) by @Nat-the-Kat
+
 ### RF Specification
 
 | Name              | Value      |
