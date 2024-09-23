@@ -47,8 +47,8 @@ You can put most esp32's into download mode by temporarily connecting GPIO 0 to 
 
 Example PIN's for the Wemos D1 Mini
 
-[Wemos D1 Mini GND Figure](../static/boards/wemos-d1-mini-esp32/gnd-figure.webp)
-[Wemos D1 Mini GND Figure 2](../static/boards/wemos-d1-mini-esp32/gnd-figure2.webp)
+![Wemos D1 Mini GND Figure](../static/boards/wemos-d1-mini-esp32/gnd-figure.webp)
+![Wemos D1 Mini GND Figure 2](../static/boards/wemos-d1-mini-esp32/gnd-figure2.webp)
 
 ##### Manually flash using EspTool.py
 
