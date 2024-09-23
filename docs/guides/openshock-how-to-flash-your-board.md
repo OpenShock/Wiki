@@ -25,5 +25,31 @@ If your hub is not showing up click on "Install Drivers", after that repeat this
 7. When everything went well you board will restart and you should be able to run through the [First Setup](../guides/openshock-first-setup.md) steps to configure your hub and link it to your shocker etc.  
 8. (Optional) If you have issues after flashing it try again with "Erase everything before flashing" enabled.  
 
+### Troubleshooting
+
+#### Connection issues
+
+If you experience issues with connecting the flash tool to your esp, there is a couple of steps you can try.
+
+##### (Re-)Install Driver
+
+1. Download drivers from here [CP210x Universal Windows Driver](https://download.openshock.org/drivers/CP210x_Universal_Windows_Driver.zip)
+2. Extract the zip file
+3. Run the `CP210xVCPInstaller_x64.exe` installer file
+
+##### Different Cable
+
+Try a couple of different USB cables, usb ports on your computer and if available on a different machine entirely.
+
+##### Pull IO0 to GND
+
+You can put most esp32's into download mode by temporarily connecting GPIO 0 to a Ground Pin when the esp is booting.
+
+Example PIN's for the Wemos D1 Mini
+
+[Wemos D1 Mini GND Figure](../static/boards/wemos-d1-mini-esp32/gnd-figure.webp)
+[Wemos D1 Mini GND Figure 2](../static/boards/wemos-d1-mini-esp32/gnd-figure2.webp)
+
+
 !!! failure "Still not working?"
     Try again, if you still got problems after following this guide join our [discord](https://discord.gg/OpenShock) and we will see how we can help you!
