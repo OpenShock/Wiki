@@ -27,21 +27,19 @@ If your hub is not showing up click on "Install Drivers", after that repeat this
 
 ### Troubleshooting
 
-#### Connection issues
-
 If you experience issues with connecting the flash tool to your esp, there is a couple of steps you can try.
 
-##### (Re-)Install Driver
+#### (Re-)Install Driver
 
 1. Download drivers from here [CP210x Universal Windows Driver](https://download.openshock.org/drivers/CP210x_Universal_Windows_Driver.zip)
 2. Extract the zip file
 3. Run the `CP210xVCPInstaller_x64.exe` installer file
 
-##### Different Cable
+#### Different Cable
 
 Try a couple of different USB cables, usb ports on your computer and if available on a different machine entirely.
 
-##### Pull IO0 to GND
+#### Pull IO0 to GND
 
 You can put most esp32's into download mode by temporarily connecting GPIO 0 to a Ground Pin when the esp is booting.
 
@@ -50,7 +48,7 @@ Example PIN's for the Wemos D1 Mini
 ![Wemos D1 Mini GND Figure](../static/boards/wemos-d1-mini-esp32/gnd-figure.webp)
 ![Wemos D1 Mini GND Figure 2](../static/boards/wemos-d1-mini-esp32/gnd-figure2.webp)
 
-##### Manually flash using EspTool.py
+#### Manually flash using EspTool.py
 
 1. [Download esptool](https://github.com/espressif/esptool/releases/latest) (for windows the file is called something like `esptool-vx.x.x-win64.zip `)
 2. [Download firmware .bin](https://github.com/OpenShock/Firmware/releases/latest) for your board
