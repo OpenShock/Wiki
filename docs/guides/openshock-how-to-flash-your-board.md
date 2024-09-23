@@ -50,6 +50,15 @@ Example PIN's for the Wemos D1 Mini
 [Wemos D1 Mini GND Figure](../static/boards/wemos-d1-mini-esp32/gnd-figure.webp)
 [Wemos D1 Mini GND Figure 2](../static/boards/wemos-d1-mini-esp32/gnd-figure2.webp)
 
+##### Manually flash using EspTool.py
+
+1. [Download esptool](https://github.com/espressif/esptool/releases/latest) (for windows the file is called something like `esptool-vx.x.x-win64.zip `)
+2. [Download firmware .bin](https://github.com/OpenShock/Firmware/releases/latest) for your board
+3. Extract the esptool zip file
+4. Move the downloaded firmware `.bin` file into the folder with `esptool.exe`
+5. Open a command line (`cmd` or `powershell`) in that folder
+6. Execute the command `esptool write_flash 0x0 OpenShock_xxx-name-xxx.bin`. Replace firmware name with your actual file name.
+7. Wait for it to complete flashing and you should be ready to go :partying_face:
 
 !!! failure "Still not working?"
     Try again, if you still got problems after following this guide join our [discord](https://discord.gg/OpenShock) and we will see how we can help you!
