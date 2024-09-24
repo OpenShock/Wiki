@@ -69,7 +69,6 @@ nav:
           - Hardware:
                 - diy/assembling.md
           - Software:
-                - diy/selfhosting.md
                 - diy/compile.md
     - contributing/contributing.md
 
