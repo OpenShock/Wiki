@@ -10,7 +10,7 @@ tags:
 
 !!! danger "Safety Warning" 
     **Do not touch the pins of the shocker with both hands at the same time.** 
-    The electricity will flow through your heart. 
+    The electricity could flow through your heart. 
 
 # Shockers
 At OpenShock we support a couple of different Shocker Models. All of them are based on 433 MHz RF for communication.  

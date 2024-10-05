@@ -6,7 +6,7 @@
 
 !!! danger "Safety Warning" 
     **Do not touch the pins of the shocker with both hands at the same time.** 
-    The electricity will flow through your heart. 
+    The electricity could flow through your heart. 
 
 ## What you need
 
@@ -30,7 +30,7 @@
     *A green pop up should appear if it's connected successfully*
         ![Image "image"](../static/guides/first-setup/ESPWebGUI.png)
 
-!!! warning "RF TX Pin" **DO NOT** change the RF TX Pin **UNLESS IT IS NOT AUTOMATICALLY DETECTED**. This is an advanced feature. It should be set correctly by default after flashing the OpenShock firmware. If the pin is not automatically selected (ie. the transmitter doesn't send any signals) you can reflash the board and input the correct pin in the web UI, or open a UART terminal and send the command `rftxpin #` where `#` is your pin number. For more information see the page dedicated to your micro-controller under [boards](../hardware/boards/index.md).
+!!! warning "RF TX Pin" **DO NOT** change the RF TX Pin **UNLESS IT IS NOT AUTOMATICALLY DETECTED**. This is an advanced feature. It should be set correctly by default after flashing the OpenShock firmware. If the pin is not automatically selected, can open a UART terminal and send the command `rftxpin #` where `#` is your pin number. If you do not know how to do this, you can also reflash the board and configure the pin in the web interface. For more information see the page dedicated to your micro-controller under [boards](../hardware/boards/index.md).
 
 3. Create a hub on the website:
     1. **On your PC** open [openshock.app](https://openshock.app/).
@@ -78,7 +78,7 @@
     2. Hold the power button again until it beeps and the LED flashes fast. *This means the pair mode is active*
     3. On the website click the ***speaker icon*** of your shocker, if your shocker beeps in response, the pairing was successful.
     4. You must click the icon before the shocker's pairing mode times out (while the shocker's LED is flashing quickly).
-    ??? Info "Image"
+    ??? info "Image"
         ![image](../static/guides/first-setup/find_sound_button.png)
 **Everything should work now, have fun!** 🎉  
 

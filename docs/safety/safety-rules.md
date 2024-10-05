@@ -7,7 +7,7 @@
     ![An image depicting unsafe places to place shockers. Places include along the spine, on the chest near the heart and on the neck.](../static/safety/nogo-body-zones.png)  
 
 !!! danger "Do not touch the pins of the shocker with both hands at the same time" 
-    The electricity will flow through your heart. 
+    The electricity could flow through your heart. 
 
 ## Consequences
 
