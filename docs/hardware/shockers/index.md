@@ -4,6 +4,14 @@ tags:
   - shockers
 ---
 
+!!! danger "Safety Warning"
+    **Do not wear the shocker near your neck or your heart.**  
+    Check out [Safety](../safety/safety-rules.md) for more information.
+
+!!! danger "Safety Warning" 
+    **Do not touch the pins of the shocker with both hands at the same time.** 
+    The electricity could flow through your heart. 
+
 # Shockers
 At OpenShock we support a couple of different Shocker Models. All of them are based on 433 MHz RF for communication.  
 They are controlled via a OpenShock Hub.
