@@ -10,7 +10,7 @@
     Ensure you have a cable that supports data transfer, and neither the port nor cable is damaged.
 
 !!! Info
-    If you recieved your hub from an OpenShock hardware vendor, you can likely skip this step! Any updates can be [performed wirelessly](../guides/openshock-how-to-update.md) after the initial setup.
+    If you received your hub from an OpenShock hardware vendor, you can likely skip this step! Any updates can be [performed wirelessly](../guides/openshock-how-to-update.md) after the initial setup.
 
 ## Flashing the firmware
 1. Plug your hub into your PC using a USB cable.
@@ -37,7 +37,7 @@ If you experience issues with connecting the flash tool to your esp, there is a 
 
 #### Different Cable
 
-Try a couple of different USB cables, usb ports on your computer and if available on a different machine entirely.
+Try a couple of different USB cables, USB ports on your computer and if available on a different machine entirely.
 
 #### Pull IO0 to GND
 
