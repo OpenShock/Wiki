@@ -30,7 +30,8 @@
     *A green pop up should appear if it's connected successfully*
         ![Image "image"](../static/guides/first-setup/ESPWebGUI.png)
 
-!!! warning "RF TX Pin" **DO NOT** change the RF TX Pin **UNLESS IT IS NOT AUTOMATICALLY DETECTED**. This is an advanced feature. It should be set correctly by default after flashing the OpenShock firmware. If the pin is not automatically selected, can open a UART terminal and send the command `rftxpin #` where `#` is your pin number. If you do not know how to do this, you can also reflash the board and configure the pin in the web interface. For more information see the page dedicated to your micro-controller under [boards](../hardware/boards/index.md).
+!!! warning "RF TX Pin" 
+    **DO NOT** change the RF TX Pin **UNLESS IT IS NOT AUTOMATICALLY DETECTED**. This is an advanced feature. It should be set correctly by default after flashing the OpenShock firmware. If the pin is not automatically selected, can open a UART terminal and send the command `rftxpin #` where `#` is your pin number. If you do not know how to do this, you can also reflash the board and configure the pin in the web interface. For more information see the page dedicated to your micro-controller under [boards](../hardware/boards/index.md).
 
 3. Create a hub on the website:
     1. **On your PC** open [openshock.app](https://openshock.app/).
