@@ -6,6 +6,9 @@
 !!! danger "DO NOT wear your Shockers near these Zones"
     ![An image depicting unsafe places to place shockers. Places include along the spine, on the chest near the heart and on the neck.](../static/safety/nogo-body-zones.png)  
 
+!!! danger "Do not touch the pins of the shocker with both hands at the same time" 
+    The electricity could flow through your heart. 
+
 ## Consequences
 
 Wearing the shocker near any of these Zones can cause:  
@@ -22,7 +25,6 @@ If you notice any of these symptoms contact emergency services immediately.
 
 You are playing with Electricity, always handle it with care.  
 
-- Do not touch the pins of the shocker with both hands at the same time, the electricity will flow through your heart.
 - Do not not touch the pins of the shocker while it's on, it may not cause permanent damage to your hand but it is extremely painful.  
 
 ## Consent

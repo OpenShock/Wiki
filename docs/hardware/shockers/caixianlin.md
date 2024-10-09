@@ -25,6 +25,7 @@ Best effort list of current AliExpress sellers. Feel free to add more sources to
 The charging port for this model is a standard **DC 3.5 x 1.35mm**. A USB to **DC 3.5 x 1.35mm** cable is used to charge the shocker. You might even have one laying around as they are common.
 
 - :globe_with_meridians: International: [AliExpress](https://aliexpress.com/item/2255799944669970.html)
+- :globe_with_meridians: International: [AliBaba](https://www.alibaba.com/product-detail/MZ-880-Waterproof-Rechargeable-Vibrating-Dog_1600152421803.html?spm=a2756.trade-list-buyer.0.0.591076e9bwDzlP)
 
 ## Media
 
