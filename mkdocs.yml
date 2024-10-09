@@ -88,11 +88,20 @@ theme:
         - navigation.sections
         - navigation.expand
         - navigation.instant
+        - navigation.instant.progress
         - navigation.tracking
         - navigation.indexes
+        - navigation.footer
+        - navigation.top
         - content.tabs.link
         - content.code.annotate
         - content.code.copy
+        - content.tooltips
+        - content.action.edit
+        - content.action.view
+        - search.share
+        - search.suggest
+        - search.highlight
     palette:
         # Palette toggle for dark mode
         - scheme: slate  
