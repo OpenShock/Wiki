@@ -1,14 +1,13 @@
-site_name: OpenShock
+site_name: OpenShock Wiki
 docs_dir: docs
 site_url: https://wiki.openshock.org/
 repo_url: https://github.com/OpenShock/Wiki
 
 nav:
-    - Home: index.md
-
-    - Safety: safety/safety-rules.md
-
-    - Developer: dev/index.md
+    - Home:
+          - index.md
+          - FAQ: home/faq.md
+          - Safety: home/safety-rules.md
 
     - Guides:
           - Quickstart:
@@ -27,6 +26,23 @@ nav:
                 - guides/shockosc-parameters.md
           - Self Hosting:
                 - guides/selfhosting/index.md
+
+    - Do It Yourself:
+          - Hardware:
+                - diy/assembling.md
+          - Software:
+                - diy/compile.md
+
+    - Developer: dev/index.md
+
+    - Vendors:
+          - Hardware:
+                - vendors/hardware/index.md
+                - Europe:
+                      - vendors/hardware/luc.md
+                      - vendors/hardware/bosjesman.md
+                - North America:
+                      - vendors/hardware/nullstalgia.md
 
     - Hardware:
           - Shockers:
@@ -55,22 +71,7 @@ nav:
           - Transmitter:
                 - hardware/transmitter/index.md
 
-    - Vendors:
-          - Hardware:
-                - vendors/hardware/index.md
-                - Europe:
-                      - vendors/hardware/luc.md
-                      - vendors/hardware/bosjesman.md
-                - North America:
-                      - vendors/hardware/nullstalgia.md
-          - vendors/software.md
-
-    - Do it Yourself:
-          - Hardware:
-                - diy/assembling.md
-          - Software:
-                - diy/compile.md
-    - contributing/contributing.md
+    - Contributing: contributing/contributing.md
 
     - Legal and Privacy:
           - legal/terms-and-conditions.md
