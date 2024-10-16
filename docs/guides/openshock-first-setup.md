@@ -13,6 +13,7 @@
 - USB cable suitable for your Openshock hub.
 - A stable power source. Try to avoid cheap power bricks, they can cause the device to crash under certain loads.
 - A smartphone with a web browser (Chrome, Firefox etc.)
+- Your routers WiFi Password.
 - [OpenShock hub](../hardware/boards/index.md)
 - [Shocker](../hardware/shockers/index.md)
 - [OpenShock account](https://openshock.app/)
