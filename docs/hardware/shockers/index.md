@@ -6,7 +6,7 @@ tags:
 
 !!! danger "Safety Warning"
     **Do not wear the shocker near your neck or your heart.**  
-    Check out [Safety](../safety/safety-rules.md) for more information.
+    Check out [Safety](../../home/safety-rules.md) for more information.
 
 !!! danger "Safety Warning" 
     **Do not touch the pins of the shocker with both hands at the same time.** 
