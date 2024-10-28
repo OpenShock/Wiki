@@ -258,7 +258,7 @@ In addition we also need a ssl certificate, change the path to your needs, and c
 ??? "docker-compose.yml"
     ```yaml
 
-    # This file is a minimal plug and play working example of a runnable OpenShock stack.
+    # Minimal example for nginx
     services:
 
       db: # We need a postgres database, preferably version 15+
@@ -365,7 +365,7 @@ In addition we also need a ssl certificate, change the path to your needs, and c
     networks:
       openshock:
 
-  ```
+    ```
 
 **You will need to change the server names here!**
 
