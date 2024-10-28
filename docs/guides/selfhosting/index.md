@@ -37,155 +37,153 @@ Add two files with the names `docker-compose.yml` and `.env`. Paste their conten
 
     # This file is a minimal plug and play working example of a runnable OpenShock stack.
     services:
-
-    db: # We need a postgres database, preferably version 15+
+    
+      db: # We need a postgres database, preferably version 15+
         image: postgres:16
         restart: unless-stopped
         container_name: openshock-postgres
         healthcheck:
-        test: ["CMD-SHELL", "pg_isready -d $${POSTGRES_DB} -U $${POSTGRES_USER}"]
-        start_period: 20s
-        interval: 30s
-        retries: 5
-        timeout: 5s
+          test: ["CMD-SHELL", "pg_isready -d $${POSTGRES_DB} -U $${POSTGRES_USER}"]
+          start_period: 20s
+          interval: 30s
+          retries: 5
+          timeout: 5s
         networks:
-        - openshock
+         - openshock
         environment:
-        POSTGRES_PASSWORD: ${PG_PASS:?database password required}
-        POSTGRES_USER: ${PG_USER:-openshock}
-        POSTGRES_DB: ${PG_DB:-openshock}
+          POSTGRES_PASSWORD: ${PG_PASS:?database password required}
+          POSTGRES_USER: ${PG_USER:-openshock}
+          POSTGRES_DB: ${PG_DB:-openshock}
         volumes:
-        - ./postgres-data:/var/lib/postgresql/data # Data is saved in a folder called postgres-data in the current working directory
-    
-    redis:
+          - ./postgres-data:/var/lib/postgresql/data # Data is saved in a folder called postgres-data in the current working directory
+      
+      redis:
         restart: unless-stopped
         networks:
-        - openshock
+         - openshock
         image: redis/redis-stack-server:latest
         healthcheck:
-        test: ["CMD-SHELL", "redis-cli ping | grep PONG"]
-        start_period: 20s
-        interval: 30s
-        retries: 5
-        timeout: 3s
+          test: ["CMD-SHELL", "redis-cli ping | grep PONG"]
+          start_period: 20s
+          interval: 30s
+          retries: 5
+          timeout: 3s
         volumes:
-        - ./redis-data:/data # Same goes for redis
+          - ./redis-data:/data # Same goes for redis
         environment:
-        - "REDIS_ARGS=--notify-keyspace-events KEA"
-
-    api:
+          - "REDIS_ARGS=--notify-keyspace-events KEA"
+    
+      api:
         image: ghcr.io/openshock/api:latest
         restart: unless-stopped
         networks:
-        - openshock
+         - openshock
         depends_on:
-        - db
-        - redis
+          - db
+          - redis
         env_file: .env
         environment:
-        OPENSHOCK__FRONTEND__BASEURL: https://${OPENSHOCK_DOMAIN:-openshock.local}
-        OPENSHOCK__FRONTEND__SHORTURL: https://${OPENSHOCK_DOMAIN:-openshock.local}
-        OPENSHOCK__FRONTEND__COOKIEDOMAIN: ${OPENSHOCK_DOMAIN:-openshock.local}
-        OPENSHOCK__DB__CONN: Host=db;Port=5432;Database=${PG_USER:-openshock};Username=${PG_USER:-openshock};Password=${PG_PASS}
-        OPENSHOCK__REDIS__HOST: redis
-        OPENSHOCK__TURNSTILE__ENABLE: false
+          OPENSHOCK__FRONTEND__BASEURL: https://${OPENSHOCK_DOMAIN:-openshock.local}
+          OPENSHOCK__FRONTEND__SHORTURL: https://${OPENSHOCK_DOMAIN:-openshock.local}
+          OPENSHOCK__FRONTEND__COOKIEDOMAIN: ${OPENSHOCK_DOMAIN:-openshock.local}
+          OPENSHOCK__DB__CONN: Host=db;Port=5432;Database=${PG_USER:-openshock};Username=${PG_USER:-openshock};Password=${PG_PASS}
+          OPENSHOCK__REDIS__HOST: redis
+          OPENSHOCK__TURNSTILE__ENABLE: false
         labels:
-        - "traefik.enable=true"
-        - "traefik.http.routers.openshock-api.rule=Host(`${OPENSHOCK_API_SUBDOMAIN:-api}.${OPENSHOCK_DOMAIN:-openshock.local}`)"
-        - "traefik.http.routers.openshock-api.entrypoints=https"
-        - "traefik.http.routers.openshock-api.tls=true"
-        - "traefik.http.routers.openshock-api.service=openshock-api"
-        - "traefik.http.services.openshock-api.loadbalancer.server.port=80"
-    
-    webui:
+          - "traefik.enable=true"
+          - "traefik.http.routers.openshock-api.rule=Host(`${OPENSHOCK_API_SUBDOMAIN:-api}.${OPENSHOCK_DOMAIN:-openshock.local}`)"
+          - "traefik.http.routers.openshock-api.entrypoints=https"
+          - "traefik.http.routers.openshock-api.tls=true"
+          - "traefik.http.routers.openshock-api.service=openshock-api"
+          - "traefik.http.services.openshock-api.loadbalancer.server.port=80"
+      
+      webui:
         image: ghcr.io/openshock/webui:latest
         restart: unless-stopped
         networks:
-        - openshock
+          - openshock
         environment:
-        OPENSHOCK_NAME: OpenShock
-        OPENSHOCK_URL: ${OPENSHOCK_DOMAIN:-openshock.local}
-        OPENSHOCK_SHARE_URL: https://${OPENSHOCK_DOMAIN:-openshock.local}
-        OPENSHOCK_API_URL: https://${OPENSHOCK_API_SUBDOMAIN:-api}.${OPENSHOCK_DOMAIN:-openshock.local}
+          OPENSHOCK_NAME: OpenShock
+          OPENSHOCK_URL: ${OPENSHOCK_DOMAIN:-openshock.local}
+          OPENSHOCK_SHARE_URL: https://${OPENSHOCK_DOMAIN:-openshock.local}
+          OPENSHOCK_API_URL: https://${OPENSHOCK_API_SUBDOMAIN:-api}.${OPENSHOCK_DOMAIN:-openshock.local}
         labels:
-         - "traefik.enable=true"
-         - "traefik.http.routers.openshock-webui.rule=Host(`${OPENSHOCK_DOMAIN:-openshock.local}`)"
-         - "traefik.http.routers.openshock-webui.entrypoints=https"
-         - "traefik.http.routers.openshock-webui.tls=true"
-         - "traefik.http.routers.openshock-webui.service=openshock-webui"
-         - "traefik.http.routers.openshock-webui.middlewares=osr-s,osr-c,osr-t"
-         - "traefik.http.services.openshock-webui.loadbalancer.server.port=80"
-         - "traefik.http.middlewares.osr-s.redirectregex.regex=^https://${OPENSHOCK_DOMAIN:-openshock.local}/s/(.*)"
-         - "traefik.http.middlewares.osr-s.redirectregex.replacement=https://${OPENSHOCK_DOMAIN:-openshock.local}/#/public/proxy/shares/link/$$1"
-         - "traefik.http.middlewares.osr-c.redirectregex.regex=^https://${OPENSHOCK_DOMAIN:-openshock.local}/c/(.*)"
-         - "traefik.http.middlewares.osr-c.redirectregex.replacement=https://${OPENSHOCK_DOMAIN:-openshock.local}/#/public/proxy/shares/code/$$1"
-         - "traefik.http.middlewares.osr-t.redirectregex.regex=^https://${OPENSHOCK_DOMAIN:-openshock.local}/t/(.*)"
-         - "traefik.http.middlewares.osr-t.redirectregex.replacement=https://${OPENSHOCK_DOMAIN:-openshock.local}/#/public/proxy/shares/token/$$1"
-
-    lcg:
+          - "traefik.enable=true"
+          - "traefik.http.routers.openshock-webui.rule=Host(`${OPENSHOCK_DOMAIN:-openshock.local}`)"
+          - "traefik.http.routers.openshock-webui.entrypoints=https"
+          - "traefik.http.routers.openshock-webui.tls=true"
+          - "traefik.http.routers.openshock-webui.service=openshock-webui"
+          - "traefik.http.routers.openshock-webui.middlewares=osr-s,osr-c,osr-t"
+          - "traefik.http.services.openshock-webui.loadbalancer.server.port=80"
+          - "traefik.http.middlewares.osr-s.redirectregex.regex=^https://${OPENSHOCK_DOMAIN:-openshock.local}/s/(.*)"
+          - "traefik.http.middlewares.osr-s.redirectregex.replacement=https://${OPENSHOCK_DOMAIN:-openshock.local}/#/public/proxy/shares/link/$$1"
+          - "traefik.http.middlewares.osr-c.redirectregex.regex=^https://${OPENSHOCK_DOMAIN:-openshock.local}/c/(.*)"
+          - "traefik.http.middlewares.osr-c.redirectregex.replacement=https://${OPENSHOCK_DOMAIN:-openshock.local}/#/public/proxy/shares/code/$$1"
+          - "traefik.http.middlewares.osr-t.redirectregex.regex=^https://${OPENSHOCK_DOMAIN:-openshock.local}/t/(.*)"
+          - "traefik.http.middlewares.osr-t.redirectregex.replacement=https://${OPENSHOCK_DOMAIN:-openshock.local}/#/public/proxy/shares/token/$$1"
+    
+      lcg:
         image: ghcr.io/openshock/live-control-gateway:latest
         restart: unless-stopped
         networks:
-        - openshock
+         - openshock
         depends_on:
-        - db
-        - redis
+         - db
+         - redis
         environment:
-        OPENSHOCK__REDIS__HOST: redis
-        OPENSHOCK__DB__CONN: Host=db;Port=5432;Database=${PG_USER:-openshock};Username=${PG_USER:-openshock};Password=${PG_PASS}
-        OPENSHOCK__LCG__COUNTRYCODE: DE
-        OPENSHOCK__LCG__FQDN: ${OPENSHOCK_GATEWAY_SUBDOMAIN:-gateway}.${OPENSHOCK_DOMAIN:-openshock.local}
+          OPENSHOCK__REDIS__HOST: redis
+          OPENSHOCK__DB__CONN: Host=db;Port=5432;Database=${PG_USER:-openshock};Username=${PG_USER:-openshock};Password=${PG_PASS}
+          OPENSHOCK__LCG__COUNTRYCODE: DE
+          OPENSHOCK__LCG__FQDN: ${OPENSHOCK_GATEWAY_SUBDOMAIN:-gateway}.${OPENSHOCK_DOMAIN:-openshock.local}
         labels:
-        - "traefik.enable=true"
-        - "traefik.http.routers.openshock-gateway.rule=Host(`${OPENSHOCK_GATEWAY_SUBDOMAIN:-gateway}.${OPENSHOCK_DOMAIN:-openshock.local}`)"
-        - "traefik.http.routers.openshock-gateway.entrypoints=https"
-        - "traefik.http.routers.openshock-gateway.tls=true"
-        - "traefik.http.routers.openshock-gateway.service=openshock-gateway"
-        - "traefik.http.services.openshock-gateway.loadbalancer.server.port=80"
-
-    cron:
+          - "traefik.enable=true"
+          - "traefik.http.routers.openshock-gateway.rule=Host(`${OPENSHOCK_GATEWAY_SUBDOMAIN:-gateway}.${OPENSHOCK_DOMAIN:-openshock.local}`)"
+          - "traefik.http.routers.openshock-gateway.entrypoints=https"
+          - "traefik.http.routers.openshock-gateway.tls=true"
+          - "traefik.http.routers.openshock-gateway.service=openshock-gateway"
+          - "traefik.http.services.openshock-gateway.loadbalancer.server.port=80"
+    
+      cron:
         image: ghcr.io/openshock/cron:master
         restart: unless-stopped
         networks:
-        - openshock
+         - openshock
         depends_on:
-        - db
-        - redis
+          - db
+          - redis
         environment:
-        OPENSHOCK__REDIS__HOST: redis
-        OPENSHOCK__DB__CONN: Host=db;Port=5432;Database=${PG_USER:-openshock};Username=${PG_USER:-openshock};Password=${PG_PASS}
+          OPENSHOCK__REDIS__HOST: redis
+          OPENSHOCK__DB__CONN: Host=db;Port=5432;Database=${PG_USER:-openshock};Username=${PG_USER:-openshock};Password=${PG_PASS}
         labels:
-        - "traefik.enable=true"
-        - "traefik.http.routers.openshock-cron.rule=Host(`${OPENSHOCK_DOMAIN:-localhost}`) && PathPrefix(`/hangfire`)"
-        - "traefik.http.routers.openshock-cron.entrypoints=https"
-        - "traefik.http.routers.openshock-cron.tls=true"
-        - "traefik.http.routers.openshock-cron.service=openshock-cron"
-        - "traefik.http.services.openshock-cron.loadbalancer.server.port=780"
+          - "traefik.enable=true"
+          - "traefik.http.routers.openshock-cron.rule=Host(`${OPENSHOCK_DOMAIN:-localhost}`) && PathPrefix(`/hangfire`)"
+          - "traefik.http.routers.openshock-cron.entrypoints=https"
+          - "traefik.http.routers.openshock-cron.tls=true"
+          - "traefik.http.routers.openshock-cron.service=openshock-cron"
+          - "traefik.http.services.openshock-cron.loadbalancer.server.port=780"
         
-    traefik:
+      traefik:
         image: traefik:latest
         container_name: traefik
         command:
-        #- "--log.level=DEBUG"
-        - "--providers.docker=true"
-        - "--providers.docker.exposedbydefault=false"
-        - "--entryPoints.https.address=:443"
-        #- "--api.insecure=true"
+          #- "--log.level=DEBUG"
+          - "--providers.docker=true"
+          - "--providers.docker.exposedbydefault=false"
+          - "--entryPoints.https.address=:443"
+          #- "--api.insecure=true"
         restart: unless-stopped
         networks:
-        - openshock
+          - openshock
         ports:
-        - 80:80
-        - 443:443
-        #- 8080:8080 # Traefik Web UI (enabled by --api.insecure=true)
+          - 80:80
+          - 443:443
+          #- 8080:8080 # Traefik Web UI (enabled by --api.insecure=true)
         volumes:
-        - /etc/localtime:/etc/localtime:ro
-        - /var/run/docker.sock:/var/run/docker.sock:ro
-
+          - /etc/localtime:/etc/localtime:ro
+          - /var/run/docker.sock:/var/run/docker.sock:ro
+    
     networks:
-    openshock:
-
-
+      openshock:
     ```
 
 ??? ".env"
