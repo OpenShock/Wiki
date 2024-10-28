@@ -192,9 +192,9 @@ Add two files with the names `docker-compose.yml` and `.env`. Paste their conten
     #PG_PASS=someSecurePassword(1)
 
     # Compose variables
-    OPENSHOCK_DOMAIN=openshock.local(2)
-    OPENSHOCK_GATEWAY_SUBDOMAIN=gateway(3)
-    OPENSHOCK_API_SUBDOMAIN=api(4)
+    OPENSHOCK_DOMAIN=openshock.local #(2)
+    OPENSHOCK_GATEWAY_SUBDOMAIN=gateway #(3)
+    OPENSHOCK_API_SUBDOMAIN=api #(4)
 
     #global email config
     OPENSHOCK__MAIL__SENDER__NAME=OpenShock System
