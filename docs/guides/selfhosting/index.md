@@ -250,6 +250,192 @@ There is a short hand letter, that redirects to the webui url, with this prefix 
 This setup also assumes that your frontend is for example under `openshock.app`. And API and Gateway are subdomains of the current domain name.
 If you want to have your frontend also be under a subdomain, you will need to edit the reverse proxy todo so. And set the frontend urls environment variables accordingly.
 
+#### NGINX reverse proxy example with custom SSL
+
+We can use this modified docker-compose.yml, difference here is, we removed traefik and added nginx.
+In addition we also need a ssl certificate, change the path to your needs, and create a `nginx-site.conf` file.
+
+??? "docker-compose.yml"
+    ```yaml
+
+    # This file is a minimal plug and play working example of a runnable OpenShock stack.
+    services:
+
+      db: # We need a postgres database, preferably version 15+
+        image: postgres:16
+        restart: unless-stopped
+        container_name: openshock-postgres
+        healthcheck:
+          test: ["CMD-SHELL", "pg_isready -d $${POSTGRES_DB} -U $${POSTGRES_USER}"]
+          start_period: 20s
+          interval: 30s
+          retries: 5
+          timeout: 5s
+        networks:
+        - openshock
+        environment:
+          POSTGRES_PASSWORD: ${PG_PASS:?database password required}
+          POSTGRES_USER: ${PG_USER:-openshock}
+          POSTGRES_DB: ${PG_DB:-openshock}
+        volumes:
+          - ./postgres-data:/var/lib/postgresql/data # Data is saved in a folder called postgres-data in the current working directory
+      
+      redis:
+        restart: unless-stopped
+        networks:
+        - openshock
+        image: redis/redis-stack-server:latest
+        healthcheck:
+          test: ["CMD-SHELL", "redis-cli ping | grep PONG"]
+          start_period: 20s
+          interval: 30s
+          retries: 5
+          timeout: 3s
+        volumes:
+          - ./redis-data:/data # Same goes for redis
+        environment:
+          - "REDIS_ARGS=--notify-keyspace-events KEA"
+
+      api:
+        image: ghcr.io/openshock/api:latest
+        restart: unless-stopped
+        networks:
+        - openshock
+        depends_on:
+          - db
+          - redis
+        env_file: .env
+        environment:
+          OPENSHOCK__FRONTEND__BASEURL: https://${OPENSHOCK_DOMAIN:-openshock.local}
+          OPENSHOCK__FRONTEND__SHORTURL: https://${OPENSHOCK_DOMAIN:-openshock.local}
+          OPENSHOCK__FRONTEND__COOKIEDOMAIN: ${OPENSHOCK_DOMAIN:-openshock.local}
+          OPENSHOCK__DB__CONN: Host=db;Port=5432;Database=${PG_USER:-openshock};Username=${PG_USER:-openshock};Password=${PG_PASS}
+          OPENSHOCK__REDIS__HOST: redis
+          OPENSHOCK__TURNSTILE__ENABLE: false
+      
+      webui:
+        image: ghcr.io/openshock/webui:latest
+        restart: unless-stopped
+        networks:
+          - openshock
+        environment:
+          OPENSHOCK_NAME: OpenShock
+          OPENSHOCK_URL: ${OPENSHOCK_DOMAIN:-openshock.local}
+          OPENSHOCK_SHARE_URL: https://${OPENSHOCK_DOMAIN:-openshock.local}
+          OPENSHOCK_API_URL: https://${OPENSHOCK_API_SUBDOMAIN:-api}.${OPENSHOCK_DOMAIN:-openshock.local}
+
+      lcg:
+        image: ghcr.io/openshock/live-control-gateway:latest
+        restart: unless-stopped
+        networks:
+        - openshock
+        depends_on:
+        - db
+        - redis
+        environment:
+          OPENSHOCK__REDIS__HOST: redis
+          OPENSHOCK__DB__CONN: Host=db;Port=5432;Database=${PG_USER:-openshock};Username=${PG_USER:-openshock};Password=${PG_PASS}
+          OPENSHOCK__LCG__COUNTRYCODE: DE
+          OPENSHOCK__LCG__FQDN: ${OPENSHOCK_GATEWAY_SUBDOMAIN:-gateway}.${OPENSHOCK_DOMAIN:-openshock.local}
+
+      cron:
+        image: ghcr.io/openshock/cron:master
+        restart: unless-stopped
+        networks:
+        - openshock
+        depends_on:
+          - db
+          - redis
+        environment:
+          OPENSHOCK__REDIS__HOST: redis
+          OPENSHOCK__DB__CONN: Host=db;Port=5432;Database=${PG_USER:-openshock};Username=${PG_USER:-openshock};Password=${PG_PASS}
+        
+      nginx:
+        image: nginx
+        restart: unless-stopped
+        networks:
+          - openshock
+        ports:
+          - 80:80
+          - 443:443
+        volumes:
+          - ./nginx-site.conf:/etc/nginx/conf.d/nginx-site.conf
+          - ./certs:/certs
+
+    networks:
+      openshock:
+
+  ```
+
+**You will need to change the server names here!**
+
+??? "nginx-site.conf"
+
+    ```yaml
+
+    server {
+        listen 443 ssl;
+        server_name openshock.local;
+        ssl_certificate /certs/fullchain.pem;
+        ssl_certificate_key /certs/privkey.pem;
+
+        # Redirect /s/<anything> to /#/public/proxy/shares/link/<anything>
+        location ~ ^/s/(.*)$ {
+            return 301 /#/public/proxy/shares/link/$1;
+        }
+
+        # Redirect /c/<anything> to /#/public/proxy/shares/code/<anything>
+        location ~ ^/c/(.*)$ {
+            return 301 /#/public/proxy/shares/code/$1;
+        }
+
+        # Redirect /t/<anything> to /#/public/proxy/shares/token/<anything>
+        location ~ ^/t/(.*)$ {
+            return 301 /#/public/proxy/shares/token/$1;
+        }
+
+        location / {
+            proxy_pass http://webui:80;
+            proxy_set_header Host $host;
+            proxy_set_header Upgrade $http_upgrade;
+            proxy_set_header Connection keep-alive;
+            proxy_set_header Connection "upgrade";
+        }
+    }
+
+
+    server {
+        listen 443 ssl;
+        server_name api.openshock.local;
+        ssl_certificate /certs/fullchain.pem;
+        ssl_certificate_key /certs/privkey.pem;
+
+        location / {
+            proxy_pass http://api:80;
+            proxy_set_header Host $host;
+            proxy_set_header Upgrade $http_upgrade;
+            proxy_set_header Connection keep-alive;
+            proxy_set_header Connection "upgrade";
+        }
+    }
+
+    server {
+        listen 443 ssl;
+        server_name gateway.openshock.local;
+        ssl_certificate /certs/fullchain.pem;
+        ssl_certificate_key /certs/privkey.pem;
+
+        location / {
+            proxy_pass http://lcg:80;
+            proxy_set_header Host $host;
+            proxy_set_header Upgrade $http_upgrade;
+            proxy_set_header Connection keep-alive;
+            proxy_set_header Connection "upgrade";
+        }
+    }
+
+    ```
+
 ## Done
 
 Congratulations, the backend and website should be working now. :partying_face:
