@@ -398,8 +398,7 @@ In addition we also need a ssl certificate, change the path to your needs, and c
             proxy_pass http://webui:80;
             proxy_set_header Host $host;
             proxy_set_header Upgrade $http_upgrade;
-            proxy_set_header Connection keep-alive;
-            proxy_set_header Connection "upgrade";
+            proxy_set_header Connection $connection_upgrade
         }
     }
 
@@ -414,8 +413,7 @@ In addition we also need a ssl certificate, change the path to your needs, and c
             proxy_pass http://api:80;
             proxy_set_header Host $host;
             proxy_set_header Upgrade $http_upgrade;
-            proxy_set_header Connection keep-alive;
-            proxy_set_header Connection "upgrade";
+            proxy_set_header Connection $connection_upgrade
         }
     }
 
@@ -429,8 +427,7 @@ In addition we also need a ssl certificate, change the path to your needs, and c
             proxy_pass http://lcg:80;
             proxy_set_header Host $host;
             proxy_set_header Upgrade $http_upgrade;
-            proxy_set_header Connection keep-alive;
-            proxy_set_header Connection "upgrade";
+            proxy_set_header Connection $connection_upgrade
         }
     }
 
