@@ -30,8 +30,6 @@ nav:
     - Do It Yourself:
           - Hardware:
                 - diy/assembling.md
-          - Software:
-                - diy/compile.md
 
     - Developer: dev/index.md
 
@@ -71,7 +69,10 @@ nav:
           - Transmitter:
                 - hardware/transmitter/index.md
 
-    - Contributing: contributing/contributing.md
+    - Contributing:
+      - contributing/contributing.md
+      - Software:
+            - contributing/compile-firmware.md
 
     - Legal and Privacy:
           - legal/terms-and-conditions.md
