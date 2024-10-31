@@ -2,7 +2,7 @@
 
 !!! danger "Safety Warning"
     **Don't wear the shocker somewhere near your neck or your heart.**  
-    Check out [Safety](../safety/safety-rules.md) for more information.
+    Check out [Safety](../home/safety-rules.md) for more information.
 
 !!! danger "Safety Warning" 
     **Do not touch the pins of the shocker with both hands at the same time.** 
@@ -33,11 +33,15 @@
     ??? Info "Images (click to expand)"
         ![Image "image"](../static/guides/first-setup/ESPWebGUI.png)
 
-!!! warning "RF TX Pin" 
-    **DO NOT** change the RF TX Pin **UNLESS IT IS NOT AUTOMATICALLY DETECTED**.  
-    This is an advanced feature. It should be set correctly by default after flashing the OpenShock firmware. If the pin is not automatically selected, you can open a UART terminal and send the command `rftxpin #` where `#` is your pin number. If you do not know how to do this, you can also reflash the board and configure the pin in the web interface. For more information see the page dedicated to your micro-controller under [boards](../hardware/boards/index.md).
+3. Set the RF TX Pin if needed
 
-3. Create a hub on the website:
+!!! warning "RF TX Pin" 
+    **DO NOT** change the RF TX Pin **UNLESS IT IS NOT AUTOMATICALLY DETECTED** or you are using a DIY hub.
+    This is an advanced feature. It should be set correctly by default after flashing the OpenShock firmware.  
+    If the pin is not automatically selected, you can open a Serial terminal and send the command `rftxpin #` where `#` is your pin number.  
+    If you do not know how to do this, you can also re-enable the captive portal (hotspot of the Hub) to re-configure it. For more information see the page dedicated to your micro-controller under [boards](../hardware/boards/index.md).
+
+1. Create a hub on the website:
     1. **On your PC** open [openshock.app](https://openshock.app/).
     2. Create an account. *(If you don't have one already)*
     3. Go to **Devices** and click the **green plus icon** at the lower right corner to create a new hub.
@@ -50,7 +54,7 @@
             ![Image "image"](../static/guides/first-setup/findaddbutton3.png)
             ![Image "image"](../static/guides/first-setup/find_device_context_menu.png)
             ![Image "image"](../static/guides/first-setup/edit_device.png)
-4. Pair the hub:
+2. Pair the hub:
     1. Open the context menu of your hub again.
     2. Select **pair** and press **get pair code**, this will generate a new pair code.
     3. On your phone type the code into the account Linking field of the hub's web-interface, then press **pair**.
@@ -58,14 +62,9 @@
         ??? Info "Images (click to expand)"
             ![Image "image"](../static/guides/first-setup/findpaircode.png)
             ![Image "image"](../static/guides/first-setup/paircodeexample.png)
-5. The hub is now connected!
+3. The hub is now connected!
     - If everything went well, it should show a **green icon** next to the device name on the website.  
     ![Image "image"](../static/guides/first-setup/checkifonline.png)
-
-!!! warning "RF TX Pin" 
-    **DO NOT** change the RF TX Pin **UNLESS IT IS NOT AUTOMATICALLY DETECTED**.  
-    This is an advanced feature. It should be set correctly by default after flashing the OpenShock firmware. If the pin is not automatically selected, you can open a UART terminal and send the command `rftxpin #` where `#` is your pin number. If you do not know how to do this, you can also reflash the board and configure the pin in the web interface. For more information see the page dedicated to your micro-controller under [boards](../hardware/boards/index.md).
-
 
 ## Pairing shockers
 

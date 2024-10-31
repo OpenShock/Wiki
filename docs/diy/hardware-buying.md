@@ -1,8 +1,4 @@
-
-# Buying guide
-
-!!! example "Still brewing!"
-    Sorry, we haven't *quite* finished this article yet. **In the meantime, feel free to hit us up on [Discord](https://discord.gg/OpenShock) if you have any trouble.**
+# DIY Hardware
 
 !!! tip "pre-built options available"
     Not interested in building your own OpenShock hub? Head over to the [Hardware vendors](../vendors/hardware/index.md).
@@ -18,7 +14,11 @@ These are the **recommendations** of the OpenShock maintainers. This list is **n
 
 ### ESP32-S3
 
-We recommend the `ESP32-S3` chip, specifically the `N16R8` variant for its 16 MiB of flash. The [Wemos Lolin S3](../hardware/boards/wemos/lolin-s3.md) board satisfies all these criteria.
+We recommend the `ESP32-S3` chip, specifically the `N16R8` variant for its 16 MiB of flash. The [Wemos Lolin S3](../hardware/boards/wemos/lolin-s3.md) board satisfies all these criteria.  
+
+Requirements for the ESP are:
+- Needs to be a **ESP32** specifically. Not a 8266 or other!
+- 4MB or more of flash
 
 ## 433 MHz Transmitter
 

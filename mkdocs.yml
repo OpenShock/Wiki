@@ -12,7 +12,6 @@ nav:
     - Guides:
           - Quickstart:
                 - quickstart/what-you-need.md
-                - quickstart/buying-guide.md
           - OpenShock:
                 - guides/openshock-how-to-flash-your-board.md
                 - guides/openshock-first-setup.md
@@ -28,19 +27,12 @@ nav:
                 - guides/selfhosting/index.md
 
     - Do It Yourself:
+          - diy/index.md
           - Hardware:
+                - diy/hardware-buying.md
                 - diy/assembling.md
 
     - Developer: dev/index.md
-
-    - Vendors:
-          - Hardware:
-                - vendors/hardware/index.md
-                - Europe:
-                      - vendors/hardware/luc.md
-                      - vendors/hardware/bosjesman.md
-                - North America:
-                      - vendors/hardware/nullstalgia.md
 
     - Hardware:
           - Shockers:
@@ -66,13 +58,32 @@ nav:
                       - hardware/boards/wemos/d1-mini-esp32.md
                       - hardware/boards/wemos/lolin-s2-mini.md
                       - hardware/boards/wemos/lolin-s3.md
+                - DFRobot:
+                      - hardware/boards/dfr-firebeetle/dfr-firebeetle.md
+                - ESP32-S3:
+                      - hardware/boards/china/esp32s3-dorx.md
           - Transmitter:
                 - hardware/transmitter/index.md
+                - hardware/transmitter/china/open-smart.md
+
+    - Vendors:
+          - Hardware:
+                - vendors/hardware/index.md
+                - Europe:
+                      - vendors/hardware/luc.md
+                      - vendors/hardware/bosjesman.md
+                - North America:
+                      - vendors/hardware/nullstalgia.md
+                      - vendors/hardware/sillypupkit.md
 
     - Contributing:
       - contributing/contributing.md
       - Software:
             - contributing/compile-firmware.md
+
+    - Troubleshooting:
+      - troubleshooting/hub.md
+      - troubleshooting/shockosc.md
 
     - Legal and Privacy:
           - legal/terms-and-conditions.md

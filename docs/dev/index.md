@@ -10,7 +10,7 @@ tags:
 
 ## Backend Architecture
 
-![Backend Architecture Diagram](/static/developer/backend-architecture-overview.svg)
+![Backend Architecture Diagram](../static/developer/backend-architecture-overview.svg)
 
 
 ## OpenAPI Documentation

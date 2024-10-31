@@ -18,8 +18,8 @@ Interested in hosting your own server? Check out the [Self-hosting](../guides/se
 A hub connects OpenShock to the shock device via a micro-controller and a 433 MHz transmitter.
 
 - For pre-built options, check out the [Hardware vendors](../vendors/hardware/index.md).
-- For building your own, after reading the [Buying guide](../quickstart/buying-guide.md), head over to our do it yourself [Assembly guide](../diy/assembling.md).
+- For building your own [DIY Buying guide](../diy/hardware-buying.md).
 
 ### 3. Shockers
 
-This is the easy part! Head to the [Buying Guide](../quickstart/buying-guide.md) for all the information you'll need.
+See the [Shockers](../hardware/shockers/index.md). We recommend the [CaiXianlin](../hardware/shockers/caixianlin.md) shockers.
