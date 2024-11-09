@@ -24,3 +24,6 @@ For example, if you bought a [Wemos Lolin S3](../hardware/boards/wemos/lolin-s3.
     Or you reenable the Captive Portal on the website and connect to it again with your phone.
 
 ![Example Pinout](../static/diy/pinout.png)
+
+
+**Next step is [flashing the firmware.](../guides/openshock-how-to-flash-your-board.md)**
