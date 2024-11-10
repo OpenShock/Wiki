@@ -111,6 +111,5 @@ This will utilize the Contact Sender and Receiver components of the VRChatSDK to
     Also make sure you have interactions enabled in-game otherwise contacts won't work!
 
 ## Pull trigger
-
-!!! info "Still brewing!"
-    Sorry, we haven't *quite* gotten around to writing this set of articles just yet. **In the meantime, feel free to hit us up on [Discord](https://discord.gg/OpenShock).**
+You can use physbones to trigger shocks with intensity based on the distance the bone is stretched once it's released.
+Add a new parameter to a physbone component on your avatar with the same name as your group, e.g. `ShockOsc/Leg` or `ShockOsc/_All`
