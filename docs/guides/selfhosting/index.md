@@ -116,11 +116,11 @@ Add two files with the names `docker-compose.yml` and `.env`. Paste their conten
           - "traefik.http.routers.openshock-webui.middlewares=osr-s,osr-c,osr-t"
           - "traefik.http.services.openshock-webui.loadbalancer.server.port=80"
           - "traefik.http.middlewares.osr-s.redirectregex.regex=^https://${OPENSHOCK_DOMAIN:-openshock.local}/s/(.*)"
-          - "traefik.http.middlewares.osr-s.redirectregex.replacement=https://${OPENSHOCK_DOMAIN:-openshock.local}/#/public/proxy/shares/link/$$1"
+          - "traefik.http.middlewares.osr-s.redirectregex.replacement=https://${OPENSHOCK_DOMAIN:-openshock.local}/#/public/proxy/shares/links/$$1"
           - "traefik.http.middlewares.osr-c.redirectregex.regex=^https://${OPENSHOCK_DOMAIN:-openshock.local}/c/(.*)"
           - "traefik.http.middlewares.osr-c.redirectregex.replacement=https://${OPENSHOCK_DOMAIN:-openshock.local}/#/public/proxy/shares/code/$$1"
           - "traefik.http.middlewares.osr-t.redirectregex.regex=^https://${OPENSHOCK_DOMAIN:-openshock.local}/t/(.*)"
-          - "traefik.http.middlewares.osr-t.redirectregex.replacement=https://${OPENSHOCK_DOMAIN:-openshock.local}/#/public/proxy/shares/token/$$1"
+          - "traefik.http.middlewares.osr-t.redirectregex.replacement=https://${OPENSHOCK_DOMAIN:-openshock.local}/#/public/proxy/token/$$1"
     
       lcg:
         image: ghcr.io/openshock/live-control-gateway:latest
@@ -241,9 +241,9 @@ By default the reverse proxy that comes with this example is traefik. Everything
 
 If you decide to have your own reverse proxy or just straight up use a different domain for short urls, you need to setup redirects.
 
-- `/s/$` -> `/#/public/proxy/shares/link/$`
+- `/s/$` -> `/#/public/proxy/shares/links/$`
 - `/c/$` -> `/#/public/proxy/shares/code/$`
-- `/t/$` -> `/#/public/proxy/shares/token/$`
+- `/t/$` -> `/#/public/proxy/token/$`
 
 There is a short hand letter, that redirects to the webui url, with this prefix added, and `$` being a placeholder.
 
@@ -379,7 +379,7 @@ In addition we also need a ssl certificate, change the path to your needs, and c
         ssl_certificate /certs/fullchain.pem;
         ssl_certificate_key /certs/privkey.pem;
 
-        # Redirect /s/<anything> to /#/public/proxy/shares/link/<anything>
+        # Redirect /s/<anything> to /#/public/proxy/shares/links/<anything>
         location ~ ^/s/(.*)$ {
             return 301 /#/public/proxy/shares/link/$1;
         }
@@ -389,7 +389,7 @@ In addition we also need a ssl certificate, change the path to your needs, and c
             return 301 /#/public/proxy/shares/code/$1;
         }
 
-        # Redirect /t/<anything> to /#/public/proxy/shares/token/<anything>
+        # Redirect /t/<anything> to /#/public/proxy/token/<anything>
         location ~ ^/t/(.*)$ {
             return 301 /#/public/proxy/shares/token/$1;
         }
