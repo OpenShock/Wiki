@@ -55,68 +55,42 @@ Thank you `@dasbrin` on Discord for the images.
 |-------------------|------------|
 | Carrier Frequency | 433.95 MHz |
 | Modulation Type   | ASK / OOK  |
-| Baud Rate         | 3950 Hz    |
 
-### Message Format
+### Bit encoding
 
-> The hex values represent the encoded result, ready to be transmitted at 3950 Hz baud
+| Type | High duration | Low duration |
+|------|---------------|--------------|
+| Sync | 1400µs        | 750µs        |
+| 1    | 750µs         | 250µs        |
+| 0    | 250µs         | 750µs        |
 
-| Name              | Value      | Length  | Remarks |
-|-------------------|------------|---------|---------|
-| Prefix            | 0xFC       | 2 bits  |         |
-| Transmitter ID    | 0 - 65535  | 16 bits | The collar will be Paired to this |
-| Channel Number    | 0 - 2      | 4 bits  | The collar will be Paired to this |
-| Action Command    | 1 - 3      | 4 bits  | 1 = Shock, 2 = Vibrate, 3 = Beep  |
-| Command Intensity | 0 - 99     | 8 bits  | Should always be 0 for beep       |
-| Message checksum  | Calculated | 8 bits  | (sum of everything in front except prefix) modulo 256 |
-| Postfix           | 0x88       | 2 bits  | |
+### Packet fields
 
-#### Layout
+| Name              | Value      | Length    | Remarks                                  |
+|-------------------|------------|-----------|------------------------------------------|
+| Transmitter ID    | 0 - 65535  | 16 bits   | The collar will be Paired to this        |
+| Channel Number    | 0 - 2      | 4 bits    | The collar will be Paired to this        |
+| Action Command    | 1 - 3      | 4 bits    | 1 = Shock, 2 = Vibrate, 3 = Beep         |
+| Command Intensity | 0 - 99     | 8 bits    | Should always be 0 for beep              |
+| Message checksum  | 0 - 255    | 8 bits    | 8-bit sum of all other fields as a int32 |
 
-```text
-[PREFIX        ] = XX
-[TRANSMITTER ID] =   XXXXXXXXXXXXXXXX
-[CHANNEL       ] =                   XXXX
-[MODE          ] =                       XXXX
-[STRENGTH      ] =                           XXXXXXXX
-[CHECKSUM      ] =                                   XXXXXXXX
-[END           ] =                                           XX
-```
-
-#### Encoding
-
-> The following applies to a baud rate of 3950 Hz
-
-Every ``1`` is encoded as ``1110`` or ``0xE``
-Every ``0`` is encoded as ``1000`` or ``0x8``
-
-### Examples
-
-> Names are formatted as: Channel number (CH1), Command (SHOCK), Strength (99)
-> For all examples the Transmitter ID ``46231`` is used
+### Layout
 
 ```text
-[CH1 SHOCK   00] = fc e8ee8e88e88e8eee 8888 888e 88888888 8e88ee88 88
-[CH1 SHOCK   01] = fc e8ee8e88e88e8eee 8888 888e 8888888e 8e88ee8e 88
-[CH1 SHOCK   02] = fc e8ee8e88e88e8eee 8888 888e 888888e8 8e88eee8 88
-[CH1 SHOCK   03] = fc e8ee8e88e88e8eee 8888 888e 888888ee 8e88eeee 88
-[CH1 SHOCK   50] = fc e8ee8e88e88e8eee 8888 888e 88ee88e8 8eeeeee8 88
-[CH2 SHOCK   50] = fc e8ee8e88e88e8eee 888e 888e 88ee88e8 e888eee8 88
-[CH3 SHOCK   50] = fc e8ee8e88e88e8eee 88e8 888e 88ee88e8 e88eeee8 88
-[CH1 VIBRATE 50] = fc e8ee8e88e88e8eee 8888 88e8 88ee88e8 8eeeeeee 88
-[CH2 VIBRATE 50] = fc e8ee8e88e88e8eee 888e 88e8 88ee88e8 e888eeee 88
-[CH3 VIBRATE 50] = fc e8ee8e88e88e8eee 88e8 88e8 88ee88e8 e88eeeee 88
-[CH3 VIBRATE 99] = fc e8ee8e88e88e8eee 88e8 88e8 8ee888ee ee8e8888 88
-[CH1 SOUND     ] = fc e8ee8e88e88e8eee 8888 88ee 88888888 8e88eee8 88
-[CH2 SOUND     ] = fc e8ee8e88e88e8eee 888e 88ee 88888888 8e8eeee8 88
-[CH3 SOUND     ] = fc e8ee8e88e88e8eee 88e8 88ee 88888888 8ee8eee8 88
-[CH1 SHOCK   00] = fc e8ee8e88e88e8eee 8888 888e 88888888 8e88ee88 88
-[CH1 SHOCK   99] = fc e8ee8e88e88e8eee 8888 888e 8ee888ee e8e8eeee 88
-[CH1 VIBRATE 00] = fc e8ee8e88e88e8eee 8888 88e8 88888888 8e88ee8e 88
-[CH1 VIBRATE 99] = fc e8ee8e88e88e8eee 8888 88e8 8ee888ee e8ee8888 88
+[PREFIX        ] = SYNC
+[TRANSMITTER ID] =     XXXXXXXXXXXXXXXX
+[CHANNEL       ] =                     XXXX
+[MODE          ] =                         XXXX
+[STRENGTH      ] =                             XXXXXXXX
+[CHECKSUM      ] =                                     XXXXXXXX
+[END           ] =                                             00
 ```
 
-### Example untested RFCat code
+## Working C++ code
+
+[Firmware CaiXianlin Encoder](https://github.com/OpenShock/Firmware/blob/develop/src/radio/rmt/CaiXianlinEncoder.cpp)
+
+## Example untested RFCat code
 
 ```py
 # Import the necessary libraries and functions
