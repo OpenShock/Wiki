@@ -72,6 +72,7 @@ nav:
                 - Europe:
                       - vendors/hardware/luc.md
                       - vendors/hardware/bosjesman.md
+                      - vendors/hardware/foghunter.md
                 - North America:
                       - vendors/hardware/nullstalgia.md
                       - vendors/hardware/sillypupkit.md
