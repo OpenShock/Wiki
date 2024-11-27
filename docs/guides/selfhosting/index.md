@@ -1,3 +1,8 @@
+<!-- 
+please note that this is my very first commit / contribution to a project, it may be very ugly or perhaps not especially well framed. 
+but I especially want to bring some precision that blocked me during installation
+I don't know if my contribution is valid, but it's the least I can do after receiving help. I've tried to do the best I can for the comments and other information. 
+-->
 ---
 tags:
   - selfhost
@@ -19,15 +24,39 @@ Software:
 
 Other:
 
-1. Domain name, setup to pointed towards your server.
+1. Domain name, setup to pointed towards your server, note : 
 2. HTTPS - required for cookies to work securely. You can use cloudflare for lets encrypt for example.
+
+note : <!-- comment for the validator it's one of the parts that blocked me at one point, my english doesn't help too much but I find it important to have an example and also to specify that you need 3 domains. -->
+1. since several docker containers are exposed, this requires a specific dns configuration
+   it's necessary to have 1 domain and 2 sub-domains pointing to the server here's an example
+   if the domain used is openshock.local the .env will default to api.openshock.local and gateway.openshock.local so you'll need to point the domains in this way to the server ip 
+
+2. if you use 3 sub-domains 
+(does not work with cloudflare)
+example
+shock.openshock.local
+the .env will work like this by default
+for domaine shock.openshock.local 
+api : api.shock.openshock.local
+gateway : gateway.shock.openshock.local
+you'll need to match your dns zone with the above sub-domains (adapted to your configuration) to the server's public ip 
+
+
 
 ## Preparing the server
 
 Install software from the [Requirements](#requirements) on the server.
 
-### Docker compose setup
+### generate valid https certificate (lets encrypt)
+<!-- for the https part I must admit that it's a bit of a DIY job as I'm not totally familiar with docker but I wanted to do it the right way so I did it for myself afterwards I'll see about validation -->
+1. Install Certbot ```sudo apt-get install certbot ``` for a debian 12 server my scenario for me
+2. command to generate certificate two possible scenarios
+3. if you use 3 subdomains for exemple (to suit your needs) ``` sudo certbot certonly --standalone -d shock.openshock.local -d api.shock.openshock.local -d gateway.shock.openshock.local``` command will create a single certificate containing the 3 sub-domains 
+4. if you use 1 domain and 2 subdomain (to suit your needs) ``` sudo certbot certonly --standalone -d openshock.local -d api.openshock.local -d gateway.openshock.local``` command will create a single certificate containing the 1 domain and 2 sub-domains
+5.  once the certificates have been generated you should find them in this example in ```/etc/letsencrypt/live/shock.openshock.local/``` if you are working with 3 subdomains or ```/etc/letsencrypt/live/openshock.local/``` if you are using 1 domain + 2 subdomains.
 
+### Docker compose setup
 Make a new folder in a known location.
 
 Add two files with the names `docker-compose.yml` and `.env`. Paste their contents from below.
@@ -192,7 +221,7 @@ Add two files with the names `docker-compose.yml` and `.env`. Paste their conten
     #PG_PASS=someSecurePassword(1)
 
     # Compose variables
-    OPENSHOCK_DOMAIN=openshock.local #(2)
+    OPENSHOCK_DOMAIN=openshock.local #(2) two possible for example openshock.local or if you use 3 subdomains (does not work with cloudflare) shock.openshock.local
     OPENSHOCK_GATEWAY_SUBDOMAIN=gateway #(3)
     OPENSHOCK_API_SUBDOMAIN=api #(4)
 
@@ -215,6 +244,7 @@ Add two files with the names `docker-compose.yml` and `.env`. Paste their conten
     OPENSHOCK__MAIL__SMTP__PASSWORD=SMTPPASSWORD
     OPENSHOCK__MAIL__SMTP__ENABLESSL=true
     OPENSHOCK__MAIL__SMTP__VERIFYCERTIFICATE=true
+    OPENSHOCK__MAIL__SMTP__PORT=587 # to be adapted according to your mail server used
 
     ```
 
@@ -255,7 +285,13 @@ If you want to have your frontend also be under a subdomain, you will need to ed
 We can use this modified docker-compose.yml, difference here is, we removed traefik and added nginx.
 In addition we also need a ssl certificate, change the path to your needs, and create a `nginx-site.conf` file.
 
-??? "docker-compose.yml"
+<!--
+for some reason i still have the bug with certicat i installed a 0 machine nothing to do even copy paste the certificate to make it work i modified the docker compose of nginx 
+by adding in volumes (the domain name is an example)
+- /etc/letsencrypt/live/openshock.local/fullchain.pem:/certs/fullchain.pem:ro
+- /etc/letsencrypt/live/openshock.local/privkey.pem:/certs/privkey.pem:ro
+-->
+??? "docker-compose.yml" 
     ```yaml
 
     # Minimal example for nginx
@@ -311,7 +347,7 @@ In addition we also need a ssl certificate, change the path to your needs, and c
           OPENSHOCK__FRONTEND__COOKIEDOMAIN: ${OPENSHOCK_DOMAIN:-openshock.local}
           OPENSHOCK__DB__CONN: Host=db;Port=5432;Database=${PG_USER:-openshock};Username=${PG_USER:-openshock};Password=${PG_PASS}
           OPENSHOCK__REDIS__HOST: redis
-          OPENSHOCK__TURNSTILE__ENABLE: false
+          OPENSHOCK__TURNSTILE__ENABLE: false #so here's the thing: when I ran the container the first time it bugged me, it wanted me to set false to "false" and then I was able to docker-compose up -d
       
       webui:
         image: ghcr.io/openshock/webui:latest
@@ -359,22 +395,30 @@ In addition we also need a ssl certificate, change the path to your needs, and c
           - 80:80
           - 443:443
         volumes:
-          - ./nginx-site.conf:/etc/nginx/conf.d/nginx-site.conf
-          - ./certs:/certs
-
+          - ./nginx-site.conf:/etc/nginx/conf.d/nginx-site.conf #I had a bug when I made it, it just created a directory /nginx-site.conf in the directory where docker-compose.yml is located, so I deleted the directory and created nano nginx-site.conf.
+          - ./certs:/cert
+          # I've left this as a comment because I think it's only valid for me, even though it's just done it to me on a new virtual machine, a vps moreover.
+          #- /etc/letsencrypt/live/openshock.local/fullchain.pem:/certs/fullchain.pem:ro 
+          #- /etc/letsencrypt/live/openshock.local/privkey.pem:/certs/privkey.pem:ro
     networks:
       openshock:
 
     ```
 
 **You will need to change the server names here!**
-
-??? "nginx-site.conf"
+<!--here I just made a modification I globalized http2 rather than http1 it's not much but it seems to be useful I'll try to see if I can activate http3-->
+<!--I also found this little typo in the nginx config just one ; which is missing on the parts proxy_set_header Connection $connection_upgrade it generates errors in nginx logs-->
+<!-- I didn't quite understand on my previous instance that I installed on the proxy_set_header part I had this proxy_set_header Connection “upgrade”; in the meantime it has changed on the wiki to proxy_set_header Connection $connection_upgrade and it gave me quite a few errors in nginx logs, so I put it back in 
+proxy_set_header Connection “upgrade”; 
+and the new instance I created to try and improve the process started up correctly this time if
+-->
+??? "nginx-site.conf" 
 
     ```yaml
 
     server {
         listen 443 ssl;
+        http2  on; #activation http2
         server_name openshock.local;
         ssl_certificate /certs/fullchain.pem;
         ssl_certificate_key /certs/privkey.pem;
@@ -398,13 +442,14 @@ In addition we also need a ssl certificate, change the path to your needs, and c
             proxy_pass http://webui:80;
             proxy_set_header Host $host;
             proxy_set_header Upgrade $http_upgrade;
-            proxy_set_header Connection $connection_upgrade
+            proxy_set_header Connection "upgrade";
         }
     }
 
 
     server {
         listen 443 ssl;
+        http2  on; #activation http2
         server_name api.openshock.local;
         ssl_certificate /certs/fullchain.pem;
         ssl_certificate_key /certs/privkey.pem;
@@ -413,12 +458,13 @@ In addition we also need a ssl certificate, change the path to your needs, and c
             proxy_pass http://api:80;
             proxy_set_header Host $host;
             proxy_set_header Upgrade $http_upgrade;
-            proxy_set_header Connection $connection_upgrade
+            proxy_set_header Connection "upgrade"; 
         }
     }
 
     server {
         listen 443 ssl;
+        http2  on; #activation http2
         server_name gateway.openshock.local;
         ssl_certificate /certs/fullchain.pem;
         ssl_certificate_key /certs/privkey.pem;
@@ -427,7 +473,7 @@ In addition we also need a ssl certificate, change the path to your needs, and c
             proxy_pass http://lcg:80;
             proxy_set_header Host $host;
             proxy_set_header Upgrade $http_upgrade;
-            proxy_set_header Connection $connection_upgrade
+            proxy_set_header Connection "upgrade";
         }
     }
 
@@ -438,3 +484,6 @@ In addition we also need a ssl certificate, change the path to your needs, and c
 Congratulations, the backend and website should be working now. :partying_face:
 
 You can now set the backend domain for the firmware to your api url via the `domain` serial command.
+<!--actually I managed to bug on it probably due to fatigue and such but the more precise it is the less you'll have people like me who are sometimes in a fog. -->
+To do this, simply go to your arduino ide, plug in your esp32 in usb, go to the serial monitor and write, for example 
+```domain api.sock.openshock.local``` or using one domain and 2 subdomain ```domain api.openshock.local``` (to be adapted to your own domain that you defined in the .env) then press enter. You should get confirmation that it's using your 3 subdomain. 
