@@ -414,69 +414,143 @@ and the new instance I created to try and improve the process started up correct
 -->
 ??? "nginx-site.conf" 
 
-    ```yaml
+```yaml
 
-    server {
-        listen 443 ssl;
-        http2  on; #activation http2
-        server_name openshock.local;
-        ssl_certificate /certs/fullchain.pem;
-        ssl_certificate_key /certs/privkey.pem;
+server {
+    listen 80;
+    server_name openshock.local;
+    return 301 https://$server_name$request_uri;
+}
 
-        # Redirect /s/<anything> to /#/public/proxy/shares/link/<anything>
-        location ~ ^/s/(.*)$ {
-            return 301 /#/public/proxy/shares/link/$1;
-        }
+server {
+    listen 80;
+    server_name api.openshock.local;
+    return 301 https://$server_name$request_uri;
+}
 
-        # Redirect /c/<anything> to /#/public/proxy/shares/code/<anything>
-        location ~ ^/c/(.*)$ {
-            return 301 /#/public/proxy/shares/code/$1;
-        }
+server {
+    listen 80;
+    server_name gateway.openshock.local;
+    return 301 https://$server_name$request_uri;
+}
 
-        # Redirect /t/<anything> to /#/public/proxy/shares/token/<anything>
-        location ~ ^/t/(.*)$ {
-            return 301 /#/public/proxy/shares/token/$1;
-        }
+server {
+    listen 443 ssl;
+    http2  on;
+    server_name openshock.local;
+    resolver 192.168.42.3 valid=300s;
+    ssl_certificate /certs/fullchain.pem;
+    ssl_certificate_key /certs/privkey.pem;
+    ssl_protocols                 TLSv1.2 TLSv1.3;
+    ssl_ciphers                   TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_AES_128_CCM_8_SHA256:TLS_AES_128_CCM_SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384;
+    ssl_trusted_certificate       /certs/chain.pem;
+    ssl_prefer_server_ciphers     on;
+    ssl_stapling                  on;
+    ssl_stapling_verify           on;
+    ssl_session_cache    shared:SSL:10m;
+    ssl_session_timeout  10m;
+    add_header Strict-Transport-Security "max-age=15552000; includeSubDomains" always;
+    add_header Referrer-Policy                   "no-referrer"       always;
+    add_header X-Content-Type-Options            "nosniff"           always;
+    add_header X-Download-Options                "noopen"            always;
+    add_header X-Frame-Options                   "SAMEORIGIN"        always;
+    add_header X-Permitted-Cross-Domain-Policies "none"              always;
+    add_header X-Robots-Tag                      "noindex, nofollow" always;
+    add_header X-XSS-Protection                  "1; mode=block"     always;
 
-        location / {
-            proxy_pass http://webui:80;
-            proxy_set_header Host $host;
-            proxy_set_header Upgrade $http_upgrade;
-            proxy_set_header Connection "upgrade";
-        }
+    
+    # Redirect /s/<anything> to /#/public/proxy/shares/link/<anything>
+    location ~ ^/s/(.*)$ {
+        return 301 /#/public/proxy/shares/links/$1;
     }
 
-
-    server {
-        listen 443 ssl;
-        http2  on; #activation http2
-        server_name api.openshock.local;
-        ssl_certificate /certs/fullchain.pem;
-        ssl_certificate_key /certs/privkey.pem;
-
-        location / {
-            proxy_pass http://api:80;
-            proxy_set_header Host $host;
-            proxy_set_header Upgrade $http_upgrade;
-            proxy_set_header Connection "upgrade"; 
-        }
+    # Redirect /c/<anything> to /#/public/proxy/shares/code/<anything>
+    location ~ ^/c/(.*)$ {
+        return 301 /#/public/proxy/shares/code/$1;
     }
 
-    server {
-        listen 443 ssl;
-        http2  on; #activation http2
-        server_name gateway.openshock.local;
-        ssl_certificate /certs/fullchain.pem;
-        ssl_certificate_key /certs/privkey.pem;
-
-        location / {
-            proxy_pass http://lcg:80;
-            proxy_set_header Host $host;
-            proxy_set_header Upgrade $http_upgrade;
-            proxy_set_header Connection "upgrade";
-        }
+    # Redirect /t/<anything> to /#/public/proxy/shares/token/<anything>
+    location ~ ^/t/(.*)$ {
+        return 301 /#/public/proxy/token/$1;
     }
 
+    location / {
+        proxy_pass http://webui:80;
+        proxy_set_header Host $host;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection keep-alive;
+        proxy_set_header Connection "upgrade";
+   }
+}
+
+
+server {
+    listen 443 ssl;
+    http2  on;
+    server_name api.openshock.local;
+    resolver 192.168.42.3 valid=300s;
+    ssl_certificate /certs/fullchain.pem;
+    ssl_certificate_key /certs/privkey.pem;
+    ssl_trusted_certificate       /certs/chain.pem;
+    ssl_protocols                 TLSv1.2 TLSv1.3;
+    ssl_ciphers                   TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_AES_128_CCM_8_SHA256:TLS_AES_128_CCM_SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384;
+    ssl_prefer_server_ciphers     on;
+    ssl_stapling                  on;
+    ssl_stapling_verify           on; 
+    ssl_session_cache    shared:SSL:10m;
+    ssl_session_timeout  10m;
+    add_header Strict-Transport-Security "max-age=15552000; includeSubDomains" always;    
+    add_header Referrer-Policy                   "no-referrer"       always;
+    add_header X-Content-Type-Options            "nosniff"           always;
+    add_header X-Download-Options                "noopen"            always;
+    add_header X-Frame-Options                   "SAMEORIGIN"        always;
+    add_header X-Permitted-Cross-Domain-Policies "none"              always;
+    add_header X-Robots-Tag                      "noindex, nofollow" always;
+    add_header X-XSS-Protection                  "1; mode=block"     always;
+
+    location / {
+        proxy_pass http://api:80;
+        proxy_set_header Host $host;
+        proxy_set_header Connection keep-alive;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+    }
+}
+
+server {
+    listen 443 ssl;
+    http2  on;
+    server_name gateway.openshock.local;
+    resolver 192.168.42.3 valid=300s;
+    ssl_certificate /certs/fullchain.pem;
+    ssl_certificate_key /certs/privkey.pem;
+    ssl_ciphers                   TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_AES_128_CCM_8_SHA256:TLS_AES_128_CCM_SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384;
+    ssl_trusted_certificate       /certs/chain.pem;
+    ssl_protocols                 TLSv1.2 TLSv1.3;
+    ssl_prefer_server_ciphers     on;
+    ssl_stapling                  on;
+    ssl_stapling_verify           on;
+    ssl_session_cache    shared:SSL:10m;
+    ssl_session_timeout  10m;
+
+    add_header Strict-Transport-Security "max-age=15552000; includeSubDomains" always;
+    add_header Referrer-Policy                   "no-referrer"       always;
+    add_header X-Content-Type-Options            "nosniff"           always;
+    add_header X-Download-Options                "noopen"            always;
+    add_header X-Frame-Options                   "SAMEORIGIN"        always;
+    add_header X-Permitted-Cross-Domain-Policies "none"              always;
+    add_header X-Robots-Tag                      "noindex, nofollow" always;
+    add_header X-XSS-Protection                  "1; mode=block"     always;
+
+
+    location / {
+        proxy_pass http://lcg:80;
+        proxy_set_header Host $host;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection keep-alive;
+        proxy_set_header Connection "upgrade";
+    }
+}
     ```
 
 ## Done
