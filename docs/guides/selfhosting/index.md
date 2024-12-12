@@ -416,141 +416,159 @@ and the new instance I created to try and improve the process started up correct
 
 ```yaml
 
+# Redirect HTTP (port 80) traffic for openshock.local to HTTPS (port 443)
 server {
-    listen 80;
-    server_name openshock.local;
-    return 301 https://$server_name$request_uri;
+    listen 80;  # Listen for HTTP traffic on port 80
+    server_name openshock.local;  # The server name (domain) for this block
+    return 301 https://$server_name$request_uri;  # Permanent redirect (301) to the same URI over HTTPS
 }
 
+# Redirect HTTP (port 80) traffic for api.openshock.local to HTTPS (port 443)
 server {
-    listen 80;
-    server_name api.openshock.local;
-    return 301 https://$server_name$request_uri;
+    listen 80;  # Listen for HTTP traffic on port 80
+    server_name api.openshock.local;  # The server name (domain) for this block
+    return 301 https://$server_name$request_uri;  # Permanent redirect (301) to the same URI over HTTPS
 }
 
+# Redirect HTTP (port 80) traffic for gateway.openshock.local to HTTPS (port 443)
 server {
-    listen 80;
-    server_name gateway.openshock.local;
-    return 301 https://$server_name$request_uri;
+    listen 80;  # Listen for HTTP traffic on port 80
+    server_name gateway.openshock.local;  # The server name (domain) for this block
+    return 301 https://$server_name$request_uri;  # Permanent redirect (301) to the same URI over HTTPS
 }
 
+# HTTPS server block for openshock.local
 server {
-    listen 443 ssl;
-    http2  on;
-    server_name openshock.local;
-    resolver 192.168.42.3 valid=300s;
-    ssl_certificate /certs/fullchain.pem;
-    ssl_certificate_key /certs/privkey.pem;
-    ssl_protocols                 TLSv1.2 TLSv1.3;
-    ssl_ciphers                   TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_AES_128_CCM_8_SHA256:TLS_AES_128_CCM_SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384;
-    ssl_trusted_certificate       /certs/chain.pem;
-    ssl_prefer_server_ciphers     on;
-    ssl_stapling                  on;
-    ssl_stapling_verify           on;
-    ssl_session_cache    shared:SSL:10m;
-    ssl_session_timeout  10m;
-    add_header Strict-Transport-Security "max-age=15552000; includeSubDomains" always;
-    add_header Referrer-Policy                   "no-referrer"       always;
-    add_header X-Content-Type-Options            "nosniff"           always;
-    add_header X-Download-Options                "noopen"            always;
-    add_header X-Frame-Options                   "SAMEORIGIN"        always;
-    add_header X-Permitted-Cross-Domain-Policies "none"              always;
-    add_header X-Robots-Tag                      "noindex, nofollow" always;
-    add_header X-XSS-Protection                  "1; mode=block"     always;
-
+    listen 443 ssl;  # Listen for HTTPS traffic on port 443, enabling SSL
+    http2 on;  # Enable HTTP/2 for faster communication
+    server_name openshock.local;  # The server name (domain) for this block
+    resolver 192.168.42.3 valid=300s;  # DNS resolver IP address to resolve domain names (valid for 5 minutes)
     
+    # SSL configuration for secure connections
+    ssl_certificate /certs/fullchain.pem;  # Path to the SSL certificate file
+    ssl_certificate_key /certs/privkey.pem;  # Path to the SSL certificate private key
+    ssl_protocols TLSv1.2 TLSv1.3;  # Enforce the use of TLSv1.2 and TLSv1.3 protocols (secure)
+    ssl_ciphers TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_AES_128_CCM_8_SHA256:TLS_AES_128_CCM_SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384;  # Define a secure list of ciphers for encryption
+    ssl_trusted_certificate /certs/chain.pem;  # Path to the trusted certificate chain
+    ssl_prefer_server_ciphers on;  # Prefer the server's cipher order over the client's
+    ssl_stapling on;  # Enable OCSP Stapling for better performance and security
+    ssl_stapling_verify on;  # Verify the OCSP response
+    ssl_session_cache shared:SSL:10m;  # Use a shared SSL session cache to improve performance
+    ssl_session_timeout 10m;  # SSL session timeout of 10 minutes
+
+    # Add security headers to protect against attacks
+    add_header Strict-Transport-Security "max-age=15552000; includeSubDomains" always;  # Enforce HTTPS for 6 months for the domain and subdomains
+    add_header Referrer-Policy "no-referrer" always;  # Do not send referrer information to other websites
+    add_header X-Content-Type-Options "nosniff" always;  # Prevent browsers from interpreting files as a different MIME type
+    add_header X-Download-Options "noopen" always;  # Prevent files from being automatically opened
+    add_header X-Frame-Options "SAMEORIGIN" always;  # Prevent clickjacking by disallowing the page from being embedded in iframes from other domains
+    add_header X-Permitted-Cross-Domain-Policies "none" always;  # Disallow Flash and Acrobat to load data from other domains
+    add_header X-Robots-Tag "noindex, nofollow" always;  # Prevent search engines from indexing and following links on this page
+    add_header X-XSS-Protection "1; mode=block" always;  # Enable cross-site scripting (XSS) protection in browsers
+
     # Redirect /s/<anything> to /#/public/proxy/shares/link/<anything>
-    location ~ ^/s/(.*)$ {
-        return 301 /#/public/proxy/shares/links/$1;
+    location ~ ^/s/(.*)$ {  # Match any URL path starting with /s/
+        return 301 /#/public/proxy/shares/links/$1;  # Redirect to the new location with a 301 permanent redirect
     }
 
     # Redirect /c/<anything> to /#/public/proxy/shares/code/<anything>
-    location ~ ^/c/(.*)$ {
-        return 301 /#/public/proxy/shares/code/$1;
+    location ~ ^/c/(.*)$ {  # Match any URL path starting with /c/
+        return 301 /#/public/proxy/shares/code/$1;  # Redirect to the new location with a 301 permanent redirect
     }
 
     # Redirect /t/<anything> to /#/public/proxy/shares/token/<anything>
-    location ~ ^/t/(.*)$ {
-        return 301 /#/public/proxy/token/$1;
+    location ~ ^/t/(.*)$ {  # Match any URL path starting with /t/
+        return 301 /#/public/proxy/token/$1;  # Redirect to the new location with a 301 permanent redirect
     }
 
-    location / {
-        proxy_pass http://webui:80;
-        proxy_set_header Host $host;
-        proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection keep-alive;
-        proxy_set_header Connection "upgrade";
-   }
-}
-
-
-server {
-    listen 443 ssl;
-    http2  on;
-    server_name api.openshock.local;
-    resolver 192.168.42.3 valid=300s;
-    ssl_certificate /certs/fullchain.pem;
-    ssl_certificate_key /certs/privkey.pem;
-    ssl_trusted_certificate       /certs/chain.pem;
-    ssl_protocols                 TLSv1.2 TLSv1.3;
-    ssl_ciphers                   TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_AES_128_CCM_8_SHA256:TLS_AES_128_CCM_SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384;
-    ssl_prefer_server_ciphers     on;
-    ssl_stapling                  on;
-    ssl_stapling_verify           on; 
-    ssl_session_cache    shared:SSL:10m;
-    ssl_session_timeout  10m;
-    add_header Strict-Transport-Security "max-age=15552000; includeSubDomains" always;    
-    add_header Referrer-Policy                   "no-referrer"       always;
-    add_header X-Content-Type-Options            "nosniff"           always;
-    add_header X-Download-Options                "noopen"            always;
-    add_header X-Frame-Options                   "SAMEORIGIN"        always;
-    add_header X-Permitted-Cross-Domain-Policies "none"              always;
-    add_header X-Robots-Tag                      "noindex, nofollow" always;
-    add_header X-XSS-Protection                  "1; mode=block"     always;
-
-    location / {
-        proxy_pass http://api:80;
-        proxy_set_header Host $host;
-        proxy_set_header Connection keep-alive;
-        proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection "upgrade";
+    # Proxy all other traffic to the web UI service
+    location / {  
+        proxy_pass http://webui:80;  # Proxy the traffic to the 'webui' service on port 80
+        proxy_set_header Host $host;  # Forward the original Host header to the backend
+        proxy_set_header Upgrade $http_upgrade;  # Forward the Upgrade header for WebSocket support
+        proxy_set_header Connection keep-alive;  # Keep the connection alive
+        proxy_set_header Connection "upgrade";  # Allow connection upgrade for WebSockets
     }
 }
 
+# HTTPS server block for api.openshock.local
 server {
-    listen 443 ssl;
-    http2  on;
-    server_name gateway.openshock.local;
-    resolver 192.168.42.3 valid=300s;
-    ssl_certificate /certs/fullchain.pem;
-    ssl_certificate_key /certs/privkey.pem;
-    ssl_ciphers                   TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_AES_128_CCM_8_SHA256:TLS_AES_128_CCM_SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384;
-    ssl_trusted_certificate       /certs/chain.pem;
-    ssl_protocols                 TLSv1.2 TLSv1.3;
-    ssl_prefer_server_ciphers     on;
-    ssl_stapling                  on;
-    ssl_stapling_verify           on;
-    ssl_session_cache    shared:SSL:10m;
-    ssl_session_timeout  10m;
+    listen 443 ssl;  # Listen for HTTPS traffic on port 443
+    http2 on;  # Enable HTTP/2 for faster communication
+    server_name api.openshock.local;  # The server name (domain) for this block
+    resolver 192.168.42.3 valid=300s;  # DNS resolver IP address to resolve domain names (valid for 5 minutes)
 
+    # SSL configuration for secure connections
+    ssl_certificate /certs/fullchain.pem;  # Path to the SSL certificate file
+    ssl_certificate_key /certs/privkey.pem;  # Path to the SSL certificate private key
+    ssl_trusted_certificate /certs/chain.pem;  # Path to the trusted certificate chain
+    ssl_protocols TLSv1.2 TLSv1.3;  # Enforce the use of TLSv1.2 and TLSv1.3 protocols (secure)
+    ssl_ciphers TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_AES_128_CCM_8_SHA256:TLS_AES_128_CCM_SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384;  # Define a secure list of ciphers for encryption
+    ssl_prefer_server_ciphers on;  # Prefer the server's cipher order over the client's
+    ssl_stapling on;  # Enable OCSP Stapling for better performance and security
+    ssl_stapling_verify on;  # Verify the OCSP response
+    ssl_session_cache shared:SSL:10m;  # Use a shared SSL session cache to improve performance
+    ssl_session_timeout 10m;  # SSL session timeout of 10 minutes
+
+    # Security headers (same as in the previous block)
     add_header Strict-Transport-Security "max-age=15552000; includeSubDomains" always;
-    add_header Referrer-Policy                   "no-referrer"       always;
-    add_header X-Content-Type-Options            "nosniff"           always;
-    add_header X-Download-Options                "noopen"            always;
-    add_header X-Frame-Options                   "SAMEORIGIN"        always;
-    add_header X-Permitted-Cross-Domain-Policies "none"              always;
-    add_header X-Robots-Tag                      "noindex, nofollow" always;
-    add_header X-XSS-Protection                  "1; mode=block"     always;
+    add_header Referrer-Policy "no-referrer" always;
+    add_header X-Content-Type-Options "nosniff" always;
+    add_header X-Download-Options "noopen" always;
+    add_header X-Frame-Options "SAMEORIGIN" always;
+    add_header X-Permitted-Cross-Domain-Policies "none" always;
+    add_header X-Robots-Tag "noindex, nofollow" always;
+    add_header X-XSS-Protection "1; mode=block" always;
 
-
+    # Proxy all traffic to the API service
     location / {
-        proxy_pass http://lcg:80;
-        proxy_set_header Host $host;
-        proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection keep-alive;
-        proxy_set_header Connection "upgrade";
+        proxy_pass http://api:80;  # Proxy the traffic to the 'api' service on port 80
+        proxy_set_header Host $host;  # Forward the original Host header to the backend
+        proxy_set_header Connection keep-alive;  # Keep the connection alive
+        proxy_set_header Upgrade $http_upgrade;  # Forward the Upgrade header for WebSocket support
+        proxy_set_header Connection "upgrade";  # Allow connection upgrade for WebSockets
     }
 }
+
+# HTTPS server block for gateway.openshock.local
+server {
+    listen 443 ssl;  # Listen for HTTPS traffic on port 443
+    http2 on;  # Enable HTTP/2 for faster communication
+    server_name gateway.openshock.local;  # The server name (domain) for this block
+    resolver 192.168.42.3 valid=300s;  # DNS resolver IP address to resolve domain names (valid for 5 minutes)
+
+    # SSL configuration for secure connections
+    ssl_certificate /certs/fullchain.pem;  # Path to the SSL certificate file
+    ssl_certificate_key /certs/privkey.pem;  # Path to the SSL certificate private key
+    ssl_ciphers TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_AES_128_CCM_8_SHA256:TLS_AES_128_CCM_SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384;  # Define a secure list of ciphers for encryption
+    ssl_trusted_certificate /certs/chain.pem;  # Path to the trusted certificate chain
+    ssl_protocols TLSv1.2 TLSv1.3;  # Enforce the use of TLSv1.2 and TLSv1.3 protocols (secure)
+    ssl_prefer_server_ciphers on;  # Prefer the server's cipher order over the client's
+    ssl_stapling on;  # Enable OCSP Stapling for better performance and security
+    ssl_stapling_verify on;  # Verify the OCSP response
+    ssl_session_cache shared:SSL:10m;  # Use a shared SSL session cache to improve performance
+    ssl_session_timeout 10m;  # SSL session timeout of 10 minutes
+
+    # Security headers (same as in the previous blocks)
+    add_header Strict-Transport-Security "max-age=15552000; includeSubDomains" always;
+    add_header Referrer-Policy "no-referrer" always;
+    add_header X-Content-Type-Options "nosniff" always;
+    add_header X-Download-Options "noopen" always;
+    add_header X-Frame-Options "SAMEORIGIN" always;
+    add_header X-Permitted-Cross-Domain-Policies "none" always;
+    add_header X-Robots-Tag "noindex, nofollow" always;
+    add_header X-XSS-Protection "1; mode=block" always;
+
+    # Proxy all traffic to the gateway service
+    location / {
+        proxy_pass http://lcg:80;  # Proxy the traffic to the 'lcg' service on port 80
+        proxy_set_header Host $host;  # Forward the original Host header to the backend
+        proxy_set_header Upgrade $http_upgrade;  # Forward the Upgrade header for WebSocket support
+        proxy_set_header Connection keep-alive;  # Keep the connection alive
+        proxy_set_header Connection "upgrade";  # Allow connection upgrade for WebSockets
+    }
+}
+
     ```
 
 ## Done
