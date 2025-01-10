@@ -7,7 +7,7 @@ tags:
 
 # Open Smart 433MHz Transceiver Kit
 
-- [AliExpress](https://www.aliexpress.com/item/32820610184.html)
+- [AliExpress](https://www.aliexpress.us/item/3256807953643815)
 
 ## Specifications
 
