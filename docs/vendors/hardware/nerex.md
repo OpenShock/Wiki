@@ -16,6 +16,7 @@ Hubs & Shockers can be purchased via KoFi Shop at [shop.nerexbcd.dev/openshock](
 ## Contact
 
 - :simple-discord: Discord -- `nerexbcd`
+- :material-email: Email -- `products@nerexbcd.dev`
 - :material-link: KoFi Shop [shop.nerexbcd.dev/openshock](https://shop.nerexbcd.dev/openshock)
 
 
