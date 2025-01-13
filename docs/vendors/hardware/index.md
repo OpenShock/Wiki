@@ -25,17 +25,18 @@ The OpenShock team does not provide **any** guarantees about the quality of prod
 
 ### Europe
 
-| Vendor                      | :airplane: Ships to           | :electric_plug: Controllers | :high_voltage: Shockers | :package: 3D Prints (Case, Spacers) | Started    |
-| --------------------------- | ----------------------------- | --------------------------- | ----------------------- | ----------------------------------- | ---------- |
-| [Luc](./luc.md)             | :flag_eu: Europe              | :white_check_mark:          | :white_check_mark:      | :white_check_mark:                  | 2023-02-23 |
-| [BosjesMan](./bosjesman.md) | :globe_with_meridians: Global | :white_check_mark:          | :white_check_mark:      | :white_check_mark:                  | 2023-10-17 |
-| [FogHunter](./foghunter.md) | :flag_fr: France              | :white_check_mark:          | :white_check_mark:      | :white_check_mark:                  | 2024-11-23 |
+| Vendor                      | :airplane: Ships to           | :electric_plug: Hubs | :high_voltage: Shockers | :package: 3D Prints (Case, Spacers) | Started    |
+| --------------------------- | ----------------------------- | -------------------- | ----------------------- | ----------------------------------- | ---------- |
+| [Luc](./luc.md)             | :flag_eu: Europe              | :white_check_mark:   | :white_check_mark:      | :white_check_mark:                  | 2023-02-23 |
+| [BosjesMan](./bosjesman.md) | :globe_with_meridians: Global | :white_check_mark:   | :white_check_mark:      | :white_check_mark:                  | 2023-10-17 |
+| [FogHunter](./foghunter.md) | :flag_fr: France              | :white_check_mark:   | :white_check_mark:      | :white_check_mark:                  | 2024-11-23 |
+| [Nerex](./nerex.md)         | :flag_pt: Portugal            | :white_check_mark:   | :white_check_mark:      | :white_check_mark:                  | 2025-01-06 |
 
 ### North America
 
-| Vendor                          | :airplane: Ships to           | :electric_plug: Controllers | :high_voltage: Shockers | :package: 3D Prints (Case, Spacers) | Started    |
-| ------------------------------- | ----------------------------- | --------------------------- | ----------------------- | ----------------------------------- | ---------- |
-| [nullstalgia](./nullstalgia.md) | :flag_us: USA                 | :white_check_mark:          | :white_check_mark:      | :white_check_mark:                  | 2023-12-01 |
-| [sillypupkit](./sillypupkit.md) | :globe_with_meridians: Global | :white_check_mark:          | :white_check_mark:      | :white_check_mark:                  | 2024-09-07 |
+| Vendor                          | :airplane: Ships to           | :electric_plug: Hubs | :high_voltage: Shockers | :package: 3D Prints (Case, Spacers) | Started    |
+| ------------------------------- | ----------------------------- | -------------------- | ----------------------- | ----------------------------------- | ---------- |
+| [nullstalgia](./nullstalgia.md) | :flag_us: USA                 | :white_check_mark:   | :white_check_mark:      | :white_check_mark:                  | 2023-12-01 |
+| [sillypupkit](./sillypupkit.md) | :globe_with_meridians: Global | :white_check_mark:   | :white_check_mark:      | :white_check_mark:                  | 2024-09-07 |
 
 _Want to be on this list? Hit up a maintainer on [Discord](https://discord.gg/OpenShock)._
