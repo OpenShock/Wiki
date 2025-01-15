@@ -1,12 +1,12 @@
 # First time setup
 
 !!! danger "Safety Warning"
-    **Don't wear the shocker somewhere near your neck or your heart.**  
+    **Don't wear the shocker somewhere near your neck or your heart.**
     Check out [Safety](../home/safety-rules.md) for more information.
 
-!!! danger "Safety Warning" 
-    **Do not touch the pins of the shocker with both hands at the same time.** 
-    The electricity could flow through your heart. 
+!!! danger "Safety Warning"
+    **Do not touch the pins of the shocker with both hands at the same time.**
+    The electricity could flow through your heart.
 
 ## What you need
 
@@ -20,9 +20,9 @@
 
 ## Setup the OpenShock hub
 
-1. Connect your **Phone** to the hub:
+1. Wirelessly connect your **Phone** to the hub:
     1. Plug your hub in and ensure it has power.
-    2. On your phone, search for a Wi-Fi network named similar to ``OpenShock-XX:XX:XX:XX:XX:XX`` and connect to it. 
+    2. On your phone, search for a Wi-Fi network named similar to ``OpenShock-XX:XX:XX:XX:XX:XX`` and connect to it.
     ??? Info "Images (click to expand)"
         ![Image "image"](../static/guides/first-setup/WiFioverview.png)
 2. Connect to the hub via the network:
@@ -35,10 +35,10 @@
 
 3. Set the RF TX Pin if needed
 
-!!! warning "RF TX Pin" 
-    **DO NOT** change the RF TX Pin **UNLESS IT IS NOT AUTOMATICALLY DETECTED** or you are using a DIY hub.
-    This is an advanced feature. It should be set correctly by default after flashing the OpenShock firmware.  
-    If the pin is not automatically selected, you can open a Serial terminal and send the command `rftxpin #` where `#` is your pin number.  
+!!! warning "RF TX Pin"
+    **DO NOT** change the RF TX Pin **UNLESS IT IS NOT AUTOMATICALLY DETECTED** *or* you are using a DIY hub.
+    This is an advanced feature. It should be set correctly by default after flashing the OpenShock firmware if you are using a known board.
+    If the pin is not automatically selected, you can open a Serial terminal and send the command `rftxpin #` where `#` is your pin number.
     If you do not know how to do this, you can also re-enable the captive portal (hotspot of the Hub) to re-configure it. For more information see the page dedicated to your micro-controller under [boards](../hardware/boards/index.md).
 
 1. Create a hub on the website:
@@ -63,7 +63,7 @@
             ![Image "image"](../static/guides/first-setup/findpaircode.png)
             ![Image "image"](../static/guides/first-setup/paircodeexample.png)
 3. The hub is now connected!
-    - If everything went well, it should show a **green icon** next to the device name on the website.  
+    - If everything went well, it should show a **green icon** next to the device name on the website.
     ![Image "image"](../static/guides/first-setup/checkifonline.png)
 
 ## Pairing shockers
@@ -89,7 +89,7 @@
     4. You must click the icon before the shocker's pairing mode times out (while the shocker's LED is flashing quickly).
     ??? Info "Images (click to expand)"
         ![image](../static/guides/first-setup/find_sound_button.png)
-**Everything should work now, have fun!** 🎉  
+**Everything should work now, have fun!** 🎉
 
 !!! question "Need Help?"
     If you need additional help, join our [Discord](https://discord.gg/OpenShock)
