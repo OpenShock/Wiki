@@ -22,4 +22,4 @@ A hub connects OpenShock to the shock device via a micro-controller and a 433 MH
 
 ### 3. Shockers
 
-See the [Shockers](../hardware/shockers/index.md). We recommend the [CaiXianlin](../hardware/shockers/caixianlin.md) shockers.
+See [Shockers](../hardware/shockers/index.md). We recommend the [CaiXianlin](../hardware/shockers/caixianlin.md) shockers.

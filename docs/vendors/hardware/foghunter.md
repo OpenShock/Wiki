@@ -13,8 +13,6 @@ Started `2024-11-23`.
 
 Current controller on sale: [Wemos D1 mini](../../hardware/boards/wemos/d1-mini-esp32.md).
 
-[Github](https://github.com/nullstalgia)
-
 ## Contact
 
 - :simple-discord: Discord -- `foghunter`
