@@ -7,14 +7,11 @@
 - A Compatible Offline remote with it's ID
 
 !!! warning "Important"
-    Currently it is only possible to use the Offline Remote to control a **single Shocker**
+    Only the first channel on the remote will work. This is because the channel is not configurable on OpenShock's side yet
 
-!!! warning "Important"
-    If You bought an Offline Remote there should have been provided an **Offline Remote Id**
+!!! warning "Offline Remote ID"
+    If you bought an offline remote from a vendor, it might already have been decoded and the **Offline Remote ID** might be present as a sticker on the remote.
     You can also decode this ID yourself using a 433 Mhz Receiver module with an ESP32. Checkout the [rf-plaground repo](https://github.com/OpenShock/rf-playground)
-
-!!! hint "Use channel 1 on the remote"
-    Currently only the first channel on the remote will work.
 
 ## Setup the Offline Remote
 1. Login to the [website](https://openshock.app/)
@@ -24,16 +21,9 @@
     1. Open the Context Menu of the Shocker
     2. Select Edit
     3. Set the Shocker RfId field to the **Offline Remote ID**
-    4. Save the Changes        
+    4. Save
     ??? Info "Images (click to expand)"
         ![Image "image"](../static/guides/offline-remote-setup/shockercontextmenu.png)
         ![Image "image"](../static/guides/offline-remote-setup/shockerrfidfield.png)
-
 4. RePair the Shocker
-    1. Grab your shocker and turn it on. (Press the power button once. it should beep one time.)
-    2. Hold the power button again until it beeps and the LED flashes fast. *This means the pair mode is active*
-    3. On the website click the ***speaker icon*** of your shocker, if your shocker beeps in response, the pairing was successful.
-    4. You must click the icon before the shocker's pairing mode times out (while the shocker's LED is flashing quickly).
-    ??? Info "Images (click to expand)"
-        ![image](../static/guides/first-setup/find_sound_button.png)
 **Everything should work now, have fun!** 🎉
