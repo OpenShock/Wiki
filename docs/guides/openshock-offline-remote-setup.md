@@ -11,12 +11,16 @@
 
 !!! warning "Important"
     If You bought an Offline Remote there should have been provided an **Offline Remote Id**
+    You can also decode this ID yourself using a 433 Mhz Receiver module with an ESP32. Checkout the [rf-plaground repo](https://github.com/OpenShock/rf-playground)
+
+!!! hint "Use channel 1 on the remote"
+    Currently only the first channel on the remote will work.
 
 ## Setup the Offline Remote
 1. Login to the [website](https://openshock.app/)
-2. Connect your hub to a power source and make sure it appears as online in the Device section.
+2. Connect your hub to a power source and make sure it appears as online in the Hub section.
 2. Go to the **Shockers** section.
-3. Edit the Shocker to Use with the Offline Remote  
+3. Edit the Shocker to use with the Offline Remote  
     1. Open the Context Menu of the Shocker
     2. Select Edit
     3. Set the Shocker RfId field to the **Offline Remote ID**

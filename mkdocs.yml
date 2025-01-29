@@ -18,6 +18,7 @@ nav:
                 - guides/openshock-how-to-update.md
                 - guides/openshock-sharelinks.md
                 - guides/openshock-sharecodes.md
+                - guides/openshock-offline-remote-setup.md
           - ShockOsc:
                 - guides/shockosc-basic.md
                 - guides/shockosc-avatar-setup-vrc.md
