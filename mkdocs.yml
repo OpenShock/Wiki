@@ -87,6 +87,7 @@ nav:
     - Troubleshooting:
       - troubleshooting/hub.md
       - troubleshooting/shockosc.md
+      - troubleshooting/shocker-pairing.md
 
     - Legal and Privacy:
           - legal/terms-and-conditions.md
