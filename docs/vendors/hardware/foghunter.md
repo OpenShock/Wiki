@@ -15,5 +15,6 @@ Current controller on sale: [Wemos D1 mini](../../hardware/boards/wemos/d1-mini-
 
 ## Contact
 
+- :material-link: Shop -- https://shop.foghunter.fr
 - :simple-discord: Discord -- `foghunter`
 - :material-email: Email -- `shock@foghunter.fr`
