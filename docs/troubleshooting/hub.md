@@ -12,7 +12,7 @@ This could be due to 3 main reasons:
 
 Make sure the Hub is online on the Website, you can confirm this by checking if the dot next to the name of it is green.
 
-To do this, refer to the Hubs page rather than Shockers, as it's more frequently refreshed.
+If you're unsure about the reflected status, refresh the page to check if it's changed.
 
 ### RF TX pin is not configured correctly
 
