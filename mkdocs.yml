@@ -2,6 +2,7 @@ site_name: OpenShock Wiki
 docs_dir: docs
 site_url: https://wiki.openshock.org/
 repo_url: https://github.com/OpenShock/Wiki
+repo_name: OpenShock Wiki
 
 nav:
     - Home:
@@ -33,7 +34,13 @@ nav:
                 - diy/hardware-buying.md
                 - diy/assembling.md
 
-    - Developer: dev/index.md
+    - Developer: 
+          - dev/index.md
+          - Contributing:
+                - dev/contributing/index.md
+                - Software:
+                      - dev/contributing/compile-firmware.md
+                      - dev/contributing/backend.md
 
     - Hardware:
           - Shockers:
@@ -78,11 +85,6 @@ nav:
                 - North America:
                       - vendors/hardware/nullstalgia.md
                       - vendors/hardware/sillypupkit.md
-
-    - Contributing:
-      - contributing/contributing.md
-      - Software:
-            - contributing/compile-firmware.md
 
     - Troubleshooting:
       - troubleshooting/hub.md
@@ -168,10 +170,6 @@ extra_css:
   - "css/custom.css"
 
 extra:
-    # Tag definitions for tagging pages.
-    tags:
-        selfhosting: banana
-
     # Social links rendered in the footer.
     social:
         - icon: fontawesome/brands/discord
