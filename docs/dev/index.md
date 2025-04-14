@@ -15,7 +15,7 @@ tags:
 
 ## OpenAPI Documentation
 
-You can find the OpenAPI Documentation here: [api.OpenShock.app/swagger](https://api.openshock.app/swagger)
+You can find the OpenAPI Documentation here: [Definition Version 1](https://api.openshock.app/scalar/1), [Definition Version 2](https://api.openshock.app/scalar/2)
 
 Note that there is both a [Definition Version 1](https://api.openshock.app/swagger/1/swagger.json) and [Definition Version 2](https://api.openshock.app/swagger/2/swagger.json) file.
 
