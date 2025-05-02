@@ -25,6 +25,12 @@ Note that there is both a Version 1 & Version 2 at the left top in the viewer.
 
 The OpenAPI documentation contains all HTTP endpoints, but does not document the WebSockets and SignalR hubs.
 
+### User Agent
+
+In order to be able to access `openshock.app`, you need to have a `User-Agent` header set.  
+Empty User-Agents are blocked and result in a 403. So make sure to set this to something meaningful that represents your application.  
+E.g. `User-Agent: MyExampleApplication/1.0 (example@example.org)`
+
 ### Authentication
 
 Authentication for applications is done via a API Token which are to be sent as a header with the name/key `Open-Shock-Token`.
