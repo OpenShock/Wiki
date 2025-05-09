@@ -15,15 +15,21 @@ tags:
 
 ## OpenAPI Documentation
 
-You can find the OpenAPI Documentation here: [api.OpenShock.app/swagger](https://api.openshock.app/swagger)
+You can find the [OpenAPI Documentation here] (https://api.openshock.app/scalar/viewer)
 
-Note that there is both a [Definition Version 1](https://api.openshock.app/swagger/1/swagger.json) and [Definition Version 2](https://api.openshock.app/swagger/2/swagger.json) file.
+Note that there is both a Version 1 & Version 2 at the left top in the viewer.
 
 !!! hint "Version Definition Files"
     You might notice that Version 2 does not contain all the endpoints that are in Version 1. That is because version 2 only contains endpoints that actually make a version 1 equivalent obsolete and there for deprecated.  
     TL;DR; Prefer endpoints in Definition Version 2 over 1
 
 The OpenAPI documentation contains all HTTP endpoints, but does not document the WebSockets and SignalR hubs.
+
+### User Agent
+
+In order to be able to access `openshock.app`, you need to have a `User-Agent` header set.  
+Empty User-Agents are blocked and result in a 403. So make sure to set this to something meaningful that represents your application.  
+E.g. `User-Agent: MyExampleApplication/1.0 (example@example.org)`
 
 ### Authentication
 
