@@ -14,3 +14,7 @@
 .md-tabs {
   background-color: #6735A5;
 }
+
+.md-grid {
+  max-width: 75rem;
+}
