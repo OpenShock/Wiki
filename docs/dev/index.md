@@ -15,7 +15,7 @@ tags:
 
 ## OpenAPI Documentation
 
-You can find the [OpenAPI Documentation here] (https://api.openshock.app/scalar/viewer)
+You can find the [OpenAPI Documentation here](https://api.openshock.app/scalar/viewer)
 
 Note that there is both a Version 1 & Version 2 at the left top in the viewer.
 
