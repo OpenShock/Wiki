@@ -80,7 +80,6 @@ nav:
                 - Europe:
                       - vendors/hardware/luc.md
                       - vendors/hardware/bosjesman.md
-                      - vendors/hardware/foghunter.md
                       - vendors/hardware/nerex.md
                 - North America:
                       - vendors/hardware/nullstalgia.md
