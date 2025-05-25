@@ -144,7 +144,7 @@ Add two files with the names `docker-compose.yml` and `.env`. Paste their conten
           - "traefik.http.services.openshock-gateway.loadbalancer.server.port=80"
     
       cron:
-        image: ghcr.io/openshock/cron:master
+        image: ghcr.io/openshock/cron:latest
         restart: unless-stopped
         networks:
          - openshock
