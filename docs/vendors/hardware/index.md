@@ -31,7 +31,7 @@ The OpenShock team does not provide **any** guarantees about the quality of prod
 | [Luc](./luc.md)             | :flag_de: Germany     | :flag_eu: Europe              | :white_check_mark:   | :white_check_mark:      | :white_check_mark:  |
 | [BosjesMan](./bosjesman.md) |                       | :globe_with_meridians: Global | :white_check_mark:   | :white_check_mark:      | :white_check_mark:  |
 | [Nerex](./nerex.md)         | :flag_pt: Portugal    | :flag_eu: EU                  | :white_check_mark:   | :white_check_mark:      | :white_check_mark:  |
-| [0x6f78](./0x6f78.md)       | :flag_pt: Netherlands | :flag_eu: EU                  | :white_check_mark:   | :white_check_mark:      | :white_check_mark:  |
+| [0x6f78](./0x6f78.md)       | :flag_nl: Netherlands | :flag_eu: EU                  | :white_check_mark:   | :white_check_mark:      | :white_check_mark:  |
 
 ### North America
 
