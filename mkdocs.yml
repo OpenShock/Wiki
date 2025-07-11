@@ -81,6 +81,7 @@ nav:
                       - vendors/hardware/luc.md
                       - vendors/hardware/bosjesman.md
                       - vendors/hardware/nerex.md
+                      - vendors/hardware/0x6f78.md
                 - North America:
                       - vendors/hardware/nullstalgia.md
                       - vendors/hardware/sillypupkit.md
