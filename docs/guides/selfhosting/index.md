@@ -381,7 +381,7 @@ In addition we also need a ssl certificate, change the path to your needs, and c
 
         # Redirect /s/<anything> to /#/public/proxy/shares/links/<anything>
         location ~ ^/s/(.*)$ {
-            return 301 /#/public/proxy/shares/link/$1;
+            return 301 /#/public/proxy/shares/links/$1;
         }
 
         # Redirect /c/<anything> to /#/public/proxy/shares/code/<anything>
