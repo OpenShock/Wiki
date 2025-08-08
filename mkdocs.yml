@@ -85,6 +85,7 @@ nav:
                 - North America:
                       - vendors/hardware/nullstalgia.md
                       - vendors/hardware/sillypupkit.md
+                      - vendors/hardware/namelessnanashi.md
 
     - Troubleshooting:
       - troubleshooting/hub.md

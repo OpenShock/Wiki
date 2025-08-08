@@ -39,5 +39,6 @@ The OpenShock team does not provide **any** guarantees about the quality of prod
 | ------------------------------- | --------------------- | ----------------------------- | -------------------- | ----------------------- | ------------------- |
 | [nullstalgia](./nullstalgia.md) | :flag_us: USA         | :flag_us: USA                 | :white_check_mark:   | :white_check_mark:      | :white_check_mark:  |
 | [sillypupkit](./sillypupkit.md) |                       | :globe_with_meridians: Global | :white_check_mark:   | :white_check_mark:      | :white_check_mark:  |
+| [NamelessNanashi](./namelessnanashi.md) | :flag_us: USA | :flag_us: USA                 | :white_check_mark:   |                         | :white_check_mark:  |
 
 _Want to be on this list? Hit up a maintainer on [Discord](https://discord.gg/OpenShock)._
