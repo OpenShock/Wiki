@@ -39,7 +39,7 @@ Add two files with the names `docker-compose.yml` and `.env`. Paste their conten
     services:
     
       db: # We need a postgres database, preferably version 15+
-        image: postgres:16
+        image: postgres:17
         restart: unless-stopped
         container_name: openshock-postgres
         healthcheck:
