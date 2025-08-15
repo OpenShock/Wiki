@@ -18,7 +18,7 @@ Cheap and easily acquirable.
 Best effort list of current AliExpress sellers. Feel free to add more sources to this list!
 
 - :globe_with_meridians: International: [AliExpress](https://aliexpress.com/item/1005005133046985.html)
-- :flag_nl: Netherlands: [AliExpress](https://nl.aliexpress.com/item/1005005359066763.html)
+- :globe_with_meridians: Alternative: [AliExpress](https://aliexpress.com/item/1005005823699736.html)
 
 ### Cables
 
