@@ -20,7 +20,7 @@ You will need to connect the 433MHz transmitter's signal input pin to one of the
 
 Note down which GPIO pins you soldered to, as you will need to enter them during setup in a later step.
 
-For example, if you bought a [Wemos Lolin S3](../hardware/boards/wemos/lolin-s3.md) and a [Open Smart Transmitter](../hardware/transmitter/china/open-smart.md), simply connect the 5V to the 5V pins (aka VCC), ground to ground, and any numbered pin to data, for example, the 12 pin.
+For example, if you bought a [Wemos Lolin S3](../hardware/boards/wemos/lolin-s3.md) and a [Open Smart Transmitter](../hardware/transmitter/china/open-smart.md), simply connect the 3.3V to VCC, ground to ground, and any numbered GPIO pin to data, for example the pin 12, to your transmitter.
 
 !!! warning "Don't forget to enter these during setup!"
     You will need to set your RF TX pin during setup. If the pin is incorrect the transmitter wont be able to send any signals to the shockers.
