@@ -11,7 +11,7 @@
 
 ## Development
 
-This documentation site is built with [VitePress](https://vitepress.dev).
+This documentation site is built with [VitePress](https://vitepress.dev) and includes a local search bar, GitHub links, and automatic contributor sections.
 
 ### Local preview
 

@@ -1,9 +1,21 @@
 import { defineConfig } from 'vitepress'
+import { execSync } from 'node:child_process'
+import { existsSync } from 'node:fs'
+import path from 'node:path'
 
 export default defineConfig({
   title: 'OpenShock Wiki',
   description: 'Documentation for OpenShock',
+  lastUpdated: true,
   themeConfig: {
+    search: { provider: 'local' },
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/OpenShock/Wiki' },
+    ],
+    editLink: {
+      pattern: 'https://github.com/OpenShock/Wiki/edit/main/docs/:path',
+      text: 'Edit this page on GitHub',
+    },
     nav: [
       {
         text: 'Home',
@@ -284,6 +296,26 @@ export default defineConfig({
         },
       ],
     },
+  },
+  async transformHtml(code, _id, ctx) {
+    const file = path.join(process.cwd(), 'docs', ctx.pageData.relativePath)
+    if (existsSync(file)) {
+      try {
+        const out = execSync(`git --no-pager shortlog -sne HEAD -- "${file}"`, { encoding: 'utf-8' })
+        const contributors = out
+          .split('\n')
+          .filter(Boolean)
+          .map((line) => line.replace(/^\s*\d+\s+/, '').replace(/\s+<.*>/, ''))
+        if (contributors.length) {
+          const escape = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+          const items = contributors.map((name) => `<li>${escape(name)}</li>`).join('')
+          return code.replace('</div></div></main>', `<div class="contributors"><h2>Contributors</h2><ul>${items}</ul></div></div></div></main>`)
+        }
+      } catch {
+        // ignore git errors
+      }
+    }
+    return code
   },
 })
 
