@@ -4,9 +4,10 @@ tags:
     - vendor
 ---
 
-!!! warning "Disclaimer"
-    The OpenShock team does not provide **any** guarantees about the quality of products or services rendered.
+::: warning Disclaimer
+The OpenShock team does not provide **any** guarantees about the quality of products or services rendered.
 
+:::
 # Luc
 
 Started `2023-02-23`.

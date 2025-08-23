@@ -10,9 +10,10 @@ tags:
 
 # DFRobot FireBeetle 2 ESP32-E
 
-!!! success "Fully compatible"
-    This product is fully compatible with OpenShock.
+::: tip Fully compatible
+This product is fully compatible with OpenShock.
 
+:::
 - [Official webpage](https://wiki.dfrobot.com/FireBeetle_Board_ESP32_E_SKU_DFR0654)
 
 ## Specifications

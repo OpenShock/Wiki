@@ -8,14 +8,16 @@ tags:
 
 # Wemos D1 Mini ESP32
 
-!!! success "Fully compatible"
-    This product is fully compatible with OpenShock.
+::: tip Fully compatible
+This product is fully compatible with OpenShock.
 
+:::
 ## Specifications
 
-!!! example "Still brewing!"
-    Sorry, we haven't *quite* finished this article yet. **In the meantime, feel free to hit us up on [Discord](https://discord.gg/OpenShock) if you have any trouble.**
+::: info Still brewing!
+Sorry, we haven't *quite* finished this article yet. **In the meantime, feel free to hit us up on [Discord](https://discord.gg/OpenShock) if you have any trouble.**
 
+:::
 ## Buying
 
 | Availability | Variant | Links |

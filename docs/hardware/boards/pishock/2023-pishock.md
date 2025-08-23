@@ -9,12 +9,14 @@ tags:
 
 # PiShock 2023 (Current)
 
-!!! warning "OpenShock is not affiliated with PiShock"
-    We are not affiliated with PiShock in any way and do not endorse their products. However, we do support flashing OpenShock on this board.
+::: warning OpenShock is not affiliated with PiShock
+We are not affiliated with PiShock in any way and do not endorse their products. However, we do support flashing OpenShock on this board.
 
-!!! success "Fully compatible"
-    This product is fully compatible with OpenShock.
+:::
+::: tip Fully compatible
+This product is fully compatible with OpenShock.
 
+:::
 First seen in the wild on `2023-09-19`.
 
 ## Specifications

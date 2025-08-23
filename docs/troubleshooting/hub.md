@@ -16,9 +16,10 @@ If you're unsure about the reflected status, refresh the page to check if it's c
 
 ### RF TX pin is not configured correctly
 
-!!! warning
-    If you bought a pre-built Hub this is unlikely, but might be the case especially after a re-flash.
+::: warning
+If you bought a pre-built Hub this is unlikely, but might be the case especially after a re-flash.
 
+:::
 The RF TX (SIG) pin is the GPIO pin on your ESP32 that controls the signal/command to the antenna. Therefore, you want to configure the pin number to match what's wired up to the SIG pin of your transmitter.
 
 Usually you set this pin during the first time setup of your Hub. If you have already done Setup and your Hub is online, there are two ways to change the pin:

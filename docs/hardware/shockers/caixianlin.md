@@ -6,9 +6,10 @@ tags:
 
 # CaiXianlin
 
-!!! success "Compatible"
-    This product is compatible with OpenShock.
+::: tip Compatible
+This product is compatible with OpenShock.
 
+:::
 Cheap and easily acquirable.
 
 ## Buying

@@ -13,14 +13,16 @@
     1. Create a new **Empty GameObject** on the bone you want your trigger to be at, your LeftLeg for example.
         1. *Right-Click the bone.*
         2. *Select "Create Empty".*
-    ??? Info "Image"  
-        ![Image "Image"](../static/guides/shockosc/create_trigger.png)
+    ::: details Image
+![Image "Image"](../static/guides/shockosc/create_trigger.png)
+    :::
     2. Select the new GameObject.
     3. Rename it to whatever you want. *For example "ShockOSC"*
     4. Add a new ``VRC Contact Receiver`` component to it.
     5. Position the object on your avatar.
-    ??? Info "Image"  
-        ![Image "Image"](../static/guides/shockosc/example_position.png)  
+    ::: details Image
+![Image "Image"](../static/guides/shockosc/example_position.png)  
+    :::
 3. Configure the **VRC Contact Receiver** component:  
     - **Radius** : That's the range of the trigger, don't make it too big otherwise people will constantly trigger it by accident.
     - **Filtering**: ``Local Only`` should definitely be used, but it's on you if you use ``Allow Self``, ``Allow Others`` or both of these. This will decide if other people or you can trigger the shocker by touching it.
@@ -29,18 +31,21 @@
     - **Parameter**: ``ShockOsc/{GroupName}``  
       Replace *{GroupName}* with the name you gave your shocker in the [ShockOSC config](./shockosc-basic.md#setup-shockosc).  
       Example: ``ShockOsc/leftleg``.  
-    !!! example "Example"
-        ![Image "Image"](../static/guides/shockosc/example_settings3.png)  
+    ::: info Example
+![Image "Image"](../static/guides/shockosc/example_settings3.png)  
 
+    :::
 4. Upload your Avatar and you are ready to go! 🎉  
 
-!!! bug "Activate OSC"
-    Make sure that you have [enabled OSC](https://docs.vrchat.com/docs/osc-overview#enabling-it) inside VRChat.  
+::: danger Activate OSC
+Make sure that you have [enabled OSC](https://docs.vrchat.com/docs/osc-overview#enabling-it) inside VRChat.  
 
-!!! Tip "Avatar Update Info"
-    If you update an existing avatar, make sure you delete the OSC config files in ``C:\Users\%USERPROFILE%\AppData\LocalLow\VRChat\VRChat\OSC``, they are not important for the game since they only hold the avatar parameters for OSC to use, they get regenerated every time you change your avatar, but VRChat fails to update them sometimes when a new parameter got added to an Avatar.
-    Reload your Avatar after that.
+:::
+::: tip Avatar Update Info
+If you update an existing avatar, make sure you delete the OSC config files in ``C:\Users\%USERPROFILE%\AppData\LocalLow\VRChat\VRChat\OSC``, they are not important for the game since they only hold the avatar parameters for OSC to use, they get regenerated every time you change your avatar, but VRChat fails to update them sometimes when a new parameter got added to an Avatar.
+Reload your Avatar after that.
 
+:::
 ## Remote trigger  
 
 This will utilize the Contact Sender and Receiver components of the VRChatSDK to make it possible to trigger a shock without touching your Avatar, like a remote.  
@@ -66,9 +71,10 @@ This will utilize the Contact Sender and Receiver components of the VRChatSDK to
       Replace *{GroupName}* with the name you gave your shocker in the [ShockOsc config](./shockosc-basic.md#setup-shockosc).  
       Example: ``ShockOsc/leftleg_IShock``.  
     ![Receiver](../static/guides/shockosc/RemoteShock_Receiver.png)
-    ??? example
-        ![image](../static/guides/shockosc/ExampleRemote_Receiver.png)  
+    ::: details example
+![image](../static/guides/shockosc/ExampleRemote_Receiver.png)  
 
+    :::
 ### Create a Sender
 
 1. Open your partners Avatar project.
@@ -106,10 +112,11 @@ This will utilize the Contact Sender and Receiver components of the VRChatSDK to
 
 ### Upload your Avatars
 
-!!! Bug "Important"
-    Both avatars can now be uploaded, the Receiver Avatar should also delete their VRChat OSC config (``C:\Users\%USERPROFILE%\AppData\LocalLow\VRChat\VRChat\OSC``) to make sure that the newly added IShock parameter is used by OSC.  
-    Also make sure you have interactions enabled in-game otherwise contacts won't work!
+::: danger Important
+Both avatars can now be uploaded, the Receiver Avatar should also delete their VRChat OSC config (``C:\Users\%USERPROFILE%\AppData\LocalLow\VRChat\VRChat\OSC``) to make sure that the newly added IShock parameter is used by OSC.  
+Also make sure you have interactions enabled in-game otherwise contacts won't work!
 
+:::
 ## Pull trigger
 You can use physbones to trigger shocks with intensity based on the distance the bone is stretched once it's released.
 Add a new parameter to a physbone component on your avatar with the same name as your group, e.g. `ShockOsc/Leg` or `ShockOsc/_All`

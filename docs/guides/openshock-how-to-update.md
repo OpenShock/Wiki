@@ -21,10 +21,11 @@
 9. Your hub should now update automatically, don't close the website during this.  
 After it has completed the hub should restart and everything should just work™.
 
-!!! failure "What if something fails?"
-    If the update is not successful the updater will not overwrite anything and your hub should just stay on the old version.  
-    Ask on the [Discord](https://discord.gg/OpenShock) for help.
+::: danger What if something fails?
+If the update is not successful the updater will not overwrite anything and your hub should just stay on the old version.  
+Ask on the [Discord](https://discord.gg/OpenShock) for help.
 
+:::
 ## Using a Flash tool
 
 This basically means re-flashing your firmware with a newer version, like it is explained in the [How to flash the firmware](../guides/openshock-how-to-flash-your-board.md) guide.
