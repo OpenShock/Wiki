@@ -7,9 +7,10 @@
 - Basic experience in working with ChilloutVR avatars is recommended  
 - A OSC mod for ChilloutVR
 
-!!! Info "Special ShockOSC Settings for ChilloutVR"
-    Please make sure you have "OSC Query" turned off in the **App Settings** tab.  
+::: info Special ShockOSC Settings for ChilloutVR
+Please make sure you have "OSC Query" turned off in the **App Settings** tab.  
 
+:::
 ## Touch Trigger
 
 1. Open your Project

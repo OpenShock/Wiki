@@ -1,20 +1,18 @@
-FROM squidfunk/mkdocs-material:latest AS build
+FROM node:20 AS build
 
 WORKDIR /docs
 
-COPY requirements.txt requirements.txt
-
-RUN pip install -r requirements.txt
+COPY package.json package-lock.json ./
+RUN npm ci
 
 COPY . .
-
-RUN mkdocs build
+RUN npm run docs:build
 
 FROM nginx:1-alpine AS runtime
 
 EXPOSE 80
 
 # Copy release artifacts (static HTML, JS, CSS)
-COPY --from=build /docs/site /usr/share/nginx/html
+COPY --from=build /docs/docs/.vitepress/dist /usr/share/nginx/html
 
 # Leave startup as-is.

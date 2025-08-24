@@ -1,14 +1,17 @@
 # Safety Rules
 
-!!! warning "Disclaimer"
-    Information provided on this wiki does not constitute or imply endorsement and is provided purely for informational purposes. OpenShock does not claim any liability for misuse of the information on this site.
+::: warning Disclaimer
+Information provided on this wiki does not constitute or imply endorsement and is provided purely for informational purposes. OpenShock does not claim any liability for misuse of the information on this site.
 
-!!! danger "DO NOT wear your Shockers near these Zones"
-    ![An image depicting unsafe places to place shockers. Places include along the spine, on the chest near the heart and on the neck.](../static/safety/nogo-body-zones.png)  
+:::
+::: danger DO NOT wear your Shockers near these Zones
+![An image depicting unsafe places to place shockers. Places include along the spine, on the chest near the heart and on the neck.](../static/safety/nogo-body-zones.png)  
 
-!!! danger "Do not touch the pins of the shocker with both hands at the same time" 
-    The electricity could flow through your heart. 
+:::
+::: danger Do not touch the pins of the shocker with both hands at the same time
+The electricity could flow through your heart. 
 
+:::
 ## Consequences
 
 Wearing the shocker near any of these Zones can cause:  

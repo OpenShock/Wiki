@@ -9,9 +9,10 @@ tags:
 
 This is a **non-curated list** of self-reported vendors from the OpenShock **community**.
 
-!!! warning "Disclaimer"
-    The OpenShock team does not provide **any** guarantees about the quality of products or services rendered.
+::: warning Disclaimer
+The OpenShock team does not provide **any** guarantees about the quality of products or services rendered.
 
+:::
 ## Explanation
 
 | Term                    | Meaning                                                                                                                                            |

@@ -6,12 +6,14 @@
 - A Chromium based web-browser (Chrome, Edge, Opera, etc.) **Firefox will not work since it doesn't support Web Serial**
 - [Our Flashtool](https://next.openshock.app/flashtool)
 
-!!! warning "Important"
-    Ensure you have a cable that supports data transfer, and neither the port nor cable is damaged.
+::: warning Important
+Ensure you have a cable that supports data transfer, and neither the port nor cable is damaged.
 
-!!! Info
-    If you received your hub from an OpenShock hardware vendor, you can likely **skip this step**! Any updates can be [performed wirelessly](../guides/openshock-how-to-update.md) after the initial setup.
+:::
+::: info
+If you received your hub from an OpenShock hardware vendor, you can likely **skip this step**! Any updates can be [performed wirelessly](../guides/openshock-how-to-update.md) after the initial setup.
 
+:::
 ## Flashing the firmware
 1. Plug your hub into your PC using a USB cable.
 2. Open the [Flashtool](https://next.openshock.app/flashtool).
@@ -81,5 +83,6 @@ Example pins for the Wemos D1 Mini
 6. Execute the command `espflash write-bin 0x0 OpenShock_xxx-name-xxx.bin`. Replace firmware name with your actual file name.
 7. Wait for it to complete flashing and you should be ready to go :partying_face:
 
-!!! failure "Still not working?"
-    Try again, if you still got problems after following this guide join our [discord](https://discord.gg/OpenShock) and we will see how we can help you!
+::: danger Still not working?
+Try again, if you still got problems after following this guide join our [discord](https://discord.gg/OpenShock) and we will see how we can help you!
+:::

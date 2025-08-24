@@ -4,9 +4,10 @@ tags:
     - vendor
 ---
 
-!!! warning "Disclaimer"
-    The OpenShock team does not provide **any** guarantees about the quality of products or services rendered.
+::: warning Disclaimer
+The OpenShock team does not provide **any** guarantees about the quality of products or services rendered.
 
+:::
 # NamelessNanashi
 
 Started `2025-08-07`.

@@ -1,12 +1,14 @@
 # Basic Setup
 
-!!! question "What is ShockOSC?"
-    ShockOSC is an application made for OSC to trigger your shockers from an in-game trigger.  
-    [OSC](https://docs.vrchat.com/docs/osc-overview) is a service implemented in VRChat that allows the communication between the game and 3rd party applications.
+::: info What is ShockOSC?
+ShockOSC is an application made for OSC to trigger your shockers from an in-game trigger.  
+[OSC](https://docs.vrchat.com/docs/osc-overview) is a service implemented in VRChat that allows the communication between the game and 3rd party applications.
 
-!!! info "New ShockOSC"
-    Information on this page is dedicated to the **new** version of ShockOSC, the old version is no longer supported.
+:::
+::: info New ShockOSC
+Information on this page is dedicated to the **new** version of ShockOSC, the old version is no longer supported.
 
+:::
 ## What you need
 
 - [Fully setup shocker](openshock-first-setup.md)
@@ -39,5 +41,6 @@
 5. **If you want to use ShockOsc in [ChilloutVR](https://store.steampowered.com/app/661130/ChilloutVR/) make sure to disable OSC Query in the App Setting.**
 6. That's it, you are ready to go! 🎉
 
-!!! success "Avatar Setup"
-    Check out the [VRChat Avatar Setup](shockosc-avatar-setup-vrc.md) or [ChilloutVR Avatar Setup](shockosc-avatar-setup-cvr.md) Guide!  
+::: tip Avatar Setup
+Check out the [VRChat Avatar Setup](shockosc-avatar-setup-vrc.md) or [ChilloutVR Avatar Setup](shockosc-avatar-setup-cvr.md) Guide!  
+:::

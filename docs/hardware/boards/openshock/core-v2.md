@@ -12,9 +12,10 @@ tags:
 
 Designed by [nullstalgia](../../../vendors/hardware/nullstalgia.md)
 
-!!! success "Fully compatible"
-    This product is fully compatible with OpenShock.
+::: tip Fully compatible
+This product is fully compatible with OpenShock.
 
+:::
 ## Specifications
 
 - Espressif ESP32-S3-WROOM-1-N8 (8MB Flash, no PSRAM)
@@ -50,21 +51,22 @@ You may require a pair of small pointy objects, such as toothpicks or paperclips
 
 ## Media
 
-??? Info "V2.0 and Case"
-    ![Case Front](../../../static/boards/openshock-core-v2/0/case_front.webp)
-    ![Case Side](../../../static/boards/openshock-core-v2/0/case_side.webp)
-    ![Case Side 2](../../../static/boards/openshock-core-v2/0/case_side2.webp)
-    ![PCB in Case](../../../static/boards/openshock-core-v2/0/pcb_front_incase.webp)
-    ![PCB Back](../../../static/boards/openshock-core-v2/0/pcb_back.webp)
-    ![PCB Front](../../../static/boards/openshock-core-v2/0/pcb_front.webp)
+::: details V2.0 and Case
+![Case Front](../../../static/boards/openshock-core-v2/0/case_front.webp)
+![Case Side](../../../static/boards/openshock-core-v2/0/case_side.webp)
+![Case Side 2](../../../static/boards/openshock-core-v2/0/case_side2.webp)
+![PCB in Case](../../../static/boards/openshock-core-v2/0/pcb_front_incase.webp)
+![PCB Back](../../../static/boards/openshock-core-v2/0/pcb_back.webp)
+![PCB Front](../../../static/boards/openshock-core-v2/0/pcb_front.webp)
 
 
 
-??? Info "V2.2L PCB"
-    ![PCB Back](../../../static/boards/openshock-core-v2/2L/pcb_back.webp)
-    ![PCB Front](../../../static/boards/openshock-core-v2/2L/pcb_front.webp)
-    ![PCB and Case](../../../static/boards/openshock-core-v2/2L/pcb_case.webp)
-    ![PCB Green Back](../../../static/boards/openshock-core-v2/2L/pcb_green_back.webp)
-    ![PCB Green Front](../../../static/boards/openshock-core-v2/2L/pcb_green_front.webp)
-    ![PCB Purple Back](../../../static/boards/openshock-core-v2/2L/pcb_purple_back.webp)
-    ![PCB Purple Front](../../../static/boards/openshock-core-v2/2L/pcb_purple_front.webp)
+:::
+::: details V2.2L PCB
+![PCB Back](../../../static/boards/openshock-core-v2/2L/pcb_back.webp)
+![PCB Front](../../../static/boards/openshock-core-v2/2L/pcb_front.webp)
+![PCB and Case](../../../static/boards/openshock-core-v2/2L/pcb_case.webp)
+![PCB Green Back](../../../static/boards/openshock-core-v2/2L/pcb_green_back.webp)
+![PCB Green Front](../../../static/boards/openshock-core-v2/2L/pcb_green_front.webp)
+![PCB Purple Back](../../../static/boards/openshock-core-v2/2L/pcb_purple_back.webp)
+![PCB Purple Front](../../../static/boards/openshock-core-v2/2L/pcb_purple_front.webp):::

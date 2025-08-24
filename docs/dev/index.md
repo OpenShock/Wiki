@@ -19,10 +19,11 @@ You can find the [OpenAPI Documentation here](https://api.openshock.app/scalar/v
 
 Note that there is both a Version 1 & Version 2 at the left top in the viewer.
 
-!!! hint "Version Definition Files"
-    You might notice that Version 2 does not contain all the endpoints that are in Version 1. That is because version 2 only contains endpoints that actually make a version 1 equivalent obsolete and there for deprecated.  
-    TL;DR; Prefer endpoints in Definition Version 2 over 1
+::: info Version Definition Files
+You might notice that Version 2 does not contain all the endpoints that are in Version 1. That is because version 2 only contains endpoints that actually make a version 1 equivalent obsolete and there for deprecated.  
+TL;DR; Prefer endpoints in Definition Version 2 over 1
 
+:::
 The OpenAPI documentation contains all HTTP endpoints, but does not document the WebSockets and SignalR hubs.
 
 ### User Agent

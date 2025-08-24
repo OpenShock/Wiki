@@ -8,10 +8,11 @@ tags:
 
 # Wemos Lolin S3
 
-!!! success "Fully compatible"
+::: tip Fully compatible
 
-    This product is fully compatible with OpenShock.
+This product is fully compatible with OpenShock.
 
+:::
 - [Official webpage](https://www.wemos.cc/en/latest/s3/s3.html)
 - [AliExpress](https://www.aliexpress.com/item/1005004643475363.html?spm=a2g0o.store_pc_home.0.0.276d4ff12EF3UH)
 

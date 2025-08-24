@@ -18,8 +18,8 @@ updates:
     schedule:
       interval: "weekly"
 
-  # Check for Python dependency updates
-  - package-ecosystem: "pip"
+  # Check for Node dependency updates
+  - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "weekly"
