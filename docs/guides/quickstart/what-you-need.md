@@ -11,15 +11,15 @@ To get started with OpenShock, you need three things:
 
 This can be either a public or private OpenShock server. We recommend the [openshock.app](https://openshock.app) public OpenShock instance.
 
-Interested in hosting your own server? Check out the [Self-hosting](../guides/selfhosting/index.md) guide.
+Interested in hosting your own server? Check out the [Self-hosting](../selfhosting/index.md) guide.
 
 ### 2. An OpenShock hub
 
 A hub connects OpenShock to the shock device via a micro-controller and a 433 MHz transmitter.
 
-- For pre-built options, check out the [Hardware vendors](../vendors/hardware/index.md).
+- For pre-built options, check out the [Hardware vendors](../../vendors/hardware/index.md).
 - For building your own [DIY Buying guide](../diy/hardware-buying.md).
 
 ### 3. Shockers
 
-See [Shockers](../hardware/shockers/index.md). We recommend the [CaiXianlin](../hardware/shockers/caixianlin.md) shockers.
+See [Shockers](../../hardware/shockers/index.md). We recommend the [CaiXianlin](../../hardware/shockers/caixianlin.md) shockers.

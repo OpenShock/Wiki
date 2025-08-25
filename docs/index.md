@@ -21,10 +21,10 @@ Welcome to OpenShock! We're proud to present our fully open-source software solu
 
 Head over to the Guides to get started:
 
-- [What you need](quickstart/what-you-need.md)
-- [DIY](diy/hardware-buying.md)
-- [How to Flash the Firmware](guides/openshock-how-to-flash-your-board.md)
-- [Setup ESP and Shocker](guides/openshock-first-setup.md)
+- [What you need](guides/quickstart/what-you-need.md)
+- [DIY](guides/diy/hardware-buying.md)
+- [How to Flash the Firmware](guides/openshock/how-to-flash-your-board.md)
+- [Setup ESP and Shocker](guides/openshock/first-setup.md)
 
 ## Safety
 

@@ -20,7 +20,7 @@ You will need to connect the 433MHz transmitter's signal input pin to one of the
 
 Note down which GPIO pins you soldered to, as you will need to enter them during setup in a later step.
 
-For example, if you bought a [Wemos Lolin S3](../hardware/boards/wemos/lolin-s3.md) and a [Open Smart Transmitter](../hardware/transmitter/china/open-smart.md), simply connect the 3.3V to VCC, ground to ground, and any numbered GPIO pin to data, for example the pin 12, to your transmitter.
+For example, if you bought a [Wemos Lolin S3](../../hardware/boards/wemos/lolin-s3.md) and a [Open Smart Transmitter](../../hardware/transmitter/china/open-smart.md), simply connect the 3.3V to VCC, ground to ground, and any numbered GPIO pin to data, for example the pin 12, to your transmitter.
 
 ::: warning Don't forget to enter these during setup!
 You will need to set your RF TX pin during setup. If the pin is incorrect the transmitter wont be able to send any signals to the shockers.
@@ -33,11 +33,11 @@ Or, you can re-enable the Captive Portal on the website under the Hub's "..." me
 
 
 :::
-![Example Pinout](../static/diy/pinout.png)
+![Example Pinout](../../static/diy/pinout.png)
 
 ::: warning Logic level compatibility
 Please note that all ESP32s operate at 3.3V logic levels. To avoid overvolting your ESP's IO pins, it is recommended to either: connect your transmitter's power input to a 3V supply pin on the ESP's board, or use a logic-level shifter if your transmitter ***really* requires** more than 3V power to operate.
 
 
 :::
-**Next step is [flashing the firmware!](../guides/openshock-how-to-flash-your-board.md)**
+**Next step is [flashing the firmware!](../openshock/how-to-flash-your-board.md)**

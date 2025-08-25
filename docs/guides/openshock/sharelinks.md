@@ -6,7 +6,7 @@ Share links are a great way to give people control of your shockers without the 
 :::
 ## What you need
 - [OpenShock account](https://openshock.app/)
-- [A connected shocker](openshock-first-setup.md)
+- [A connected shocker](./first-setup.md)
 
 ## How to create a Share link
 
@@ -19,10 +19,10 @@ Share links are a great way to give people control of your shockers without the 
     5. Press **Create**
         - Your new share link should popup as a new entry on the page.
     ::: details Images
-![Image "Image"](../static/guides/how-to-sharelinks/findshocklinks.png)  
-![Image "Image"](../static/guides/how-to-sharelinks/addnewsharelink.png)  
-![Image "Image"](../static/guides/how-to-sharelinks/createshocklink.png)  
-![Image "Image"](../static/guides/how-to-sharelinks/sharelinkcreated.png)  
+![Image "Image"](../../static/guides/how-to-sharelinks/findshocklinks.png)  
+![Image "Image"](../../static/guides/how-to-sharelinks/addnewsharelink.png)  
+![Image "Image"](../../static/guides/how-to-sharelinks/createshocklink.png)  
+![Image "Image"](../../static/guides/how-to-sharelinks/sharelinkcreated.png)  
     :::
 2. Add a Shocker to the Link:
     1. Click on the newly created link.
@@ -32,8 +32,8 @@ Share links are a great way to give people control of your shockers without the 
     5. Press **Add** *(repeat that to add more shockers)*
         - You should be able to see the shockers controls now.
     ::: details Images
-![Image "Image"](../static/guides/how-to-sharelinks/addshockertosharelink.png)  
-![Image "Image"](../static/guides/how-to-sharelinks/addshockertosharelink2.png)  
+![Image "Image"](../../static/guides/how-to-sharelinks/addshockertosharelink.png)  
+![Image "Image"](../../static/guides/how-to-sharelinks/addshockertosharelink2.png)  
 
     :::
 **That's it.**  
@@ -59,8 +59,8 @@ You can also **Pause** the link so nobody can send commands with this link.
     3. Set the maximum ***intensity***, ***duration*** and choose what kind of ***command*** can be send.
     4. To exit the Edit Mode open the share links context menu and select **Edit Mode** again. This will return the controls to their normal color.
     ::: details Images
-![Image "Image"](../static/guides/how-to-sharelinks/editlinkllimits.png)
-![Image "Image"](../static/guides/how-to-sharelinks/editinterface.png)
+![Image "Image"](../../static/guides/how-to-sharelinks/editlinkllimits.png)
+![Image "Image"](../../static/guides/how-to-sharelinks/editinterface.png)
 
     :::
 **That's it.** 🎉
@@ -76,6 +76,6 @@ A paused link will not accept any commands.
         - It should now ***blur*** the shocker controls telling you it's paused.
 2. To un-pause the share link again simply click on the ``Play Icon``.
 ::: details Images
-![Image "Image"](../static/guides/how-to-sharelinks/pauseshocker.png)
-![Image "Image"](../static/guides/how-to-sharelinks/pausedlink.png)  
+![Image "Image"](../../static/guides/how-to-sharelinks/pauseshocker.png)
+![Image "Image"](../../static/guides/how-to-sharelinks/pausedlink.png)  
 :::

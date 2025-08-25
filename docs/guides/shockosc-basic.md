@@ -11,7 +11,7 @@ Information on this page is dedicated to the **new** version of ShockOSC, the ol
 :::
 ## What you need
 
-- [Fully setup shocker](openshock-first-setup.md)
+- [Fully setup shocker](openshock/first-setup.md)
 - [Newest ShockOSC](https://github.com/OpenShock/ShockOSC/releases)
 - [Shocklink Account](https://openshock.app/)
 

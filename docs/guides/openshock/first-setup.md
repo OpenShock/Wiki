@@ -2,7 +2,7 @@
 
 ::: danger Safety Warning
 **Don't wear the shocker somewhere near your neck or your heart.**
-Check out [Safety](../home/safety-rules.md) for more information.
+Check out [Safety](../../home/safety-rules.md) for more information.
 
 :::
 ::: danger Safety Warning
@@ -16,8 +16,8 @@ The electricity could flow through your heart.
 - A stable power source. Try to avoid cheap power bricks, they can cause the device to crash under certain loads.
 - A smartphone with a web browser (Chrome, Firefox etc.)
 - Your routers WiFi Password.
-- [OpenShock hub](../hardware/boards/index.md)
-- [Shocker](../hardware/shockers/index.md)
+- [OpenShock hub](../../hardware/boards/index.md)
+- [Shocker](../../hardware/shockers/index.md)
 - [OpenShock account](https://openshock.app/)
 
 ## Setup the OpenShock hub
@@ -26,7 +26,7 @@ The electricity could flow through your heart.
     1. Plug your hub in and ensure it has power.
     2. On your phone, search for a Wi-Fi network named similar to ``OpenShock-XX:XX:XX:XX:XX:XX`` and connect to it.
     ::: details Images (click to expand)
-![Image "image"](../static/guides/first-setup/WiFioverview.png)
+![Image "image"](../../static/guides/first-setup/WiFioverview.png)
     :::
 2. Connect to the hub via the network:
     1. Open your phone's browser and type in ``10.10.10.10`` *or* ``openshock.local`` this should open up a web-interface for the hub.
@@ -34,7 +34,7 @@ The electricity could flow through your heart.
     3. Press the green button next to it and type in your Wi-Fi password, then press submit.
     *A green pop up should appear if it's connected successfully*
     ::: details Images (click to expand)
-![Image "image"](../static/guides/first-setup/ESPWebGUI.png)
+![Image "image"](../../static/guides/first-setup/ESPWebGUI.png)
 
     :::
 3. Set the RF TX Pin if needed
@@ -43,7 +43,7 @@ The electricity could flow through your heart.
 **DO NOT** change the RF TX Pin **UNLESS IT IS NOT AUTOMATICALLY DETECTED** *or* you are using a DIY hub.
 This is an advanced feature. It should be set correctly by default after flashing the OpenShock firmware if you are using a known board.
 If the pin is not automatically selected, you can open a Serial terminal and send the command `rftxpin #` where `#` is your pin number.
-If you do not know how to do this, you can also re-enable the captive portal (hotspot of the Hub) to re-configure it. For more information see the page dedicated to your micro-controller under [boards](../hardware/boards/index.md).
+If you do not know how to do this, you can also re-enable the captive portal (hotspot of the Hub) to re-configure it. For more information see the page dedicated to your micro-controller under [boards](../../hardware/boards/index.md).
 
 :::
 1. Create a hub on the website:
@@ -56,9 +56,9 @@ If you do not know how to do this, you can also re-enable the captive portal (ho
         3. Type in a name, *(your name for example)* into the name field.
         4. Press save.
         ::: details Images (click to expand)
-![Image "image"](../static/guides/first-setup/findaddbutton3.png)
-![Image "image"](../static/guides/first-setup/find_device_context_menu.png)
-![Image "image"](../static/guides/first-setup/edit_device.png)
+![Image "image"](../../static/guides/first-setup/findaddbutton3.png)
+![Image "image"](../../static/guides/first-setup/find_device_context_menu.png)
+![Image "image"](../../static/guides/first-setup/edit_device.png)
         :::
 2. Pair the hub:
     1. Open the context menu of your hub again.
@@ -66,12 +66,12 @@ If you do not know how to do this, you can also re-enable the captive portal (ho
     3. On your phone type the code into the account Linking field of the hub's web-interface, then press **pair**.
         - After you linked the hub to your account it should shut down it's own Wi-Fi network.
         ::: details Images (click to expand)
-![Image "image"](../static/guides/first-setup/findpaircode.png)
-![Image "image"](../static/guides/first-setup/paircodeexample.png)
+![Image "image"](../../static/guides/first-setup/findpaircode.png)
+![Image "image"](../../static/guides/first-setup/paircodeexample.png)
         :::
 3. The hub is now connected!
     - If everything went well, it should show a **green icon** next to the device name on the website.
-    ![Image "image"](../static/guides/first-setup/checkifonline.png)
+    ![Image "image"](../../static/guides/first-setup/checkifonline.png)
 
 ## Pairing shockers
 
@@ -87,8 +87,8 @@ If you do not know how to do this, you can also re-enable the captive portal (ho
     7. Select the **model** of shocker.
     8. Click **Create**
     ::: details Images (click to expand)
-![image](../static/guides/first-setup/Create_shocker_green_plus.png)
-![image](../static/guides/first-setup/create_shocker.png)
+![image](../../static/guides/first-setup/Create_shocker_green_plus.png)
+![image](../../static/guides/first-setup/create_shocker.png)
     :::
 4. Pair your Shocker.
     1. Grab your shocker and turn it on. (Press the power button once. it should beep one time.)
@@ -96,7 +96,7 @@ If you do not know how to do this, you can also re-enable the captive portal (ho
     3. On the website click the ***speaker icon*** of your shocker, if your shocker beeps in response, the pairing was successful.
     4. You must click the icon before the shocker's pairing mode times out (while the shocker's LED is flashing quickly).
     ::: details Images (click to expand)
-![image](../static/guides/first-setup/find_sound_button.png)
+![image](../../static/guides/first-setup/find_sound_button.png)
     :::
 **Everything should work now, have fun!** 🎉
 

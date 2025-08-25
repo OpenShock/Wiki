@@ -11,7 +11,7 @@ Shares are permanent until unshared/deleted by the owner of the shocker.
 ## What you need
 
 - [OpenShock account](https://openshock.app/)
-- [A connected shocker](openshock-first-setup.md)
+- [A connected shocker](first-setup.md)
 
 ## Create a share code
 
@@ -22,9 +22,9 @@ Shares are permanent until unshared/deleted by the owner of the shocker.
     3. Click on the **green plus icon**, that will generate a new share code.
     4. Send this code to a person you trust.
     ::: details Images
-![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_ContextMenuShocker.png)  
-![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_CreateCode.png)  
-![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_FindCode.png)  
+![Image "Image"](../../static/guides/how-to-sharecodes/ShareCode_ContextMenuShocker.png)  
+![Image "Image"](../../static/guides/how-to-sharecodes/ShareCode_CreateCode.png)  
+![Image "Image"](../../static/guides/how-to-sharecodes/ShareCode_FindCode.png)  
 
     :::
 ## Use a share code
@@ -36,9 +36,9 @@ Shares are permanent until unshared/deleted by the owner of the shocker.
 
 **Now the shocker is linked to your account and you can control it.** 🎉
 ::: details Images
-![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_FindAddCode.png)
-![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_AddCode.png)
-![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_Added.png)
+![Image "Image"](../../static/guides/how-to-sharecodes/ShareCode_FindAddCode.png)
+![Image "Image"](../../static/guides/how-to-sharecodes/ShareCode_AddCode.png)
+![Image "Image"](../../static/guides/how-to-sharecodes/ShareCode_Added.png)
 :::
 ::: tip
 You can find all shockers you added with a share code on the same page in your account under **Shockers** -> [**Shared**](https://openshock.app/#/dashboard/shockers/shared)
@@ -61,10 +61,10 @@ For this step to work, someone has to [use your share code](#use-a-share-code) f
     5. Set max ***intensity*** and ***duration*** and also select what kind of ***commands*** the person can send.  
     6. Press **Save**, you are done. 🎉  
     ::: details Images
-![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_ContextMenuShocker.png)
-![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_LinkedList.png)
-![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_SharedContextMneu.png)
-![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_EditLimit.png)
+![Image "Image"](../../static/guides/how-to-sharecodes/ShareCode_ContextMenuShocker.png)
+![Image "Image"](../../static/guides/how-to-sharecodes/ShareCode_LinkedList.png)
+![Image "Image"](../../static/guides/how-to-sharecodes/ShareCode_SharedContextMneu.png)
+![Image "Image"](../../static/guides/how-to-sharecodes/ShareCode_EditLimit.png)
 
     :::
 ## Pause/Unpause a share code
@@ -82,8 +82,8 @@ For this step to work, someone has to [use your share code](#use-a-share-code) f
         - *Press the **play icon** next to the persons name to unpause the code again.*
     4. You are done. 🎉  
     ::: details Images
-![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_ContextMenuShocker.png)
-![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_LinkedList.png)
+![Image "Image"](../../static/guides/how-to-sharecodes/ShareCode_ContextMenuShocker.png)
+![Image "Image"](../../static/guides/how-to-sharecodes/ShareCode_LinkedList.png)
 
     :::
 ## Unshare/Delete a share code
@@ -100,9 +100,9 @@ For this step to work, someone has to [use your share code](#use-a-share-code) f
     4. Select **Unshare**
     5. You are done. 🎉  
     ::: details Images
-![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_ContextMenuShocker.png)
-![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_LinkedList.png)
-![Image "Image"](../static/guides/how-to-sharecodes/ShareCode_SharedContextMneu.png)
+![Image "Image"](../../static/guides/how-to-sharecodes/ShareCode_ContextMenuShocker.png)
+![Image "Image"](../../static/guides/how-to-sharecodes/ShareCode_LinkedList.png)
+![Image "Image"](../../static/guides/how-to-sharecodes/ShareCode_SharedContextMneu.png)
 
     :::
 ::: tip
