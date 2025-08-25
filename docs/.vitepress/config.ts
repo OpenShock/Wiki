@@ -8,7 +8,7 @@ export default defineConfig({
   lastUpdated: true,
   themeConfig: {
     siteTitle: false,
-    logo: '/static/branding/LogoBakedFont.svg',
+    logo: '/branding/LogoBakedFont.svg',
     search: { provider: 'local' },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/OpenShock' },
