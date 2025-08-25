@@ -1,5 +1,19 @@
+---
+layout: home
 
-# OpenShock
+
+hero:
+  name: OpenShock
+  tagline: Wiki and Documentation
+
+  actions:
+    - theme: brand
+      text: Get Started
+      link: /quickstart/what-you-need.md
+    - theme: alt
+      text: View on GitHub
+      link: https://github.com/openshock
+---
 
 Welcome to OpenShock! We're proud to present our fully open-source software solution, compatible with off-the-shelf hardware, to get you started in the world of shocking!
 
@@ -12,10 +26,6 @@ Head over to the Guides to get started:
 - [How to Flash the Firmware](guides/openshock-how-to-flash-your-board.md)
 - [Setup ESP and Shocker](guides/openshock-first-setup.md)
 
-## Community
+## Safety
 
-Like what you see? Join us [over on Discord!](https://discord.gg/OpenShock)
-
-## Contributing
-
-Want to help? Head over to the [OpenShock GitHub](https://github.com/OpenShock) and dive right in!
+Please read the [Safety Rules](./home/safety-rules.md)
