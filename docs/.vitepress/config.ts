@@ -7,10 +7,14 @@ export default defineConfig({
   description: 'Documentation for OpenShock',
   lastUpdated: true,
   cleanUrls: true,
+  rewrites: {
+    '/diy/:page': '/guides/diy/:page',
+    '/guides/openshock-:page': '/guides/openshock/:page'
+  },
   themeConfig: {
     siteTitle: false,
     logo: '/branding/LogoBakedFont.svg',
-    search: { 
+    search: {
       provider: 'algolia',
       options: {
         appId: 'TM973D0RMF',
