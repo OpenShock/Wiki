@@ -65,6 +65,10 @@ export default {
     ],
     '/hardware/': [
         {
+            text: 'Overview',
+            link: '/hardware/'
+        },
+        {
             text: 'Shockers',
             items: [
                 { text: 'Overview', link: '/hardware/shockers/' },
