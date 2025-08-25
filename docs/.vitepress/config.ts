@@ -9,7 +9,14 @@ export default defineConfig({
   themeConfig: {
     siteTitle: false,
     logo: '/branding/LogoBakedFont.svg',
-    search: { provider: 'local' },
+    search: { 
+      provider: 'algolia',
+      options: {
+        appId: 'TM973D0RMF',
+        apiKey: '63f489250dfedfd861f58395335ee908',
+        indexName: 'Algolia OpenShock Crawler'
+      }
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/OpenShock' },
       { icon: 'discord', link: 'https://discord.gg/OpenShock' }
