@@ -6,6 +6,7 @@ export default defineConfig({
   title: 'OpenShock Wiki',
   description: 'Documentation for OpenShock',
   lastUpdated: true,
+  cleanUrls: true,
   themeConfig: {
     siteTitle: false,
     logo: '/branding/LogoBakedFont.svg',
