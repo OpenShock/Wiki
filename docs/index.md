@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /quickstart/what-you-need.md
+      link: /guides/quickstart/what-you-need.md
     - theme: alt
       text: View on GitHub
       link: https://github.com/openshock
