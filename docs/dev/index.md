@@ -54,3 +54,5 @@ SignalR is a Realtime Messaging Framework developed by Microsoft. The transport 
 
 - [API]/1/hubs/user
 - [API]/1/hubs/share/link/{id}
+
+For connection examples and event details, see the [SignalR WebSockets](signalr-websockets.md) guide.

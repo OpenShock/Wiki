@@ -34,8 +34,9 @@ nav:
                 - diy/hardware-buying.md
                 - diy/assembling.md
 
-    - Developer: 
+    - Developer:
           - dev/index.md
+          - SignalR WebSockets: dev/signalr-websockets.md
           - Contributing:
                 - dev/contributing/index.md
                 - Software:
