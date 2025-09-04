@@ -69,6 +69,12 @@ export default {
             link: '/hardware/'
         },
         {
+            text: 'Firmware',
+            items: [
+                { text: 'Status LED', link: '/hardware/firmware/status-led' }
+            ]
+        },
+        {
             text: 'Shockers',
             items: [
                 { text: 'Overview', link: '/hardware/shockers/' },
