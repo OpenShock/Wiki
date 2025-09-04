@@ -15,7 +15,7 @@ COPY pnpm-lock.yaml .
 RUN pnpm install --frozen-lockfile --strict-peer-dependencies
 
 COPY . .
-RUN pnpm run docs:build
+RUN pnpm run build
 
 FROM node:${NODE_VERSION}-alpine${ALPINE_VERSION} AS runtime
 
