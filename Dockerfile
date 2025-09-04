@@ -8,6 +8,7 @@ ARG PNPM_VERSION
 
 WORKDIR /docs
 
+RUN apk add --no-cache git
 RUN wget -qO /bin/pnpm "https://github.com/pnpm/pnpm/releases/download/v${PNPM_VERSION}/pnpm-linuxstatic-x64" && chmod +x /bin/pnpm
 
 COPY package.json .
