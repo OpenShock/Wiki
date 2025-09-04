@@ -1,14 +1,23 @@
-FROM node:20 AS build
+ARG NODE_VERSION=24.6.0
+ARG PNPM_VERSION=10.15.0
+ARG ALPINE_VERSION=3.22
+
+FROM node:${NODE_VERSION}-alpine${ALPINE_VERSION} AS build
+
+ARG PNPM_VERSION
 
 WORKDIR /docs
 
-COPY package.json package-lock.json ./
-RUN npm ci
+RUN wget -qO /bin/pnpm "https://github.com/pnpm/pnpm/releases/download/v${PNPM_VERSION}/pnpm-linuxstatic-x64" && chmod +x /bin/pnpm
+
+COPY package.json .
+COPY pnpm-lock.yaml .
+RUN pnpm install --frozen-lockfile --strict-peer-dependencies
 
 COPY . .
-RUN npm run docs:build
+RUN pnpm run docs:build
 
-FROM nginx:1-alpine AS runtime
+FROM node:${NODE_VERSION}-alpine${ALPINE_VERSION} AS runtime
 
 EXPOSE 80
 
