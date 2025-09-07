@@ -123,8 +123,7 @@ export default {
                 { text: 'Luc', link: '/vendors/hardware/luc' },
                 { text: 'NamelessNanashi', link: '/vendors/hardware/namelessnanashi' },
                 { text: 'Nerex', link: '/vendors/hardware/nerex' },
-                { text: 'Nullstalgia', link: '/vendors/hardware/nullstalgia' },
-                { text: 'SillyPupKit', link: '/vendors/hardware/sillypupkit' },
+                { text: 'Nullstalgia', link: '/vendors/hardware/nullstalgia' }
             ],
         },
     ],
