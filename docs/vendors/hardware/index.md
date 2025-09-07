@@ -39,6 +39,6 @@ The OpenShock team does not provide **any** guarantees about the quality of prod
 | Vendor                                  | :earth_americas: From | :airplane: Ships to | :electric_plug: Hubs | ⚡ Shockers         | :package: 3D Prints |
 | --------------------------------------- | --------------------- | ------------------- | -------------------- | ------------------ | ------------------- |
 | [nullstalgia](./nullstalgia.md)         | 🇺🇸 USA                 | 🇺🇸 USA               | :white_check_mark:   | :white_check_mark: | :white_check_mark:  |
-| [NamelessNanashi](./namelessnanashi.md) | 🇺🇸 USA                 | 🇺🇸 USA               | :white_check_mark:   |                    | :white_check_mark:  |
+| [NamelessNanashi](./namelessnanashi.md) | 🇺🇸 USA                 | 🇺🇸 USA               | :white_check_mark:   | :x:                | :white_check_mark:  |
 
 _Want to be on this list? Hit up a maintainer on [Discord](https://discord.gg/OpenShock)._
