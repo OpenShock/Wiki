@@ -9,6 +9,10 @@ ShockOSC is an application made for OSC to trigger your shockers from an in-game
 Information on this page is dedicated to the **new** version of ShockOSC, the old version is no longer supported.
 
 :::
+::: danger ShockOSC is getting deprecated.
+Please go and download [OpenShock Desktop](https://github.com/OpenShock/Desktop) instead.
+
+:::
 ## What you need
 
 - [Fully setup shocker](openshock/first-setup.md)
