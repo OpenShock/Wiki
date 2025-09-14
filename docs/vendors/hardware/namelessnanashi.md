@@ -14,6 +14,10 @@ Started `2025-08-07`.
 
 Selling Hubs and Spacers via Discord and E-Mail inquiry.
 
+Also will 3D print custom parts upon request.
+
+(Also has permission to sell [FlatShocker](<https://github.com/tommaier123/FlatShocker>) parts)
+
 Via Discord please clarify that you are messaging about an OpenShock in your first message.
 
 Via E-Mail please have the subject include `OpenShock` somewhere.
