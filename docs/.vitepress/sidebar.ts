@@ -118,12 +118,13 @@ export default {
             text: 'Hardware',
             items: [
                 { text: 'Overview', link: '/vendors/hardware/' },
+                { text: 'Luc', link: '/vendors/hardware/luc' },
+                { text: 'Nullstalgia', link: '/vendors/hardware/nullstalgia' },
                 { text: '0x6f78', link: '/vendors/hardware/0x6f78' },
                 { text: 'Bosjesman', link: '/vendors/hardware/bosjesman' },
-                { text: 'Luc', link: '/vendors/hardware/luc' },
+                { text: 'SillyPupKit', link: '/vendors/hardware/sillypupkit' },
                 { text: 'NamelessNanashi', link: '/vendors/hardware/namelessnanashi' },
                 { text: 'Nerex', link: '/vendors/hardware/nerex' },
-                { text: 'Nullstalgia', link: '/vendors/hardware/nullstalgia' },
                 { text: 'Yasha', link: '/vendors/hardware/yasha' }
             ],
         },
