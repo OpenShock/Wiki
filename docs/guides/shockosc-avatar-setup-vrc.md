@@ -13,15 +13,15 @@
     1. Create a new **Empty GameObject** on the bone you want your trigger to be at, your LeftLeg for example.
         1. *Right-Click the bone.*
         2. *Select "Create Empty".*
-    ::: details Image
-![Image "Image"](../static/guides/shockosc/create_trigger.png)
+    ::: details Image (click to expand)
+    ![Image "Image"](../static/guides/shockosc/create_trigger.png)
     :::
     2. Select the new GameObject.
     3. Rename it to whatever you want. *For example "ShockOSC"*
     4. Add a new ``VRC Contact Receiver`` component to it.
     5. Position the object on your avatar.
-    ::: details Image
-![Image "Image"](../static/guides/shockosc/example_position.png)  
+    ::: details Image (click to expand)
+    ![Image "Image"](../static/guides/shockosc/example_position.png)  
     :::
 3. Configure the **VRC Contact Receiver** component:  
     - **Radius** : That's the range of the trigger, don't make it too big otherwise people will constantly trigger it by accident.
@@ -32,8 +32,7 @@
       Replace *{GroupName}* with the name you gave your shocker in the [ShockOSC config](./shockosc-basic.md#setup-shockosc).  
       Example: ``ShockOsc/leftleg``.  
     ::: info Example
-![Image "Image"](../static/guides/shockosc/example_settings3.png)  
-
+    ![Image "Image"](../static/guides/shockosc/example_settings3.png)  
     :::
 4. Upload your Avatar and you are ready to go! 🎉  
 
@@ -46,6 +45,7 @@ If you update an existing avatar, make sure you delete the OSC config files in `
 Reload your Avatar after that.
 
 :::
+
 ## Remote trigger  
 
 This will utilize the Contact Sender and Receiver components of the VRChatSDK to make it possible to trigger a shock without touching your Avatar, like a remote.  
@@ -71,10 +71,10 @@ This will utilize the Contact Sender and Receiver components of the VRChatSDK to
       Replace *{GroupName}* with the name you gave your shocker in the [ShockOsc config](./shockosc-basic.md#setup-shockosc).  
       Example: ``ShockOsc/leftleg_IShock``.  
     ![Receiver](../static/guides/shockosc/RemoteShock_Receiver.png)
-    ::: details example
-![image](../static/guides/shockosc/ExampleRemote_Receiver.png)  
-
+    ::: details Example (click to expand)
+    ![image](../static/guides/shockosc/ExampleRemote_Receiver.png)  
     :::
+
 ### Create a Sender
 
 1. Open your partners Avatar project.
