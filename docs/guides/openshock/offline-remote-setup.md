@@ -25,8 +25,8 @@ You can also decode this ID yourself using a 433 Mhz Receiver module with an ESP
     3. Set the Shocker RfId field to the **Offline Remote ID**
     4. Save
     ::: details Images (click to expand)
-![Image "image"](../../static/guides/offline-remote-setup/shockercontextmenu.png)
-![Image "image"](../../static/guides/offline-remote-setup/shockerrfidfield.png)
+    ![Image "image"](../../static/guides/offline-remote-setup/shockercontextmenu.png)
+    ![Image "image"](../../static/guides/offline-remote-setup/shockerrfidfield.png)
     :::
 4. RePair the Shocker
 **Everything should work now, have fun!** 🎉
