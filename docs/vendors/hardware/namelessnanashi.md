@@ -14,13 +14,15 @@ Started `2025-08-07`.
 
 Selling Hubs and Spacers via Discord and E-Mail inquiry.
 
-Also will 3D print custom parts upon request.
+Will 3D print custom parts upon request.
 
-(Also has permission to sell parts for the [Official FlatShocker](<https://github.com/tommaier123/FlatShocker>) and the [Minimal hardware FlatShocker version by Ebthing](<https://www.printables.com/model/1455967-minimal-hardware-flatshocker>))
+(Has permission to sell parts for the [Official FlatShocker](<https://github.com/tommaier123/FlatShocker>) and the [Minimal hardware FlatShocker version by Ebthing](<https://www.printables.com/model/1455967-minimal-hardware-flatshocker>))
 
-Via Discord please clarify that you are messaging about an OpenShock in your first message.
+A list of reviews can be found in the [OpenShock Discord](<https://discord.gg/OpenShock>) under the [Vendor Reviews](<https://discord.com/channels/1078124408775901204/1424434056652783616>) section.
 
-Via E-Mail please have the subject include `OpenShock` somewhere.
+**Via Discord please clarify that you are messaging about an OpenShock in your first message.**
+
+**Via E-Mail please have the subject include `OpenShock` somewhere.**
 
 ## Contact
 
