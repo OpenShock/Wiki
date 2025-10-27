@@ -11,17 +11,17 @@
 
 ## Development
 
-This documentation site is built with [VitePress](https://vitepress.dev) and includes a local search bar, GitHub links, and automatic contributor sections.
+This documentation site is built with [VitePress](https://vitepress.dev).
 
 ### Local preview
 
 ```bash
-npm install
-npm run docs:dev
+pnpm install
+pnpm run dev
 ```
 
 ### Build static site
 
 ```bash
-npm run docs:build
+pnpm run build
 ```
