@@ -23,10 +23,10 @@ export default [
             {
                 text: 'ShockOsc',
                 items: [
-                    { text: 'Basic', link: '/guides/shockosc-basic' },
-                    { text: 'Avatar setup VRC', link: '/guides/shockosc-avatar-setup-vrc' },
-                    { text: 'Avatar setup CVR', link: '/guides/shockosc-avatar-setup-cvr' },
-                    { text: 'Parameters', link: '/guides/shockosc-parameters' },
+                    { text: 'Basic', link: '/guides/shockosc/basic' },
+                    { text: 'Avatar setup VRC', link: '/guides/shockosc/avatar-setup-vrc' },
+                    { text: 'Avatar setup CVR', link: '/guides/shockosc/avatar-setup-cvr' },
+                    { text: 'Parameters', link: '/guides/shockosc/parameters' },
                 ],
             },
             { text: 'Self Hosting', link: '/guides/selfhosting/' },
@@ -52,6 +52,7 @@ export default [
         text: 'Legal',
         items: [
             { text: 'Terms and Conditions', link: '/legal/terms-and-conditions' },
+            { text: 'Privacy Policy', link: '/legal/privacy-policy' },
             { text: 'Code of Conduct', link: '/legal/code-of-conduct' },
             { text: 'License', link: '/legal/license' },
         ],
