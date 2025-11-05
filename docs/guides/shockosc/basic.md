@@ -43,5 +43,5 @@ OSC is a protocol implemented in VRChat, ChilloutVR, etc. that allows the commun
 5. That's it, you are ready to go! 🎉
 
 ::: tip Avatar Setup
-Check out the [VRChat Avatar Setup](shockosc-avatar-setup-vrc.md) or [ChilloutVR Avatar Setup](shockosc-avatar-setup-cvr.md) Guide!  
+Check out the [VRChat Avatar Setup](avatar-setup-vrc.md) or [ChilloutVR Avatar Setup](avatar-setup-cvr.md) Guide!  
 :::
