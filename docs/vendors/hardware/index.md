@@ -32,7 +32,7 @@ The OpenShock team does not provide **any** guarantees about the quality of prod
 | [Luc](./luc.md)             | 🇩🇪 Germany             | 🇪🇺 Europe                      | :white_check_mark:   | :x:                | :white_check_mark:  |
 | [BosjesMan](./bosjesman.md) |                       | :globe_with_meridians: Global | :white_check_mark:   | :white_check_mark: | :white_check_mark:  |
 | [Nerex](./nerex.md)         | 🇵🇹 Portugal            | 🇪🇺 EU                          | :white_check_mark:   | :white_check_mark: | :white_check_mark:  |
-| [0x6f78](./0x6f78.md)       | 🇳🇱 Netherlands         | 🇪🇺 EU                          | :white_check_mark:   | :white_check_mark: | :white_check_mark:  |
+| [0x6f78](./0x6f78.md)       | 🇳🇱 Netherlands         | :globe_with_meridians: Global | :white_check_mark:   | :white_check_mark: | :white_check_mark:  |
 | [Yasha](./yasha.md)         | 🇬🇧 United Kingdom      | 🇪🇺 Europe & 🇬🇧 UK               | :white_check_mark:   | :white_check_mark: | :white_check_mark:  |
 
 ### North America
