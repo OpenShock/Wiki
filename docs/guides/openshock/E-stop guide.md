@@ -7,7 +7,7 @@ E-Stops are a Physical button or switch that can be triggered to stop all curent
 ## What you need
 - [OpenShock account](https://openshock.app/)
 - [A connected shocker](./first-setup.md)
-- [A Hub With A E-Stop Button](/docs/diy/E-Stop.md)
+- [A Hub With A E-Stop Button](/docs/guides/diy/E-Stop.md)
 
 ## How to Use the E-stop
 
