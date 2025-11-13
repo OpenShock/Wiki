@@ -15,8 +15,8 @@ You will need to connect the button and resistor in a pullup or pulldown configu
 
 Either pullup or pulldown will work use which ever is easier for your board.
 
-![Image "Image"](../../static/guides/e-stop/pullupexample.png)
-![Image "Image"](../../static/guides/e-stop/pulldownexample.png)
+![Image "Image"](../../static/diy/e-stop/pullupexample.png)
+![Image "Image"](../../static/diy/e-stop/pulldownexample.png)
 
 *Most* of the GPIO pins on any given ESP32 board should work for E-Stop, however some pins are reserved for special usage and will return an error if you attempt to use them during setup. If you run into that error, adjust your setup to use a different pin with a higher number.
 
