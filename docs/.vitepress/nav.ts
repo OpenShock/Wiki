@@ -13,6 +13,7 @@ export default [
             { text: 'Quickstart', link: '/guides/quickstart/what-you-need' },
             { text: 'OpenShock', link: '/guides/openshock/' },
             { text: 'Do It Yourself', link: '/guides/diy/' },
+            { text: 'E-stops', link: '/guides/openshock/E-stop guide' },
             {
                 text: 'Developer',
                 items: [
