@@ -3,7 +3,6 @@
 ::: info E-Stops for what?
 E-Stops are a Physical button or switch that can be triggered to stop all curent and pending shocks, viberations, And beeps.  
 
-:::
 ## What you need
 - [OpenShock account](https://openshock.app/)
 - [A connected shocker](./first-setup.md)
@@ -21,5 +20,5 @@ E-Stops are a Physical button or switch that can be triggered to stop all curent
     :::
 
 ::: tip
-The E-Stop is a safety system to protect you and those arround you, if your having an emergency or can not handle the shocks pressing it is a safe way to give your self sometime to recover
+The E-Stop is a safety system to protect you and those arround you, if your having an emergency or can not handle the shocks pressing it is a safe way to give your self sometime to recover.
 
