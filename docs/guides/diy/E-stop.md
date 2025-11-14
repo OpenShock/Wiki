@@ -2,7 +2,6 @@
 
 ::: This guide mainly focuses on adding a E-Stop to a DIY Hub
 
-:::
 ## What you need
 - A Button or mommentary switch
 - a resistor (anything between 10k to 200k will work well)
