@@ -8,7 +8,7 @@ tags:
 The OpenShock team does not provide **any** guarantees about the quality of products or services rendered.
 
 :::
-# Yasha
+# Yunadex
 
 Started `2025-11-22`.
 
