@@ -33,7 +33,8 @@ The OpenShock team does not provide **any** guarantees about the quality of prod
 | [BosjesMan](./bosjesman.md) |                       | :globe_with_meridians: Global | :white_check_mark:   | :white_check_mark: | :white_check_mark:  |
 | [Nerex](./nerex.md)         | 🇵🇹 Portugal            | 🇪🇺 EU                          | :white_check_mark:   | :white_check_mark: | :white_check_mark:  |
 | [0x6f78](./0x6f78.md)       | 🇳🇱 Netherlands         | :globe_with_meridians: Global | :white_check_mark:   | :white_check_mark: | :white_check_mark:  |
-| [Yasha](./yasha.md)         | 🇬🇧 United Kingdom      | 🇪🇺 Europe & 🇬🇧 UK               | :white_check_mark:   | :white_check_mark: | :white_check_mark:  |
+| [Yunadex](./yunadex.md)     | 🇫🇮 Finland             | :globe_with_meridians: Global | :white_check_mark:   | :white_check_mark: | :white_check_mark:  |
+
 
 ### North America
 
@@ -45,8 +46,8 @@ The OpenShock team does not provide **any** guarantees about the quality of prod
 
 ### Australia
 
-| Vendor                                  | :earth_americas: From | :airplane: Ships to           | :electric_plug: Hubs | ⚡ Shockers         | :package: 3D Prints |
-| --------------------------------------- | --------------------- | ----------------------------- | -------------------- | ------------------ | ------------------- |
-| [ebthing](./ebthing.md)                 | 🇦🇺 AUS                | 🌏 Oceania                    | :white_check_mark:   | :white_check_mark: | :white_check_mark:  |
+| Vendor                  | :earth_americas: From | :airplane: Ships to | :electric_plug: Hubs | ⚡ Shockers         | :package: 3D Prints |
+| ----------------------- | --------------------- | ------------------- | -------------------- | ------------------ | ------------------- |
+| [ebthing](./ebthing.md) | 🇦🇺 AUS                 | 🌏 Oceania           | :white_check_mark:   | :white_check_mark: | :white_check_mark:  |
 
 _Want to be on this list? Hit up a maintainer on [Discord](https://discord.gg/OpenShock)._

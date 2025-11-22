@@ -125,8 +125,8 @@ export default {
                 { text: 'SillyPupKit', link: '/vendors/hardware/sillypupkit' },
                 { text: 'NamelessNanashi', link: '/vendors/hardware/namelessnanashi' },
                 { text: 'Nerex', link: '/vendors/hardware/nerex' },
-                { text: 'Yasha', link: '/vendors/hardware/yasha' },
-                { text: 'Ebthing', link: '/vendors/hardware/ebthing' }
+                { text: 'Ebthing', link: '/vendors/hardware/ebthing' },
+                { text: 'Yunadex', link: '/vendors/hardware/yunadex' },
             ],
         },
     ],
