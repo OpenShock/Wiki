@@ -6,6 +6,8 @@
 
 [Assembling my hub](./assembling.md)
 
+[Adding E-stop](./E-stop.md)
+
 ### As a host
 
 [Setting up my own OpenShock instance](../selfhosting/index.md)

@@ -26,6 +26,7 @@ export default {
                 { text: 'Sharelinks', link: '/guides/openshock/sharelinks' },
                 { text: 'Sharecodes', link: '/guides/openshock/sharecodes' },
                 { text: 'Offline remote setup', link: '/guides/openshock/offline-remote-setup' },
+                { text: 'E-stops', link: '/guides/openshock/E-stop guide' },
             ],
         },
         {
@@ -34,6 +35,7 @@ export default {
                 { text: 'Overview', link: '/guides/diy/' },
                 { text: 'Hardware', link: '/guides/diy/hardware-buying' },
                 { text: 'Assembling', link: '/guides/diy/assembling' },
+                { text: 'E-Stop', link: '/guides/diy/E-stop' },
             ],
         },
         {
