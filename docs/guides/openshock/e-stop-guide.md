@@ -1,7 +1,7 @@
-# E-Stops 101
+# Using the E-Stop 101
 
-::: info E-Stops for what?
-E-Stops are a Physical button or switch that can be triggered to stop all curent and pending shocks, viberations, And beeps.  
+::: info E-Stop for what?
+Emergency-Stop are a Physical button or switch that can be triggered to stop all curent and pending shocks, viberations, And beeps.  
 
 ## What you need
 - [OpenShock account](https://openshock.app/)

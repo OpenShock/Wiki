@@ -5,6 +5,15 @@ export default [
             { text: 'Home', link: '/' },
             { text: 'FAQ', link: '/home/faq' },
             { text: 'Safety', link: '/home/safety-rules' },
+            {
+                text: 'Legal',
+                items: [
+                    { text: 'Terms and Conditions', link: '/legal/terms-and-conditions' },
+                    { text: 'Privacy Policy', link: '/legal/privacy-policy' },
+                    { text: 'Code of Conduct', link: '/legal/code-of-conduct' },
+                    { text: 'License', link: '/legal/license' },
+                ],
+            },
         ],
     },
     {
@@ -13,14 +22,6 @@ export default [
             { text: 'Quickstart', link: '/guides/quickstart/what-you-need' },
             { text: 'OpenShock', link: '/guides/openshock/' },
             { text: 'Do It Yourself', link: '/guides/diy/' },
-            { text: 'E-stops', link: '/guides/openshock/E-stop guide' },
-            {
-                text: 'Developer',
-                items: [
-                    { text: 'Overview', link: '/dev/' },
-                    { text: 'Contributing', link: '/dev/contributing/' },
-                ],
-            },
             {
                 text: 'ShockOsc',
                 items: [
@@ -34,6 +35,13 @@ export default [
         ],
     },
     {
+        text: 'Developer',
+        items: [
+            { text: 'Overview', link: '/dev/' },
+            { text: 'Contributing', link: '/dev/contributing/' },
+        ],
+    },
+    {
         text: 'Hardware',
         link: '/hardware'
     },
@@ -42,20 +50,11 @@ export default [
         link: '/vendors/hardware'
     },
     {
-        text: 'Troubleshooting',
+        text: 'Help',
         items: [
             { text: 'Hub', link: '/troubleshooting/hub' },
             { text: 'ShockOsc', link: '/troubleshooting/shockosc' },
             { text: 'Shocker pairing', link: '/troubleshooting/shocker-pairing' },
         ],
-    },
-    {
-        text: 'Legal',
-        items: [
-            { text: 'Terms and Conditions', link: '/legal/terms-and-conditions' },
-            { text: 'Privacy Policy', link: '/legal/privacy-policy' },
-            { text: 'Code of Conduct', link: '/legal/code-of-conduct' },
-            { text: 'License', link: '/legal/license' },
-        ],
-    },
+    }
 ];

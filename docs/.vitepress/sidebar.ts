@@ -8,6 +8,15 @@ export default {
                 { text: 'Safety', link: '/home/safety-rules' },
             ],
         },
+        {
+            text: 'Legal and Privacy',
+            items: [
+                { text: 'Terms and Conditions', link: '/legal/terms-and-conditions' },
+                { text: 'Privacy Policy', link: '/legal/privacy-policy' },
+                { text: 'Code of Conduct', link: '/legal/code-of-conduct' },
+                { text: 'License', link: '/legal/license' }
+            ],
+        },
     ],
     '/guides/': [
         {
@@ -26,7 +35,7 @@ export default {
                 { text: 'Sharelinks', link: '/guides/openshock/sharelinks' },
                 { text: 'Sharecodes', link: '/guides/openshock/sharecodes' },
                 { text: 'Offline remote setup', link: '/guides/openshock/offline-remote-setup' },
-                { text: 'E-stops', link: '/guides/openshock/E-stop guide' },
+                { text: 'Using the E-Stop', link: '/guides/openshock/e-stop-guide' },
             ],
         },
         {
@@ -35,7 +44,7 @@ export default {
                 { text: 'Overview', link: '/guides/diy/' },
                 { text: 'Hardware', link: '/guides/diy/hardware-buying' },
                 { text: 'Assembling', link: '/guides/diy/assembling' },
-                { text: 'E-Stop', link: '/guides/diy/E-stop' },
+                { text: 'E-Stop', link: '/guides/diy/e-stop' },
             ],
         },
         {
@@ -141,16 +150,5 @@ export default {
                 { text: 'Shocker pairing', link: '/troubleshooting/shocker-pairing' },
             ],
         },
-    ],
-    '/legal/': [
-        {
-            text: 'Legal and Privacy',
-            items: [
-                { text: 'Terms and Conditions', link: '/legal/terms-and-conditions' },
-                { text: 'Privacy Policy', link: '/legal/privacy-policy' },
-                { text: 'Code of Conduct', link: '/legal/code-of-conduct' },
-                { text: 'License', link: '/legal/license' }
-            ],
-        },
-    ],
+    ]
 };
