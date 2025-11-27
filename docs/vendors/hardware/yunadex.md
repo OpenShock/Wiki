@@ -22,9 +22,12 @@ Shocker is custom and comes with a comfortable wide silicone backed strap with a
 
 Hubs are basic Wemos D1 Mini ESP32's with Transmitters
 
-Full kit price 45€ + shipping
-Individual Hub / shocker peice 25€ a piece
+Full kit price 45€ + shipping  
+Individual Hub / shocker 25€ a piece
 ## Contact
 
 - :simple-discord: Discord -- `yunadex`
 - :material-email: Email -- `Yunadex@proton.me`
+
+## Credits
+3D-Print latches made by MoDErahN on [Thingiverse](https://www.thingiverse.com/thing:6929026)
