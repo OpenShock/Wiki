@@ -6,7 +6,7 @@ Please go and download [OpenShock Desktop](https://github.com/OpenShock/Desktop)
 :::
 
 ::: info What is ShockOSC?
-ShockOSC is an a [OpenShock Desktop Module](https://github.com/OpenShock/Desktop) made for OSC to trigger your shockers from an in-game trigger.  
+ShockOSC is an [OpenShock Desktop Module](https://github.com/OpenShock/Desktop) made for OSC to trigger your shockers from an in-game trigger.  
 OSC is a protocol implemented in VRChat, ChilloutVR, etc. that allows the communication between the game and 3rd party applications.
 :::
 
