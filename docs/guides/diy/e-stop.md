@@ -21,8 +21,7 @@ Either pullup or pulldown will work use which ever is easier for your board.
 
 Note down which GPIO pins you soldered to, as you will need to enter them during setup in a later step.
 
-For example, if you bought a [Wemos Lolin S3](../../hardware/boards/wemos/lolin-s3.md) , simply connect the 3.3V to one side, ground to the other side, and any numbered GPIO pin to to resitor & switch, for example the pin 10.
-
+For example, if you bought a [Wemos Lolin S3](../../hardware/boards/wemos/lolin-s3.md) , simply connect the 3.3V to one of the switch legs, Connect the resistor and a short wire to the other switch Leg, Connect the wire to Pin 10, Lastly connect the resistor to the Ground pin.
 
 A nice and reliable web serial terminal is available here: https://serial.huhn.me
 
