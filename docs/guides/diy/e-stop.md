@@ -21,14 +21,13 @@ Either pullup or pulldown will work use which ever is easier for your board.
 
 Note down which GPIO pins you soldered to, as you will need to enter them during setup in a later step.
 
-For example, if you bought a [Wemos Lolin S3](../../hardware/boards/wemos/lolin-s3.md) , simply connect the 3.3V to VCC, ground to ground, and any numbered GPIO pin to data, for example the pin 12, to your transmitter.
-
+For example, if you bought a [Wemos Lolin S3](../../hardware/boards/wemos/lolin-s3.md) , simply connect the 3.3V to one of the switch legs, Connect the resistor and a short wire to the other switch Leg, Connect the wire to Pin 10, Lastly connect the resistor to the Ground pin.
 
 A nice and reliable web serial terminal is available here: https://serial.huhn.me
 
 ::: warning Don't forget to enter these during setup!
 
-Using A serial Console `estop enabled true` to enable the E-Stop function, Not doing so will mean the
+Using A serial Console `estop enabled true` to enable the E-Stop function, Not doing so will mean the E-Stop will not work when pressed!
 
 You can change E-Stop pin with `estop pin #` where `#` is your pin number.
 
