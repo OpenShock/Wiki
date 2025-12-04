@@ -23,7 +23,7 @@ Best effort list of current AliExpress sellers. Feel free to add more sources to
 - :globe_with_meridians: [AliExpress](https://www.aliexpress.com/item/3256805637384984.html)
 - :globe_with_meridians: [AliExpress](https://www.aliexpress.com/item/3256806810698119.html)
 - :globe_with_meridians: [AliExpress](https://aliexpress.com/item/1005005823699736.html)
-- - :globe_with_meridians: [AliBaba](https://www.alibaba.com/product-detail/MZ-880-Waterproof-Rechargeable-Vibrating-Dog_1600152421803.html)
+- :globe_with_meridians: [AliBaba](https://www.alibaba.com/product-detail/MZ-880-Waterproof-Rechargeable-Vibrating-Dog_1600152421803.html)
 
 ### Cables
 
