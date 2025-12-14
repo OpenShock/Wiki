@@ -36,7 +36,7 @@ const vendors = [
   { name: "Luc", link: "./luc", from: "🇩🇪 Germany", ships_to: ["EU"], hubs: true, shockers: false, prints3d: true, design: "Official", region: "EUROPE" },
   { name: "BosjesMan", link: "./bosjesman", from: "❓ Unspecified", ships_to: ["GLOBAL"], hubs: true, shockers: true, prints3d: true, design: "Custom", region: "EUROPE" },
   { name: "Nerex", link: "./nerex", from: "🇵🇹 Portugal", ships_to: ["EU"], hubs: true, shockers: true, prints3d: true, design: "Custom", region: "EUROPE" },
-  { name: "Millkox", link: "./millkox", from: "🇳🇱 Netherlands", ships_to: ["GLOBAL"], hubs: true, shockers: true, prints3d: true, design: "Official", region: "EUROPE" },
+  { name: "0x6f78", link: "./0x6f78", from: "🇳🇱 Netherlands", ships_to: ["GLOBAL"], hubs: true, shockers: true, prints3d: true, design: "Official", region: "EUROPE" },
   { name: "Yunadex", link: "./yunadex", from: "🇫🇮 Finland", ships_to: ["GLOBAL"], hubs: true, shockers: true, prints3d: true, design: "Official", region: "EUROPE" },
   // NORTH_AMERICA
   { name: "Nullstalgia", link: "./nullstalgia", from: "🇺🇸 USA", ships_to: ["NA"], hubs: true, shockers: true, prints3d: true, design: "Official", region: "NORTH_AMERICA" },
@@ -57,11 +57,11 @@ const regionNames = { EU: "🇪🇺 Europe", NA: "🌎 North America", OCEANIA: 
 const shippingRegions = ["EU", "NA", "OCEANIA", "GLOBAL"]
 
 const toBool = (value) => {
+  if (typeof value === 'boolean') return value
   if (value === null || value === undefined) return false
   const normalized = String(value).trim().toLowerCase()
   return normalized === '1' || normalized === 'true' || normalized === 'yes' || normalized === 'on'
 }
-
 const vendorAnchor = (vendor) => {
   const slug = String(vendor.name)
     .trim()
@@ -206,7 +206,7 @@ const checkX = (value) => value ? "✅" : "❌"
 <!-- EUROPE -->
 <template v-if="vendorsEurope.length">
 <h3>Europe</h3>
-<table>
+<table aria-label="Available hardware vendors in the Europe region">
   <thead>
     <tr>
       <th>Vendor</th>
@@ -235,7 +235,7 @@ const checkX = (value) => value ? "✅" : "❌"
 <!-- NORTH AMERICA -->
 <template v-if="vendorsNorthAmerica.length">
 <h3>North America</h3>
-<table>
+<table aria-label="Available hardware vendors in the North America region">
   <thead>
     <tr>
       <th>Vendor</th>
@@ -264,7 +264,7 @@ const checkX = (value) => value ? "✅" : "❌"
 <!-- AUSTRALIA -->
 <template v-if="vendorsAustralia.length">
 <h3>Australia</h3>
-<table>
+<table aria-label="Available hardware vendors in the Australia region">
   <thead>
     <tr>
       <th>Vendor</th>
