@@ -1,5 +1,5 @@
 ---
-tags: 
+tags:
     - hardware
     - vendor
 ---
@@ -22,4 +22,4 @@ Custom 3D prints can be ordered via discord.
 
 - :simple-discord: Discord -- `millkox`
 - :material-link: Shop: [milkieverse.cc](https://milkieverse.cc)
-- :simple-discord: Discord Server:  [discord.milkieverse.cc](https://discord.com/invite/9824xbSgcJ) (via support system)
+- :simple-discord: Discord Server:  [discord.milkieverse.cc](https://discord.milkieverse.cc) (via support system)
