@@ -131,7 +131,7 @@ export default {
                 { text: 'Overview', link: '/vendors/hardware/' },
                 { text: 'Luc', link: '/vendors/hardware/luc' },
                 { text: 'Nullstalgia', link: '/vendors/hardware/nullstalgia' },
-                { text: '0x6f78', link: '/vendors/hardware/0x6f78' },
+                { text: 'Millkox', link: '/vendors/hardware/millkox' },
                 { text: 'Bosjesman', link: '/vendors/hardware/bosjesman' },
                 { text: 'SillyPupKit', link: '/vendors/hardware/sillypupkit' },
                 { text: 'NamelessNanashi', link: '/vendors/hardware/namelessnanashi' },

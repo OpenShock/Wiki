@@ -22,7 +22,7 @@ The OpenShock team does not provide **any** guarantees about the quality of prod
 | 📡 Hubs               | Whether they sell pre-assembled Hubs ([ESP32 board](../../hardware/boards/index.md) + [433 MHz transmitter](../../hardware/transmitter/index.md)). |
 | ⚡️ Shockers           | Whether they sell [shockers](../../hardware/shockers/index.md).                                                                                    |
 | 📦 3D Prints   | Whether they sell 3D-printed cases (for controllers) or spacers (for shockers).                                                                    |
-| 🎨 Designs         | Whether they sell the Official (Nullstalgia) OpenShock PCBs or Custom designs.                                                                                             |
+| 🎨 Designs         | Whether the vendor sells the Official (Nullstalgia) OpenShock PCBs or Custom designs.                                                                                             |
 
 ## Vendor Picker
 
@@ -57,7 +57,7 @@ const regionNames = { EU: "🇪🇺 Europe", NA: "🌎 North America", OCEANIA: 
 const shippingRegions = ["EU", "NA", "OCEANIA", "GLOBAL"]
 
 const toBool = (value) => {
-  if (value == null) return false
+  if (value === null || value === undefined) return false
   const normalized = String(value).trim().toLowerCase()
   return normalized === '1' || normalized === 'true' || normalized === 'yes' || normalized === 'on'
 }
@@ -149,12 +149,15 @@ watchEffect(async () => {
   if (typeof window === 'undefined') return
   if (!requestedVendorAnchor.value) return
 
+  const anchor = requestedVendorAnchor.value
   await nextTick()
-  const el = document.getElementById(requestedVendorAnchor.value)
+  const el = document.getElementById(anchor)
   if (!el) return
 
   el.scrollIntoView({ block: 'start' })
-  requestedVendorAnchor.value = null
+  if (requestedVendorAnchor.value === anchor) {
+    requestedVendorAnchor.value = null
+  }
 })
 
 const compareVendorsByName = (a, b) => String(a?.name ?? '').localeCompare(String(b?.name ?? ''), undefined, { sensitivity: 'base', numeric: true })
