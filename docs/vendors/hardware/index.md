@@ -18,10 +18,10 @@ The OpenShock team does not provide **any** guarantees about the quality of prod
 | Term                  | Meaning                                                                                                                                            |
 | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 🌐 From | Where it's being sent from.                                                                                                                        |
-| ✈️ Ships to   | The region(s) that a vendor ships to.                                                                                                              |
-| 📡 Hubs               | Whether they sell pre-assembled Hubs ([ESP32 board](../../hardware/boards/index.md) + [433 MHz transmitter](../../hardware/transmitter/index.md)). |
-| ⚡️ Shockers           | Whether they sell [shockers](../../hardware/shockers/index.md).                                                                                    |
-| 📦 3D Prints   | Whether they sell 3D-printed cases (for controllers) or spacers (for shockers).                                                                    |
+| ✈️ Ships to   | The region(s) that the vendor ships to.                                                                                                              |
+| 📡 Hubs               | Whether the vendor sells pre-assembled Hubs ([ESP32 board](../../hardware/boards/index.md) + [433 MHz transmitter](../../hardware/transmitter/index.md)). |
+| ⚡️ Shockers           | Whether the vendor sells [shockers](../../hardware/shockers/index.md).                                                                                    |
+| 📦 3D Prints   | Whether the vendor sells 3D-printed cases (for controllers) or spacers (for shockers).                                                                    |
 | 🎨 Designs         | Whether the vendor sells the Official (Nullstalgia) OpenShock PCBs or Custom designs.                                                                                             |
 
 ## Vendor Picker
