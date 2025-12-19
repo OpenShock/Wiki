@@ -8,7 +8,7 @@ tags:
 The OpenShock team does not provide **any** guarantees about the quality of products or services rendered.
 
 :::
-# 0x6f78
+# Millkox
 
 Started `2025-07-06`.
 
@@ -20,6 +20,6 @@ Custom 3D prints can be ordered via discord.
 
 ## Contact
 
-- :simple-discord: Discord -- `0x6f78`
-- :material-link: Shop: [0x6f78.xyz](https://0x6f78.xyz) / [milkieverse.cc](https://milkieverse.cc)
-- :simple-discord: Discord Server:  [discord.0x6f78.xyz](https://discord.com/invite/9824xbSgcJ) (via support system)
+- :simple-discord: Discord -- `millkox`
+- :material-link: Shop: [milkieverse.cc](https://milkieverse.cc)
+- :simple-discord: Discord Server:  [discord.milkieverse.cc](https://discord.milkieverse.cc) (via support system)

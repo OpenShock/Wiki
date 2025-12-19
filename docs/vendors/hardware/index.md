@@ -36,7 +36,7 @@ const vendors = [
   { name: "Luc", link: "./luc", from: "🇩🇪 Germany", ships_to: ["EU"], hubs: true, shockers: false, prints3d: true, design: "Official", region: "EUROPE" },
   { name: "BosjesMan", link: "./bosjesman", from: "❓ Unspecified", ships_to: ["GLOBAL"], hubs: true, shockers: true, prints3d: true, design: "Custom", region: "EUROPE" },
   { name: "Nerex", link: "./nerex", from: "🇵🇹 Portugal", ships_to: ["EU"], hubs: true, shockers: true, prints3d: true, design: "Custom", region: "EUROPE" },
-  { name: "0x6f78", link: "./0x6f78", from: "🇳🇱 Netherlands", ships_to: ["GLOBAL"], hubs: true, shockers: true, prints3d: true, design: "Official", region: "EUROPE" },
+  { name: "Millkox", link: "./millkox", from: "🇳🇱 Netherlands", ships_to: ["GLOBAL"], hubs: true, shockers: true, prints3d: true, design: "Official", region: "EUROPE" },
   { name: "Yunadex", link: "./yunadex", from: "🇫🇮 Finland", ships_to: ["GLOBAL"], hubs: true, shockers: true, prints3d: true, design: "Official", region: "EUROPE" },
   // NORTH_AMERICA
   { name: "Nullstalgia", link: "./nullstalgia", from: "🇺🇸 USA", ships_to: ["NA"], hubs: true, shockers: true, prints3d: true, design: "Official", region: "NORTH_AMERICA" },
