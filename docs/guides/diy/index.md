@@ -6,7 +6,7 @@
 
 [Assembling my hub](./assembling.md)
 
-[Adding E-stop](./E-stop.md)
+[Adding E-stop](./e-stop.md)
 
 ### As a host
 

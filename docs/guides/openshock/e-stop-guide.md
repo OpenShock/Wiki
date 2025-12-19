@@ -6,7 +6,7 @@ Emergency-Stop are a Physical button or switch that can be triggered to stop all
 ## What you need
 - [OpenShock account](https://openshock.app/)
 - [A connected shocker](./first-setup.md)
-- [A Hub With A E-Stop Button](/docs/guides/diy/E-Stop.md)
+- [A Hub With A E-Stop Button](../diy/e-stop.md)
 
 ## How to Use the E-stop
 
