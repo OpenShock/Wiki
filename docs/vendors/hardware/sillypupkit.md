@@ -12,9 +12,8 @@ The OpenShock team does not provide **any** guarantees about the quality of prod
 
 Started `2024-09-07`.
 
-Selling Hubs and Shockers via discord and email inquiry.
+Selling Hubs and Shockers via discord.
 
 ## Contact
 
 - :simple-discord: Discord -- `sillypupkit`
-- :material-email: Email -- `pupkitprinting@proton.me`
