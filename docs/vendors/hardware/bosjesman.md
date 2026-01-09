@@ -14,5 +14,5 @@ Started `2023-10-17`.
 
 ## Contact
 
-- :simple-discord: Discord -- `bosjesman`
-- :material-email: Email -- `shockers@bosjes.cc`
+- <span style="display: inline-flex; align-items: center; gap: 7px"><img src="/static/icons/discord-blurple.svg" width="20px"> Discord `bosjesman`</span>
+- ✉ Email `shockers@bosjes.cc`

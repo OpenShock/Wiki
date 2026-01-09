@@ -26,5 +26,5 @@ A list of reviews can be found in the [OpenShock Discord](<https://discord.gg/Op
 
 ## Contact
 
-- :simple-discord: Discord -- `NamelessNanashi`
-- :material-email: E-Mail -- `Nanashi@NamelessNanashi.dev`
+- <span style="display: inline-flex; align-items: center; gap: 7px"><img src="/static/icons/discord-blurple.svg" width="20px"> Discord `NamelessNanashi`</span>
+- ✉ E-Mail `Nanashi@NamelessNanashi.dev`

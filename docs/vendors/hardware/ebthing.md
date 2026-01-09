@@ -20,4 +20,4 @@ Has permission to sell parts And Assembled shockers of the [Official FlatShocker
 
 ## Contact
 
-- :simple-discord: Discord -- `ebthing`
+- <span style="display: inline-flex; align-items: center; gap: 7px"><img src="/static/icons/discord-blurple.svg" width="20px"> Discord `ebthing`</span>

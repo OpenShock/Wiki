@@ -20,6 +20,6 @@ Custom 3D prints can be ordered via discord.
 
 ## Contact
 
-- :simple-discord: Discord -- `millkox`
-- :material-link: Shop: [milkieverse.cc](https://milkieverse.cc)
-- :simple-discord: Discord Server:  [discord.milkieverse.cc](https://discord.milkieverse.cc) (via support system)
+- <span style="display: inline-flex; align-items: center; gap: 7px"><img src="/static/icons/discord-blurple.svg" width="20px"> Discord `millkox`</span>
+- 🔗 Shop: [milkieverse.cc](https://milkieverse.cc)
+- <span style="display: inline-flex; align-items: center; gap: 7px"><img src="/static/icons/discord-blurple.svg" width="20px"> Discord Server:  [discord.milkieverse.cc](https://discord.milkieverse.cc) (via support system)</span>

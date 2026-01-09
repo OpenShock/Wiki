@@ -16,4 +16,4 @@ Selling Hubs and Shockers via discord.
 
 ## Contact
 
-- :simple-discord: Discord -- `sillypupkit`
+- <span style="display: inline-flex; align-items: center; gap: 7px"><img src="/static/icons/discord-blurple.svg" width="20px"> Discord `sillypupkit`</span>

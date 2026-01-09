@@ -26,8 +26,8 @@ Full kit price 45€ + shipping
 Individual Hub / shocker 25€ a piece
 ## Contact
 
-- :simple-discord: Discord -- `yunadex`
-- :material-email: Email -- `Yunadex@proton.me`
+- <span style="display: inline-flex; align-items: center; gap: 7px"><img src="/static/icons/discord-blurple.svg" width="20px"> Discord `yunadex`</span>
+- ✉ Email `Yunadex@proton.me`
 
 ## Credits
 3D-Print latches made by MoDErahN on [Thingiverse](https://www.thingiverse.com/thing:6929026)
