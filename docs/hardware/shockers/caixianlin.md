@@ -25,6 +25,11 @@ Best effort list of current AliExpress sellers. Feel free to add more sources to
 - :globe_with_meridians: [AliExpress](https://www.aliexpress.com/item/1005005823699736.html)
 - :globe_with_meridians: [AliBaba](https://www.alibaba.com/product-detail/MZ-880-Waterproof-Rechargeable-Vibrating-Dog_1600152421803.html)
 
+Amazon also caries this style of shocker under the brand "Heaflex" - if you're looking to buy in the US without dealing with tarrifs this is a good option
+- 🇺🇸: [Amazon](https://www.amazon.com/Training-Waterproof-Rechargeable-Vibration-Electronic/dp/B0CJDJ6LHB/ref=sr_1_2_sspa?crid=1DU0M2OSUYLI&dib=eyJ2IjoiMSJ9.O9fRLUxVE6sHX-_w0ftxgnPfgwHxJHoLwgITe09dp3iuSbuSI8OJNtSmI0i-QeKZY09t4cQ6mrULUSaPgSHKBLm7SkQThVF9KHj1OtG0NTkWdFkaU_6kEdRf2nwg2VALRVAqGLFUBtEpOQMGsIW2RfSqpvaG6gDROBXw5wwI22L7oM1n4Z-fcFF05k893Ex6TGOS6Rhqyq7QBhWN6ZCqJpYqBNly8m75a42Lj--wqaDbbtRYV00SX2SxeLDI8fALNI7y65gvWF99qvj-ju3svRxDnyPhY38PNZEbGdaOpTE.HB_fl2mYqPwMJrhkqmQQf2mlaqC0Moct-8tVQQwuuVI&dib_tag=se&keywords=heaflex%2Bshock%2Bcollar&qid=1768670548&sprefix=heaflex%2Bshock%2Bcollar%2Breplacement%2Bcontact%2Bprongs%2Caps%2C223&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1)
+- 🇺🇸: [Amazon](https://www.amazon.com/slopehill-Training-Electronic-Vibration-Waterproof/dp/B09DFRYNMD/ref=sr_1_8?crid=1EQPFUCUG0JXN&dib=eyJ2IjoiMSJ9.A6qds28FHoGXF8W2XE_edLhfozTa0ArjspPuyh9xz1fiQnzbhFy7kK98kcXh11pK15rDf8U5QcKiyUvRUM1XW_9NP4LNUsJ8JZgMyHvMdCkF29GLuu5VT8eJpPLM7c6CE0vUosr1A5YTbcI4hxKoJrrMwpoPEG1H8Io0OUDIJ8wA5-SOw-CnqEryrLNovD_UvzvHerMOJyZXHNW98kc3h9iWoFzb_z-iomTfLnFkxa8b1LNV3O1-oDNS0JodyY5F3Mx84LYV_mKAW2WHeXUL1HVp1zVbzXRsvJ5RlB_c-YM.sweyKmqhicSDXMgbnTKjzh4jqDTadKc1NcVBEqlifJ4&dib_tag=se&keywords=dog%2Bshock%2Bcollar&qid=1768670944&sprefix=dog%2Bshock%2Bcoll%2Caps%2C301&sr=8-8&th=1)
+
+
 ### Cables
 
 The charging port for this model is a standard **DC 3.5 x 1.35mm**. A USB to **DC 3.5 x 1.35mm** cable is used to charge the shocker. You might even have one laying around as they are common.
