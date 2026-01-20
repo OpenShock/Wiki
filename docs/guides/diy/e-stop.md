@@ -23,7 +23,11 @@ Note down which GPIO pins you soldered to, as you will need to enter them during
 
 For example, if you bought a [Wemos Lolin S3](../../hardware/boards/wemos/lolin-s3.md) , simply connect the 3.3V to one of the switch legs, Connect the resistor and a short wire to the other switch Leg, Connect the wire to Pin 10, Lastly connect the resistor to the Ground pin.
 
-A nice and reliable web serial terminal is available here: https://serial.huhn.me
+Best effort list of web serial terminals available for your convenience: 
+- <https://serial.namelessnanashi.dev/>
+- <https://serial.huhn.me/>
+- <https://www.serialterminal.com/>
+- <https://webserialterminal.com/>
 
 ::: warning Don't forget to enter these during setup!
 
