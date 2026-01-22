@@ -27,7 +27,11 @@ Usually you set this pin during the first time setup of your Hub. If you have al
 1. Re-enable the Captive Portal via the website (`Hubs -> Three dots -> Remote Debug -> Captive Portal On`), then 10.10.10.10 etc.
 2. Connect a serial terminal to the ESP (via USB UART) and use the `rftxpin` command followed by the number of your GPIO pin.
 
-A nice and reliable web serial terminal is available here: https://serial.huhn.me
+Best effort list of web serial terminals available for your convenience: 
+- <https://serial.namelessnanashi.dev/>
+- <https://serial.huhn.me/>
+- <https://www.serialterminal.com/>
+- <https://webserialterminal.com/>
 
 ### Transmitter is not connected properly
 
