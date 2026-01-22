@@ -25,6 +25,11 @@ Best effort list of current AliExpress sellers. Feel free to add more sources to
 - :globe_with_meridians: [AliExpress](https://www.aliexpress.com/item/1005005823699736.html)
 - :globe_with_meridians: [AliBaba](https://www.alibaba.com/product-detail/MZ-880-Waterproof-Rechargeable-Vibrating-Dog_1600152421803.html)
 
+Amazon also caries this style of shocker under the brand "Heaflex" - if you're looking to buy in the US without dealing with tarrifs this is a good option
+- 🇺🇸: [Amazon](https://www.amazon.com/Training-Waterproof-Rechargeable-Vibration-Electronic/dp/B0CJDJ6LHB)
+- 🇺🇸: [Amazon](https://www.amazon.com/slopehill-Training-Electronic-Vibration-Waterproof/dp/B09DFRYNMD)
+
+
 ### Cables
 
 The charging port for this model is a standard **DC 3.5 x 1.35mm**. A USB to **DC 3.5 x 1.35mm** cable is used to charge the shocker. You might even have one laying around as they are common.
