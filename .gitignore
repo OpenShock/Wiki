@@ -1,6 +1,6 @@
 site
+/.next
+/.source
 /.vscode
 .cache
 node_modules
-docs/.vitepress/dist
-docs/.vitepress/cache
