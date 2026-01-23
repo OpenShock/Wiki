@@ -20,9 +20,22 @@ RUN pnpm run build
 
 FROM node:${NODE_VERSION}-alpine${ALPINE_VERSION} AS runtime
 
-EXPOSE 80
+ARG PNPM_VERSION
 
-# Copy release artifacts (static HTML, JS, CSS)
-COPY --from=build /docs/docs/.vitepress/dist /usr/share/nginx/html
+WORKDIR /docs
 
-# Leave startup as-is.
+RUN wget -qO /bin/pnpm "https://github.com/pnpm/pnpm/releases/download/v${PNPM_VERSION}/pnpm-linuxstatic-x64" && chmod +x /bin/pnpm
+
+ENV NODE_ENV=production
+
+COPY package.json .
+COPY pnpm-lock.yaml .
+RUN pnpm install --prod --frozen-lockfile --strict-peer-dependencies
+
+COPY --from=build /docs/.next ./.next
+COPY --from=build /docs/public ./public
+COPY --from=build /docs/next.config.mjs ./next.config.mjs
+
+EXPOSE 3000
+
+CMD ["pnpm", "start"]

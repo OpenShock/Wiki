@@ -11,7 +11,7 @@
 
 ## Development
 
-This documentation site is built with [VitePress](https://vitepress.dev).
+This documentation site is built with [Fumadocs](https://fumadocs.dev) on top of Next.js.
 
 ### Local preview
 
