@@ -14,7 +14,9 @@ Started `2025-08-07`.
 
 Selling Hubs and Spacers via Discord or E-Mail inquiries.
 
-Will 3D print custom parts upon request.
+Current spacers sold are a custom modified design found at [NanashiTheNameless/OpenShock-Custom-Spacer](<https://github.com/NanashiTheNameless/OpenShock-Custom-Spacer>) licensed under GPL-3.0 same as the official prints.
+
+Will also 3D print custom parts upon request.
 
 (Has permission to sell parts for the [Official FlatShocker](<https://github.com/tommaier123/FlatShocker>) and the [Minimal hardware FlatShocker version by Ebthing](<https://www.printables.com/model/1455967-minimal-hardware-flatshocker>))
 
