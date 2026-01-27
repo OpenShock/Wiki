@@ -14,7 +14,7 @@ Started `2025-08-07`.
 
 Selling Hubs and Spacers via Discord or E-Mail inquiries.
 
-Current spacers sold are a custom modified design found at [NanashiTheNameless/OpenShock-Custom-Spacer](<https://github.com/NanashiTheNameless/OpenShock-Custom-Spacer>) licensed under GPL-3.0 same as the official prints.
+Current spacers sold are a custom modified design found at [NanashiTheNameless/OpenShock-Custom-Spacer](<https://github.com/NanashiTheNameless/OpenShock-Custom-Spacer>) licensed under GPL-3.0 same as the official designs.
 
 Will also 3D print custom parts upon request.
 
