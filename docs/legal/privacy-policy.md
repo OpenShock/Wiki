@@ -1,8 +1,8 @@
 # Privacy Policy
 
-**Effective Date**: November 5, 2025  
+**Effective Date**: January 31, 2026  
 **Applies to**: [openshock.app](https://openshock.app) and the [OpenShock Discord Bot / Activity](https://discord.com/oauth2/authorize?client_id=1096380937496969326)  
-**Last Updated**: November 5, 2025
+**Last Updated**: January 31, 2026
 
 ## 1. Introduction
 
@@ -77,9 +77,10 @@ We use limited third-party services to help deliver, secure, and improve OpenSho
 These providers may process certain technical data on our behalf in accordance with GDPR and applicable data protection laws.
 
 ### Discord
-If you use our Discord Bot or Activity, your interaction also falls under the Discord Privacy Policy.  
-We do not control how Discord processes or stores your data.  
+If you use our Service, Discord Bot, or Activity, your interaction also falls under the Discord Privacy Policy. We do not control how Discord processes or stores your data.
 See Discord’s policy here: [https://discord.com/privacy](https://discord.com/privacy)
+
+In addition, our main Service integrates with Discord’s API. As part of normal operation, limited data (such as event or error information) may be sent to Discord and logged in a private Discord channel for monitoring and troubleshooting purposes. We do not use this data for marketing or profiling.
 
 ### Cloudflare
 We use **Cloudflare** to provide network security, DDoS protection, and content delivery for openshock.app.  
