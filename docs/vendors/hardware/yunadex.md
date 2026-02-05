@@ -14,16 +14,18 @@ Started `2025-11-22`.
 
 Shipping Globally from Finland.
 
-Basic Hubs, Custom Design Flat Comfortable Shocker ( https://imgur.com/a/ocYL9zH ), 3D prints, Parts Purchasable via Discord or Email inquiry.
+Basic Hubs, Custom Design Flat Comfortable Shocker ( https://imgur.com/a/ehZh48U ), 3D prints, Parts Purchasable via Discord or Email inquiry.
 
 if contacting through Discord please specify you are inquirying about OpenShock items in your first message
 
-Shocker is custom and comes with a comfortable wide silicone backed strap with a dovetail Latch
+Shocker is custom, it has USB-C and custom flat electrodes made of conductive rubber! multiple colour options available! ( check imgur )
 
 Hubs are basic Wemos D1 Mini ESP32's with Transmitters
 
-Full kit price 45€ + shipping  
+Full kit price 45€ + shipping
 Individual Hub / shocker 25€ a piece
+
+
 ## Contact
 
 - <span style="display: inline-flex; align-items: center; gap: 7px"><img src="/static/icons/discord-blurple.svg" width="20px"> Discord `yunadex`</span>
