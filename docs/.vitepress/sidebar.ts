@@ -96,6 +96,7 @@ export default {
         { text: "Overview", link: "/hardware/shockers/" },
         { text: "Caixianlin", link: "/hardware/shockers/caixianlin" },
         { text: "Petrainer", link: "/hardware/shockers/petrainer" },
+        { text: "Wellturn T330", link: "/hardware/shockers/wellturn-t330" },
       ],
     },
     {

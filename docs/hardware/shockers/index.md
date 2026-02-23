@@ -28,5 +28,6 @@ We have a couple of offers from AliExpress linked on the [CaiXianlin Shocker Pag
 We currently support the following Shockers:
 
 - [CaiXianlin](caixianlin.md) (**✅ recommended ⭐**)
+- [Wellturn T330](wellturn-t330.md) (barely used)
 - [Petrainer](petrainer.md) (discontinued)
 - Petrainer 998DR (unknown availability)
