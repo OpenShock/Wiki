@@ -9,12 +9,17 @@ tags:
 ::: tip Compatible
 This product is compatible with OpenShock.
 
+:::
+
 ::: danger Lack of dashboard support
 Cannot be added on the dashboard (openshock.app) and only useable via rf commands through the terminal.
+
+:::
 
 ::: danger Highly priced
 Highly priced and barely available.
 
+:::
 ## Buying
 
 # Official Wellturn Stores
