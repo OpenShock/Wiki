@@ -9,20 +9,25 @@ tags:
 ::: tip Compatible
 This product is compatible with OpenShock.
 
+:::
+
 ::: danger Lack of dashboard support
 Cannot be added on the dashboard (openshock.app) and only useable via rf commands through the terminal.
+
+:::
 
 ::: danger Highly priced
 Highly priced and barely available.
 
+:::
 ## Buying
 
-# Official Wellturn Stores
+### Official Wellturn Stores
 
 - :globe_with_meridians: [Alibaba](https://www.alibaba.com/product-detail/Dog-Remotely-Collar-1000-Feet-2_1600772049827.html)
 - :globe_with_meridians: [Alibaba](https://www.alibaba.com/product-detail/300m-Professional-Remote-Dog-Training-Collar_1600693067072.html)
 
-# 3rd Party Stores
+### 3rd Party Stores
 
 - :globe_with_meridians: [Alibaba](https://www.alibaba.com/product-detail/Circular-Rechargeable-Waterproof-Shock-Collar-Powerful_1601679214819.html)
 - :globe_with_meridians: [Alibaba](https://www.alibaba.com/product-detail/2025-Automatic-Pet-Stop-Barking-Collar_1601596339209.html)
