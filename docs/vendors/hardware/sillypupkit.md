@@ -12,7 +12,7 @@ The OpenShock team does not provide **any** guarantees about the quality of prod
 
 Started `2024-09-07`.
 
-Selling Hubs and Shockers via discord.
+Selling Hubs, spacers, and Shockers via discord.
 
 ## Contact
 
