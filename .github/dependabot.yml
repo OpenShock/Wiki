@@ -1,3 +1,4 @@
+
 # To get started with Dependabot version updates, you'll need to specify which
 # package ecosystems to update and where the package manifests are located.
 # Please see the documentation for all configuration options:
@@ -6,20 +7,38 @@
 version: 2
 updates:
 
+  # Check for Nuget package updates
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: '06:00'
+    groups:
+      npm-dependencies:
+        patterns:
+          - '*' # Group all updates together
+
+  # Check for Nuget package updates
+  - package-ecosystem: docker
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: '06:00'
+    groups:
+      docker:
+        patterns:
+          - '*' # Group all updates together
+  
   # Check for Github Actions version updates (for CI/CD)
-  - package-ecosystem: "github-actions"
-    directory: "/"
+  - package-ecosystem: github-actions
+    directory: /
     schedule:
-      interval: "weekly"
-
-  # Check for container base image updates
-  - package-ecosystem: "docker"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-
-  # Check for Node dependency updates
-  - package-ecosystem: "npm"
-    directory: "/"
-    schedule:
-      interval: "weekly"
+      interval: weekly
+      day: monday
+      time: '06:00'
+    groups:
+      github-actions:
+        patterns:
+          - '*' # Group all updates together
