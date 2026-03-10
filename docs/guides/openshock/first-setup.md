@@ -48,8 +48,9 @@ If you do not know how to do this, you can also re-enable the captive portal (ho
 1. Create a hub on the website:
     1. **On your PC** open [openshock.app](https://openshock.app/).
     2. Create an account. *(If you don't have one already)*
-    3. Go to **Devices** and click the **green plus icon** at the lower right corner to create a new hub.
-    4. Give it a name:
+    3. Navigate to **Hubs**.
+    4. Click the **green plus icon** at the lower right corner to create a new hub.
+    5. Give it a name:
         1. Open the context menu of the hub. *(the three dots next to the newly created hub)*
         2. Select **edit**.
         3. Type in a name, *(your name for example)* into the name field.
@@ -63,7 +64,7 @@ If you do not know how to do this, you can also re-enable the captive portal (ho
     1. Open the context menu of your hub again.
     2. Select **pair** and press **get pair code**, this will generate a new pair code.
     3. On your phone type the code into the account Linking field of the hub's web-interface, then press **pair**.
-        - After you linked the hub to your account it should shut down it's own Wi-Fi network.
+        - After you linked the hub to your account it should shut down its own Wi-Fi network.
         ::: details Images (click to expand)
         ![Image "image"](../../static/guides/first-setup/findpaircode.png)
         ![Image "image"](../../static/guides/first-setup/paircodeexample.png)
@@ -90,7 +91,7 @@ If you do not know how to do this, you can also re-enable the captive portal (ho
     ![image](../../static/guides/first-setup/create_shocker.png)
     :::
 4. Pair your Shocker.
-    1. Grab your shocker and turn it on. (Press the power button once. it should beep one time.)
+    1. Grab your shocker and turn it on. (Press the power button once. It should beep one time.)
     2. Hold the power button again until it beeps and the LED flashes fast. *This means the pair mode is active*
     3. On the website click the ***speaker icon*** of your shocker, if your shocker beeps in response, the pairing was successful.
     4. You must click the icon before the shocker's pairing mode times out (while the shocker's LED is flashing quickly).
