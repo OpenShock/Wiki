@@ -49,7 +49,7 @@ Most boards will have a pair of buttons. The first button labelled "Boot", "IO0"
 
 First, attempt flashing **while holding down "Boot"**.
 
-If that doesn't work, try holding down "Boot" and then tapping "Reset". That will reboot the ESP32, and also enter the bootloader, making it ready to recieve new firmware!
+If that doesn't work, try holding down "Boot" and then tapping "Reset". That will reboot the ESP32, and also enter the bootloader, making it ready to receive new firmware!
 
 Sometimes, you may need to both enter the bootloader manually *and* hold down "Boot" while starting the flashing process.
 
