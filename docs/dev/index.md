@@ -38,22 +38,19 @@ Authentication for applications is done via a API Token which are to be sent as 
 
 You can generate a API Token on the website. [New API Token UI](https://next.openshock.app/settings/api-tokens)
 
-### WebSockets
+### Real-Time Communication
 
-There is a few different WebSocket endpoints. Most of them use json. The Hub (previously named Device) websocket uses flatbuffers binary serialization.
+OpenShock provides two real-time communication methods for client applications:
 
-GW = Gateway or LiveControlGateway (e.g. de1-gateway.openshock.app)  
-API = Main API (e.g. api.openshock.app)
+**SignalR Hubs** - Built on Microsoft's [SignalR](https://learn.microsoft.com/aspnet/core/signalr) framework, using WebSocket transport with JSON payloads. Used for device management, control commands, event notifications, and share links.
 
-- [GW]/1/ws/live/{deviceId} # Live Control Websocket, json
-- [GW]/1/ws/device # Hubs (devices) websocket, flatbuffers
-- [API]/1/ws/device # Legacy Hubs (Deprecated, not implemented anymore as of 31.08.2024)
+- `[API]/1/hubs/user` - Authenticated user hub
+- `[API]/1/hubs/share/link/{id}` - Public share link hub
 
-## SignalR
+**Live Control WebSocket** - A raw JSON WebSocket for continuous real-time shocker control (e.g. VR integrations).
 
-SignalR is a Realtime Messaging Framework developed by Microsoft. The transport way we use is only WebSocket with JSON.
+- `[GW]/1/ws/live/{deviceId}` - Requires authentication
 
-- [API]/1/hubs/user
-- [API]/1/hubs/share/link/{id}
+Where `[API]` = `api.openshock.app` and `[GW]` = a gateway host (e.g. `de1-gateway.openshock.app`).
 
-For connection examples and event details, see the [SignalR WebSockets](signalr-websockets.md) guide.
+For full details on endpoints, methods, message formats, and types, see the [Real-Time Communication Guide](./realtime/).

@@ -72,6 +72,16 @@ export default {
       text: "Developer",
       items: [
         { text: "Overview", link: "/dev/" },
+        {
+          text: "Real-Time Communication",
+          link: "/dev/realtime/",
+          items: [
+            { text: "User Hub", link: "/dev/realtime/user-hub" },
+            { text: "Share Link Hub", link: "/dev/realtime/share-link-hub" },
+            { text: "Live Control", link: "/dev/realtime/live-control" },
+            { text: "Types Reference", link: "/dev/realtime/types" },
+          ],
+        },
         { text: "Contributing", link: "/dev/contributing/" },
         {
           text: "Compile firmware",
