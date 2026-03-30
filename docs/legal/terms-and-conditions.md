@@ -1,8 +1,9 @@
 # Terms and conditions
 
-!!! info "Still brewing!"
-    This article heavily under development, expect very frequent changes
+::: info Still brewing!
+This article heavily under development, expect very frequent changes
 
+:::
 Terms and conditions for OpenShock Open Source Software.
 
 OpenShock Contributors Team is committed to ensure maximum safety for users and make software elements as useful and efficient as possible.

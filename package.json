@@ -1,0 +1,15 @@
+{
+  "name": "openshock-wiki",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "2.0.0-alpha.15"
+  },
+  "packageManager": "pnpm@10.26.1"
+}

@@ -12,9 +12,10 @@ tags:
 
 Designed by [nullstalgia](../../../vendors/hardware/nullstalgia.md)
 
-!!! success "Fully compatible"
-    This product is fully compatible with OpenShock.
+::: tip Fully compatible
+This product is fully compatible with OpenShock.
 
+:::
 ## Specifications
 
 - Espressif ESP32-S3-WROOM-1-N8 (8MB Flash, no PSRAM)

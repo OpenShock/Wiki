@@ -8,10 +8,11 @@ tags:
 
 # Wemos Lolin S2 Mini
 
-!!! success "Fully compatible"
+::: tip Fully compatible
 
-    This product is fully compatible with OpenShock.
+This product is fully compatible with OpenShock.
 
+:::
 - [Official webpage](https://www.wemos.cc/en/latest/s2/s2_mini.html)
 
 ## Specifications

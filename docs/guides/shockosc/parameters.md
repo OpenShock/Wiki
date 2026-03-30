@@ -1,12 +1,14 @@
 # List of ShockOsc Parameters
-!!! Warning "Important!"
-    The syntax of the parameters is important, if it's not correct, ShockOSC will NOT recognize the parameter.
-    Replace "Groupname" with the name of your group defined in ShockOsc WITHOUT the brackets (ex. ShockOsc/{Groupname} -> ShockOsc/LeftLeg)
-    You can check the recognized parameters in the Debug Tab
+::: warning Important!
+The syntax of the parameters is important, if it's not correct, ShockOSC will NOT recognize the parameter.
+Replace "Groupname" with the name of your group defined in ShockOsc WITHOUT the brackets (ex. ShockOsc/{Groupname} -> ShockOsc/LeftLeg)
+You can check the recognized parameters in the Debug Tab
 
-!!! Tip "Avatar Update"
-    If you updated your avatar with a NEW parameter and it doesnt work / show up in the Debug Tab, delete the files in ``C:\Users\%USERPROFILE%\AppData\LocalLow\VRChat\VRChat\OSC`` to refresh the OSC index.  
+:::
+::: tip Avatar Update
+If you updated your avatar with a NEW parameter and it doesnt work / show up in the Debug Tab, delete the files in ``C:\Users\%USERPROFILE%\AppData\LocalLow\VRChat\VRChat\OSC`` to refresh the OSC index.  
 
+:::
 <!-- markdownlint-disable MD046 -->
 ## Avatar Dynamic Parameters
 | Parameter                          | Type  | Range Info          | Description                                                                                                                                                                        |

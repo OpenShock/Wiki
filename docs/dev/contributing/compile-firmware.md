@@ -1,8 +1,9 @@
 # Compiling Firmware
 
-!!! info "Still brewing!"
-    This article heavily under development; expect frequent changes.
+::: info Still brewing!
+This article heavily under development; expect frequent changes.
 
+:::
 ## Requirements  
 
 - [Git](https://git-scm.com/downloads)
