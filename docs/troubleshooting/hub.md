@@ -24,7 +24,7 @@ The RF TX (SIG) pin is the GPIO pin on your ESP32 that controls the signal/comma
 
 Usually you set this pin during the first time setup of your Hub. If you have already done Setup and your Hub is online, there are two ways to change the pin:
 
-1. Re-enable the Captive Portal via the website (`Hubs -> Three dots -> Remote Debug -> Captive Portal On`), then 10.10.10.10 etc.
+1. Re-enable the Captive Portal via the website (`Hubs -> Three dots -> Remote Debug -> Captive Portal On`), then 4.3.2.1 etc.
 2. Connect a serial terminal to the ESP (via USB UART) and use the `rftxpin` command followed by the number of your GPIO pin.
 
 Best effort list of web serial terminals available for your convenience: 

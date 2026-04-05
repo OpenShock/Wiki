@@ -29,9 +29,13 @@ The electricity could flow through your heart.
     ![Image "image"](../../static/guides/first-setup/WiFioverview.png)
     :::
 2. Connect to the hub via the network:
-    1. Open your phone's browser and type in ``10.10.10.10`` *or* ``openshock.local`` this should open up a web-interface for the hub.
-    2. Find your router's Wi-Fi network in the web-interface.
-    3. Press the green button next to it and type in your Wi-Fi password, then press submit.
+    1. A web page should automatically pop up on your phone.
+        * If it does, continue with steps 3 and 4 below.
+    2. If the page does **not** appear automatically:
+        * Open your browser and go to `http://4.3.2.1`
+        * If that doesn’t work, try `http://10.10.10.10` instead
+    3. In the web interface, find your router’s Wi-Fi network.
+    4. Press the green button next to it, enter your Wi-Fi password, and press **Submit**.
     *A green pop up should appear if it's connected successfully*
     ::: details Images (click to expand)
     ![Image "image"](../../static/guides/first-setup/ESPWebGUI.png)
