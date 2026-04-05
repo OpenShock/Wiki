@@ -44,6 +44,7 @@ const vendors = [
   { name: "Nullstalgia", link: "./nullstalgia", from: "🇺🇸 USA", ships_to: ["NA"], hubs: true, shockers: true, prints3d: true, design: "Official", region: "NORTH_AMERICA" },
   { name: "Sillypupkit", link: "./sillypupkit", from: "🇨🇦 Canada", ships_to: ["GLOBAL"], hubs: true, shockers: true, prints3d: true, design: "Custom", region: "NORTH_AMERICA" },
   { name: "NamelessNanashi", link: "./namelessnanashi", from: "🇺🇸 USA", ships_to: ["NA"], hubs: true, shockers: false, prints3d: true, design: "Custom", region: "NORTH_AMERICA" },
+  { name: "ArtisanForgeDesigns", link: "./artisanforgedesigns", from: "🇺🇸 USA", ships_to: ["GLOBAL"], hubs: true, shockers: false, prints3d: true, design: "Custom", region: "NORTH_AMERICA" },
   // AUSTRALIA
   { name: "Ebthing", link: "./ebthing", from: "🇦🇺 Australia", ships_to: ["OCEANIA"], hubs: true, shockers: true, prints3d: true, design: "Custom", region: "AUSTRALIA" }
 ]

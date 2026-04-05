@@ -167,7 +167,8 @@ export default {
         { text: "Ebthing", link: "/vendors/hardware/ebthing" },
         { text: "Yunadex", link: "/vendors/hardware/yunadex" },
         { text: "MeguminVRC", link: "/vendors/hardware/meguminvrc" },
-        { text: "MarkDasWolf", link: "/vendors/hardware/markdaswolf" }
+        { text: "MarkDasWolf", link: "/vendors/hardware/markdaswolf" },
+        { text: "ArtisanForgeDesigns", link: "/vendors/hardware/artisanforgedesigns" }
       ],
     },
   ],
