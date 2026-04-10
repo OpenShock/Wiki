@@ -1,13 +1,13 @@
 ---
 tags:
-    - hardware
-    - shockers
+  - hardware
+  - shockers
 title: CaiXianlin
 icon: Zap
 ---
 
 <Callout type="success" title="Compatible">
-This product is compatible with OpenShock.
+  This product is compatible with OpenShock.
 </Callout>
 Cheap and easily acquirable.
 
@@ -25,9 +25,9 @@ Best effort list of current AliExpress sellers. Feel free to add more sources to
 - :globe_with_meridians: [AliBaba](https://www.alibaba.com/product-detail/MZ-880-Waterproof-Rechargeable-Vibrating-Dog_1600152421803.html)
 
 Amazon also caries this style of shocker under the brand "Heaflex" - if you're looking to buy in the US without dealing with tarrifs this is a good option
+
 - 🇺🇸: [Amazon](https://www.amazon.com/Training-Waterproof-Rechargeable-Vibration-Electronic/dp/B0CJDJ6LHB)
 - 🇺🇸: [Amazon](https://www.amazon.com/slopehill-Training-Electronic-Vibration-Waterproof/dp/B09DFRYNMD)
-
 
 ### Cables
 
@@ -45,7 +45,6 @@ The charging port for this model is a standard **DC 3.5 x 1.35mm**. A USB to **D
 
 Thank you `@dasbrin` on Discord for the images.
 
-
 ## Technical Specification
 
 ### Official documents
@@ -61,27 +60,27 @@ Thank you `@dasbrin` on Discord for the images.
 ### RF Specification
 
 | Name              | Value      |
-|-------------------|------------|
+| ----------------- | ---------- |
 | Carrier Frequency | 433.95 MHz |
 | Modulation Type   | ASK / OOK  |
 
 ### Bit encoding
 
 | Type | High duration | Low duration |
-|------|---------------|--------------|
+| ---- | ------------- | ------------ |
 | Sync | 1400µs        | 750µs        |
 | 1    | 750µs         | 250µs        |
 | 0    | 250µs         | 750µs        |
 
 ### Packet fields
 
-| Name              | Value      | Length    | Remarks                                  |
-|-------------------|------------|-----------|------------------------------------------|
-| Transmitter ID    | 0 - 65535  | 16 bits   | The collar will be Paired to this        |
-| Channel Number    | 0 - 2      | 4 bits    | The collar will be Paired to this        |
-| Action Command    | 1 - 3      | 4 bits    | 1 = Shock, 2 = Vibrate, 3 = Beep         |
-| Command Intensity | 0 - 99     | 8 bits    | Should always be 0 for beep              |
-| Message checksum  | 0 - 255    | 8 bits    | 8-bit sum of all other fields as a int32 |
+| Name              | Value     | Length  | Remarks                                  |
+| ----------------- | --------- | ------- | ---------------------------------------- |
+| Transmitter ID    | 0 - 65535 | 16 bits | The collar will be Paired to this        |
+| Channel Number    | 0 - 2     | 4 bits  | The collar will be Paired to this        |
+| Action Command    | 1 - 3     | 4 bits  | 1 = Shock, 2 = Vibrate, 3 = Beep         |
+| Command Intensity | 0 - 99    | 8 bits  | Should always be 0 for beep              |
+| Message checksum  | 0 - 255   | 8 bits  | 8-bit sum of all other fields as a int32 |
 
 ### Layout
 
@@ -116,7 +115,7 @@ d.setMdmModulation(MOD_ASK_OOK)
 d.setMdmDRate(3950)
 d.makePktFLEN(22)
 d.setMdmSyncWord(0)
-   
+
 """
 Returns the string representation of the action (Shock, Vibrate, or Beep)
 """

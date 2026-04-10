@@ -1,1 +1,16 @@
-{ "title": "Boards", "icon": "Cpu", "pages": ["index", "---Official---", "openshock", "---Third Party---", "seeed", "wemos", "pishock", "dfr-firebeetle", "---Other---", "china"] }
+{
+  "title": "Boards",
+  "icon": "Cpu",
+  "pages": [
+    "index",
+    "---Official---",
+    "openshock",
+    "---Third Party---",
+    "seeed",
+    "wemos",
+    "pishock",
+    "dfr-firebeetle",
+    "---Other---",
+    "china"
+  ]
+}

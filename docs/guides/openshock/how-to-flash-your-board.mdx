@@ -10,10 +10,11 @@ icon: Upload
 - [Our Flashtool](https://next.openshock.app/flashtool)
 
 <Callout type="warn" title="Important">
-Ensure you have a cable that supports data transfer, and neither the port nor cable is damaged.
+  Ensure you have a cable that supports data transfer, and neither the port nor cable is damaged.
 </Callout>
 <Callout type="info">
-If you received your hub from an OpenShock hardware vendor, you can likely **skip this step**! Any updates can be [performed wirelessly](../openshock/how-to-update.md) after the initial setup.
+  If you received your hub from an OpenShock hardware vendor, you can likely **skip this step**! Any
+  updates can be [performed wirelessly](../openshock/how-to-update.md) after the initial setup.
 </Callout>
 
 ## Flashing the firmware
@@ -23,6 +24,7 @@ If you received your hub from an OpenShock hardware vendor, you can likely **ski
 ### Connect your hub
 
 Plug your hub into your PC using a USB cable.
+
 </Step>
 
 <Step>
@@ -31,6 +33,7 @@ Plug your hub into your PC using a USB cable.
 Open the [Flashtool](https://next.openshock.app/flashtool) and click "Select Device", then select your hub in the popup window. If your hub is not showing up, click "Install Drivers" first, then retry.
 
 ![Connect Controller](../../static/guides/how-to-flash/Connect_Device_Flashtoolguide.png)
+
 </Step>
 
 <Step>
@@ -39,12 +42,14 @@ Open the [Flashtool](https://next.openshock.app/flashtool) and click "Select Dev
 Ensure you have the "Stable" channel selected and the correct [board](../../hardware/boards/index.md) is selected.
 
 ![Settings](../../static/guides/how-to-flash/settings.png)
+
 </Step>
 
 <Step>
 ### Flash
 
 Press Flash and let it do its thing. Keep the window open — it will tell you when it's done.
+
 </Step>
 
 <Step>
@@ -53,6 +58,7 @@ Press Flash and let it do its thing. Keep the window open — it will tell you w
 When everything went well, your board will restart and you should be able to run through the [First Setup](../openshock/first-setup.md) steps to configure your hub and link it to your shocker.
 
 (Optional) If you have issues after flashing, try again with "Erase everything before flashing" enabled.
+
 </Step>
 </Steps>
 
@@ -78,9 +84,9 @@ First, attempt flashing **while holding down "Boot"**.
 
 If that doesn't work, try holding down "Boot" and then tapping "Reset". That will reboot the ESP32, and also enter the bootloader, making it ready to receive new firmware!
 
-Sometimes, you may need to both enter the bootloader manually *and* hold down "Boot" while starting the flashing process.
+Sometimes, you may need to both enter the bootloader manually _and_ hold down "Boot" while starting the flashing process.
 
-If you don't have a button, you can still usually short GPIO `0` to Ground while booting to enter the bootloader (for *most* ESP32s).
+If you don't have a button, you can still usually short GPIO `0` to Ground while booting to enter the bootloader (for _most_ ESP32s).
 
 ### Extra tip for ESP32-S and -C boards!
 
@@ -112,5 +118,6 @@ Example pins for the Wemos D1 Mini
 7. Wait for it to complete flashing and you should be ready to go!
 
 <Callout type="error" title="Still not working?">
-Try again, if you still got problems after following this guide join our [discord](https://discord.gg/OpenShock) and we will see how we can help you!
+  Try again, if you still got problems after following this guide join our
+  [discord](https://discord.gg/OpenShock) and we will see how we can help you!
 </Callout>

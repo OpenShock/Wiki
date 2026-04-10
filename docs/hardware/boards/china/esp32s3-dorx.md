@@ -1,12 +1,12 @@
 ---
 tags:
-    - hardware
-    - board
-    - vendor:china
-    - chip:esp32-s3
-    - compat:full
-    - support:maintainers
-title: "ESP32-S3 \"Dorx\""
+  - hardware
+  - board
+  - vendor:china
+  - chip:esp32-s3
+  - compat:full
+  - support:maintainers
+title: 'ESP32-S3 "Dorx"'
 icon: Cpu
 ---
 
@@ -22,9 +22,9 @@ Codenamed "Dorx", this is a brandless knockoff ESP32-S3 board with a fake "ESP32
 - ESP32-S3 (Knockoff)
 - One WS2812B controllable LED
 - One LED for each of R/G/B:
-    - Red when the board is powered
-    - Green for serial traffic
-    - Blue while flashing
+  - Red when the board is powered
+  - Green for serial traffic
+  - Blue while flashing
 
 ## Buying
 

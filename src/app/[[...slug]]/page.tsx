@@ -1,4 +1,4 @@
-import { getPageImage, getPageMarkdownUrl, source } from '@/lib/source';
+import { getPageImage, getPageMarkdownUrl, source } from "@/lib/source";
 import {
   DocsBody,
   DocsDescription,
@@ -6,23 +6,30 @@ import {
   DocsTitle,
   MarkdownCopyButton,
   ViewOptionsPopover,
-} from 'fumadocs-ui/layouts/notebook/page';
-import { notFound } from 'next/navigation';
-import { getMDXComponents } from '@/components/mdx';
-import type { Metadata } from 'next';
-import { createRelativeLink } from 'fumadocs-ui/mdx';
-import { gitConfig } from '@/lib/shared';
+  PageLastUpdate,
+} from "fumadocs-ui/layouts/notebook/page";
+import { notFound } from "next/navigation";
+import { getMDXComponents } from "@/components/mdx";
+import type { Metadata } from "next";
+import { createRelativeLink } from "fumadocs-ui/mdx";
+import { gitConfig } from "@/lib/shared";
 
-export default async function Page(props: PageProps<'/[[...slug]]'>) {
+export default async function Page(props: PageProps<"/[[...slug]]">) {
   const params = await props.params;
   const page = source.getPage(params.slug);
   if (!page) notFound();
 
   const MDX = page.data.body;
   const markdownUrl = getPageMarkdownUrl(page).url;
+  const lastModifiedTime = page.data.lastModified;
 
   return (
-    <DocsPage toc={page.data.toc} full={page.data.full}>
+    <DocsPage
+      toc={page.data.toc}
+      full={page.data.full}
+      tableOfContent={{ style: "clerk" }}
+      tableOfContentPopover={{ style: "clerk" }}
+    >
       <DocsTitle>{page.data.title}</DocsTitle>
       <DocsDescription className="mb-0">{page.data.description}</DocsDescription>
       <div className="flex flex-row gap-2 items-center border-b pb-6">
@@ -40,6 +47,7 @@ export default async function Page(props: PageProps<'/[[...slug]]'>) {
           })}
         />
       </DocsBody>
+      {lastModifiedTime && <PageLastUpdate date={lastModifiedTime} />}
     </DocsPage>
   );
 }
@@ -48,7 +56,7 @@ export async function generateStaticParams() {
   return source.generateParams();
 }
 
-export async function generateMetadata(props: PageProps<'/[[...slug]]'>): Promise<Metadata> {
+export async function generateMetadata(props: PageProps<"/[[...slug]]">): Promise<Metadata> {
   const params = await props.params;
   const page = source.getPage(params.slug);
   if (!page) notFound();

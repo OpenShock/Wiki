@@ -1,11 +1,4 @@
 {
   "title": "OpenShock Wiki",
-  "pages": [
-    "home",
-    "guides",
-    "hardware",
-    "vendors",
-    "troubleshooting",
-    "dev"
-  ]
+  "pages": ["home", "guides", "hardware", "vendors", "troubleshooting", "dev"]
 }

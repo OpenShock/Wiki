@@ -2,8 +2,5 @@
   "title": "Vendors",
   "icon": "Store",
   "root": true,
-  "pages": [
-    "---Hardware---",
-    "...hardware"
-  ]
+  "pages": ["---Hardware---", "...hardware"]
 }

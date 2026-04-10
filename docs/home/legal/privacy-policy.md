@@ -29,12 +29,12 @@ OpenShock
 When you use our website or Discord bot, we may collect and store the following information:
 
 - Account Information
-    - Email address
-    - Username
+  - Email address
+  - Username
 - Technical Information
-    - IP address
-    - User agent (browser or app information)
-    - Webserver and system logs
+  - IP address
+  - User agent (browser or app information)
+  - Webserver and system logs
 
 We collect only the information necessary for the proper functioning of our services.
 
@@ -50,6 +50,7 @@ We will only process your personal data for the purposes stated in this policy.
 ## 5. How We Use Your Information
 
 We use your information to:
+
 - Provide and maintain your account
 - Deliver and improve our services
 - Ensure system security and prevent abuse
@@ -80,20 +81,23 @@ We use limited third-party services to help deliver, secure, and improve OpenSho
 These providers may process certain technical data on our behalf in accordance with GDPR and applicable data protection laws.
 
 ### Discord
+
 If you use our Service, Discord Bot, or Activity, your interaction also falls under the Discord Privacy Policy. We do not control how Discord processes or stores your data.
 See Discord’s policy here: [https://discord.com/privacy](https://discord.com/privacy)
 
 In addition, our main Service integrates with Discord’s API. As part of normal operation, limited data (such as event or error information) may be sent to Discord and logged in a private Discord channel for monitoring and troubleshooting purposes. We do not use this data for marketing or profiling.
 
 ### Cloudflare
+
 We use **Cloudflare** to provide network security, DDoS protection, and content delivery for openshock.app.  
 When you access our website, your traffic is routed through Cloudflare’s global network, which helps prevent abuse and improves site performance.
 
 Cloudflare may process limited technical data such as:
-- IP addresses  
-- System and browser information  
-- URLs requested  
-- Security and performance logs  
+
+- IP addresses
+- System and browser information
+- URLs requested
+- Security and performance logs
 
 Cloudflare acts as a **data processor** on our behalf and processes this information only to provide its services.  
 Their processing is covered under a GDPR-compliant Data Processing Agreement (DPA).  

@@ -17,20 +17,140 @@ interface Vendor {
 
 const vendors: Vendor[] = [
   // Europe
-  { name: "BosjesMan", link: "./bosjesman", from: "\u2753 Unspecified", ships_to: ["GLOBAL"], hubs: true, shockers: true, prints3d: true, design: "Custom", region: "EUROPE" },
-  { name: "Luc", link: "./luc", from: "\ud83c\udde9\ud83c\uddea Germany", ships_to: ["EU"], hubs: true, shockers: false, prints3d: true, design: "Official", region: "EUROPE" },
-  { name: "MarkDasWolf", link: "./markdaswolf", from: "\ud83c\udde6\ud83c\uddf9 Austria", ships_to: ["EU"], hubs: true, shockers: true, prints3d: true, design: "Custom", region: "EUROPE" },
-  { name: "MeguminVRC", link: "./meguminvrc", from: "\ud83c\udde9\ud83c\uddea Germany", ships_to: ["GLOBAL"], hubs: true, shockers: true, prints3d: true, design: "Custom", region: "EUROPE" },
-  { name: "Millkox", link: "./millkox", from: "\ud83c\uddf3\ud83c\uddf1 Netherlands", ships_to: ["GLOBAL"], hubs: true, shockers: true, prints3d: true, design: "Official", region: "EUROPE" },
-  { name: "Nerex", link: "./nerex", from: "\ud83c\uddf5\ud83c\uddf9 Portugal", ships_to: ["EU"], hubs: true, shockers: true, prints3d: true, design: "Custom", region: "EUROPE" },
-  { name: "Yunadex", link: "./yunadex", from: "\ud83c\uddeb\ud83c\uddee Finland", ships_to: ["GLOBAL"], hubs: true, shockers: true, prints3d: true, design: "Custom", region: "EUROPE" },
+  {
+    name: "BosjesMan",
+    link: "./bosjesman",
+    from: "\u2753 Unspecified",
+    ships_to: ["GLOBAL"],
+    hubs: true,
+    shockers: true,
+    prints3d: true,
+    design: "Custom",
+    region: "EUROPE",
+  },
+  {
+    name: "Luc",
+    link: "./luc",
+    from: "\ud83c\udde9\ud83c\uddea Germany",
+    ships_to: ["EU"],
+    hubs: true,
+    shockers: false,
+    prints3d: true,
+    design: "Official",
+    region: "EUROPE",
+  },
+  {
+    name: "MarkDasWolf",
+    link: "./markdaswolf",
+    from: "\ud83c\udde6\ud83c\uddf9 Austria",
+    ships_to: ["EU"],
+    hubs: true,
+    shockers: true,
+    prints3d: true,
+    design: "Custom",
+    region: "EUROPE",
+  },
+  {
+    name: "MeguminVRC",
+    link: "./meguminvrc",
+    from: "\ud83c\udde9\ud83c\uddea Germany",
+    ships_to: ["GLOBAL"],
+    hubs: true,
+    shockers: true,
+    prints3d: true,
+    design: "Custom",
+    region: "EUROPE",
+  },
+  {
+    name: "Millkox",
+    link: "./millkox",
+    from: "\ud83c\uddf3\ud83c\uddf1 Netherlands",
+    ships_to: ["GLOBAL"],
+    hubs: true,
+    shockers: true,
+    prints3d: true,
+    design: "Official",
+    region: "EUROPE",
+  },
+  {
+    name: "Nerex",
+    link: "./nerex",
+    from: "\ud83c\uddf5\ud83c\uddf9 Portugal",
+    ships_to: ["EU"],
+    hubs: true,
+    shockers: true,
+    prints3d: true,
+    design: "Custom",
+    region: "EUROPE",
+  },
+  {
+    name: "Yunadex",
+    link: "./yunadex",
+    from: "\ud83c\uddeb\ud83c\uddee Finland",
+    ships_to: ["GLOBAL"],
+    hubs: true,
+    shockers: true,
+    prints3d: true,
+    design: "Custom",
+    region: "EUROPE",
+  },
   // North America
-  { name: "ArtisanForgeDesigns", link: "./artisanforgedesigns", from: "\ud83c\uddfa\ud83c\uddf8 USA", ships_to: ["GLOBAL"], hubs: true, shockers: false, prints3d: true, design: "Custom", region: "NORTH_AMERICA" },
-  { name: "NamelessNanashi", link: "./namelessnanashi", from: "\ud83c\uddfa\ud83c\uddf8 USA", ships_to: ["NA"], hubs: true, shockers: false, prints3d: true, design: "Custom", region: "NORTH_AMERICA" },
-  { name: "Nullstalgia", link: "./nullstalgia", from: "\ud83c\uddfa\ud83c\uddf8 USA", ships_to: ["NA"], hubs: true, shockers: true, prints3d: true, design: "Official", region: "NORTH_AMERICA" },
-  { name: "Sillypupkit", link: "./sillypupkit", from: "\ud83c\udde8\ud83c\udde6 Canada", ships_to: ["GLOBAL"], hubs: true, shockers: true, prints3d: true, design: "Custom", region: "NORTH_AMERICA" },
+  {
+    name: "ArtisanForgeDesigns",
+    link: "./artisanforgedesigns",
+    from: "\ud83c\uddfa\ud83c\uddf8 USA",
+    ships_to: ["GLOBAL"],
+    hubs: true,
+    shockers: false,
+    prints3d: true,
+    design: "Custom",
+    region: "NORTH_AMERICA",
+  },
+  {
+    name: "NamelessNanashi",
+    link: "./namelessnanashi",
+    from: "\ud83c\uddfa\ud83c\uddf8 USA",
+    ships_to: ["NA"],
+    hubs: true,
+    shockers: false,
+    prints3d: true,
+    design: "Custom",
+    region: "NORTH_AMERICA",
+  },
+  {
+    name: "Nullstalgia",
+    link: "./nullstalgia",
+    from: "\ud83c\uddfa\ud83c\uddf8 USA",
+    ships_to: ["NA"],
+    hubs: true,
+    shockers: true,
+    prints3d: true,
+    design: "Official",
+    region: "NORTH_AMERICA",
+  },
+  {
+    name: "Sillypupkit",
+    link: "./sillypupkit",
+    from: "\ud83c\udde8\ud83c\udde6 Canada",
+    ships_to: ["GLOBAL"],
+    hubs: true,
+    shockers: true,
+    prints3d: true,
+    design: "Custom",
+    region: "NORTH_AMERICA",
+  },
   // Australia
-  { name: "Ebthing", link: "./ebthing", from: "\ud83c\udde6\ud83c\uddfa Australia", ships_to: ["OCEANIA"], hubs: true, shockers: true, prints3d: true, design: "Custom", region: "AUSTRALIA" },
+  {
+    name: "Ebthing",
+    link: "./ebthing",
+    from: "\ud83c\udde6\ud83c\uddfa Australia",
+    ships_to: ["OCEANIA"],
+    hubs: true,
+    shockers: true,
+    prints3d: true,
+    design: "Custom",
+    region: "AUSTRALIA",
+  },
 ];
 
 const SHIPPING_REGIONS = ["EU", "NA", "OCEANIA", "GLOBAL"] as const;
@@ -74,7 +194,9 @@ function VendorTable({ vendors, region }: { vendors: Vendor[]; region: string })
           <tbody>
             {vendors.map((v) => (
               <tr key={v.name} id={`vendor-${v.name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}>
-                <td><Link href={v.link}>{v.name}</Link></td>
+                <td>
+                  <Link href={v.link}>{v.name}</Link>
+                </td>
                 <td>{v.from}</td>
                 <td>{v.ships_to.map((r) => regionNames[r]).join(", ")}</td>
                 <td>{checkX(v.hubs)}</td>
@@ -101,7 +223,8 @@ export function VendorPicker() {
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const region = params.get("region");
-    if (region && (SHIPPING_REGIONS as readonly string[]).includes(region)) setSelectedRegion(region);
+    if (region && (SHIPPING_REGIONS as readonly string[]).includes(region))
+      setSelectedRegion(region);
     if (params.get("hubs") === "1") setRequireHubs(true);
     if (params.get("shockers") === "1") setRequireShockers(true);
     if (params.get("prints3d") === "1") setRequire3dPrints(true);
@@ -128,7 +251,9 @@ export function VendorPicker() {
   const filtered = useMemo(() => {
     let result = vendors;
     if (selectedRegion) {
-      result = result.filter((v) => v.ships_to.includes(selectedRegion) || v.ships_to.includes("GLOBAL"));
+      result = result.filter(
+        (v) => v.ships_to.includes(selectedRegion) || v.ships_to.includes("GLOBAL"),
+      );
     }
     if (requireHubs) result = result.filter((v) => v.hubs);
     if (requireShockers) result = result.filter((v) => v.shockers);
@@ -137,9 +262,18 @@ export function VendorPicker() {
     return result;
   }, [selectedRegion, requireHubs, requireShockers, require3dPrints, requireOfficial]);
 
-  const europe = useMemo(() => filtered.filter((v) => v.region === "EUROPE").sort(sortByName), [filtered]);
-  const northAmerica = useMemo(() => filtered.filter((v) => v.region === "NORTH_AMERICA").sort(sortByName), [filtered]);
-  const australia = useMemo(() => filtered.filter((v) => v.region === "AUSTRALIA").sort(sortByName), [filtered]);
+  const europe = useMemo(
+    () => filtered.filter((v) => v.region === "EUROPE").sort(sortByName),
+    [filtered],
+  );
+  const northAmerica = useMemo(
+    () => filtered.filter((v) => v.region === "NORTH_AMERICA").sort(sortByName),
+    [filtered],
+  );
+  const australia = useMemo(
+    () => filtered.filter((v) => v.region === "AUSTRALIA").sort(sortByName),
+    [filtered],
+  );
 
   return (
     <>
@@ -154,34 +288,52 @@ export function VendorPicker() {
           >
             <option value="">Show vendors serving any region</option>
             {SHIPPING_REGIONS.map((r) => (
-              <option key={r} value={r}>{regionNames[r]}</option>
+              <option key={r} value={r}>
+                {regionNames[r]}
+              </option>
             ))}
           </select>
         </div>
 
         {showHubsFilter && (
           <label className="flex items-center gap-2">
-            <input type="checkbox" checked={requireHubs} onChange={(e) => setRequireHubs(e.target.checked)} />
+            <input
+              type="checkbox"
+              checked={requireHubs}
+              onChange={(e) => setRequireHubs(e.target.checked)}
+            />
             {"\ud83d\udce1"} Only show vendors that sell hubs
           </label>
         )}
 
         {showShockersFilter && (
           <label className="flex items-center gap-2">
-            <input type="checkbox" checked={requireShockers} onChange={(e) => setRequireShockers(e.target.checked)} />
+            <input
+              type="checkbox"
+              checked={requireShockers}
+              onChange={(e) => setRequireShockers(e.target.checked)}
+            />
             {"\u26a1\ufe0f"} Only show vendors that sell shockers
           </label>
         )}
 
         {show3dPrintsFilter && (
           <label className="flex items-center gap-2">
-            <input type="checkbox" checked={require3dPrints} onChange={(e) => setRequire3dPrints(e.target.checked)} />
+            <input
+              type="checkbox"
+              checked={require3dPrints}
+              onChange={(e) => setRequire3dPrints(e.target.checked)}
+            />
             {"\ud83d\udce6"} Only show vendors with 3D Prints
           </label>
         )}
 
         <label className="flex items-center gap-2">
-          <input type="checkbox" checked={requireOfficial} onChange={(e) => setRequireOfficial(e.target.checked)} />
+          <input
+            type="checkbox"
+            checked={requireOfficial}
+            onChange={(e) => setRequireOfficial(e.target.checked)}
+          />
           {"\ud83c\udfa8"} Only show vendors using the Official (Nullstalgia) PCB design
         </label>
       </div>

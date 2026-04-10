@@ -7,7 +7,6 @@ URL: `https://api.openshock.app/1/hubs/user`
 
 ## Endpoint
 
-
 ## Connecting
 
 Use a SignalR client and provide the required headers:
@@ -20,8 +19,8 @@ import { HubConnectionBuilder, LogLevel } from "@microsoft/signalr";
 
 const connection = new HubConnectionBuilder()
   .withUrl("https://api.openshock.app/1/hubs/user", {
-      transport: HttpTransportType.WebSockets,
-      skipNegotiation: true,
+    transport: HttpTransportType.WebSockets,
+    skipNegotiation: true,
   })
   .withAutomaticReconnect()
   .configureLogging(LogLevel.Information)
@@ -90,7 +89,9 @@ To connect to a share link hub, use the share link identifier and optionally pro
 
 ```ts
 const shareConn = new HubConnectionBuilder()
-  .withUrl("https://api.openshock.app/1/hubs/share/link/01234567-89ab-cdef-0123-456789abcdef?name=Guest")
+  .withUrl(
+    "https://api.openshock.app/1/hubs/share/link/01234567-89ab-cdef-0123-456789abcdef?name=Guest",
+  )
   .build();
 await shareConn.start();
 ```

@@ -1,1 +1,5 @@
-{ "title": "Legal", "icon": "Scale", "pages": ["terms-and-conditions", "privacy-policy", "code-of-conduct", "license"] }
+{
+  "title": "Legal",
+  "icon": "Scale",
+  "pages": ["terms-and-conditions", "privacy-policy", "code-of-conduct", "license"]
+}

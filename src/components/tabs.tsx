@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import * as React from 'react';
+import * as React from "react";
 import {
   type ComponentProps,
   createContext,
@@ -10,15 +10,15 @@ import {
   useId,
   useMemo,
   useState,
-} from 'react';
-import { cn } from '../lib/cn';
-import * as Unstyled from './ui/tabs';
+} from "react";
+import { cn } from "../lib/cn";
+import * as Unstyled from "./ui/tabs";
 
 type CollectionKey = string | symbol;
 
 export interface TabsProps extends Omit<
   ComponentProps<typeof Unstyled.Tabs>,
-  'value' | 'onValueChange'
+  "value" | "onValueChange"
 > {
   /**
    * Use simple mode instead of advanced usage as documented in https://radix-ui.com/primitives/docs/components/tabs.
@@ -45,7 +45,7 @@ const TabsContext = createContext<{
 
 function useTabContext() {
   const ctx = useContext(TabsContext);
-  if (!ctx) throw new Error('You must wrap your component in <Tabs>');
+  if (!ctx) throw new Error("You must wrap your component in <Tabs>");
   return ctx;
 }
 
@@ -54,7 +54,7 @@ export function TabsList(props: React.ComponentPropsWithRef<typeof Unstyled.Tabs
     <Unstyled.TabsList
       {...props}
       className={cn(
-        'flex gap-3.5 text-fd-secondary-foreground overflow-x-auto px-4 not-prose',
+        "flex gap-3.5 text-fd-secondary-foreground overflow-x-auto px-4 not-prose",
         props.className,
       )}
     />
@@ -66,7 +66,7 @@ export function TabsTrigger(props: React.ComponentPropsWithRef<typeof Unstyled.T
     <Unstyled.TabsTrigger
       {...props}
       className={cn(
-        'inline-flex items-center gap-2 whitespace-nowrap text-fd-muted-foreground border-b border-transparent py-2 text-sm font-medium transition-colors [&_svg]:size-4 hover:text-fd-accent-foreground disabled:pointer-events-none disabled:opacity-50 data-[state=active]:border-fd-primary data-[state=active]:text-fd-primary',
+        "inline-flex items-center gap-2 whitespace-nowrap text-fd-muted-foreground border-b border-transparent py-2 text-sm font-medium transition-colors [&_svg]:size-4 hover:text-fd-accent-foreground disabled:pointer-events-none disabled:opacity-50 data-[state=active]:border-fd-primary data-[state=active]:text-fd-primary",
         props.className,
       )}
     />
@@ -89,7 +89,7 @@ export function Tabs({
     <Unstyled.Tabs
       ref={ref}
       className={cn(
-        'flex flex-col overflow-hidden rounded-xl border bg-fd-secondary my-4',
+        "flex flex-col overflow-hidden rounded-xl border bg-fd-secondary my-4",
         className,
       )}
       value={value}
@@ -116,7 +116,7 @@ export function Tabs({
   );
 }
 
-export interface TabProps extends Omit<ComponentProps<typeof Unstyled.TabsContent>, 'value'> {
+export interface TabProps extends Omit<ComponentProps<typeof Unstyled.TabsContent>, "value"> {
   /**
    * Value of tab, detect from index if unspecified.
    */
@@ -131,7 +131,7 @@ export function Tab({ value, ...props }: TabProps) {
     items?.at(useCollectionIndex());
   if (!resolved)
     throw new Error(
-      'Failed to resolve tab `value`, please pass a `value` prop to the Tab component.',
+      "Failed to resolve tab `value`, please pass a `value` prop to the Tab component.",
     );
 
   return (
@@ -151,7 +151,7 @@ export function TabsContent({
       value={value}
       forceMount
       className={cn(
-        'p-4 text-[0.9375rem] bg-fd-background rounded-xl outline-none prose-no-margin data-[state=inactive]:hidden [&>figure:only-child]:-m-4 [&>figure:only-child]:border-none',
+        "p-4 text-[0.9375rem] bg-fd-background rounded-xl outline-none prose-no-margin data-[state=inactive]:hidden [&>figure:only-child]:-m-4 [&>figure:only-child]:border-none",
         className,
       )}
       {...props}
@@ -186,5 +186,5 @@ function useCollectionIndex() {
  * only escape whitespaces in values in simple mode
  */
 function escapeValue(v: string): string {
-  return v.toLowerCase().replace(/\s/, '-');
+  return v.toLowerCase().replace(/\s/, "-");
 }
