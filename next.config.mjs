@@ -8,6 +8,7 @@ const config = {
   output: 'standalone',
   redirects: async () => [
     { source: '/', destination: '/home', permanent: false },
+    { source: '/legal/:path*', destination: '/home/legal/:path*', permanent: true },
   ],
 };
 

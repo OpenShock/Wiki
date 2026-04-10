@@ -4,10 +4,10 @@
   "root": true,
   "pages": [
     "index",
-    "---Contributing---",
-    "...contributing",
-    "---SignalR---",
+    "---API Reference---",
     "signalr",
-    "...signalr"
+    "...signalr",
+    "---Contributing---",
+    "...contributing"
   ]
 }

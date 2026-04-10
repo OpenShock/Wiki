@@ -4,15 +4,15 @@
   "root": true,
   "pages": [
     "index",
-    "---Firmware---",
-    "...firmware",
-    "---Shockers---",
-    "...shockers",
-    "---Remotes---",
-    "...remotes",
     "---Boards---",
     "...boards",
+    "---Shockers---",
+    "...shockers",
     "---Transmitter---",
-    "...transmitter"
+    "...transmitter",
+    "---Firmware---",
+    "...firmware",
+    "---Remotes---",
+    "...remotes"
   ]
 }

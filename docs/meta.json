@@ -3,10 +3,9 @@
   "pages": [
     "home",
     "guides",
-    "dev",
     "hardware",
     "vendors",
     "troubleshooting",
-    "legal"
+    "dev"
   ]
 }

@@ -2,7 +2,7 @@
 tags:
   - faq
 title: Frequently Asked Questions
-icon: HelpCircle
+icon: MessageCircleQuestionMark
 ---
 
 ## What is OpenShock?

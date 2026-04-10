@@ -3,13 +3,13 @@
   "icon": "BookOpen",
   "root": true,
   "pages": [
-    "---Quickstart---",
+    "---Getting Started---",
     "...quickstart",
-    "---OpenShock---",
+    "---Setup & Usage---",
     "...openshock",
-    "---Do It Yourself---",
+    "---DIY---",
     "...diy",
-    "---ShockOsc---",
+    "---ShockOSC (VR)---",
     "...shockosc",
     "---Self Hosting---",
     "...selfhosting"

@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//f/Dev/Git/OpenShock/**)",
+      "Bash(pnpm create:*)"
+    ]
+  }
+}

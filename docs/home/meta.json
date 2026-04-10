@@ -2,5 +2,5 @@
   "title": "Home",
   "icon": "House",
   "root": true,
-  "pages": ["index", "faq", "safety-rules"]
+  "pages": ["index", "faq", "safety-rules", "---", "...legal"]
 }

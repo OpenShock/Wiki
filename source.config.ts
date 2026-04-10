@@ -1,6 +1,7 @@
 import { defineConfig, defineDocs } from 'fumadocs-mdx/config';
 import { metaSchema, pageSchema } from 'fumadocs-core/source/schema';
 import { remarkAdmonition } from 'fumadocs-core/mdx-plugins';
+import remarkGemoji from 'remark-gemoji';
 import { z } from 'zod';
 
 // VitePress markdown often relies on the first H1 for the title and has no
@@ -28,6 +29,6 @@ export const docs = defineDocs({
 
 export default defineConfig({
   mdxOptions: {
-    remarkPlugins: [remarkAdmonition],
+    remarkPlugins: [remarkAdmonition, remarkGemoji],
   },
 });

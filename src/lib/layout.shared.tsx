@@ -17,8 +17,8 @@ export function baseOptions(): BaseLayoutProps {
       { text: 'Guides', url: '/guides/quickstart/what-you-need' },
       { text: 'Hardware', url: '/hardware' },
       { text: 'Vendors', url: '/vendors/hardware' },
-      { text: 'Developer', url: '/dev' },
       { text: 'Help', url: '/troubleshooting/hub' },
+      { text: 'Developer', url: '/dev' },
       {
         text: 'Discord',
         url: 'https://discord.gg/OpenShock',
