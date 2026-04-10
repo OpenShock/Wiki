@@ -1,4 +1,7 @@
-# Offline Remote Setup
+---
+title: Offline Remote Setup
+icon: WifiOff
+---
 
 ## What you need
 

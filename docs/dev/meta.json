@@ -1,1 +1,13 @@
-{ "title": "Developer", "pages": ["index", "contributing", "signalr"] }
+{
+  "title": "Developer",
+  "icon": "Code",
+  "root": true,
+  "pages": [
+    "index",
+    "---Contributing---",
+    "...contributing",
+    "---SignalR---",
+    "signalr",
+    "...signalr"
+  ]
+}

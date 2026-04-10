@@ -1,4 +1,7 @@
-# Privacy Policy
+---
+title: Privacy Policy
+icon: Shield
+---
 
 **Effective Date**: January 31, 2026  
 **Applies to**: [openshock.app](https://openshock.app) and the [OpenShock Discord Bot / Activity](https://discord.com/oauth2/authorize?client_id=1096380937496969326)  

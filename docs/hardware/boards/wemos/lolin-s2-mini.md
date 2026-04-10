@@ -4,9 +4,9 @@ tags:
     - board
     - vendor:wemos
     - chip:esp32-s2-mini
+title: Wemos Lolin S2 Mini
+icon: Cpu
 ---
-
-# Wemos Lolin S2 Mini
 
 ::: tip Fully compatible
 

@@ -1,5 +1,6 @@
 {
   "title": "OpenShock",
+  "icon": "Zap",
   "pages": [
     "index",
     "how-to-flash-your-board",

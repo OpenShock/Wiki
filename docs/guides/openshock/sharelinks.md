@@ -1,4 +1,7 @@
-# Share links
+---
+title: Share links
+icon: Link
+---
 
 ::: info What is a Share link?
 Share links are a great way to give people control of your shockers without the need of a OpenShock account.  

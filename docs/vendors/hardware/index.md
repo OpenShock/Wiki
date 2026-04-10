@@ -3,9 +3,9 @@ tags:
   - hardware
   - vendor
   - second-party-vendor
+title: Hardware vendors
+icon: Store
 ---
-
-# Hardware vendors
 
 This is a **non-curated list** of self-reported vendors from the OpenShock **community**.
 

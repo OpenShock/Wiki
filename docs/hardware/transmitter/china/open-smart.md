@@ -3,9 +3,9 @@ tags:
     - hardware
     - board
     - vendor:opensmart
+title: Open Smart 433MHz
+icon: Radio
 ---
-
-# Open Smart 433MHz
 
 ### Transmitter Only
 

@@ -2,14 +2,14 @@
 tags: 
     - hardware
     - vendor
+title: MeguminVRC
+icon: Store
 ---
 
 ::: warning Disclaimer
 The OpenShock team does not provide **any** guarantees about the quality of products or services rendered.
 
 :::
-# MeguminVRC
-
 Started `2026-01-09`.
 
 Hubs and Shockers can be purchased via the Website [shocker.club69.club](https://shocker.club69.club/).  Will 3D Pint custom parts upon request. Has permission to sell parts for the Official FlatShocker.

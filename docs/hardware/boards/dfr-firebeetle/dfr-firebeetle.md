@@ -6,9 +6,9 @@ tags:
     - chip:esp32-e
     - compat:full
     - support:community
+title: DFRobot FireBeetle 2 ESP32-E
+icon: Cpu
 ---
-
-# DFRobot FireBeetle 2 ESP32-E
 
 ::: tip Fully compatible
 This product is fully compatible with OpenShock.

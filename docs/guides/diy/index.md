@@ -1,4 +1,7 @@
-# Do-It-Yourself
+---
+title: Do-It-Yourself
+icon: Hammer
+---
 
 ### As a user
 

@@ -1,5 +1,7 @@
-
-# Using SignalR WebSockets
+---
+title: Using SignalR WebSockets
+icon: Plug
+---
 
 OpenShock exposes real-time events and control channels through [SignalR](https://learn.microsoft.com/aspnet/core/signalr). The hubs use WebSocket transport with JSON payloads.
 

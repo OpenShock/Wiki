@@ -1,4 +1,7 @@
-# Troubleshooting: Hub
+---
+title: "Troubleshooting: Hub"
+icon: Bug
+---
 
 ## Shocker not pairing
 

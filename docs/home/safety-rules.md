@@ -1,4 +1,7 @@
-# Safety Rules
+---
+title: Safety Rules
+icon: ShieldAlert
+---
 
 ::: warning Disclaimer
 Information provided on this wiki does not constitute or imply endorsement and is provided purely for informational purposes. OpenShock does not claim any liability for misuse of the information on this site.

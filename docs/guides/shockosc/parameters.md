@@ -1,4 +1,8 @@
-# List of ShockOsc Parameters
+---
+title: List of ShockOsc Parameters
+icon: List
+---
+
 ::: warning Important!
 The syntax of the parameters is important, if it's not correct, ShockOSC will NOT recognize the parameter.
 Replace "Groupname" with the name of your group defined in ShockOsc WITHOUT the brackets (ex. ShockOsc/{Groupname} -> ShockOsc/LeftLeg)

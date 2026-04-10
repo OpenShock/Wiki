@@ -1,1 +1,9 @@
-{ "title": "Vendors", "pages": ["hardware"] }
+{
+  "title": "Vendors",
+  "icon": "Store",
+  "root": true,
+  "pages": [
+    "---Hardware---",
+    "...hardware"
+  ]
+}

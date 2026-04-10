@@ -1,4 +1,7 @@
-# Using the E-Stop 101
+---
+title: Using the E-Stop 101
+icon: OctagonX
+---
 
 ::: info E-Stop for what?
 Emergency-Stop are a Physical button or switch that can be triggered to stop all curent and pending shocks, viberations, And beeps.  

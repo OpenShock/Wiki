@@ -1,3 +1,7 @@
+---
+title: "Assembling"
+icon: Wrench
+---
 
 This guide mainly focuses on the parts listed in the [Hardware Buy guide](hardware-buying.md).
 

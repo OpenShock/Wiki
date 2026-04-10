@@ -1,1 +1,18 @@
-{ "title": "Hardware", "pages": ["index", "firmware", "shockers", "remotes", "boards", "transmitter"] }
+{
+  "title": "Hardware",
+  "icon": "CircuitBoard",
+  "root": true,
+  "pages": [
+    "index",
+    "---Firmware---",
+    "...firmware",
+    "---Shockers---",
+    "...shockers",
+    "---Remotes---",
+    "...remotes",
+    "---Boards---",
+    "...boards",
+    "---Transmitter---",
+    "...transmitter"
+  ]
+}

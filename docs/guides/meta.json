@@ -1,4 +1,17 @@
 {
   "title": "Guides",
-  "pages": ["quickstart", "openshock", "diy", "shockosc", "selfhosting"]
+  "icon": "BookOpen",
+  "root": true,
+  "pages": [
+    "---Quickstart---",
+    "...quickstart",
+    "---OpenShock---",
+    "...openshock",
+    "---Do It Yourself---",
+    "...diy",
+    "---ShockOsc---",
+    "...shockosc",
+    "---Self Hosting---",
+    "...selfhosting"
+  ]
 }

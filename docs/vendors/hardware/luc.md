@@ -2,14 +2,14 @@
 tags: 
     - hardware
     - vendor
+title: Luc
+icon: Store
 ---
 
 ::: warning Disclaimer
 The OpenShock team does not provide **any** guarantees about the quality of products or services rendered.
 
 :::
-# Luc
-
 Started `2023-02-23`.
 
 Selling Hubs & 3D-Prints.

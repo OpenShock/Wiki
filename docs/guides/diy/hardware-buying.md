@@ -1,4 +1,7 @@
-# DIY Hardware
+---
+title: DIY Hardware
+icon: ShoppingCart
+---
 
 ::: tip pre-built options available
 Not interested in building your own OpenShock hub? Head over to the [Hardware vendors](../../vendors/hardware/index.md).

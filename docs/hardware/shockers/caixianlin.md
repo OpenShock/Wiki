@@ -2,9 +2,9 @@
 tags:
     - hardware
     - shockers
+title: CaiXianlin
+icon: Zap
 ---
-
-# CaiXianlin
 
 ::: tip Compatible
 This product is compatible with OpenShock.

@@ -1,5 +1,7 @@
-
-# What you need
+---
+title: What you need
+icon: ShoppingCart
+---
 
 If you've found yourself here, chances are you're either looking to get shocked, or shock a friend or partner! We've written this quick start guide to help you get shocking as fast as possible.
 

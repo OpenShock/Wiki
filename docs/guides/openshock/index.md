@@ -1,2 +1,5 @@
-# OpenShock Platform Guides
+---
+title: OpenShock Platform Guides
+icon: Zap
+---
 

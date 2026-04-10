@@ -1,4 +1,7 @@
-# Visual Status LED Patterns
+---
+title: Visual Status LED Patterns
+icon: Lightbulb
+---
 
 The firmware uses prioritized repeating patterns to convey device state via:
 - Built‑in single‑color GPIO LED

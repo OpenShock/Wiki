@@ -3,10 +3,9 @@ tags:
   - developer
   - api
   - backend
+title: Developer & API Docs
+icon: Code
 ---
-
-# Developer & API Docs
-
 
 ## Backend Architecture
 

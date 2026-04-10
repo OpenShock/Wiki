@@ -2,9 +2,9 @@
 tags:
     - hardware
     - shockers
+title: Wellturn T330
+icon: Zap
 ---
-
-# Wellturn T330
 
 ::: tip Compatible
 This product is compatible with OpenShock.

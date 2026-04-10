@@ -2,6 +2,8 @@
 tags:
   - hardware
   - shockers
+title: Shockers
+icon: Zap
 ---
 
 ::: danger Safety Warning
@@ -14,7 +16,6 @@ Check out [Safety](../../home/safety-rules.md) for more information.
 The electricity could flow through your heart. 
 
 :::
-# Shockers
 At OpenShock we support a couple of different Shocker Models. All of them are based on 433 MHz RF for communication.  
 They are controlled via a OpenShock Hub.
 

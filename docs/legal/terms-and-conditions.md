@@ -1,4 +1,7 @@
-# Terms and conditions
+---
+title: Terms and conditions
+icon: FileText
+---
 
 ::: info Still brewing!
 This article heavily under development, expect very frequent changes

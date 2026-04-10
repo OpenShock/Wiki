@@ -4,9 +4,9 @@ tags:
     - board
     - vendor:seeed
     - chip:esp32s3
+title: Seeed Xiao ESP32S3
+icon: Cpu
 ---
-
-# Seeed Xiao ESP32S3
 
 ::: tip Fully compatible
 This product is fully compatible with OpenShock.

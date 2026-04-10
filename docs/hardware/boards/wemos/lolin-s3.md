@@ -4,9 +4,9 @@ tags:
     - board
     - vendor:wemos
     - chip:esp32-s3
+title: Wemos Lolin S3
+icon: Cpu
 ---
-
-# Wemos Lolin S3
 
 ::: tip Fully compatible
 

@@ -6,6 +6,9 @@ const withMDX = createMDX();
 const config = {
   reactStrictMode: true,
   output: 'standalone',
+  redirects: async () => [
+    { source: '/', destination: '/home', permanent: false },
+  ],
 };
 
 export default withMDX(config);

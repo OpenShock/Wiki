@@ -2,14 +2,14 @@
 tags:
     - hardware
     - vendor
+title: BosjesMan
+icon: Store
 ---
 
 ::: warning Disclaimer
 The OpenShock team does not provide **any** guarantees about the quality of products or services rendered.
 
 :::
-# BosjesMan
-
 Started `2023-10-17`.
 
 ## Contact

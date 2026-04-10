@@ -1,4 +1,7 @@
-# Share codes
+---
+title: Share codes
+icon: Share2
+---
 
 ::: info What is a Share code?
 Share codes make it possible for someone with a openshock.app account to directly control your shocker with their account.  

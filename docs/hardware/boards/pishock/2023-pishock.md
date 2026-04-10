@@ -5,9 +5,9 @@ tags:
   - vendor:pishock
   - compat:full
   - support:full
+title: PiShock 2023 (Current)
+icon: Cpu
 ---
-
-# PiShock 2023 (Current)
 
 ::: warning OpenShock is not affiliated with PiShock
 We are not affiliated with PiShock in any way and do not endorse their products. However, we do support flashing OpenShock on this board.

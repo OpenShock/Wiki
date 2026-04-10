@@ -1,4 +1,7 @@
-Troubleshooting: ShockOSC
+---
+title: "Troubleshooting: ShockOSC"
+icon: Bug
+---
 
 ## OSC active?
 

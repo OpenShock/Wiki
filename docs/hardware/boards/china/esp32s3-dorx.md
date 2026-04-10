@@ -6,9 +6,9 @@ tags:
     - chip:esp32-s3
     - compat:full
     - support:maintainers
+title: "ESP32-S3 \"Dorx\""
+icon: Cpu
 ---
-
-# ESP32-S3 "Dorx"
 
 Codenamed "Dorx", this is a brandless knockoff ESP32-S3 board with a fake "ESP32-S3-WROOM-1" module.
 

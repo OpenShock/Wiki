@@ -1,18 +1,6 @@
 ---
-layout: home
-
-
-hero:
-  name: OpenShock
-  tagline: Wiki and Documentation
-
-  actions:
-    - theme: brand
-      text: Get Started
-      link: /guides/quickstart/what-you-need.md
-    - theme: alt
-      text: View on GitHub
-      link: https://github.com/openshock
+title: Welcome
+icon: House
 ---
 
 Welcome to OpenShock! We're proud to present our fully open-source software solution, compatible with off-the-shelf hardware, to get you started in the world of shocking!
@@ -28,4 +16,4 @@ Head over to the Guides to get started:
 
 ## Safety
 
-Please read the [Safety Rules](./home/safety-rules.md)
+Please read the [Safety Rules](./safety-rules.md)

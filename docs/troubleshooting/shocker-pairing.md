@@ -1,4 +1,7 @@
-# Troubleshooting: Shocker Pairing
+---
+title: "Troubleshooting: Shocker Pairing"
+icon: Bug
+---
 
 ## Shocker Pairing Mode
 

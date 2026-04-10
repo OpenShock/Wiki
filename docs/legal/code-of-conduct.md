@@ -1,4 +1,7 @@
-# Contributor Covenant Code of Conduct
+---
+title: Contributor Covenant Code of Conduct
+icon: Heart
+---
 
 ## Our Pledge
 

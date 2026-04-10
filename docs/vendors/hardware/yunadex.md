@@ -2,14 +2,14 @@
 tags:
     - hardware
     - vendor
+title: Yunadex
+icon: Store
 ---
 
 ::: warning Disclaimer
 The OpenShock team does not provide **any** guarantees about the quality of products or services rendered.
 
 :::
-# Yunadex
-
 Started `2025-11-22`.
 
 Shipping Globally from Finland.

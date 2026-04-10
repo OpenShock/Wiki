@@ -1,4 +1,7 @@
-# How to Update the Hub
+---
+title: How to Update the Hub
+icon: RefreshCw
+---
 
 ## What you need
 

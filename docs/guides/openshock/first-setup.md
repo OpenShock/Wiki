@@ -1,4 +1,7 @@
-# First time setup
+---
+title: First time setup
+icon: Play
+---
 
 ::: danger Safety Warning
 **Don't wear the shocker somewhere near your neck or your heart.**

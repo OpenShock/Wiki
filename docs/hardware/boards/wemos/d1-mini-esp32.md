@@ -4,9 +4,9 @@ tags:
     - board
     - vendor:wemos
     - chip:esp32
+title: Wemos D1 Mini ESP32
+icon: Cpu
 ---
-
-# Wemos D1 Mini ESP32
 
 ::: tip Fully compatible
 This product is fully compatible with OpenShock.

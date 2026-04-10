@@ -1,4 +1,7 @@
-# Compiling Firmware
+---
+title: Compiling Firmware
+icon: Terminal
+---
 
 ::: info Still brewing!
 This article heavily under development; expect frequent changes.

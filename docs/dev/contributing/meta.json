@@ -1,1 +1,1 @@
-{ "title": "Contributing", "pages": ["index", "compile-firmware", "backend"] }
+{ "title": "Contributing", "icon": "GitPullRequest", "pages": ["index", "compile-firmware", "backend"] }

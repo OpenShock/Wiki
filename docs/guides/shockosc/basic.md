@@ -1,5 +1,7 @@
-# Basic Setup
-
+---
+title: Basic Setup
+icon: Settings
+---
 
 ::: danger ShockOSC is now a Module in [OpenShock Desktop](https://github.com/OpenShock/Desktop)
 Please go and download [OpenShock Desktop](https://github.com/OpenShock/Desktop) to use ShockOSC.

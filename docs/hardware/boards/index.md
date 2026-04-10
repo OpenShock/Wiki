@@ -1,4 +1,7 @@
-# Boards
+---
+title: Boards
+icon: Cpu
+---
 
 ## Legend
 

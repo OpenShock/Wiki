@@ -1,5 +1,8 @@
-# VRChat Avatar Setup
-  
+---
+title: VRChat Avatar Setup
+icon: User
+---
+
 ## What you need
 
 - [ShockOSC](basic.md)

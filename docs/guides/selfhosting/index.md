@@ -3,9 +3,9 @@ tags:
   - selfhost
   - api
   - backend
+title: Self Hosting
+icon: Server
 ---
-
-# Self Hosting
 
 ## Requirements
 

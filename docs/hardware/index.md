@@ -1,4 +1,7 @@
-# Hardware Overview
+---
+title: Hardware Overview
+icon: CircuitBoard
+---
 
 This section covers all physical components that make up an OpenShock setup – from the control board ("Hub") and transmitter modules, to the shockers (collars) themselves and the remotes you may already own.
 

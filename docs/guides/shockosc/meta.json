@@ -1,1 +1,1 @@
-{ "title": "ShockOsc", "pages": ["basic", "avatar-setup-vrc", "avatar-setup-cvr", "parameters"] }
+{ "title": "ShockOsc", "icon": "Gamepad2", "pages": ["basic", "avatar-setup-vrc", "avatar-setup-cvr", "parameters"] }

@@ -6,9 +6,9 @@ tags:
   - chip:esp32s3
   - compat:full
   - support:full
+title: OpenShock Core V1
+icon: Cpu
 ---
-
-# OpenShock Core V1
 
 Designed by [nullstalgia](../../../vendors/hardware/nullstalgia.md)
 

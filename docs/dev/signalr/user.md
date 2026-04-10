@@ -1,5 +1,7 @@
-
-# SignalR Hub: User
+---
+title: "SignalR Hub: User"
+icon: User
+---
 
 URL: `https://api.openshock.app/1/hubs/user`
 

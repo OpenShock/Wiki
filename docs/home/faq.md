@@ -1,9 +1,9 @@
 ---
 tags:
   - faq
+title: Frequently Asked Questions
+icon: HelpCircle
 ---
-
-# Frequently Asked Questions
 
 ## What is OpenShock?
 

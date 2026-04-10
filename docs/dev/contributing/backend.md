@@ -1,4 +1,7 @@
-# Backend Development Setup
+---
+title: Backend Development Setup
+icon: Server
+---
 
 ## Requirements
 - Docker or Podman with Compose ([Docker Linux](https://github.com/docker/docker-install) [Docker Desktop Windows](https://www.docker.com/products/docker-desktop/) [Podman](https://podman.io/docs/installation) [Podman Desktop](https://podman-desktop.io/))

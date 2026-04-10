@@ -2,14 +2,14 @@
 tags:
     - hardware
     - vendor
+title: Ebthing
+icon: Store
 ---
 
 ::: warning Disclaimer
 The OpenShock team does not provide **any** guarantees about the quality of products or services rendered.
 
 :::
-# Ebthing
-
 Started `2025-10-27`.
 
 Selling Hubs and Flatshocker kits and Fully assembled units via Their Website [shop.neuroi.au](https://shop.neuroi.au) And via Discord

@@ -1,4 +1,7 @@
-# ChilloutVR Avatar Setup
+---
+title: ChilloutVR Avatar Setup
+icon: User
+---
 
 ## What you need
 

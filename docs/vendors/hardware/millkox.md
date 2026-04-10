@@ -2,14 +2,14 @@
 tags:
     - hardware
     - vendor
+title: Millkox
+icon: Store
 ---
 
 ::: warning Disclaimer
 The OpenShock team does not provide **any** guarantees about the quality of products or services rendered.
 
 :::
-# Millkox
-
 Started `2025-07-06`.
 
 Hubs, Shockers and Offline Remotes can be purchased through my Shop.

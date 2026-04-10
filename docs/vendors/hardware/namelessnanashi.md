@@ -2,14 +2,14 @@
 tags:
     - hardware
     - vendor
+title: NamelessNanashi
+icon: Store
 ---
 
 ::: warning Disclaimer
 The OpenShock team does not provide **any** guarantees about the quality of products or services rendered.
 
 :::
-# NamelessNanashi
-
 Started `2025-08-07`.
 
 Selling Hubs and Spacers via Discord or E-Mail inquiries.

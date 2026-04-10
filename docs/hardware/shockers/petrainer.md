@@ -2,9 +2,9 @@
 tags:
     - hardware
     - shockers
+title: Petrainer
+icon: Zap
 ---
-
-# Petrainer
 
 ::: tip Compatible
 This product is compatible with OpenShock.

@@ -1,4 +1,7 @@
-# How to flash the firmware
+---
+title: How to flash the firmware
+icon: Upload
+---
 
 ## What you need
 

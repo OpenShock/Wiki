@@ -1,4 +1,7 @@
-# E-Stop
+---
+title: E-Stop
+icon: OctagonX
+---
 
 ::: This guide mainly focuses on adding a E-Stop to a DIY Hub
 
