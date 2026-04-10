@@ -1,8 +1,7 @@
 import type { BaseLayoutProps } from "fumadocs-ui/layouts/shared";
 import { appName, gitConfig } from "./shared";
 
-export function baseOptions(): BaseLayoutProps {
-  return {
+export const baseOptions: BaseLayoutProps = {
     nav: {
       title: <img src="/branding/LogoBakedFont.svg" alt={appName} style={{ height: 24 }} />,
     },
@@ -20,4 +19,3 @@ export function baseOptions(): BaseLayoutProps {
       },
     ],
   };
-}

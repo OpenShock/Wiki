@@ -218,6 +218,7 @@ export function VendorPicker() {
   const [requireShockers, setRequireShockers] = useState(false);
   const [require3dPrints, setRequire3dPrints] = useState(false);
   const [requireOfficial, setRequireOfficial] = useState(false);
+  const [initialized, setInitialized] = useState(false);
 
   // Read filters from URL on mount
   useEffect(() => {
@@ -229,10 +230,12 @@ export function VendorPicker() {
     if (params.get("shockers") === "1") setRequireShockers(true);
     if (params.get("prints3d") === "1") setRequire3dPrints(true);
     if (params.get("official") === "1") setRequireOfficial(true);
+    setInitialized(true);
   }, []);
 
-  // Sync filters to URL
+  // Sync filters to URL (skip until URL params have been read)
   useEffect(() => {
+    if (!initialized) return;
     const params = new URLSearchParams();
     if (selectedRegion) params.set("region", selectedRegion);
     if (requireHubs) params.set("hubs", "1");

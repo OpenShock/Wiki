@@ -22,9 +22,9 @@ export function getMDXComponents(components?: MDXComponents) {
     VendorPicker,
     ...components,
     // HTML `ref` attribute conflicts with `forwardRef`
-    pre: ({ ref: _ref, ...props }) => (
+    pre: ({ ref: _ref, children, ...props }) => (
       <CodeBlock {...props}>
-        <Pre>{props.children}</Pre>
+        <Pre>{children}</Pre>
       </CodeBlock>
     ),
   } satisfies MDXComponents;

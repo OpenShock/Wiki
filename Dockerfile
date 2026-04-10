@@ -9,7 +9,13 @@ ARG PNPM_VERSION
 WORKDIR /app
 
 RUN apk add --no-cache libc6-compat
-RUN wget -qO /bin/pnpm "https://github.com/pnpm/pnpm/releases/download/v${PNPM_VERSION}/pnpm-linuxstatic-x64" && chmod +x /bin/pnpm
+RUN ARCH=$(uname -m) && \
+    case "$ARCH" in \
+      x86_64) PNPM_ARCH="x64" ;; \
+      aarch64) PNPM_ARCH="arm64" ;; \
+      *) echo "Unsupported architecture: $ARCH" && exit 1 ;; \
+    esac && \
+    wget -qO /bin/pnpm "https://github.com/pnpm/pnpm/releases/download/v${PNPM_VERSION}/pnpm-linuxstatic-${PNPM_ARCH}" && chmod +x /bin/pnpm
 
 COPY package.json pnpm-lock.yaml ./
 RUN pnpm install --frozen-lockfile
@@ -20,7 +26,13 @@ ARG PNPM_VERSION
 
 WORKDIR /app
 
-RUN wget -qO /bin/pnpm "https://github.com/pnpm/pnpm/releases/download/v${PNPM_VERSION}/pnpm-linuxstatic-x64" && chmod +x /bin/pnpm
+RUN ARCH=$(uname -m) && \
+    case "$ARCH" in \
+      x86_64) PNPM_ARCH="x64" ;; \
+      aarch64) PNPM_ARCH="arm64" ;; \
+      *) echo "Unsupported architecture: $ARCH" && exit 1 ;; \
+    esac && \
+    wget -qO /bin/pnpm "https://github.com/pnpm/pnpm/releases/download/v${PNPM_VERSION}/pnpm-linuxstatic-${PNPM_ARCH}" && chmod +x /bin/pnpm
 
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
