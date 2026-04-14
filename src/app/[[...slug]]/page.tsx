@@ -69,4 +69,3 @@ export async function generateMetadata(props: PageProps<"/[[...slug]]">): Promis
     },
   };
 }
-

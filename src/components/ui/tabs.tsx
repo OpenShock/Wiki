@@ -148,4 +148,3 @@ export function TabsContent({ value, ...props }: ComponentProps<typeof Primitive
     </Primitive.TabsContent>
   );
 }
-
