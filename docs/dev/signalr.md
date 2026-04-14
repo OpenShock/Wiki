@@ -1,14 +1,16 @@
-
-# Using SignalR WebSockets
+---
+title: Using SignalR WebSockets
+icon: Plug
+---
 
 OpenShock exposes real-time events and control channels through [SignalR](https://learn.microsoft.com/aspnet/core/signalr). The hubs use WebSocket transport with JSON payloads.
 
 ## Endpoints
 
 - `https://api.openshock.app/1/hubs/user`
-  *Receive device status, logs and OTA updates for an authenticated user and send control commands.*
+  _Receive device status, logs and OTA updates for an authenticated user and send control commands._
 - `https://api.openshock.app/1/hubs/share/link/{id}`
-  *Interact with a public share link. Replace `{id}` with the share link UUID.*
+  _Interact with a public share link. Replace `{id}` with the share link UUID._
 
 ## Connecting
 
@@ -23,8 +25,8 @@ import { HubConnectionBuilder, LogLevel } from "@microsoft/signalr";
 const connection = new HubConnectionBuilder()
   .withUrl("https://api.openshock.app/1/hubs/user", {
     headers: {
-      "User-Agent": "MyExampleApp/1.0"
-    }
+      "User-Agent": "MyExampleApp/1.0",
+    },
   })
   .withAutomaticReconnect()
   .configureLogging(LogLevel.Information)
@@ -93,7 +95,9 @@ To connect to a share link hub, use the share link identifier and optionally pro
 
 ```ts
 const shareConn = new HubConnectionBuilder()
-  .withUrl("https://api.openshock.app/1/hubs/share/link/01234567-89ab-cdef-0123-456789abcdef?name=Guest")
+  .withUrl(
+    "https://api.openshock.app/1/hubs/share/link/01234567-89ab-cdef-0123-456789abcdef?name=Guest",
+  )
   .build();
 await shareConn.start();
 ```

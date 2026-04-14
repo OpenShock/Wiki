@@ -1,11 +1,11 @@
 ---
 tags:
-    - hardware
-    - board
-    - vendor:opensmart
+  - hardware
+  - board
+  - vendor:opensmart
+title: Open Smart 433MHz
+icon: Radio
 ---
-
-# Open Smart 433MHz
 
 ### Transmitter Only
 
@@ -15,11 +15,11 @@ tags:
 
 - [AliExpress](https://www.aliexpress.com/item/32820610184.html)
 
-
 ### Specifications
 
 - 433MHz
 
 ### Media
+
 ![Transmitter](../../../static/transmitters/opensmart-transmitter.jpg)
 ![Transmitter & Receiver](../../../static/transmitters/opensmart-transmitter-receiver.jpg)

@@ -1,0 +1,6 @@
+{
+  "title": "Troubleshooting",
+  "icon": "LifeBuoy",
+  "root": true,
+  "pages": ["hub", "shocker-pairing", "shockosc"]
+}

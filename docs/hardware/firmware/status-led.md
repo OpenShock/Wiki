@@ -1,18 +1,23 @@
-# Visual Status LED Patterns
+---
+title: Visual Status LED Patterns
+icon: Lightbulb
+---
 
 The firmware uses prioritized repeating patterns to convey device state via:
+
 - Built‑in single‑color GPIO LED
 - RGB WS2812B LED
 
 Time values are in milliseconds. Patterns loop continuously. Priority means only the first matching state (highest severity) shows.
 
 ## Priority Order (highest → lowest)
-1. Critical Error  
-2. Emergency Stop Awaiting Release  
-3. Emergency Stopped  
-4. WebSocket Connected  
-5. Has IP (Wi‑Fi connected, no WebSocket)  
-6. Wi‑Fi Scanning  
+
+1. Critical Error
+2. Emergency Stop Awaiting Release
+3. Emergency Stopped
+4. WebSocket Connected
+5. Has IP (Wi‑Fi connected, no WebSocket)
+6. Wi‑Fi Scanning
 7. Wi‑Fi Disconnected (fallback)
 
 (An extra “WebSocket Can’t Connect” pattern exists in code but is not selected anywhere.)
@@ -32,6 +37,7 @@ Time values are in milliseconds. Patterns loop continuously. Priority means only
 | Not pure OK (dual LED mode)     | Solid OFF                                       | (RGB shows prioritized pattern)           | Any deviation from healthy mask       |
 
 ### Flag to Pattern Mapping
+
 - kCriticalErrorFlag → Critical Error
 - kEmergencyStopAwaitingReleaseFlag → Emergency Stop Awaiting Release
 - kEmergencyStoppedFlag → Emergency Stopped
@@ -41,8 +47,8 @@ Time values are in milliseconds. Patterns loop continuously. Priority means only
 - (Else) → Wi‑Fi **Disconnected**
 
 ## Dual‑LED Mode (Both GPIO + RGB Present)
+
 - The built‑in LED becomes a binary health indicator, overriding the normal blink patterns. (Some basic ESP's only have a Power LED which cannot be controlled)
 - It is Solid ON only if the state flag mask equals exactly:  
   WebSocketConnected + HasIpAddress + WiFiConnected
 - Any additional or missing flag → Solid OFF (RGB continues to show detailed status).
-

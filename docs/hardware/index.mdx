@@ -1,0 +1,70 @@
+---
+title: Hardware Overview
+icon: CircuitBoard
+---
+
+This section covers all physical components that make up an OpenShock setup — from the control board ("Hub") and transmitter modules, to the shockers (collars) themselves.
+
+<Cards>
+  <Card title="Boards (Hubs)" href="/hardware/boards" icon="🔌">
+    Supported microcontroller boards, compatibility and feature matrix
+  </Card>
+  <Card title="Transmitter" href="/hardware/transmitter" icon="📡">
+    433 MHz transmitter modules and assembly guidance
+  </Card>
+  <Card title="Shockers" href="/hardware/shockers" icon="⚡">
+    Supported receiver/shocker models and safety info
+  </Card>
+</Cards>
+
+## Choosing Your Path
+
+| Goal                                                | Start Here                                          | Why                                               |
+| --------------------------------------------------- | --------------------------------------------------- | ------------------------------------------------- |
+| I want the simplest working hub                     | [Boards](./boards/index.md)                         | Pick a fully maintained board for fewer surprises |
+| I already own a collar and want to know if it works | [Shockers](./shockers/index.md)                     | Lists supported shocker models and status         |
+| Ready to get started?                               | [Guides — OpenShock](../guides/openshock/index.md)  | End-to-end setup instructions                     |
+| I plan to self-host everything                      | [Guides — Selfhost](../guides/selfhosting/index.md) | Best selfhost practice and examples               |
+
+## Recommended Starting Hardware
+
+If you are new and buying fresh parts today:
+
+1. A fully maintained board (e.g. Seeed Studio XIAO ESP32S3, Wemos Lolin S3, or OpenShock Core V2)
+2. A 433 MHz transmitter module listed in the Transmitter section
+3. A recommended shocker (CaiXianlin) — see supported list
+
+Recommended: cables and a soldering iron to connect the ESP32 and transmitter.
+
+## Safety First
+
+Before powering anything or placing a collar on a person, read the core [Safety Rules](../home/safety-rules.md). Improper use can cause injury. Never place electrodes near the heart or neck; avoid simultaneous contact with both shocker pins.
+
+## Firmware and Flashing
+
+Once you have your board selected, head to:
+
+<Cards>
+  <Card title="Flash Your Board" href="/guides/openshock/how-to-flash-your-board" icon="⚡">
+    Flash the OpenShock firmware
+  </Card>
+  <Card title="First Setup" href="/guides/openshock/first-setup" icon="🚀">
+    Configure your hub after flashing
+  </Card>
+  <Card title="How to Update" href="/guides/openshock/how-to-update" icon="🔄">
+    OTA and version upgrade workflow
+  </Card>
+</Cards>
+
+## Need Help?
+
+<Cards>
+  <Card title="Troubleshooting: Hub" href="/troubleshooting/hub" icon="🐛">
+    Hub connectivity and pairing issues
+  </Card>
+  <Card title="Troubleshooting: Shocker" href="/troubleshooting/shocker-pairing" icon="🔍">
+    Shocker pairing problems
+  </Card>
+</Cards>
+
+Ask in the community ([Discord](https://discord.gg/OpenShock)) with board + firmware version + logs if available.

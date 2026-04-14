@@ -1,18 +1,23 @@
-# Backend Development Setup
+---
+title: Backend Development Setup
+icon: Server
+---
 
 ## Requirements
+
 - Docker or Podman with Compose ([Docker Linux](https://github.com/docker/docker-install) [Docker Desktop Windows](https://www.docker.com/products/docker-desktop/) [Podman](https://podman.io/docs/installation) [Podman Desktop](https://podman-desktop.io/))
 - [NET 9.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)
 - git (+ git bash if on [Windows](https://git-scm.com/downloads))
 
 ## Recommendations
+
 - Jetbrains Rider
 
 ## Setup
 
 Open a shell in the `dev` directory. (Git Bash on Windows)
 
-### Postgres, Dragonfly (Redis Compatible Cache), WebUI 
+### Postgres, Dragonfly (Redis Compatible Cache), WebUI
 
 Run the following command to start the local development databases.
 
@@ -27,6 +32,7 @@ Its accessible at `http://localhost:8080`.
 There shouldn't be any errors in the output.
 
 **Tips:**
+
 - You can use `docker ps` to check if the containers are running.
 - To update the images you need to run `docker compose pull` and then `docker compose up -d` again.
 - To stop the containers, run `docker compose down`.
@@ -36,6 +42,7 @@ There shouldn't be any errors in the output.
 Make sure you are in the `dev` directory and your terminal is a linux like bash terminal (Git Bash on Windows will work).
 
 Run the `setupUsersecrets.sh` script to setup dotnet user secrets for the projects.
+
 ```bash
 ./setupUsersecrets.sh
 ```
@@ -67,9 +74,8 @@ Password: `OpenShock123!`
 
 PS: The locally started WebUI is available at `http://localhost:8080`.
 
-
 ### Running the other projects
 
 ### Connecting a Hub to this locally running instance
 
-### Creating migrations 
+### Creating migrations

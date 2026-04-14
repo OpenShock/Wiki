@@ -1,0 +1,5 @@
+{
+  "title": "Do It Yourself",
+  "icon": "Hammer",
+  "pages": ["index", "hardware-buying", "assembling", "e-stop"]
+}

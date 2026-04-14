@@ -1,15 +1,50 @@
 {
   "name": "openshock-wiki",
-  "private": true,
   "version": "1.0.0",
-  "type": "module",
+  "private": true,
   "scripts": {
-    "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
-    "preview": "vitepress preview docs"
+    "build": "next build",
+    "dev": "next dev",
+    "start": "next start",
+    "types:check": "fumadocs-mdx && next typegen && tsc --noEmit",
+    "postinstall": "fumadocs-mdx",
+    "lint": "oxlint src/",
+    "format": "oxfmt --write src/ docs/",
+    "format:check": "oxfmt --check src/ docs/"
+  },
+  "dependencies": {
+    "@radix-ui/react-tabs": "^1.1.13",
+    "algoliasearch": "^5.50.1",
+    "class-variance-authority": "^0.7.1",
+    "flexsearch": "^0.8.212",
+    "fumadocs-core": "16.7.11",
+    "fumadocs-mdx": "14.2.11",
+    "fumadocs-ui": "16.7.11",
+    "hast-util-to-jsx-runtime": "^2.3.6",
+    "lucide-react": "^1.7.0",
+    "next": "16.2.2",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "remark": "^15.0.1",
+    "remark-gemoji": "^8.0.0",
+    "remark-gfm": "^4.0.1",
+    "remark-rehype": "^11.1.2",
+    "tailwind-merge": "^3.5.0",
+    "unist-util-visit": "^5.1.0",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
-    "vitepress": "2.0.0-alpha.17"
+    "@tailwindcss/postcss": "^4.2.2",
+    "@types/hast": "^3.0.4",
+    "@types/mdx": "^2.0.13",
+    "@types/node": "^25.5.2",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "oxfmt": "^0.44.0",
+    "oxlint": "^1.59.0",
+    "postcss": "^8.5.9",
+    "tailwindcss": "^4.2.2",
+    "typescript": "^6.0.2"
   },
-  "packageManager": "pnpm@10.26.1"
+  "packageManager": "pnpm@10.33.0"
 }

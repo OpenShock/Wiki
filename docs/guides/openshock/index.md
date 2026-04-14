@@ -1,2 +1,0 @@
-# OpenShock Platform Guides
-

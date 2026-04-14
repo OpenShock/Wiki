@@ -1,0 +1,17 @@
+{
+  "title": "Guides",
+  "icon": "BookOpen",
+  "root": true,
+  "pages": [
+    "---Getting Started---",
+    "...quickstart",
+    "---Setup & Usage---",
+    "...openshock",
+    "---DIY---",
+    "...diy",
+    "---ShockOSC (VR)---",
+    "...shockosc",
+    "---Self Hosting---",
+    "...selfhosting"
+  ]
+}
