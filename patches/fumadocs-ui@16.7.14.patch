@@ -1,0 +1,28 @@
+diff --git a/dist/components/toc/clerk.js b/dist/components/toc/clerk.js
+index 0b430ff..aba2ad5 100644
+--- a/dist/components/toc/clerk.js
++++ b/dist/components/toc/clerk.js
+@@ -78,12 +78,17 @@ function TOCItems({ ref, className, thumbBox = true, ...props }) {
+ 		if (thumbBox) {
+ 			const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+ 			path.setAttribute("d", d);
+-			let l = 0;
+-			for (const [top, bottom] of positions) {
+-				while (path.getPointAtLength(l).y < top) l++;
+-				const topL = l;
+-				while (path.getPointAtLength(l).y < bottom) l++;
+-				itemLineLengths.push([topL, l]);
++			const totalLength = path.getTotalLength();
++			if (Number.isFinite(totalLength) && totalLength > 0) {
++				let l = 0;
++				for (const [top, bottom] of positions) {
++					while (l < totalLength && path.getPointAtLength(l).y < top) l++;
++					const topL = l;
++					while (l < totalLength && path.getPointAtLength(l).y < bottom) l++;
++					itemLineLengths.push([topL, l]);
++				}
++			} else {
++				for (let i = 0; i < positions.length; i++) itemLineLengths.push([0, 0]);
+ 			}
+ 		}
+ 		setSvg({

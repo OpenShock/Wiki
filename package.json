@@ -45,5 +45,10 @@
     "tailwindcss": "^4.2.2",
     "typescript": "^6.0.2"
   },
-  "packageManager": "pnpm@10.33.0"
+  "packageManager": "pnpm@10.33.0",
+  "pnpm": {
+    "patchedDependencies": {
+      "fumadocs-ui@16.7.14": "patches/fumadocs-ui@16.7.14.patch"
+    }
+  }
 }
