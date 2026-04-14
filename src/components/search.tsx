@@ -1,6 +1,6 @@
 "use client";
 
-import { liteClient } from "algoliasearch/lite";
+import { create } from "@orama/orama";
 import {
   SearchDialog,
   SearchDialogClose,
@@ -15,17 +15,26 @@ import {
 } from "fumadocs-ui/components/dialog/search";
 import { useDocsSearch } from "fumadocs-core/search/client";
 
-const client = liteClient("TM973D0RMF", "63f489250dfedfd861f58395335ee908");
+function initOrama() {
+  return create({
+    schema: { _: "string" },
+    language: "english",
+  });
+}
 
 export default function CustomSearchDialog(props: SharedProps) {
   const { search, setSearch, query } = useDocsSearch({
-    type: "algolia",
-    client,
-    indexName: "Algolia OpenShock Crawler",
+    type: "static",
+    initOrama,
   });
 
   return (
-    <SearchDialog search={search} onSearchChange={setSearch} isLoading={query.isLoading} {...props}>
+    <SearchDialog
+      search={search}
+      onSearchChange={setSearch}
+      isLoading={query.isLoading}
+      {...props}
+    >
       <SearchDialogOverlay />
       <SearchDialogContent>
         <SearchDialogHeader>
@@ -34,15 +43,6 @@ export default function CustomSearchDialog(props: SharedProps) {
           <SearchDialogClose />
         </SearchDialogHeader>
         <SearchDialogList items={query.data !== "empty" ? query.data : null} />
-        <SearchDialogFooter>
-          <a
-            href="https://algolia.com"
-            rel="noreferrer noopener"
-            className="ms-auto text-xs text-fd-muted-foreground"
-          >
-            Search powered by Algolia
-          </a>
-        </SearchDialogFooter>
       </SearchDialogContent>
     </SearchDialog>
   );
