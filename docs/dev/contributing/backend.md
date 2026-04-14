@@ -1,13 +1,13 @@
 ---
 title: Backend Development Setup
-description: Set up the OpenShock backend locally with Docker, Postgres, Dragonfly and the .NET 9 SDK.
+description: Set up the OpenShock backend locally with Docker, Postgres, Dragonfly and the .NET 10 SDK.
 icon: Server
 ---
 
 ## Requirements
 
 - Docker or Podman with Compose ([Docker Linux](https://github.com/docker/docker-install) [Docker Desktop Windows](https://www.docker.com/products/docker-desktop/) [Podman](https://podman.io/docs/installation) [Podman Desktop](https://podman-desktop.io/))
-- [NET 9.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)
+- [NET 10.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/10.0)
 - git (+ git bash if on [Windows](https://git-scm.com/downloads))
 
 ## Recommendations
