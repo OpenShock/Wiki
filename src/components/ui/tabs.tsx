@@ -130,9 +130,17 @@ export function Tabs({
 export function TabsContent({ value, ...props }: ComponentProps<typeof Primitive.TabsContent>) {
   const { valueToIdMap } = useTabContext();
 
-  if (props.id) {
+  useLayoutEffect(() => {
+    if (!props.id) return;
+
     valueToIdMap.set(value, props.id);
-  }
+
+    return () => {
+      if (valueToIdMap.get(value) === props.id) {
+        valueToIdMap.delete(value);
+      }
+    };
+  }, [props.id, value, valueToIdMap]);
 
   return (
     <Primitive.TabsContent value={value} {...props}>
@@ -140,3 +148,4 @@ export function TabsContent({ value, ...props }: ComponentProps<typeof Primitive
     </Primitive.TabsContent>
   );
 }
+
