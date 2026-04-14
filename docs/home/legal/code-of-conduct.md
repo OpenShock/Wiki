@@ -1,5 +1,6 @@
 ---
 title: Contributor Covenant Code of Conduct
+description: Community code of conduct for everyone participating in OpenShock spaces.
 icon: Heart
 ---
 

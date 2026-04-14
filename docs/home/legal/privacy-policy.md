@@ -1,5 +1,6 @@
 ---
 title: Privacy Policy
+description: GDPR-compliant privacy policy for openshock.app and the OpenShock Discord bot.
 icon: Shield
 ---
 

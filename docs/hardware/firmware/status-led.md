@@ -1,5 +1,6 @@
 ---
 title: Visual Status LED Patterns
+description: Blink patterns used by the firmware's status LED to communicate device state.
 icon: Lightbulb
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Using SignalR WebSockets
+description: Connect to OpenShock's real-time SignalR hubs to receive device events and send control commands.
 icon: Plug
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Backend Development Setup
+description: Set up the OpenShock backend locally with Docker, Postgres, Dragonfly and the .NET 9 SDK.
 icon: Server
 ---
 

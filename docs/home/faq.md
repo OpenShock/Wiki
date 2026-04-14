@@ -2,6 +2,7 @@
 tags:
   - faq
 title: Frequently Asked Questions
+description: Quick answers to the most common questions about OpenShock.
 icon: MessageCircleQuestionMark
 ---
 

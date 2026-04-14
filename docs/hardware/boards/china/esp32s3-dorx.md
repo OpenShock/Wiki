@@ -7,6 +7,7 @@ tags:
   - compat:full
   - support:maintainers
 title: 'ESP32-S3 "Dorx"'
+description: Brandless ESP32-S3 knockoff board (N8R2 / N16R8) — fully compatible with OpenShock.
 icon: Cpu
 ---
 

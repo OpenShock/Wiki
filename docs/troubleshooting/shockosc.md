@@ -1,5 +1,6 @@
 ---
 title: "Troubleshooting: ShockOSC"
+description: "Quick fixes for ShockOSC: OSC toggle, config reset, and avatar refresh."
 icon: Bug
 ---
 

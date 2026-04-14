@@ -4,6 +4,7 @@ tags:
   - board
   - vendor:opensmart
 title: Open Smart 433MHz
+description: Open Smart 433 MHz transmitter module — tested to work with OpenShock hubs.
 icon: Radio
 ---
 

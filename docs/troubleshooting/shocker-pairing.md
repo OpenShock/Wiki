@@ -1,5 +1,6 @@
 ---
 title: "Troubleshooting: Shocker Pairing"
+description: "Fix shocker pairing problems — pairing mode, RF TX pin, and model-specific quirks."
 icon: Bug
 ---
 

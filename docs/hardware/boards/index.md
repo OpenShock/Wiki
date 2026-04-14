@@ -1,5 +1,6 @@
 ---
 title: Boards
+description: Compatibility and support matrix for every microcontroller board tested with OpenShock.
 icon: Cpu
 ---
 

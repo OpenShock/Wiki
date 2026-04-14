@@ -4,6 +4,7 @@ tags:
   - remote
   - buy
 title: Identifying
+description: How to tell a genuine CaiXianlin remote from common knockoffs.
 icon: ScanSearch
 ---
 
