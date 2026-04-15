@@ -23,4 +23,4 @@ _If anyone has more information for other models feel free to contribute or leav
 ## Hub Radio Transmitter Pin (RFTX Pin)
 
 Your Hub's RFTX GPIO Pin might not be set correct. This can be especially the case for DIY.
-[See here for more information](hub.md#rf-tx-pin-is-not-configured-correctly)
+[See here for more information](hub#rf-tx-pin-is-not-configured-correctly)

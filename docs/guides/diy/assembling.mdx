@@ -4,7 +4,7 @@ description: Wire up an ESP32 and a 433 MHz transmitter into a working OpenShock
 icon: Wrench
 ---
 
-This guide mainly focuses on the parts listed in the [Hardware Buy guide](hardware-buying.md).
+This guide mainly focuses on the parts listed in the [Hardware Buy guide](hardware-buying).
 
 ## Hub Hardware Requirements
 
@@ -15,7 +15,7 @@ This guide mainly focuses on the parts listed in the [Hardware Buy guide](hardwa
 
 ## What/Where to buy?
 
-See the [hardware buying guide here](hardware-buying.md). For the hub assembly you'll need an ESP32 and a 433 MHz transmitter.
+See the [hardware buying guide here](hardware-buying). For the hub assembly you'll need an ESP32 and a 433 MHz transmitter.
 
 ## Figuring out the pins
 
@@ -25,7 +25,7 @@ _Most_ of the GPIO pins on any given ESP32 board should work for both RF TX and 
 
 Note down which GPIO pins you soldered to, as you will need to enter them during setup in a later step.
 
-For example, if you bought a [Wemos Lolin S3](../../hardware/boards/wemos/lolin-s3.md) and a [Open Smart Transmitter](../../hardware/transmitter/china/open-smart.md), simply connect the 3.3V to VCC, ground to ground, and any numbered GPIO pin to data, for example the pin 12, to your transmitter.
+For example, if you bought a [Wemos Lolin S3](../../hardware/boards/wemos/lolin-s3) and a [Open Smart Transmitter](../../hardware/transmitter/china/open-smart), simply connect the 3.3V to VCC, ground to ground, and any numbered GPIO pin to data, for example the pin 12, to your transmitter.
 
 <Callout type="warn" title="Don't forget to enter these during setup!">
 You will need to set your RF TX pin during setup. If the pin is incorrect the transmitter wont be able to send any signals to the shockers.
@@ -42,7 +42,7 @@ Or, you can re-enable the Captive Portal on the website under the Hub's "..." me
 <Callout type="warn" title="Logic level compatibility">
 Please note that all ESP32s operate at 3.3V logic levels. To avoid overvolting your ESP's IO pins, it is recommended to either: connect your transmitter's power input to a 3V supply pin on the ESP's board, or use a logic-level shifter if your transmitter ***really* requires** more than 3V power to operate.
 
-How to wire up a E-stop can be found [Here](e-stop.md)
+How to wire up a E-stop can be found [Here](e-stop)
 
 </Callout>
-**Next step is [flashing the firmware!](../openshock/how-to-flash-your-board.md)**
+**Next step is [flashing the firmware!](../openshock/how-to-flash-your-board)**
