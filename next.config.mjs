@@ -14,6 +14,7 @@ const config = {
   // Prod redirects live in `public/_redirects` (Cloudflare Pages).
   ...(isDev && {
     redirects: async () => [
+      { source: '/:path*.md', destination: '/:path*', permanent: true },
       { source: '/', destination: '/home', permanent: false },
     ],
   }),

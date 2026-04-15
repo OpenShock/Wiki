@@ -1,2 +1,4 @@
+/legal/*.md        /home/legal/:splat  301
+/*.md               /:splat             301
 /                   /home/           301
 /legal/*            /home/legal/:splat  301
