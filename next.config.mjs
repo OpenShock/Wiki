@@ -9,7 +9,7 @@ const config = {
   // Dev server runs normally; prod build is a static export for Cloudflare Pages.
   ...(isDev ? {} : { output: 'export' }),
   images: { unoptimized: true },
-  trailingSlash: true,
+  trailingSlash: false,
   // Redirects don't work with `output: 'export'` — dev only.
   // Prod redirects live in `public/_redirects` (Cloudflare Pages).
   ...(isDev && {
