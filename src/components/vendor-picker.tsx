@@ -19,7 +19,7 @@ const vendors: Vendor[] = [
   // Europe
   {
     name: "BosjesMan",
-    link: "./bosjesman",
+    link: "./hardware/bosjesman",
     from: "\u2753 Unspecified",
     ships_to: ["GLOBAL"],
     hubs: true,
@@ -30,7 +30,7 @@ const vendors: Vendor[] = [
   },
   {
     name: "Luc",
-    link: "./luc",
+    link: "./hardware/luc",
     from: "\ud83c\udde9\ud83c\uddea Germany",
     ships_to: ["EU"],
     hubs: true,
@@ -41,7 +41,7 @@ const vendors: Vendor[] = [
   },
   {
     name: "MarkDasWolf",
-    link: "./markdaswolf",
+    link: "./hardware/markdaswolf",
     from: "\ud83c\udde6\ud83c\uddf9 Austria",
     ships_to: ["EU"],
     hubs: true,
@@ -52,7 +52,7 @@ const vendors: Vendor[] = [
   },
   {
     name: "MeguminVRC",
-    link: "./meguminvrc",
+    link: "./hardware/meguminvrc",
     from: "\ud83c\udde9\ud83c\uddea Germany",
     ships_to: ["GLOBAL"],
     hubs: true,
@@ -63,7 +63,7 @@ const vendors: Vendor[] = [
   },
   {
     name: "Millkox",
-    link: "./millkox",
+    link: "./hardware/millkox",
     from: "\ud83c\uddf3\ud83c\uddf1 Netherlands",
     ships_to: ["GLOBAL"],
     hubs: true,
@@ -74,7 +74,7 @@ const vendors: Vendor[] = [
   },
   {
     name: "Nerex",
-    link: "./nerex",
+    link: "./hardware/nerex",
     from: "\ud83c\uddf5\ud83c\uddf9 Portugal",
     ships_to: ["EU"],
     hubs: true,
@@ -85,7 +85,7 @@ const vendors: Vendor[] = [
   },
   {
     name: "Yunadex",
-    link: "./yunadex",
+    link: "./hardware/yunadex",
     from: "\ud83c\uddeb\ud83c\uddee Finland",
     ships_to: ["GLOBAL"],
     hubs: true,
@@ -97,7 +97,7 @@ const vendors: Vendor[] = [
   // North America
   {
     name: "ArtisanForgeDesigns",
-    link: "./artisanforgedesigns",
+    link: "./hardware/artisanforgedesigns",
     from: "\ud83c\uddfa\ud83c\uddf8 USA",
     ships_to: ["GLOBAL"],
     hubs: true,
@@ -108,7 +108,7 @@ const vendors: Vendor[] = [
   },
   {
     name: "NamelessNanashi",
-    link: "./namelessnanashi",
+    link: "./hardware/namelessnanashi",
     from: "\ud83c\uddfa\ud83c\uddf8 USA",
     ships_to: ["NA"],
     hubs: true,
@@ -119,7 +119,7 @@ const vendors: Vendor[] = [
   },
   {
     name: "Nullstalgia",
-    link: "./nullstalgia",
+    link: "./hardware/nullstalgia",
     from: "\ud83c\uddfa\ud83c\uddf8 USA",
     ships_to: ["NA"],
     hubs: true,
@@ -130,7 +130,7 @@ const vendors: Vendor[] = [
   },
   {
     name: "Sillypupkit",
-    link: "./sillypupkit",
+    link: "./hardware/sillypupkit",
     from: "\ud83c\udde8\ud83c\udde6 Canada",
     ships_to: ["GLOBAL"],
     hubs: true,
@@ -142,7 +142,7 @@ const vendors: Vendor[] = [
   // Australia
   {
     name: "Ebthing",
-    link: "./ebthing",
+    link: "./hardware/ebthing",
     from: "\ud83c\udde6\ud83c\uddfa Australia",
     ships_to: ["OCEANIA"],
     hubs: true,
