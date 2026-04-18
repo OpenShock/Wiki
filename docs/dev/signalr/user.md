@@ -1,5 +1,5 @@
 ---
-title: "SignalR Hub: User"
+title: "User"
 description: "Reference for the /hubs/user SignalR endpoint: server methods, events and authentication."
 icon: User
 ---
