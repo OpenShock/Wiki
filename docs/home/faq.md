@@ -18,4 +18,4 @@ If you want to support us you can do so via [GitHub Sponsors](https://github.com
 
 ## How can I build/get my own?
 
-You can either buy a pre-built Hub from on of our [Community Vendors](../vendors/hardware/index) or build your own [(DIY)](../guides/diy/index).
+You can either buy a pre-built Hub from on of our [Community Vendors](../vendors/hardware) or build your own [(DIY)](../guides/diy).
