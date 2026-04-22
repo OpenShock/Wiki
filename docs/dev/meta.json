@@ -2,11 +2,5 @@
   "title": "Developer",
   "icon": "Code",
   "root": true,
-  "pages": [
-    "index",
-    "---API Reference---",
-    "signalr",
-    "---Contributing---",
-    "...contributing"
-  ]
+  "pages": ["index", "---API Reference---", "signalr", "---Contributing---", "...contributing"]
 }
