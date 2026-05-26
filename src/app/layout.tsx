@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://wiki.openshock.org"),
   icons: {
     icon: [
-      { url: "/branding/Icon.svg", type: "image/svg+xml" },
-      { url: "/branding/Icon32.png", sizes: "32x32", type: "image/png" },
-      { url: "/branding/Icon16.png", sizes: "16x16", type: "image/png" },
-      { url: "/branding/Icon.ico", sizes: "any" },
+      { url: "/branding/Icon/Icon.svg", type: "image/svg+xml" },
+      { url: "/branding/Icon/Icon32.png", sizes: "32x32", type: "image/png" },
+      { url: "/branding/Icon/Icon16.png", sizes: "16x16", type: "image/png" },
+      { url: "/branding/Icon/Icon.ico", sizes: "any" },
     ],
-    apple: "/branding/Icon256.png",
+    apple: "/branding/Icon/Icon256.png",
   },
 };
 

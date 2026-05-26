@@ -4,7 +4,7 @@ import { appName, gitConfig } from "./shared";
 export const baseOptions: BaseLayoutProps = {
   nav: {
     url: "/home",
-    title: <img src="/branding/LogoBakedFont.svg" alt={appName} style={{ height: 24 }} />,
+    title: <img src="/branding/Logo/Logo.svg" alt={appName} style={{ height: 24 }} />,
   },
   githubUrl: `https://github.com/${gitConfig.user}/${gitConfig.repo}`,
   links: [
