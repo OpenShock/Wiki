@@ -348,7 +348,10 @@ export function VendorPicker() {
         </label>
       </div>
 
-      {europe.length === 0 && northAmerica.length === 0 && australia.length === 0 && southAmerica.length === 0 ? (
+      {europe.length === 0 &&
+      northAmerica.length === 0 &&
+      australia.length === 0 &&
+      southAmerica.length === 0 ? (
         <p className="my-4 text-fd-muted-foreground">No vendors match your current filters.</p>
       ) : (
         <>
