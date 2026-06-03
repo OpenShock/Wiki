@@ -140,13 +140,26 @@ const vendors: Vendor[] = [
     design: "Custom",
     region: "AUSTRALIA",
   },
+  // South America
+  {
+    name: "Luvini",
+    link: "./hardware/luvini",
+    from: "\ud83c\udde7\ud83c\uddf7 Brazil",
+    ships_to: ["SA"],
+    hubs: true,
+    shockers: true,
+    prints3d: false,
+    design: "Custom",
+    region: "SOUTH_AMERICA",
+  },
 ];
 
-const SHIPPING_REGIONS = ["EU", "NA", "OCEANIA", "GLOBAL"] as const;
+const SHIPPING_REGIONS = ["EU", "NA", "SA", "OCEANIA", "GLOBAL"] as const;
 
 const regionNames: Record<string, string> = {
   EU: "\ud83c\uddea\ud83c\uddfa Europe",
   NA: "\ud83c\udf0e North America",
+  SA: "\ud83c\udf0e South America",
   OCEANIA: "\ud83c\udf0f Oceania",
   GLOBAL: "\ud83c\udf10 Worldwide",
 };
@@ -155,6 +168,7 @@ const sectionLabels: Record<string, string> = {
   EUROPE: "Europe",
   NORTH_AMERICA: "North America",
   AUSTRALIA: "Australia",
+  SOUTH_AMERICA: "South America",
 };
 
 const checkX = (value: boolean) => (value ? "\u2705" : "\u274c");
@@ -266,6 +280,10 @@ export function VendorPicker() {
     () => filtered.filter((v) => v.region === "AUSTRALIA").sort(sortByName),
     [filtered],
   );
+  const southAmerica = useMemo(
+    () => filtered.filter((v) => v.region === "SOUTH_AMERICA").sort(sortByName),
+    [filtered],
+  );
 
   return (
     <>
@@ -330,12 +348,13 @@ export function VendorPicker() {
         </label>
       </div>
 
-      {europe.length === 0 && northAmerica.length === 0 && australia.length === 0 ? (
+      {europe.length === 0 && northAmerica.length === 0 && australia.length === 0 && southAmerica.length === 0 ? (
         <p className="my-4 text-fd-muted-foreground">No vendors match your current filters.</p>
       ) : (
         <>
           <VendorTable vendors={europe} region="EUROPE" />
           <VendorTable vendors={northAmerica} region="NORTH_AMERICA" />
+          <VendorTable vendors={southAmerica} region="SOUTH_AMERICA" />
           <VendorTable vendors={australia} region="AUSTRALIA" />
         </>
       )}
