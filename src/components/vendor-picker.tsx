@@ -83,17 +83,6 @@ const vendors: Vendor[] = [
     design: "Custom",
     region: "EUROPE",
   },
-  {
-    name: "Yunadex",
-    link: "./hardware/yunadex",
-    from: "\ud83c\uddeb\ud83c\uddee Finland",
-    ships_to: ["GLOBAL"],
-    hubs: true,
-    shockers: true,
-    prints3d: true,
-    design: "Custom",
-    region: "EUROPE",
-  },
   // North America
   {
     name: "ArtisanForgeDesigns",
