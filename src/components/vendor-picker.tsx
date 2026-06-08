@@ -203,7 +203,7 @@ function VendorTable({ vendors, region }: { vendors: Vendor[]; region: string })
                   <Link href={v.link}>{v.name}</Link>
                 </td>
                 <td>{v.from}</td>
-                <td>{v.ships_to_display ?? v.ships_to.map((r) => regionNames[r]).join(", ")}</td>
+                <td>{v.ships_to_display || v.ships_to.map((r) => regionNames[r]).join(", ")}</td>
                 <td>{checkX(v.hubs)}</td>
                 <td>{checkX(v.shockers)}</td>
                 <td>{checkX(v.prints3d)}</td>
