@@ -440,6 +440,16 @@ server {
 </Accordion>
 </Accordions>
 
+## Creating your admin account
+
+A fresh instance has **no admin user**. You can bootstrap the first admin with an SQL update.
+
+```bash
+docker exec -it openshock-postgres \
+ psql -U openshock -d openshock \
+ -c "UPDATE users SET roles = array_append(roles, 'admin') WHERE email = 'you@example.com';"
+```
+
 ## Done
 
 Congratulations, the backend and website should be working now. :partying_face:
