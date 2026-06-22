@@ -14,41 +14,36 @@
   },
   "dependencies": {
     "@orama/orama": "^3.1.18",
-    "@radix-ui/react-tabs": "^1.1.13",
+    "@radix-ui/react-tabs": "^1.1.15",
     "class-variance-authority": "^0.7.1",
-    "fumadocs-core": "16.8.7",
-    "fumadocs-mdx": "14.3.2",
-    "fumadocs-ui": "16.7.15",
+    "fumadocs-core": "16.10.4",
+    "fumadocs-mdx": "15.0.12",
+    "fumadocs-ui": "16.10.4",
     "hast-util-to-jsx-runtime": "^2.3.6",
-    "lucide-react": "^1.14.0",
-    "next": "16.2.4",
-    "react": "^19.2.5",
-    "react-dom": "^19.2.5",
+    "lucide-react": "^1.21.0",
+    "next": "16.2.9",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
     "remark": "^15.0.1",
     "remark-gemoji": "^8.0.0",
     "remark-gfm": "^4.0.1",
     "remark-rehype": "^11.1.2",
-    "tailwind-merge": "^3.5.0",
+    "tailwind-merge": "^3.6.0",
     "unist-util-visit": "^5.1.0",
-    "zod": "^4.4.2"
+    "zod": "^4.4.3"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.2.4",
+    "@tailwindcss/postcss": "^4.3.1",
     "@types/hast": "^3.0.4",
-    "@types/mdx": "^2.0.13",
-    "@types/node": "^25.6.0",
-    "@types/react": "^19.2.14",
+    "@types/mdx": "^2.0.14",
+    "@types/node": "^26.0.0",
+    "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
-    "oxfmt": "^0.47.0",
-    "oxlint": "^1.62.0",
-    "postcss": "^8.5.13",
-    "tailwindcss": "^4.2.4",
+    "oxfmt": "^0.55.0",
+    "oxlint": "^1.70.0",
+    "postcss": "^8.5.15",
+    "tailwindcss": "^4.3.1",
     "typescript": "^6.0.3"
   },
-  "packageManager": "pnpm@10.33.0",
-  "pnpm": {
-    "patchedDependencies": {
-      "fumadocs-ui@16.7.15": "patches/fumadocs-ui@16.7.15.patch"
-    }
-  }
+  "packageManager": "pnpm@10.33.0"
 }
