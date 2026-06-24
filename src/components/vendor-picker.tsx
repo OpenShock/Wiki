@@ -8,6 +8,7 @@ interface Vendor {
   link: string;
   from: string;
   ships_to: string[];
+  ships_to_display?: string;
   hubs: boolean;
   shockers: boolean;
   prints3d: boolean;
@@ -100,6 +101,7 @@ const vendors: Vendor[] = [
     link: "./hardware/namelessnanashi",
     from: "\ud83c\uddfa\ud83c\uddf8 USA",
     ships_to: ["NA"],
+    ships_to_display: "\ud83c\uddfa\ud83c\uddf8 USA",
     hubs: true,
     shockers: false,
     prints3d: true,
@@ -201,7 +203,7 @@ function VendorTable({ vendors, region }: { vendors: Vendor[]; region: string })
                   <Link href={v.link}>{v.name}</Link>
                 </td>
                 <td>{v.from}</td>
-                <td>{v.ships_to.map((r) => regionNames[r]).join(", ")}</td>
+                <td>{v.ships_to_display || v.ships_to.map((r) => regionNames[r]).join(", ")}</td>
                 <td>{checkX(v.hubs)}</td>
                 <td>{checkX(v.shockers)}</td>
                 <td>{checkX(v.prints3d)}</td>
