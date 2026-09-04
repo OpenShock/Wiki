@@ -1,6 +1,6 @@
 ---
 title: List of ShockOsc Parameters
-description: Reference for every ShockOSC avatar parameter — shock, vibrate, sound, and their variants.
+description: "Reference for every ShockOSC avatar parameter: shock, vibrate, sound, and their variants."
 icon: List
 ---
 
@@ -25,7 +25,7 @@ If you updated your avatar with a NEW parameter and it doesnt work / show up in 
 | **`ShockOsc/{Groupname}_CShock`**        | float | 0 (Stop) - 1 (100%) | When at 0 it wont do anything, anything above 0 up to 1 will shock for as long as this float is not 0. The value determines how strong but scaled with limit settings              |
 | **`ShockOsc/{Groupname}_CVibrate`**      | float | 0 (Stop) - 1 (100%) | When at 0 it wont do anything, anything above 0 up to 1 will vibrate for as long as this float is not 0. The value determines how strong but scaled with limit settings            |
 | **`ShockOsc/{Groupname}_CSound`**        | float | 0 (Stop) - 1 (100%) | When at 0 it wont do anything, anything above 0 up to 1 will beep / trigger a sound as long as this float is not 0. The value determines how strong but scaled with limit settings |
-| **`ShockOsc/{Groupname}_NextIntensity`** | float | 0 (0%) - 1 (100%)   | Overrides the intensity for triggered actions. At 0 the configured intensity is used; any value above 0 (scaled to your limit settings) overrides it. Stays in effect until you set it back to 0 or change avatar — it is not cleared after a shock. |
+| **`ShockOsc/{Groupname}_NextIntensity`** | float | 0 (0%) - 1 (100%)   | Overrides the intensity for triggered actions. At 0 the configured intensity is used; any value above 0 (scaled to your limit settings) overrides it. Stays in effect until you set it back to 0 or change avatar; it is not cleared after a shock. |
 | **`ShockOsc/{Groupname}_NextDuration`**  | float | 0 (0%) - 1 (100%)   | Overrides the duration for triggered actions, scaled to your duration limit settings. Works like NextIntensity.                                                                    |
 
 ## Visual Parameters
