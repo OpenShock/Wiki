@@ -1,0 +1,9 @@
+# Where to report security vulnerabilities in OpenShock (RFC 9116).
+# Expires must be renewed before it passes; keep it less than a year ahead.
+Contact: mailto:security@openshock.org
+Contact: https://github.com/OpenShock/.github/blob/main/SECURITY.md#reporting-a-vulnerability
+Expires: 2027-10-31T00:00:00Z
+Preferred-Languages: en
+Canonical: https://wiki.openshock.org/.well-known/security.txt
+Policy: https://github.com/OpenShock/.github/blob/main/SECURITY.md
+Acknowledgments: https://github.com/OpenShock/.github/blob/main/SECURITY-ACKNOWLEDGMENTS.md
