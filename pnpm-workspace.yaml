@@ -5,5 +5,8 @@ blockExoticSubdeps: true
 minimumReleaseAge: 4320 # 3 days
 overrides:
   postcss@<8.5.10: '>=8.5.10'
+minimumReleaseAgeExclude:
+  # Renovate security update: zod@4.6.6
+  - zod@4.6.6
 
 #trustPolicy: no-downgrade
